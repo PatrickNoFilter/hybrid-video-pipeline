@@ -622,6 +622,32 @@
       "user_visible": true,
       "user_approved": true,
       "confidence": 0.99
+    },
+    {
+      "decision_id": "d-023",
+      "stage": "edit",
+      "category": "composition_mode",
+      "subject": "Subtitle burn-in",
+      "options_considered": [
+        {
+          "option_id": "no-subs",
+          "label": "No subtitles burned in",
+          "score": 0.98,
+          "reason": "User said subtitles are not needed"
+        },
+        {
+          "option_id": "burned",
+          "label": "Burn sentence subtitles",
+          "score": 0.4,
+          "reason": "Earlier plan",
+          "rejected_because": "User asked to remove subtitles"
+        }
+      ],
+      "selected": "no-subs",
+      "reason": "User request; final render has narration audio only, no burned subtitles.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
     }
   ]
 }

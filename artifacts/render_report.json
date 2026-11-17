@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "outputs": [
+    {
+      "path": "/home/desktop/Work/OpenMontage/projects/vietnam-indonesia-gdp/renders/final.mp4",
+      "format": "mp4",
+      "codec": "h264",
+      "audio_codec": "aac",
+      "resolution": "1920x1080",
+      "fps": 30.0,
+      "duration_seconds": 243.063833,
+      "file_size_bytes": 68231634,
+      "platform_target": "youtube"
+    }
+  ],
+  "warnings": [
+    "Final-frame hold added to cover narration tail; midpoint transitions are hard cuts"
+  ],
+  "verification_notes": [
+    "ffprobe: h264 1920x1080 30fps + aac stereo",
+    "duration 243.063833s vs script 242.26s",
+    "5 visual spot-check frames inspected",
+    "no subtitles burned in"
+  ],
+  "render_grammar": "explainer-data",
+  "decision_log_ref": "artifacts/decision_log.json",
+  "final_review_ref": "artifacts/final_review.json",
+  "metadata": {
+    "render_runtime_declared": "remotion",
+    "assembly": "ffmpeg concat of Remotion-rendered infographics + MPT footage halves; narration + music mix",
+    "approval_policy": "per-gate"
+  }
+}

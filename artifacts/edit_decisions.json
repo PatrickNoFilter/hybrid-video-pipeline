@@ -1,0 +1,412 @@
+{
+  "version": "1.0",
+  "cuts": [
+    {
+      "id": "s0a_graphic",
+      "source": "assets/video/gfx/s0a.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 14.66,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "fade",
+      "transition_out": "cut",
+      "transition_duration": 0.4,
+      "reason": "Deliver the headline/title"
+    },
+    {
+      "id": "s0b_graphic",
+      "source": "assets/video/gfx/s0b.mp4",
+      "in_seconds": 14.96,
+      "out_seconds": 18.49,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Deliver the headline/title"
+    },
+    {
+      "id": "s0b_footage",
+      "source": "assets/video/mpt_trim/s0b.mp4",
+      "in_seconds": 18.49,
+      "out_seconds": 22.02,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Set the news framing"
+    },
+    {
+      "id": "s1_footage",
+      "source": "assets/video/mpt_trim/s1.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 7.59,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Show the physical reality behind the number"
+    },
+    {
+      "id": "s1_graphic",
+      "source": "assets/video/gfx/s1.mp4",
+      "in_seconds": 7.59,
+      "out_seconds": 15.19,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Make the data point unmissable and self-explanatory"
+    },
+    {
+      "id": "s2_graphic",
+      "source": "assets/video/gfx/s2.mp4",
+      "in_seconds": 15.49,
+      "out_seconds": 23.87,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Make the data point unmissable and self-explanatory"
+    },
+    {
+      "id": "s2_footage",
+      "source": "assets/video/mpt_trim/s2.mp4",
+      "in_seconds": 23.87,
+      "out_seconds": 32.24,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Show the physical reality behind the number"
+    },
+    {
+      "id": "s3_footage",
+      "source": "assets/video/mpt_trim/s3.mp4",
+      "in_seconds": 32.54,
+      "out_seconds": 41.31,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Show the physical reality behind the number"
+    },
+    {
+      "id": "s3_graphic",
+      "source": "assets/video/gfx/s3.mp4",
+      "in_seconds": 41.31,
+      "out_seconds": 50.08,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Make the data point unmissable and self-explanatory"
+    },
+    {
+      "id": "s4_graphic",
+      "source": "assets/video/gfx/s4.mp4",
+      "in_seconds": 50.38,
+      "out_seconds": 59.55,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Make the data point unmissable and self-explanatory"
+    },
+    {
+      "id": "s4_footage",
+      "source": "assets/video/mpt_trim/s4.mp4",
+      "in_seconds": 59.55,
+      "out_seconds": 68.72,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Show the physical reality behind the number"
+    },
+    {
+      "id": "s5_footage",
+      "source": "assets/video/mpt_trim/s5.mp4",
+      "in_seconds": 69.02,
+      "out_seconds": 79.17,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Show the physical reality behind the number"
+    },
+    {
+      "id": "s5_graphic",
+      "source": "assets/video/gfx/s5.mp4",
+      "in_seconds": 79.17,
+      "out_seconds": 89.32,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Make the data point unmissable and self-explanatory"
+    },
+    {
+      "id": "s6_graphic",
+      "source": "assets/video/gfx/s6.mp4",
+      "in_seconds": 89.62,
+      "out_seconds": 98.97,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Make the data point unmissable and self-explanatory"
+    },
+    {
+      "id": "s6_footage",
+      "source": "assets/video/mpt_trim/s6.mp4",
+      "in_seconds": 98.97,
+      "out_seconds": 108.32,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Show the physical reality behind the number"
+    },
+    {
+      "id": "s7_footage",
+      "source": "assets/video/mpt_trim/s7.mp4",
+      "in_seconds": 108.62,
+      "out_seconds": 117.69,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Show the physical reality behind the number"
+    },
+    {
+      "id": "s7_graphic",
+      "source": "assets/video/gfx/s7.mp4",
+      "in_seconds": 117.69,
+      "out_seconds": 126.76,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Make the data point unmissable and self-explanatory"
+    },
+    {
+      "id": "s8_footage",
+      "source": "assets/video/mpt_trim/s8.mp4",
+      "in_seconds": 127.06,
+      "out_seconds": 136.26,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Show the physical reality behind the number"
+    },
+    {
+      "id": "s8_graphic",
+      "source": "assets/video/gfx/s8.mp4",
+      "in_seconds": 136.26,
+      "out_seconds": 145.47,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Make the data point unmissable and self-explanatory"
+    },
+    {
+      "id": "s9_graphic",
+      "source": "assets/video/gfx/s9.mp4",
+      "in_seconds": 145.77,
+      "out_seconds": 155.42,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Make the data point unmissable and self-explanatory"
+    },
+    {
+      "id": "s9_footage",
+      "source": "assets/video/mpt_trim/s9.mp4",
+      "in_seconds": 155.42,
+      "out_seconds": 165.07,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Show the physical reality behind the number"
+    },
+    {
+      "id": "s10_footage",
+      "source": "assets/video/mpt_trim/s10.mp4",
+      "in_seconds": 165.37,
+      "out_seconds": 175.34,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Show the physical reality behind the number"
+    },
+    {
+      "id": "s10_graphic",
+      "source": "assets/video/gfx/s10.mp4",
+      "in_seconds": 175.34,
+      "out_seconds": 185.31,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Make the data point unmissable and self-explanatory"
+    },
+    {
+      "id": "s11_graphic",
+      "source": "assets/video/gfx/s11.mp4",
+      "in_seconds": 185.61,
+      "out_seconds": 201.78,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "cut",
+      "transition_duration": 0.0,
+      "reason": "Make the data point unmissable and self-explanatory"
+    },
+    {
+      "id": "s11_footage",
+      "source": "assets/video/mpt_trim/s11.mp4",
+      "in_seconds": 201.78,
+      "out_seconds": 217.94,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "cut",
+      "transition_out": "fade",
+      "transition_duration": 0.4,
+      "reason": "Show the physical reality behind the number"
+    }
+  ],
+  "audio": {
+    "narration": {
+      "segments": [
+        {
+          "asset_id": "narr_s0a",
+          "start_seconds": 0.0,
+          "end_seconds": 14.66
+        },
+        {
+          "asset_id": "narr_s0b",
+          "start_seconds": 14.96,
+          "end_seconds": 22.02
+        },
+        {
+          "asset_id": "narr_s1",
+          "start_seconds": 22.32,
+          "end_seconds": 37.51
+        },
+        {
+          "asset_id": "narr_s2",
+          "start_seconds": 37.81,
+          "end_seconds": 54.56
+        },
+        {
+          "asset_id": "narr_s3",
+          "start_seconds": 54.86,
+          "end_seconds": 72.4
+        },
+        {
+          "asset_id": "narr_s4",
+          "start_seconds": 72.7,
+          "end_seconds": 91.04
+        },
+        {
+          "asset_id": "narr_s5",
+          "start_seconds": 91.34,
+          "end_seconds": 111.64
+        },
+        {
+          "asset_id": "narr_s6",
+          "start_seconds": 111.94,
+          "end_seconds": 130.64
+        },
+        {
+          "asset_id": "narr_s7",
+          "start_seconds": 130.94,
+          "end_seconds": 149.08
+        },
+        {
+          "asset_id": "narr_s8",
+          "start_seconds": 149.38,
+          "end_seconds": 167.79
+        },
+        {
+          "asset_id": "narr_s9",
+          "start_seconds": 168.09,
+          "end_seconds": 187.39
+        },
+        {
+          "asset_id": "narr_s10",
+          "start_seconds": 187.69,
+          "end_seconds": 207.63
+        },
+        {
+          "asset_id": "narr_s11",
+          "start_seconds": 207.93,
+          "end_seconds": 240.26
+        }
+      ]
+    },
+    "music": {
+      "asset_id": "music",
+      "volume": 0.12,
+      "fade_in_seconds": 2.0,
+      "fade_out_seconds": 3.0,
+      "ducking": {
+        "enabled": false
+      }
+    }
+  },
+  "subtitles": {
+    "enabled": false,
+    "style": "sentence",
+    "source": "assets/subtitles.srt",
+    "font": "DejaVu Sans",
+    "font_size": 30,
+    "color": "#FFFFFF",
+    "outline_color": "#000000",
+    "position": "bottom-center",
+    "max_words_per_line": 12
+  },
+  "renderer_family": "explainer-data",
+  "render_runtime": "remotion",
+  "metadata": {
+    "anchor_cut_notes": "25 half-scenes in narration order; s0a is infographic-only, all others alternate real footage and infographic",
+    "layer_order": [
+      "primary halves",
+      "subtitles",
+      "music under narration"
+    ],
+    "overlay_windows": [],
+    "variant_edit_rules": [
+      "16:9 master only"
+    ],
+    "total_duration_seconds": 242.26,
+    "note": "Subtitle burn-in removed per user request; final mux is video + narration + ducked music only."
+  }
+}
