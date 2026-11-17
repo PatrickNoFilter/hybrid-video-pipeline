@@ -352,8 +352,9 @@
       "duration_seconds": 14.67,
       "resolution": "1920x1080",
       "format": "mp4",
-      "generation_summary": "Animated news bulletin with 3 headlines and BREAKING tag, full intro section (no footage half)",
-      "prompt": "Animated news bulletin with 3 headlines and BREAKING tag, full intro section (no footage half)"
+      "generation_summary": "Remotion: Google News results page with search bar, Berita tab and five real headlines (GoodStats, Kompas, IDN Financials, kumparan, CNN Indonesia)",
+      "prompt": "Animated news bulletin with 3 headlines and BREAKING tag, full intro section (no footage half)",
+      "description": "Google News-style results page infographic"
     },
     {
       "id": "s0b_graphic",
@@ -784,6 +785,6 @@
     },
     "voice": "id-ID-GadisNeural",
     "render_runtime": "remotion",
-    "note": "Music looped (4s crossfade) so it plays to the end; no subtitles burned in."
+    "note": "Intro = Google News-style results card (no footage); closing = infographic-only (no footage); music looped; no subtitles."
   }
 }

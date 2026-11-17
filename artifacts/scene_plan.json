@@ -749,9 +749,9 @@
     {
       "id": "s11_graphic",
       "type": "text_card",
-      "description": "Remotion closing card: 'Tumbuhnya SUDAH | Ekonominya BELUM' + CTA + source line 'Sumber: BPS Indonesia · NSO Vietnam · Bank Dunia · IMF WEO Oktober 2026'",
-      "start_seconds": 185.61,
-      "end_seconds": 201.78,
+      "description": "Full-length closing card with conclusion, CTA and source line (no footage half)",
+      "start_seconds": 207.93,
+      "end_seconds": 240.26,
       "script_section_id": "s11",
       "framing": "centered safe area with 10% title padding",
       "movement": "slow push-in on the visual element",
@@ -772,43 +772,6 @@
           "type": "remotion_infographic",
           "description": "Remotion closing card: 'Tumbuhnya SUDAH | Ekonominya BELUM' + CTA + source line 'Sumber: BPS Indonesia · NSO Vietnam · Bank Dunia · IMF WEO Oktober 2026'",
           "source": "generate"
-        }
-      ]
-    },
-    {
-      "id": "s11_footage",
-      "type": "broll",
-      "description": "Hanoi street fading into Saigon night footage",
-      "start_seconds": 201.78,
-      "end_seconds": 217.94,
-      "script_section_id": "s11",
-      "framing": "full-frame 16:9",
-      "movement": "steady documentary motion",
-      "transition_in": "crossfade 0.3s from previous half",
-      "transition_out": "crossfade 0.3s to next half",
-      "overlay_notes": "burn-in subtitle at bottom, max 2 lines; no other overlay on this half",
-      "shot_language": {
-        "shot_size": "medium_wide",
-        "camera_movement": "dolly_in",
-        "lens_mm": 35,
-        "lighting_key": "natural",
-        "depth_of_field": "deep",
-        "color_temperature": "neutral"
-      },
-      "shot_intent": "Show the physical reality behind the number",
-      "narrative_role": "resolution",
-      "information_role": "What the physical story looks like",
-      "hero_moment": false,
-      "texture_keywords": [
-        "clean",
-        "documentary",
-        "natural"
-      ],
-      "required_assets": [
-        {
-          "type": "real_video_clip",
-          "description": "Hanoi street fading into Saigon night footage",
-          "source": "source"
         }
       ]
     }
@@ -836,6 +799,6 @@
     "overlay_density_limits": "max 2 concurrent overlays; no full-frame opaque cover over footage",
     "crossfade_seconds": 0.3,
     "music": "/home/desktop/Music/Background music News Investigating.mp3",
-    "note": "s0a intro is infographic-only (newsroom footage removed); all other sections remain 50/50 alternating; total 242.26s"
+    "note": "s0a and s11 are infographic-only; other sections alternate; total 242.26s"
   }
 }

@@ -726,6 +726,58 @@
       "user_visible": true,
       "user_approved": true,
       "confidence": 0.99
+    },
+    {
+      "decision_id": "d-026",
+      "stage": "assets",
+      "category": "composition_mode",
+      "subject": "Real-video vs infographic share within each scene",
+      "options_considered": [
+        {
+          "option_id": "closing-graphic-only",
+          "label": "s11 closing infographic-only",
+          "score": 0.98,
+          "reason": "User asked to change s11 footage into infographic; closing card fills full section"
+        },
+        {
+          "option_id": "alternating",
+          "label": "Keep 50/50 in s11",
+          "score": 0.5,
+          "reason": "Previous state",
+          "rejected_because": "User requested infographic-only closing"
+        }
+      ],
+      "selected": "closing-graphic-only",
+      "reason": "Explicit user request; s0a and s11 now infographic-only, all other sections still alternate.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
+    },
+    {
+      "decision_id": "d-027",
+      "stage": "assets",
+      "category": "visual_accuracy_check",
+      "subject": "Intro infographic visual style",
+      "options_considered": [
+        {
+          "option_id": "google-news-results",
+          "label": "Google News search-results style with actual headlines",
+          "score": 0.99,
+          "reason": "User supplied a screenshot of Google News results for 'pdb perkapita vietnam' and asked the intro infographic to match it"
+        },
+        {
+          "option_id": "breaking-bulletin",
+          "label": "BREAKING news bulletin card",
+          "score": 0.4,
+          "reason": "Previous intro",
+          "rejected_because": "User requested the Google News results look"
+        }
+      ],
+      "selected": "google-news-results",
+      "reason": "Intro now reproduces a Google News results page: search bar, Berita tab, and five real headlines with sources and timestamps.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
     }
   ]
 }

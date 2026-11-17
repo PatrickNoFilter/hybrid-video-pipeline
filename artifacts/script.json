@@ -570,7 +570,7 @@
     },
     {
       "id": "s11",
-      "label": "Proper conclusion + CTA + sources",
+      "label": "Proper conclusion + CTA + sources (infographic only)",
       "text": "Demikian kesimpulannya: tujuh triwulan data BPS dan NSO menunjukkan pertumbuhan Vietnam telah mengungguli Indonesia. Adapun ekonominya, masih sebatas proyeksi IMF dalam World Economic Outlook Oktober dua ribu dua puluh enam. Sumber data: BPS Indonesia, NSO Vietnam, Bank Dunia, dan IMF. Silakan simak angkanya, dan senantiasa perhatikan basis harganya.",
       "start_seconds": 207.93,
       "end_seconds": 240.26,
@@ -590,14 +590,9 @@
       },
       "enhancement_cues": [
         {
-          "type": "broll",
-          "description": "MoneyPrinterTurbo real footage: Hanoi street fading into Saigon night footage",
-          "timestamp_seconds": 130.32
-        },
-        {
           "type": "stat_card",
           "description": "Closing card: 'Tumbuhnya SUDAH | Ekonominya BELUM' + CTA + source line: 'Sumber: BPS Indonesia · NSO Vietnam · Bank Dunia · IMF WEO Oktober 2026'",
-          "timestamp_seconds": 121.32
+          "timestamp_seconds": 207.93
         }
       ],
       "pronunciation_guides": [
@@ -658,7 +653,8 @@
     "required_support_assets": [
       "Remotion news headline card fills entire s0a (no footage)",
       "Remotion: s0a news headline bulletin, s0b title card",
-      "Remotion infographic per scene: s1 split card, s2 2025 line chart, s3 2026 bars + gap, s4 proof checkmark, s5 caution card, s6 dual-basis stat cards, s7 IMF projection card, s8 sector chart, s9 population/FX cards, s10 sensitivity gauge, s11 closing card"
+      "Remotion infographic per scene: s1 split card, s2 2025 line chart, s3 2026 bars + gap, s4 proof checkmark, s5 caution card, s6 dual-basis stat cards, s7 IMF projection card, s8 sector chart, s9 population/FX cards, s10 sensitivity gauge, s11 closing card",
+      "Remotion closing card fills entire s11 (no footage)"
     ],
     "visual_plan": [
       {
@@ -723,8 +719,8 @@
       },
       {
         "scene": "s11",
-        "order": "infographic_first",
-        "crossfade_at_seconds": 201.78
+        "order": "infographic_only",
+        "crossfade_at_seconds": 224.09
       }
     ],
     "music": "/home/desktop/Music/Background music News Investigating.mp3",

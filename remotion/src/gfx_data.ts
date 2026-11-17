@@ -74,8 +74,8 @@ export const COMPS: GfxComp[] = [
   },
   {
     "id": "gfx-s11",
-    "frames": 485,
+    "frames": 970,
     "section": "s11",
-    "description": "Remotion closing card: 'Tumbuhnya SUDAH | Ekonominya BELUM' + CTA + source line 'Sumber: BPS Indonesia \u00b7 NSO Vietnam \u00b7 Bank Dunia \u00b7 IMF WEO Oktober 2026'"
+    "description": "Full-length closing card with conclusion, CTA and source line (no footage half)"
   }
 ];

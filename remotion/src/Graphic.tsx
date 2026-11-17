@@ -38,23 +38,37 @@ const Content: React.FC<{section: string}> = ({section}) => {
   const opa = (delay: number) => interpolate(frame, [delay, delay + 12], [0, 1], {extrapolateRight: 'clamp'});
 
   if (section === 's0a') {
-    const heads = [
-      'IMF: Vietnam GDP per capita to pass Indonesia in 2026',
-      'Vietnam Q3 2026 growth hits 9,95% — NSO',
-      'Indonesia growth stays near 5% as rupiah weakens — BPS'
+    const results = [
+      {src:'GoodStats', title:'Proyeksi PDB per Kapita ASEAN 2026 Menurut IMF Outlook Oktober', snip:'Produk domestik bruto (PDB) per kapita Vietnam diproyeksikan menyusul Indonesia pada 2026 menurut IMF.', time:'2 jam yang lalu', color:'#1a73e8', tag:'GDP'},
+      {src:'Kompas.com', title:'PDB Per Kapita Vietnam Bakal Lampaui Indonesia, Ini Pendorongnya', snip:'Vietnam diproyeksikan menyalip Indonesia dalam hal PDB per kapita pada 2026.', time:'1 minggu lalu', color:'#e8412f', tag:'KOMPAS'},
+      {src:'IDN Financials', title:'PDB per kapita Vietnam diproyeksi lampaui Indonesia pada 2026', snip:'Vietnam menargetkan pertumbuhan ekonomi minimal 10% pada 2026. Pada kuartal ...', time:'2 minggu lalu', color:'#f5a623', tag:'IDN'},
+      {src:'kumparan', title:'Vietnam Segera Salip Indonesia, PDB per Kapita Diprediksi Naik 8,9 Persen', snip:'PDB per kapita Vietnam diperkirakan mencapai USD 5.259 tahun ini. Akan menyalip posisi Indonesia.', time:'2 minggu lalu', color:'#c62828', tag:'k'},
+      {src:'CNN Indonesia', title:'IMF Prediksi Vietnam Salip Indonesia untuk PDB per Kapita', snip:'Vietnam diprediksi menyalip Indonesia dari sisi PDB per kapita pada 2026.', time:'2 minggu lalu', color:'#b31217', tag:'CNN'}
     ];
+    const tabs = ['Mode AI','Semua','Gambar','Berita','Video','Shopping','Video singkat','Lainnya'];
     return <>
-      <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
-        <div style={{...styles.badge, background:C.red, color:'#fff'}}>BREAKING</div>
-        <div style={{fontSize:28, color:C.muted}}>17 NOV 2026 · EKONOMI ASIA</div>
+      <div style={{background:'#303134', borderRadius:40, height:80, display:'flex', alignItems:'center', padding:'0 34px', fontSize:30, color:'#e8eaed'}}>
+        pdb perkapita vietnam <div style={{marginLeft:'auto', fontSize:38}}>×</div>
       </div>
-      <div style={styles.title}>BERITA EKONOMI ASIA</div>
-      {heads.map((h,i)=><div key={i} style={{...styles.card, marginBottom:18, transform:`translateX(${rise(6+i*8)}px)`, opacity:opa(6+i*8), borderLeft:`10px solid ${i===0?C.vn:i===1?C.blue:C.idn}`}}>
-        <div style={{fontSize:42, fontWeight:700, lineHeight:1.25}}>{h}</div>
-      </div>)}
-      <div style={styles.foot}>Sumber: IMF WEO Okt 2026 · NSO Vietnam · BPS Indonesia</div>
+      <div style={{display:'flex', gap:34, marginTop:20, fontSize:23, color:'#9aa0a6'}}>
+        {tabs.map((tab,i)=><div key={tab} style={{color:i===3?'#8ab4f8':'#9aa0a6', borderBottom:i===3?'4px solid #8ab4f8':'none', paddingBottom:10}}>{tab}</div>)}
+      </div>
+      <div style={{fontSize:22, color:'#9aa0a6', margin:'16px 0 12px'}}>Mungkin maksud Anda adalah: <span style={{color:'#8ab4f8'}}>pdb per kapita vietnam</span></div>
+      {results.map((r,i)=>{
+        const slide=interpolate(frame,[8+i*10,22+i*10],[45,0],{extrapolateRight:'clamp'});
+        const op=interpolate(frame,[8+i*10,20+i*10],[0,1],{extrapolateRight:'clamp'});
+        return <div key={i} style={{display:'flex', gap:24, transform:`translateX(${slide}px)`, opacity:op, marginBottom:14}}>
+          <div style={{flex:1}}>
+            <div style={{fontSize:19, color:'#9aa0a6'}}>{r.src} · {r.time}</div>
+            <div style={{fontSize:29, color:'#8ab4f8', lineHeight:1.18, margin:'4px 0'}}>{r.title}</div>
+            <div style={{fontSize:20, color:'#bdc1c6', lineHeight:1.25}}>{r.snip}</div>
+          </div>
+          <div style={{width:176, height:112, borderRadius:12, background:`linear-gradient(135deg, ${r.color}, #111827)`, display:'flex', alignItems:'center', justifyContent:'center', color:'#fff', fontSize:30, fontWeight:900}}>{r.tag}</div>
+        </div>;
+      })}
     </>;
   }
+
   if (section === 's0b') return (
     <>
       <div style={styles.kicker}>DATA 2025–2026 · BPS · NSO · BANK DUNIA · IMF</div>

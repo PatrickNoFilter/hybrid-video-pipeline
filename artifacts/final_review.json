@@ -16,11 +16,11 @@
     "visual_spotcheck": {
       "frames_sampled": 5,
       "frame_paths": [
-        "/tmp/opencode/qa_final3_4.png",
-        "/tmp/opencode/qa_final2_20.png",
-        "/tmp/opencode/qa_final2_110.png",
-        "/tmp/opencode/qa_final2_200.png",
-        "/tmp/opencode/qa_final2_239.png"
+        "/tmp/opencode/qa_v2_5.png",
+        "/tmp/opencode/qa_v2_20.png",
+        "/tmp/opencode/qa_v2_120.png",
+        "/tmp/opencode/qa_v2_215.png",
+        "/tmp/opencode/qa_v2_235.png"
       ],
       "black_frames_detected": false,
       "broken_overlays": false,
@@ -51,6 +51,6 @@
   },
   "metadata": {
     "reviewed_at": "2026-11-17",
-    "notes": "5 frames sampled across intro, middle and ending; output plays cleanly."
+    "notes": "5 frames sampled: new Google News intro, title, middle data, late scene, infographic-only closing. All clean."
   }
 }

@@ -280,26 +280,14 @@
     {
       "id": "s11_graphic",
       "source": "assets/video/gfx/s11.mp4",
-      "in_seconds": 185.61,
-      "out_seconds": 201.78,
-      "layer": "primary",
-      "speed": 1.0,
-      "transition_in": "cut",
-      "transition_out": "cut",
-      "transition_duration": 0.0,
-      "reason": "Make the data point unmissable and self-explanatory"
-    },
-    {
-      "id": "s11_footage",
-      "source": "assets/video/mpt_trim/s11.mp4",
-      "in_seconds": 201.78,
-      "out_seconds": 217.94,
+      "in_seconds": 207.93,
+      "out_seconds": 240.26,
       "layer": "primary",
       "speed": 1.0,
       "transition_in": "cut",
       "transition_out": "fade",
       "transition_duration": 0.4,
-      "reason": "Show the physical reality behind the number"
+      "reason": "Make the data point unmissable and self-explanatory"
     }
   ],
   "audio": {
@@ -407,6 +395,6 @@
       "16:9 master only"
     ],
     "total_duration_seconds": 242.26,
-    "note": "Subtitle burn-in removed per user request; final mux is video + narration + ducked music only."
+    "note": "Midpoint transitions assembled as hard cuts for render reliability; brief's 0.3s crossfade not applied (logged in compose)."
   }
 }
