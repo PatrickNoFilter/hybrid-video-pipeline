@@ -1,0 +1,133 @@
+{
+  "version": "1.0",
+  "title": "Tujuh Triwulan: Tumbuhnya Vietnam Sudah Menyalip Indonesia, Ekonominya Belum?",
+  "hook": "Tujuh triwulan pertumbuhan Vietnam lebih cepat dari Indonesia. Jadi, apakah ekonomi Vietnam sudah benar-benar menyalip Indonesia? Jawabannya: tumbuhnya iya, ekonominya belum.",
+  "key_points": [
+    "BAGIAN 1 — 'Tumbuhnya Sudah Menyalip': Vietnam unggul di 7/7 triwulan 2025-2026 menurut BPS & NSO — 7,05/8,16/8,25/8,46/8,15/8,81/9,95% vs 4,87/5,12/5,04/5,20/5,61/5,29/5,47%.",
+    "Selisih pertumbuhan melebar dari ~2,2 poin (Q1 2025) menjadi ~4,5 poin (Q3 2026) — ini data aktual, bukan proyeksi.",
+    "BAGIAN 2 — 'Ekonominya Belum': BPS dan NSO tidak menerbitkan PDB per kapita USD per triwulan, jadi tidak ada bukti triwulan untuk klaim level.",
+    "Level 2025 aktual: current USD Vietnam $5.066 vs Indonesia $5.060 (selisih $6); constant 2015 USD Vietnam $4.308 vs Indonesia $4.555 (Indonesia unggul 5,7%).",
+    "Level 2026: IMF WEO Oktober 2026 current USD Vietnam $5.259 vs Indonesia $5.153 — PROYEKSI, bukan hasil ukur.",
+    "Sumber lain tidak mendukung klaim level: TradingEconomics constant USD justru menaruh Indonesia di depan ($4.778 vs $4.631); Macrotrends berhenti di 2025; FocusEconomics 2026 berbayar.",
+    "Data direvisi: Q1/Q2 2026 Vietnam naik dari 7,83%/8,39% menjadi 8,15%/8,81% pada rilis Q3 2026.",
+    "Kesimpulan sesuai judul: kecepatan sudah tersalip, level masih photo finish — dan itu bukan kontradiksi, melainkan beda metric."
+  ],
+  "core_message": "Judulnya merangkum seluruh bukti: 'tumbuhnya Vietnam sudah menyalip Indonesia' dibuktikan tujuh triwulan data BPS dan NSO; 'ekonominya belum' dibuktikan level PDB per kapita yang masih imbang di 2025 dan hanya diproyeksikan unggul tipis oleh IMF untuk 2026.",
+  "cta": "Cek angka BPS dan NSO di layar — lalu perhatikan apakah yang dibandingkan itu pertumbuhan atau level.",
+  "tone": "Informatif, berbasis bukti, transparan soal ketidakpastian data, Bahasa Indonesia percakapan",
+  "style": "flat-motion-graphics",
+  "target_audience": "Pemirsa Indonesia yang tertarik ekonomi Asia Tenggara dan ingin melihat datanya, bukan sekadar narasi",
+  "target_platform": "youtube",
+  "target_duration_seconds": 70,
+  "reference_material": [
+    "https://www.nso.gov.vn/en/data-and-statistics/2026/01/press-release-social-economic-situation-in-the-fourth-quarter-and-2025/",
+    "https://www.nso.gov.vn/en/data-and-statistics/2026/11/press-release-socio-economic-performance-in-the-q3-and-the-nine-months-of-2026/",
+    "https://www.nso.gov.vn/en/data-and-statistics/2026/08/press-release-socio-economic-performance-in-the-q2-and-in-the-first-half-of-2026/",
+    "https://tradingeconomics.com/indonesia/gdp-growth-annual (source: Statistics Indonesia / BPS)",
+    "https://countryeconomy.com/gdp/indonesia?year=2025",
+    "/home/desktop/Work/MoneyPrinterTurbo/storage/local_videos/hanoi.mp4",
+    "/home/desktop/Work/MoneyPrinterTurbo/storage/local_videos/saigon.mp4",
+    "/home/desktop/Music/Background music News Investigating.mp3"
+  ],
+  "angle_options": [
+    {
+      "name": "Growth vs level",
+      "description": "Hook dengan klaim IMF, lalu bedah: pertumbuhan sudah tersalip, level belum — dengan hierarki bukti yang transparan."
+    },
+    {
+      "name": "Quarter-by-quarter race",
+      "description": "Langsung adu tujuh triwulan tanpa membahas validitas sumber."
+    }
+  ],
+  "selected_angle": "Growth vs level",
+  "metadata": {
+    "anchor_medium": "broll_footage",
+    "source_inventory": {
+      "real_footage": [
+        "hanoi.mp4",
+        "saigon.mp4",
+        "hoian.mp4",
+        "halong.mp4"
+      ],
+      "stock_source": "MoneyPrinterTurbo + Pexels API key (configured)",
+      "music": "/home/desktop/Music/Background music News Investigating.mp3",
+      "narration_voice": "id-ID-GadisNeural (Edge TTS via MoneyPrinterTurbo)"
+    },
+    "support_layers": [
+      "stat_card",
+      "bar_chart",
+      "line_chart",
+      "comparison",
+      "subtitles",
+      "music"
+    ],
+    "deliverable_mix": [
+      "hero cut 16:9"
+    ],
+    "missing_capabilities": [
+      "OpenMontage TTS 0/19 configured - narration from MoneyPrinterTurbo Edge TTS",
+      "OpenMontage video_generation 0/35 - real footage from MoneyPrinterTurbo Pexels/local",
+      "OpenMontage image_generation 0/31 - not needed; Remotion draws infographics"
+    ],
+    "fallback_policy": "If Pexels fails, use the four local Vietnam clips. If Remotion render fails, surface a blocker (no silent FFmpeg static-card downgrade).",
+    "render_runtime": "remotion",
+    "composition_mode": "templated",
+    "visual_router": {
+      "pattern": "per_scene_alternating_halves",
+      "description": "Every scene uses BOTH tools: first ~50% MoneyPrinterTurbo real footage, second ~50% Remotion animated infographic (order alternates across scenes). Continuous Gadis narration + subtitles, 0.3s crossfade at midpoint.",
+      "money_turbo_real_video": {
+        "share": "one half of EVERY scene (~3-4s)",
+        "content": [
+          "electronics assembly line / Samsung Vietnam",
+          "Hanoi & Saigon street life",
+          "rupiah / market Indonesia",
+          "export port & cargo"
+        ]
+      },
+      "open_montage_infographic": {
+        "share": "the other half of EVERY scene (~3-4s)",
+        "content": [
+          "opening split card: 'VIETNAM: Tumbuhnya SUDAH menyalip INDONESIA' (green check) vs 'Tapi Ekonominya BELUM' (amber question mark)",
+          "line chart: 7 quarters growth, Vietnam vs Indonesia, gap 2.2 -> 4.5 points",
+          "bar chart per quarter: VN 7.05/8.16/8.25/8.46/8.15/8.81/9.95 vs ID 4.87/5.12/5.04/5.20/5.61/5.29/5.47",
+          "stat card: WB 2025 current USD $5,066 vs $5,060 (dead heat) + constant USD $4,308 vs $4,555 (ID ahead)",
+          "stat card: IMF WEO Oct 2026 $5,259 vs $5,153 (label: PROJECTION, current USD)"
+        ]
+      }
+    },
+    "data_scope": "2025-2026 quarterly growth (BPS + NSO) as primary proof; 2025 annual levels and 2026 forecasts as labeled context only",
+    "data_manifest": "artifacts/data_manifest.json",
+    "data_hierarchy": [
+      "1. BPS + NSO quarterly growth actuals - PRIMARY PROOF (growth already overtaken)",
+      "2. World Bank 2025 levels - observed context (current USD ~tie; constant USD Indonesia ahead)",
+      "3. IMF WEO Oct 2026 - PROJECTION, current USD only, must be labeled 'proyeksi'",
+      "4. TradingEconomics constant-USD - different basis, never compare directly with IMF",
+      "5. UN 2024, Macrotrends, FocusEconomics public, countryeconomy - excluded from level claims"
+    ],
+    "label_rules": [
+      "Every IMF number must be labeled 'proyeksi' and 'current USD' in both voice and on screen",
+      "Always state the price basis (current vs constant USD); never place IMF and TradingEconomics numbers in the same chart without a basis note",
+      "Indonesia 2025 quarterly figures rounded to 1 decimal -> show '~' approximate marker",
+      "Show revision note for Vietnam Q1/Q2 2026 (latest vintage used)",
+      "Do not claim quarterly per-capita level - agencies do not publish it"
+    ],
+    "source_to_support_ratio": "50/50 alternating within every scene",
+    "max_concurrent_overlays": 2,
+    "acquisition_note": "IMF WEO Oct 2026 page retrieved via FlareSolverr at http://127.0.0.1:8191 after direct 403.",
+    "title_claim_map": {
+      "title": "Tujuh Triwulan: Tumbuhnya Vietnam Sudah Menyalip Indonesia, Ekonominya Belum?",
+      "claim_1": {
+        "phrase": "Tumbuhnya Vietnam Sudah Menyalip Indonesia",
+        "meaning": "Quarterly real GDP growth, Vietnam > Indonesia in 7/7 quarters",
+        "evidence": "BPS + NSO quarterly actuals (2025Q1-2026Q3)",
+        "status": "PROVEN"
+      },
+      "claim_2": {
+        "phrase": "Ekonominya Belum",
+        "meaning": "Per-capita level not decisively overtaken",
+        "evidence": "World Bank 2025 current USD dead heat; constant USD Indonesia ahead; IMF 2026 projection only",
+        "status": "NOT YET / PROJECTION ONLY"
+      }
+    }
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "version": "1.0",
+  "project_id": "vietnam-indonesia-gdp",
+  "decisions": [
+    {
+      "decision_id": "d-001",
+      "stage": "idea",
+      "category": "pipeline_selection",
+      "subject": "Pipeline for hybrid real-footage + infographic brief",
+      "options_considered": [
+        {
+          "option_id": "hybrid",
+          "label": "hybrid",
+          "score": 0.95,
+          "reason": "Built for source footage plus support graphics"
+        },
+        {
+          "option_id": "animated-explainer",
+          "label": "animated-explainer",
+          "score": 0.6,
+          "reason": "All-generated; loses real footage",
+          "rejected_because": "No real-video anchor"
+        },
+        {
+          "option_id": "documentary-montage",
+          "label": "documentary-montage",
+          "score": 0.5,
+          "reason": "Footage-led but weak chart support",
+          "rejected_because": "Beta + infographic-led beats need charts"
+        }
+      ],
+      "selected": "hybrid",
+      "reason": "Brief explicitly mixes real footage with data infographics.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-002",
+      "stage": "idea",
+      "category": "render_runtime_selection",
+      "subject": "Composition runtime",
+      "options_considered": [
+        {
+          "option_id": "remotion",
+          "label": "Remotion",
+          "score": 0.95,
+          "reason": "Native stat_card/bar_chart/line_chart scene types; composes video clips + React overlays in one pass"
+        },
+        {
+          "option_id": "hyperframes",
+          "label": "HyperFrames",
+          "score": 0.7,
+          "reason": "HTML/CSS/GSAP kinetic typography",
+          "rejected_because": "Weaker native chart primitives for this data-heavy brief"
+        },
+        {
+          "option_id": "ffmpeg",
+          "label": "FFmpeg",
+          "score": 0.4,
+          "reason": "Reliable cuts/concat",
+          "rejected_because": "Would degrade infographics to static cards"
+        }
+      ],
+      "selected": "remotion",
+      "reason": "User approved Remotion; best fit for animated data infographics.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-003",
+      "stage": "idea",
+      "category": "voice_selection",
+      "subject": "Indonesian narration voice",
+      "options_considered": [
+        {
+          "option_id": "edge-gadis",
+          "label": "Edge TTS id-ID-GadisNeural",
+          "score": 0.98,
+          "reason": "User requested 'edge gadis indonesian'; installed, free, no key"
+        },
+        {
+          "option_id": "edge-ardi",
+          "label": "Edge TTS id-ID-ArdiNeural",
+          "score": 0.6,
+          "reason": "Male Indonesian alternative",
+          "rejected_because": "User requested female Gadis"
+        },
+        {
+          "option_id": "om-tts",
+          "label": "OpenMontage TTS provider",
+          "score": 0.1,
+          "reason": "0/19 configured",
+          "rejected_because": "Not available on this machine"
+        }
+      ],
+      "selected": "edge-gadis",
+      "reason": "Exact match to user request, available via MoneyPrinterTurbo.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-004",
+      "stage": "idea",
+      "category": "capability_extension",
+      "subject": "Source of real-video segments",
+      "options_considered": [
+        {
+          "option_id": "mpt",
+          "label": "MoneyPrinterTurbo (Pexels + local clips)",
+          "score": 0.95,
+          "reason": "Pexels key configured; four local Vietnam clips on disk"
+        },
+        {
+          "option_id": "om-video",
+          "label": "OpenMontage video_generation",
+          "score": 0.05,
+          "reason": "0/35 configured",
+          "rejected_because": "No provider configured"
+        }
+      ],
+      "selected": "mpt",
+      "reason": "Working free path to real footage via the user's requested MoneyPrinterTurbo tool.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-005",
+      "stage": "idea",
+      "category": "music_source",
+      "subject": "Background music",
+      "options_considered": [
+        {
+          "option_id": "user-track",
+          "label": "/home/desktop/Music/Background music News Investigating.mp3",
+          "score": 0.95,
+          "reason": "User supplied exact path"
+        },
+        {
+          "option_id": "none",
+          "label": "No music",
+          "score": 0.5,
+          "reason": "Clean mix",
+          "rejected_because": "User chose a track"
+        },
+        {
+          "option_id": "search",
+          "label": "Music-search tool",
+          "score": 0.4,
+          "reason": "Royalty-free search",
+          "rejected_because": "User supplied their own"
+        }
+      ],
+      "selected": "user-track",
+      "reason": "User provided a specific music file; will be copied into the project and mixed at low volume.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-006",
+      "stage": "idea",
+      "category": "approval_policy",
+      "subject": "Human gate policy",
+      "options_considered": [
+        {
+          "option_id": "per-gate",
+          "label": "Stop at each gate",
+          "score": 0.95,
+          "reason": "User explicitly chose review at each gate"
+        },
+        {
+          "option_id": "preauth",
+          "label": "Pre-authorize full run",
+          "score": 0.5,
+          "reason": "Faster",
+          "rejected_because": "User declined full pre-authorization"
+        }
+      ],
+      "selected": "per-gate",
+      "reason": "User selected 'Approve, but stop at each gate'.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-007",
+      "stage": "idea",
+      "category": "composition_mode",
+      "subject": "Remotion authoring mode",
+      "options_considered": [
+        {
+          "option_id": "templated",
+          "label": "Templated scene types",
+          "score": 0.85,
+          "reason": "stat_card/bar_chart/line_chart are purpose-built for this data explainer; fast and reliable"
+        },
+        {
+          "option_id": "atelier",
+          "label": "Atelier hand-authored",
+          "score": 0.55,
+          "reason": "Bespoke visual language",
+          "rejected_because": "Overkill for a short data explainer; user did not request hero branding"
+        }
+      ],
+      "selected": "templated",
+      "reason": "Data explainer benefits from proven chart components; surfaced here for user objection at the gate.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-008",
+      "stage": "idea",
+      "category": "composition_mode",
+      "subject": "Real-video vs infographic share within each scene",
+      "options_considered": [
+        {
+          "option_id": "split-50-50",
+          "label": "50/50 split-screen in every scene",
+          "score": 0.98,
+          "reason": "User explicitly requested both tools have half share in every scene; narration can point to footage and numbers at once"
+        },
+        {
+          "option_id": "segment-router",
+          "label": "Whole scene assigned to one tool",
+          "score": 0.45,
+          "reason": "Previously logged approach in brief metadata",
+          "rejected_because": "User said it looks like only Remotion is used and asked for half share in every scene"
+        }
+      ],
+      "selected": "split-50-50",
+      "reason": "User feedback at the idea gate: MoneyPrinterTurbo real video must appear in every scene at roughly 50% share alongside the Remotion infographic.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.98
+    },
+    {
+      "decision_id": "d-009",
+      "stage": "idea",
+      "category": "composition_mode",
+      "subject": "Real-video vs infographic share within each scene",
+      "options_considered": [
+        {
+          "option_id": "split-alternating",
+          "label": "Alternating halves within every scene",
+          "score": 0.99,
+          "reason": "User explicitly chose this: first half MPT real footage, second half Remotion infographic, alternating order across scenes"
+        },
+        {
+          "option_id": "split-50-50",
+          "label": "Side-by-side split-screen in every scene",
+          "score": 0.5,
+          "reason": "Previous revision, d-008",
+          "rejected_because": "User chose alternating halves within each scene instead of simultaneous side-by-side"
+        },
+        {
+          "option_id": "segment-router",
+          "label": "Whole scene assigned to one tool",
+          "score": 0.3,
+          "reason": "Original approach",
+          "rejected_because": "User wanted both tools represented in every scene"
+        }
+      ],
+      "selected": "split-alternating",
+      "reason": "User feedback at the idea gate: alternate the two tools within each scene rather than showing them side by side.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
+    },
+    {
+      "decision_id": "d-010",
+      "stage": "idea",
+      "category": "concept_selection",
+      "subject": "Data scope and primary sources",
+      "options_considered": [
+        {
+          "option_id": "q2025-2026",
+          "label": "2025-2026 quarterly BPS + Vietnam NSO",
+          "score": 0.98,
+          "reason": "User explicitly requested only 2025-2026 data, every quarter, from BPS and Vietnam data"
+        },
+        {
+          "option_id": "annual-2015-2025",
+          "label": "2015-2025 annual trend + IMF/WB/UN",
+          "score": 0.25,
+          "reason": "Previous brief scope",
+          "rejected_because": "User asked to restrict to 2025-2026 and use quarterly BPS/Vietnam data"
+        }
+      ],
+      "selected": "q2025-2026",
+      "reason": "User feedback at the idea gate: use only 2025-2026, with quarterly figures from BPS (Indonesia) and Vietnam's NSO/GSO.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.97
+    },
+    {
+      "decision_id": "d-011",
+      "stage": "idea",
+      "category": "visual_accuracy_check",
+      "subject": "IMF projection labeling in narration",
+      "options_considered": [
+        {
+          "option_id": "labeled-context",
+          "label": "IMF as clearly labeled projection/context",
+          "score": 0.95,
+          "reason": "Directionally consistent with BPS/NSO trend but model-based; user asked whether IMF is valid"
+        },
+        {
+          "option_id": "primary-proof",
+          "label": "IMF as primary proof of overtaking",
+          "score": 0.2,
+          "reason": "Would overstate a 2.1% forecast gap",
+          "rejected_because": "IMF 2026 is a forecast, not observed data; gap is within forecast error"
+        },
+        {
+          "option_id": "drop-imf",
+          "label": "Remove IMF entirely",
+          "score": 0.6,
+          "reason": "Simplest, fully actual-data video",
+          "rejected_because": "User only asked about validity, not removal; useful as labeled context"
+        }
+      ],
+      "selected": "labeled-context",
+      "reason": "Resolved the user's validity question: BPS/NSO actuals are the proof; IMF appears only as a clearly labeled 2026 projection.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.95
+    },
+    {
+      "decision_id": "d-012",
+      "stage": "idea",
+      "category": "concept_selection",
+      "subject": "Framing of the overtaking claim (growth vs level)",
+      "options_considered": [
+        {
+          "option_id": "growth-vs-level",
+          "label": "Distinguish growth (overtaken) from level (not yet)",
+          "score": 0.98,
+          "reason": "BPS/NSO publish quarterly growth but no quarterly per-capita USD level; 2025 levels are a dead heat and 2026 levels are projections only"
+        },
+        {
+          "option_id": "flat-overtake",
+          "label": "Claim Vietnam has overtaken outright",
+          "score": 0.2,
+          "reason": "Simpler headline",
+          "rejected_because": "Overstates a $6 difference and a forecast; ignores price-basis disagreement across sources"
+        }
+      ],
+      "selected": "growth-vs-level",
+      "reason": "Final consolidation of all findings: the only solid evidence is faster quarterly growth; the level crossover remains source- and basis-dependent.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.98
+    },
+    {
+      "decision_id": "d-013",
+      "stage": "idea",
+      "category": "visual_accuracy_check",
+      "subject": "IMF vintage and cross-source comparability",
+      "options_considered": [
+        {
+          "option_id": "weo-oct-2026-labeled",
+          "label": "Use IMF WEO Oct 2026 current-USD, labeled; keep other sources separated by basis",
+          "score": 0.96,
+          "reason": "FlareSolverr confirmed the WEO October 2026 vintage and current-price basis; TE uses constant 2015 USD and is not comparable"
+        },
+        {
+          "option_id": "mix-all-sources",
+          "label": "Put IMF and TradingEconomics numbers in one chart",
+          "score": 0.1,
+          "reason": "Visually simple",
+          "rejected_because": "Different price bases would produce a misleading direct comparison"
+        }
+      ],
+      "selected": "weo-oct-2026-labeled",
+      "reason": "Locks the verified IMF vintage and enforces price-basis labeling across all visuals and narration.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.96
+    },
+    {
+      "decision_id": "d-014",
+      "stage": "idea",
+      "category": "concept_selection",
+      "subject": "Video title",
+      "options_considered": [
+        {
+          "option_id": "tujuh-triwulan",
+          "label": "Tujuh Triwulan: Tumbuhnya Sudah Menyalip, Ekonominya Belum?",
+          "score": 0.97,
+          "reason": "Encodes both verified claims: growth overtaken, level not yet; sets up the evidence hierarchy perfectly"
+        },
+        {
+          "option_id": "vietnam-menyalip",
+          "label": "Vietnam Menyalip Indonesia?",
+          "score": 0.55,
+          "reason": "Punchier but would overstate the level claim",
+          "rejected_because": "Implies a per-capita overtaking that the data does not yet prove"
+        }
+      ],
+      "selected": "tujuh-triwulan",
+      "reason": "User explicitly asked to build the brief from this title; it accurately frames the growth-vs-level distinction.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.97
+    },
+    {
+      "decision_id": "d-015",
+      "stage": "idea",
+      "category": "concept_selection",
+      "subject": "Video title",
+      "options_considered": [
+        {
+          "option_id": "title-with-countries",
+          "label": "Tujuh Triwulan: Tumbuhnya Vietnam Sudah Menyalip Indonesia, Ekonominya Belum?",
+          "score": 0.99,
+          "reason": "User asked to add the words Vietnam and Indonesia; makes the subject explicit while keeping the seven-quarter hook and the growth-vs-level claim"
+        },
+        {
+          "option_id": "tujuh-triwulan",
+          "label": "Tujuh Triwulan: Tumbuhnya Sudah Menyalip, Ekonominya Belum?",
+          "score": 0.9,
+          "reason": "Previous title, d-014",
+          "rejected_because": "User requested that the title include the names Vietnam and Indonesia"
+        }
+      ],
+      "selected": "title-with-countries",
+      "reason": "Title revised per user request; earlier title preserved as superseded in the decision log.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
+    },
+    {
+      "decision_id": "d-016",
+      "stage": "assets",
+      "category": "budget_tradeoff",
+      "subject": "Video duration vs narration fidelity",
+      "options_considered": [
+        {
+          "option_id": "extend-220",
+          "label": "Extend video to ~220s",
+          "score": 0.98,
+          "reason": "Keeps every approved word and natural Gadis pacing"
+        },
+        {
+          "option_id": "speed-tts",
+          "label": "Speed up voice ~30% to ~170s",
+          "score": 0.5,
+          "reason": "Shorter but rushed",
+          "rejected_because": "User chose to preserve narration fidelity"
+        },
+        {
+          "option_id": "shorten-text",
+          "label": "Rewrite narration shorter",
+          "score": 0.45,
+          "reason": "Could approach ~150s",
+          "rejected_because": "Would lose approved polite wording and source credit"
+        }
+      ],
+      "selected": "extend-220",
+      "reason": "User approved extending the timeline after real TTS measured 214.9s of speech vs 117s planned.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
+    },
+    {
+      "decision_id": "d-017",
+      "stage": "assets",
+      "category": "capability_extension",
+      "subject": "Source of real-video segments",
+      "options_considered": [
+        {
+          "option_id": "local-wikimedia",
+          "label": "MPT with local Vietnam clips + Wikimedia/Archive.org stock",
+          "score": 0.9,
+          "reason": "Works with configured environment; 11 clips rendered and trimmed"
+        },
+        {
+          "option_id": "pexels",
+          "label": "Pexels stock via MPT",
+          "score": 0.3,
+          "reason": "Originally planned",
+          "rejected_because": "pexels_api_keys is empty in config.toml; CLI failed at materials stage"
+        }
+      ],
+      "selected": "local-wikimedia",
+      "reason": "Pexels key unavailable; MPT rendered real footage from local/Wikimedia sources instead. Indonesia-specific shots are visually approximate and labeled as such.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-018",
+      "stage": "assets",
+      "category": "capability_extension",
+      "subject": "Source of real-video segments",
+      "options_considered": [
+        {
+          "option_id": "pexels-factory",
+          "label": "Pexels Vietnam factory stock via MPT",
+          "score": 0.98,
+          "reason": "User provided a working Pexels key; all 11 footage halves regenerated with Vietnam factory/manufacturing terms"
+        },
+        {
+          "option_id": "local-wikimedia",
+          "label": "Local Vietnam clips + Wikimedia industrial stock",
+          "score": 0.3,
+          "reason": "Previous asset set",
+          "rejected_because": "User rejected footage: not Vietnam factories; industrial clip was unrelated satellite cleanroom"
+        }
+      ],
+      "selected": "pexels-factory",
+      "reason": "User supplied a valid Pexels key and asked for Vietnam factory footage; MPT regenerated all footage segments.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
+    },
+    {
+      "decision_id": "d-020",
+      "stage": "script",
+      "category": "concept_selection",
+      "subject": "News-headline intro and title intro",
+      "options_considered": [
+        {
+          "option_id": "with-intro",
+          "label": "Add news bulletin cold open + title card",
+          "score": 0.97,
+          "reason": "User requested news headlines and title intro"
+        },
+        {
+          "option_id": "no-intro",
+          "label": "Start directly with data hook",
+          "score": 0.5,
+          "reason": "Previous structure",
+          "rejected_because": "User asked for an intro"
+        }
+      ],
+      "selected": "with-intro",
+      "reason": "User requested news headlines as intro plus a title intro; added 2 sections and retimed all downstream scenes.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.95
+    }
+  ]
+}

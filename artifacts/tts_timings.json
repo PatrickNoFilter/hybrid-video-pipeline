@@ -1,0 +1,68 @@
+[
+  {
+    "id": "s1",
+    "actual": 15.19,
+    "planned": 9.9,
+    "delta": 5.29
+  },
+  {
+    "id": "s2",
+    "actual": 16.75,
+    "planned": 9.9,
+    "delta": 6.85
+  },
+  {
+    "id": "s3",
+    "actual": 17.54,
+    "planned": 9.9,
+    "delta": 7.64
+  },
+  {
+    "id": "s4",
+    "actual": 18.34,
+    "planned": 9.9,
+    "delta": 8.44
+  },
+  {
+    "id": "s5",
+    "actual": 20.3,
+    "planned": 9.9,
+    "delta": 10.4
+  },
+  {
+    "id": "s6",
+    "actual": 18.7,
+    "planned": 9.9,
+    "delta": 8.8
+  },
+  {
+    "id": "s7",
+    "actual": 18.14,
+    "planned": 9.9,
+    "delta": 8.24
+  },
+  {
+    "id": "s8",
+    "actual": 18.41,
+    "planned": 9.9,
+    "delta": 8.51
+  },
+  {
+    "id": "s9",
+    "actual": 19.3,
+    "planned": 9.9,
+    "delta": 9.4
+  },
+  {
+    "id": "s10",
+    "actual": 19.94,
+    "planned": 9.9,
+    "delta": 10.04
+  },
+  {
+    "id": "s11",
+    "actual": 32.33,
+    "planned": 18.0,
+    "delta": 14.33
+  }
+]

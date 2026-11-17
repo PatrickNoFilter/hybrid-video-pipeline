@@ -1,0 +1,132 @@
+{
+  "scope": "2025-2026 only",
+  "metric": "Quarterly real GDP growth, year-on-year (%)",
+  "series": [
+    {
+      "quarter": "2025Q1",
+      "vietnam": 7.05,
+      "indonesia": 4.87
+    },
+    {
+      "quarter": "2025Q2",
+      "vietnam": 8.16,
+      "indonesia": 5.12
+    },
+    {
+      "quarter": "2025Q3",
+      "vietnam": 8.25,
+      "indonesia": 5.04
+    },
+    {
+      "quarter": "2025Q4",
+      "vietnam": 8.46,
+      "indonesia": 5.2
+    },
+    {
+      "quarter": "2026Q1",
+      "vietnam": 8.15,
+      "indonesia": 5.61
+    },
+    {
+      "quarter": "2026Q2",
+      "vietnam": 8.81,
+      "indonesia": 5.29
+    },
+    {
+      "quarter": "2026Q3",
+      "vietnam": 9.95,
+      "indonesia": 5.47
+    }
+  ],
+  "notes": [
+    "Vietnam Q1/Q2 2026 were revised from 7.83/8.39 to 8.15/8.81 in the Q3 2026 NSO release; latest vintage used.",
+    "Indonesia quarterly YoY sourced from BPS via Trading Economics and countryeconomy (2025 values rounded to 1 decimal).",
+    "Annual per-capita crossover retained only as 2025 (World Bank) and 2026 (IMF) context; 2015-2025 trend and UN 2024 dropped."
+  ],
+  "sources": [
+    "https://www.nso.gov.vn/en/data-and-statistics/2026/01/press-release-social-economic-situation-in-the-fourth-quarter-and-2025/",
+    "https://www.nso.gov.vn/en/data-and-statistics/2026/11/press-release-socio-economic-performance-in-the-q3-and-the-nine-months-of-2026/",
+    "https://www.nso.gov.vn/en/data-and-statistics/2026/08/press-release-socio-economic-performance-in-the-q2-and-in-the-first-half-of-2026/",
+    "https://tradingeconomics.com/indonesia/gdp-growth-annual (source: Statistics Indonesia / BPS)",
+    "https://countryeconomy.com/gdp/indonesia?year=2025"
+  ],
+  "annual_context": {
+    "indonesia_2025_per_capita_world_bank": 5060,
+    "vietnam_2025_per_capita_world_bank": 5066,
+    "indonesia_2026_per_capita_imf": 5153,
+    "vietnam_2026_per_capita_imf": 5260
+  },
+  "forecasts": {
+    "IMF_WEO_Oct_2026_current_USD": {
+      "vietnam": 5259,
+      "indonesia": 5153,
+      "note": "WEO October 2026, current prices; retrieved via FlareSolverr from imf.org after direct 403"
+    },
+    "TradingEconomics_2026_constant_2015_USD": {
+      "vietnam": 4631,
+      "indonesia": 4778,
+      "note": "Model extrapolation of World Bank constant-price series; NOT comparable to IMF current-USD figures"
+    },
+    "Macrotrends": {
+      "vietnam_2025": 5066,
+      "note": "Annual only, ends 2025; no 2026 forecast"
+    },
+    "countryeconomy": {
+      "indonesia_2026_quarterly_per_capita_USD": {
+        "Q1": 1315,
+        "Q2": 1299,
+        "Q3": 1312
+      },
+      "note": "No Vietnam 2026 data available"
+    },
+    "FocusEconomics": {
+      "vietnam_2024": 4531,
+      "indonesia_2024": 4963,
+      "note": "Consensus 2026 per-capita forecast exists but is paywalled; public figures are 2024"
+    }
+  },
+  "actual_2025_context": {
+    "world_bank_current_USD": {
+      "vietnam": 5066,
+      "indonesia": 5060
+    },
+    "world_bank_constant_2015_USD": {
+      "vietnam": 4308,
+      "indonesia": 4555
+    },
+    "imf_estimate_current_USD": {
+      "vietnam": 4829,
+      "indonesia": 5078
+    }
+  },
+  "acquisition_note": "IMF WEO October 2026 page fetched through FlareSolverr (running at http://127.0.0.1:8191) after direct requests returned 403.",
+  "growth_drivers": {
+    "vietnam_Q3_2026": {
+      "industry_construction_growth_pct": 12.5,
+      "industry_construction_share_of_total_growth_pct": 51.57,
+      "exports_growth_pct": 23.27,
+      "fdi_disbursement_9m_2026_usd_bn": 21.07,
+      "fdi_disbursement_growth_pct": 12.1
+    },
+    "source": "https://www.nso.gov.vn/en/data-and-statistics/2026/11/press-release-socio-economic-performance-in-the-q3-and-the-nine-months-of-2026/"
+  },
+  "population_fx_context": {
+    "vietnam_population_2025_millions": 101.6,
+    "indonesia_population_2025_millions": 285.7,
+    "id_rupiah_per_usd": {
+      "2024": 15855,
+      "2025": 16478,
+      "change_pct": 3.9
+    },
+    "vnd_per_usd": {
+      "2024": 24165,
+      "2025": "~25000",
+      "change_pct": "~2-3"
+    },
+    "sources": [
+      "https://api.worldbank.org/v2/country/VNM;IDN/indicator/SP.POP.TOTL",
+      "https://api.worldbank.org/v2/country/VNM;IDN/indicator/PA.NUS.FCRF"
+    ]
+  },
+  "sensitivity_note": "IMF 2026 gap is 2.1%; small FX moves or data revisions can reverse the ranking."
+}

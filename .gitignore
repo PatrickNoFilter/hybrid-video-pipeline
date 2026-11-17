@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Generated media (regenerable via scripts/)
+assets/
+*.mp4
+*.mp3
+*.srt
+
+# Credentials — never commit
+config.toml
+.env
+*.key
+
+# Editor / OS
+.DS_Store
+*.log
