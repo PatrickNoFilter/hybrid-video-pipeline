@@ -33,13 +33,13 @@ edit={
    "narration":{"segments":narr_segments},
    "music":{"asset_id":"music","volume":0.12,"fade_in_seconds":2.0,"fade_out_seconds":3.0,"ducking":{"enabled":False}}
  },
- "subtitles":{"enabled":True,"style":"sentence","source":"assets/subtitles.srt",
+ "subtitles":{"enabled":False,"style":"sentence","source":"assets/subtitles.srt",
    "font":"DejaVu Sans","font_size":30,"color":"#FFFFFF","outline_color":"#000000",
    "position":"bottom-center","max_words_per_line":12},
  "renderer_family":"explainer-data","render_runtime":"remotion",
  "metadata":{
    "anchor_cut_notes":"25 half-scenes in narration order; s0a is infographic-only, all others alternate real footage and infographic",
-   "layer_order":["primary halves","subtitles","music under narration"],
+   "layer_order":["primary halves","music under narration"],
    "overlay_windows":[],
    "variant_edit_rules":["16:9 master only"],
    "total_duration_seconds":script['total_duration_seconds'],

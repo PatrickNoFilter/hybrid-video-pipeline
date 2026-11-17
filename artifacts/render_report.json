@@ -18,9 +18,9 @@
   ],
   "verification_notes": [
     "ffprobe: h264 1920x1080 30fps + aac stereo",
-    "duration 243.06s; music looped from clean 168s cut with 4s crossfade",
-    "intro verified as Google News-style results page; closing verified as infographic-only",
-    "s11 footage removed; 24 cuts total; no subtitles burned in"
+    "duration 259.65s; music looped from clean 168s cut with 4s crossfade",
+    "closing verified as 48.9s visual dashboard with no CTA",
+    "intro = Google News-style results page; s11 infographic-only; no subtitles burned in"
   ],
   "render_grammar": "explainer-data",
   "decision_log_ref": "artifacts/decision_log.json",

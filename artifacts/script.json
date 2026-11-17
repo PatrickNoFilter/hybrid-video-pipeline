@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "title": "Tujuh Triwulan: Tumbuhnya Vietnam Sudah Menyalip Indonesia, Ekonominya Belum?",
-  "total_duration_seconds": 242.26,
+  "total_duration_seconds": 258.84,
   "voice_performance": {
     "performance_intent": "Polite, respectful Indonesian data explainer: formal-but-friendly address, careful hedging, measured conclusion",
     "pacing_profile": "conversational",
@@ -570,23 +570,24 @@
     },
     {
       "id": "s11",
-      "label": "Proper conclusion + CTA + sources (infographic only)",
-      "text": "Demikian kesimpulannya: tujuh triwulan data BPS dan NSO menunjukkan pertumbuhan Vietnam telah mengungguli Indonesia. Adapun ekonominya, masih sebatas proyeksi IMF dalam World Economic Outlook Oktober dua ribu dua puluh enam. Sumber data: BPS Indonesia, NSO Vietnam, Bank Dunia, dan IMF. Silakan simak angkanya, dan senantiasa perhatikan basis harganya.",
+      "label": "Expanded conclusion dashboard (no CTA)",
+      "text": "Demikian kesimpulannya. Selama tujuh triwulan, dari tahun dua ribu dua puluh lima hingga dua ribu dua puluh enam, pertumbuhan Vietnam senantiasa lebih cepat daripada Indonesia. Selisihnya melebar dari dua koma dua menjadi empat koma lima poin. Namun, level PDB per kapita kedua negara masih sangat ketat. Data Bank Dunia dua ribu dua puluh lima menunjukkan keduanya praktis seimbang, sementara proyeksi IMF menunjukkan keunggulan Vietnam dua koma satu persen — dan itu pun bukan hasil ukur. Sumber data: BPS Indonesia, NSO Vietnam, Bank Dunia, dan IMF WEO Oktober dua ribu dua puluh enam.",
       "start_seconds": 207.93,
-      "end_seconds": 240.26,
+      "end_seconds": 256.84,
       "delivery_cues": {
         "pace": "measured",
         "energy": "resolute, closing",
         "emphasis_words": [
-          "BPS dan NSO",
-          "World Economic Outlook Oktober",
-          "Sumber data",
-          "basis harganya"
+          "tujuh triwulan",
+          "melebar",
+          "praktis seimbang",
+          "bukan hasil ukur",
+          "Sumber data"
         ],
         "pause_before_seconds": 0.0,
         "pause_after_seconds": 0.0,
         "delivery_note": "Land firmly; let the final card hold two seconds after the voice ends.",
-        "provider_text": "Demikian kesimpulannya: tujuh triwulan data BPS dan NSO menunjukkan pertumbuhan Vietnam telah mengungguli Indonesia. Adapun ekonominya, masih sebatas proyeksi IMF dalam World Economic Outlook Oktober dua ribu dua puluh enam. Sumber data: BPS Indonesia, NSO Vietnam, Bank Dunia, dan IMF. Silakan simak angkanya, dan senantiasa perhatikan basis harganya."
+        "provider_text": "Demikian kesimpulannya. Selama tujuh triwulan, dari tahun dua ribu dua puluh lima hingga dua ribu dua puluh enam, pertumbuhan Vietnam senantiasa lebih cepat daripada Indonesia. Selisihnya melebar dari dua koma dua menjadi empat koma lima poin. Namun, level PDB per kapita kedua negara masih sangat ketat. Data Bank Dunia dua ribu dua puluh lima menunjukkan keduanya praktis seimbang, sementara proyeksi IMF menunjukkan keunggulan Vietnam dua koma satu persen — dan itu pun bukan hasil ukur. Sumber data: BPS Indonesia, NSO Vietnam, Bank Dunia, dan IMF WEO Oktober dua ribu dua puluh enam."
       },
       "enhancement_cues": [
         {

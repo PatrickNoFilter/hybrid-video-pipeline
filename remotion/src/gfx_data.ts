@@ -74,8 +74,8 @@ export const COMPS: GfxComp[] = [
   },
   {
     "id": "gfx-s11",
-    "frames": 970,
+    "frames": 1467,
     "section": "s11",
-    "description": "Full-length closing card with conclusion, CTA and source line (no footage half)"
+    "description": "Full-length conclusion dashboard: 3 KPIs, 7-quarter line chart, World Bank stat cards, source line (no CTA)"
   }
 ];

@@ -283,19 +283,52 @@ const Content: React.FC<{section: string}> = ({section}) => {
     </>
   );
 
-  // s11 closing
-  return (
-    <>
-      <div style={styles.kicker}>KESIMPULAN</div>
-      <div style={styles.title}>Tumbuhnya SUDAH.<br/>Ekonominya BELUM.</div>
-      <div style={styles.sub}>Tujuh triwulan data BPS &amp; NSO · proyeksi IMF WEO Oktober 2026</div>
-      <div style={{...styles.card, marginTop:30}}>
-        <div style={{fontSize:30, color:C.muted}}>SUMBER DATA</div>
-        <div style={{fontSize:36, marginTop:10}}>BPS Indonesia · NSO Vietnam · Bank Dunia · IMF WEO Oktober 2026</div>
+  // s11 closing - full visual summary, no CTA
+  if (section === 's11') {
+    const vn=[7.05,8.16,8.25,8.46,8.15,8.81,9.95];
+    const idn=[4.87,5.12,5.04,5.20,5.61,5.29,5.47];
+    const pts=(arr:number[])=>arr.map((v,i)=>`${110+i*270},${320-v/11*250}`).join(' ');
+    const kpis:[string,string,string,string][]=[
+      ['7 / 7','TRIWULAN VN UNGGUL',C.vn,'TERBUKTI'],
+      ['2,2 → 4,5','POIN SELISIH',C.blue,'MELEBAR'],
+      ['2,1%','PROYEKSI IMF',C.amber,'BUKAN UKURAN']
+    ];
+    const rise=(d:number)=>interpolate(frame,[d,d+16],[40,0],{extrapolateRight:'clamp'});
+    const opa=(d:number)=>interpolate(frame,[d,d+14],[0,1],{extrapolateRight:'clamp'});
+    return <>
+      <div style={styles.kicker}>KESIMPULAN · DATA 2025–2026</div>
+      <div style={{fontSize:56,fontWeight:900,lineHeight:1.1,marginBottom:14}}>Tumbuhnya SUDAH. Ekonominya BELUM.</div>
+      <div style={{display:'flex',gap:20,marginBottom:16}}>
+        {kpis.map((k,i)=><div key={i} style={{...styles.card,flex:1,transform:`translateY(${rise(6+i*8)}px)`,opacity:opa(6+i*8),borderColor:k[2]}}>
+          <div style={{fontSize:56,fontWeight:900,color:k[2],lineHeight:1}}>{k[0]}</div>
+          <div style={{fontSize:22,color:C.muted,marginTop:6}}>{k[1]}</div>
+          <div style={{fontSize:20,color:k[2],marginTop:8,fontWeight:800}}>{k[3]}</div>
+        </div>)}
       </div>
-      <div style={{...styles.badge, marginTop:24, background:C.vn, color:'#0B1220'}}>CEK ANGKA NYA · PERHATIKAN BASIS HARGA</div>
-    </>
-  );
+      <div style={{...styles.card,marginBottom:14,opacity:opa(32)}}>
+        <div style={{fontSize:24,color:C.muted,marginBottom:6}}>PERTUMBUHAN PDB TRIWULANAN · BPS &amp; NSO</div>
+        <svg viewBox="0 0 1740 350" style={{width:'100%',height:240}}>
+          {[0,1,2].map(i=><line key={i} x1={90} x2={1740} y1={70+i*120} y2={70+i*120} stroke="#ffffff12" strokeWidth={2}/>)}
+          <polyline points={pts(idn)} fill="none" stroke={C.idn} strokeWidth={9} opacity={opa(44)}/>
+          <polyline points={pts(vn)} fill="none" stroke={C.vn} strokeWidth={11} opacity={opa(36)}/>
+          {vn.map((v,i)=><text key={i} x={110+i*270} y={340} fill={C.muted} fontSize={24} textAnchor="middle">Q{i+1}</text>)}
+        </svg>
+      </div>
+      <div style={{display:'flex',gap:20,opacity:opa(48)}}>
+        <div style={{...styles.card,flex:1}}>
+          <div style={{fontSize:22,color:C.muted}}>BANK DUNIA 2025 · CURRENT USD</div>
+          <div style={{fontSize:44,fontWeight:800}}>$5.066 <span style={{color:C.muted}}>vs</span> $5.060</div>
+          <div style={{fontSize:23,color:C.amber,fontWeight:800}}>PRAKTIS SEIMBANG</div>
+        </div>
+        <div style={{...styles.card,flex:1}}>
+          <div style={{fontSize:22,color:C.muted}}>BANK DUNIA 2025 · KONSTAN 2015 USD</div>
+          <div style={{fontSize:44,fontWeight:800}}>$4.308 <span style={{color:C.muted}}>vs</span> $4.555</div>
+          <div style={{fontSize:23,color:C.idn,fontWeight:800}}>INDONESIA MASIH UNGGUL</div>
+        </div>
+      </div>
+      <div style={{fontSize:24,color:C.muted,marginTop:18,opacity:opa(56)}}>Sumber: BPS Indonesia · NSO Vietnam · Bank Dunia · IMF WEO Oktober 2026</div>
+    </>;
+  }
 };
 
 export const Graphic: React.FC<{section: string; description: string}> = ({section}) => {

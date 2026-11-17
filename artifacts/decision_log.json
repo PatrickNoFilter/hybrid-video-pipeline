@@ -778,6 +778,32 @@
       "user_visible": true,
       "user_approved": true,
       "confidence": 0.99
+    },
+    {
+      "decision_id": "d-028",
+      "stage": "script",
+      "category": "concept_selection",
+      "subject": "Closing scene content",
+      "options_considered": [
+        {
+          "option_id": "dashboard-no-cta",
+          "label": "Expanded conclusion dashboard, CTA removed",
+          "score": 0.99,
+          "reason": "User said conclusion too short/without graphics and asked to delete 'cek angkanya dst'; narration expanded with recap and source line removed of CTA"
+        },
+        {
+          "option_id": "short-card",
+          "label": "Short closing card with CTA",
+          "score": 0.3,
+          "reason": "Previous version",
+          "rejected_because": "User rejected short text-only ending and CTA"
+        }
+      ],
+      "selected": "dashboard-no-cta",
+      "reason": "User feedback at final review.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
     }
   ]
 }

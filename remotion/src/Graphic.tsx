@@ -38,37 +38,23 @@ const Content: React.FC<{section: string}> = ({section}) => {
   const opa = (delay: number) => interpolate(frame, [delay, delay + 12], [0, 1], {extrapolateRight: 'clamp'});
 
   if (section === 's0a') {
-    const results = [
-      {src:'GoodStats', title:'Proyeksi PDB per Kapita ASEAN 2026 Menurut IMF Outlook Oktober', snip:'Produk domestik bruto (PDB) per kapita Vietnam diproyeksikan menyusul Indonesia pada 2026 menurut IMF.', time:'2 jam yang lalu', color:'#1a73e8', tag:'GDP'},
-      {src:'Kompas.com', title:'PDB Per Kapita Vietnam Bakal Lampaui Indonesia, Ini Pendorongnya', snip:'Vietnam diproyeksikan menyalip Indonesia dalam hal PDB per kapita pada 2026.', time:'1 minggu lalu', color:'#e8412f', tag:'KOMPAS'},
-      {src:'IDN Financials', title:'PDB per kapita Vietnam diproyeksi lampaui Indonesia pada 2026', snip:'Vietnam menargetkan pertumbuhan ekonomi minimal 10% pada 2026. Pada kuartal ...', time:'2 minggu lalu', color:'#f5a623', tag:'IDN'},
-      {src:'kumparan', title:'Vietnam Segera Salip Indonesia, PDB per Kapita Diprediksi Naik 8,9 Persen', snip:'PDB per kapita Vietnam diperkirakan mencapai USD 5.259 tahun ini. Akan menyalip posisi Indonesia.', time:'2 minggu lalu', color:'#c62828', tag:'k'},
-      {src:'CNN Indonesia', title:'IMF Prediksi Vietnam Salip Indonesia untuk PDB per Kapita', snip:'Vietnam diprediksi menyalip Indonesia dari sisi PDB per kapita pada 2026.', time:'2 minggu lalu', color:'#b31217', tag:'CNN'}
+    const heads = [
+      'IMF: Vietnam GDP per capita to pass Indonesia in 2026',
+      'Vietnam Q3 2026 growth hits 9,95% — NSO',
+      'Indonesia growth stays near 5% as rupiah weakens — BPS'
     ];
-    const tabs = ['Mode AI','Semua','Gambar','Berita','Video','Shopping','Video singkat','Lainnya'];
     return <>
-      <div style={{background:'#303134', borderRadius:40, height:80, display:'flex', alignItems:'center', padding:'0 34px', fontSize:30, color:'#e8eaed'}}>
-        pdb perkapita vietnam <div style={{marginLeft:'auto', fontSize:38}}>×</div>
+      <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+        <div style={{...styles.badge, background:C.red, color:'#fff'}}>BREAKING</div>
+        <div style={{fontSize:28, color:C.muted}}>17 NOV 2026 · EKONOMI ASIA</div>
       </div>
-      <div style={{display:'flex', gap:34, marginTop:20, fontSize:23, color:'#9aa0a6'}}>
-        {tabs.map((tab,i)=><div key={tab} style={{color:i===3?'#8ab4f8':'#9aa0a6', borderBottom:i===3?'4px solid #8ab4f8':'none', paddingBottom:10}}>{tab}</div>)}
-      </div>
-      <div style={{fontSize:22, color:'#9aa0a6', margin:'16px 0 12px'}}>Mungkin maksud Anda adalah: <span style={{color:'#8ab4f8'}}>pdb per kapita vietnam</span></div>
-      {results.map((r,i)=>{
-        const slide=interpolate(frame,[8+i*10,22+i*10],[45,0],{extrapolateRight:'clamp'});
-        const op=interpolate(frame,[8+i*10,20+i*10],[0,1],{extrapolateRight:'clamp'});
-        return <div key={i} style={{display:'flex', gap:24, transform:`translateX(${slide}px)`, opacity:op, marginBottom:14}}>
-          <div style={{flex:1}}>
-            <div style={{fontSize:19, color:'#9aa0a6'}}>{r.src} · {r.time}</div>
-            <div style={{fontSize:29, color:'#8ab4f8', lineHeight:1.18, margin:'4px 0'}}>{r.title}</div>
-            <div style={{fontSize:20, color:'#bdc1c6', lineHeight:1.25}}>{r.snip}</div>
-          </div>
-          <div style={{width:176, height:112, borderRadius:12, background:`linear-gradient(135deg, ${r.color}, #111827)`, display:'flex', alignItems:'center', justifyContent:'center', color:'#fff', fontSize:30, fontWeight:900}}>{r.tag}</div>
-        </div>;
-      })}
+      <div style={styles.title}>BERITA EKONOMI ASIA</div>
+      {heads.map((h,i)=><div key={i} style={{...styles.card, marginBottom:18, transform:`translateX(${rise(6+i*8)}px)`, opacity:opa(6+i*8), borderLeft:`10px solid ${i===0?C.vn:i===1?C.blue:C.idn}`}}>
+        <div style={{fontSize:42, fontWeight:700, lineHeight:1.25}}>{h}</div>
+      </div>)}
+      <div style={styles.foot}>Sumber: IMF WEO Okt 2026 · NSO Vietnam · BPS Indonesia</div>
     </>;
   }
-
   if (section === 's0b') return (
     <>
       <div style={styles.kicker}>DATA 2025–2026 · BPS · NSO · BANK DUNIA · IMF</div>
@@ -242,19 +228,52 @@ const Content: React.FC<{section: string}> = ({section}) => {
     </>
   );
 
-  // s11 closing
-  return (
-    <>
-      <div style={styles.kicker}>KESIMPULAN</div>
-      <div style={styles.title}>Tumbuhnya SUDAH.<br/>Ekonominya BELUM.</div>
-      <div style={styles.sub}>Tujuh triwulan data BPS &amp; NSO · proyeksi IMF WEO Oktober 2026</div>
-      <div style={{...styles.card, marginTop:30}}>
-        <div style={{fontSize:30, color:C.muted}}>SUMBER DATA</div>
-        <div style={{fontSize:36, marginTop:10}}>BPS Indonesia · NSO Vietnam · Bank Dunia · IMF WEO Oktober 2026</div>
+  // s11 closing - full visual summary, no CTA
+  if (section === 's11') {
+    const vn=[7.05,8.16,8.25,8.46,8.15,8.81,9.95];
+    const idn=[4.87,5.12,5.04,5.20,5.61,5.29,5.47];
+    const pts=(arr:number[])=>arr.map((v,i)=>`${110+i*270},${320-v/11*250}`).join(' ');
+    const kpis:[string,string,string,string][]=[
+      ['7 / 7','TRIWULAN VN UNGGUL',C.vn,'TERBUKTI'],
+      ['2,2 → 4,5','POIN SELISIH',C.blue,'MELEBAR'],
+      ['2,1%','PROYEKSI IMF',C.amber,'BUKAN UKURAN']
+    ];
+    const rise=(d:number)=>interpolate(frame,[d,d+16],[40,0],{extrapolateRight:'clamp'});
+    const opa=(d:number)=>interpolate(frame,[d,d+14],[0,1],{extrapolateRight:'clamp'});
+    return <>
+      <div style={styles.kicker}>KESIMPULAN · DATA 2025–2026</div>
+      <div style={{fontSize:56,fontWeight:900,lineHeight:1.1,marginBottom:14}}>Tumbuhnya SUDAH. Ekonominya BELUM.</div>
+      <div style={{display:'flex',gap:20,marginBottom:16}}>
+        {kpis.map((k,i)=><div key={i} style={{...styles.card,flex:1,transform:`translateY(${rise(6+i*8)}px)`,opacity:opa(6+i*8),borderColor:k[2]}}>
+          <div style={{fontSize:56,fontWeight:900,color:k[2],lineHeight:1}}>{k[0]}</div>
+          <div style={{fontSize:22,color:C.muted,marginTop:6}}>{k[1]}</div>
+          <div style={{fontSize:20,color:k[2],marginTop:8,fontWeight:800}}>{k[3]}</div>
+        </div>)}
       </div>
-      <div style={{...styles.badge, marginTop:24, background:C.vn, color:'#0B1220'}}>CEK ANGKA NYA · PERHATIKAN BASIS HARGA</div>
-    </>
-  );
+      <div style={{...styles.card,marginBottom:14,opacity:opa(32)}}>
+        <div style={{fontSize:24,color:C.muted,marginBottom:6}}>PERTUMBUHAN PDB TRIWULANAN · BPS &amp; NSO</div>
+        <svg viewBox="0 0 1740 350" style={{width:'100%',height:240}}>
+          {[0,1,2].map(i=><line key={i} x1={90} x2={1740} y1={70+i*120} y2={70+i*120} stroke="#ffffff12" strokeWidth={2}/>)}
+          <polyline points={pts(idn)} fill="none" stroke={C.idn} strokeWidth={9} opacity={opa(44)}/>
+          <polyline points={pts(vn)} fill="none" stroke={C.vn} strokeWidth={11} opacity={opa(36)}/>
+          {vn.map((v,i)=><text key={i} x={110+i*270} y={340} fill={C.muted} fontSize={24} textAnchor="middle">Q{i+1}</text>)}
+        </svg>
+      </div>
+      <div style={{display:'flex',gap:20,opacity:opa(48)}}>
+        <div style={{...styles.card,flex:1}}>
+          <div style={{fontSize:22,color:C.muted}}>BANK DUNIA 2025 · CURRENT USD</div>
+          <div style={{fontSize:44,fontWeight:800}}>$5.066 <span style={{color:C.muted}}>vs</span> $5.060</div>
+          <div style={{fontSize:23,color:C.amber,fontWeight:800}}>PRAKTIS SEIMBANG</div>
+        </div>
+        <div style={{...styles.card,flex:1}}>
+          <div style={{fontSize:22,color:C.muted}}>BANK DUNIA 2025 · KONSTAN 2015 USD</div>
+          <div style={{fontSize:44,fontWeight:800}}>$4.308 <span style={{color:C.muted}}>vs</span> $4.555</div>
+          <div style={{fontSize:23,color:C.idn,fontWeight:800}}>INDONESIA MASIH UNGGUL</div>
+        </div>
+      </div>
+      <div style={{fontSize:24,color:C.muted,marginTop:18,opacity:opa(56)}}>Sumber: BPS Indonesia · NSO Vietnam · Bank Dunia · IMF WEO Oktober 2026</div>
+    </>;
+  }
 };
 
 export const Graphic: React.FC<{section: string; description: string}> = ({section}) => {

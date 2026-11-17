@@ -649,10 +649,10 @@
       "source_tool": "video_compose(remotion)",
       "scene_id": "s11_graphic",
       "model": "Remotion 4.0.544",
-      "duration_seconds": 16.17,
+      "duration_seconds": 48.9,
       "resolution": "1920x1080",
       "format": "mp4",
-      "generation_summary": "Remotion closing card: 'Tumbuhnya SUDAH | Ekonominya BELUM' + CTA + source line 'Sumber: BPS Indonesia · NSO Vietnam · Bank Dunia · IMF WEO Oktober 2026'",
+      "generation_summary": "Remotion conclusion dashboard: 7/7 KPI, 2.2->4.5 gap, 2.1% IMF projection, 7-quarter line chart, dual World Bank stat cards, source line, no CTA",
       "prompt": "Remotion closing card: 'Tumbuhnya SUDAH | Ekonominya BELUM' + CTA + source line 'Sumber: BPS Indonesia · NSO Vietnam · Bank Dunia · IMF WEO Oktober 2026'"
     },
     {
@@ -785,6 +785,6 @@
     },
     "voice": "id-ID-GadisNeural",
     "render_runtime": "remotion",
-    "note": "Intro = Google News-style results card (no footage); closing = infographic-only (no footage); music looped; no subtitles."
+    "note": "Closing expanded into a full visual dashboard (KPIs, 7-quarter chart, World Bank cards, sources); CTA removed; no subtitles; music looped."
   }
 }

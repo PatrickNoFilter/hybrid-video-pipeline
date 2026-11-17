@@ -4,7 +4,7 @@ PD=Path('/home/desktop/Work/OpenMontage/projects/vietnam-indonesia-gdp')
 src=PD/'assets/music/background.mp3'
 out=PD/'assets/music/background_loop.mp3'
 L=168.0          # clean source length before the silent tail
-T=243.063833
+T=258.84
 fade=4.0
 seg2=T-L+fade
 fc=(f"[0:a]atrim=0:{L},asetpts=PTS-STARTPTS,volume=1,alimiter=limit=0.95[src];"

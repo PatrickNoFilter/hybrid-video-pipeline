@@ -749,9 +749,9 @@
     {
       "id": "s11_graphic",
       "type": "text_card",
-      "description": "Full-length closing card with conclusion, CTA and source line (no footage half)",
+      "description": "Full-length conclusion dashboard: 3 KPIs, 7-quarter line chart, World Bank stat cards, source line (no CTA)",
       "start_seconds": 207.93,
-      "end_seconds": 240.26,
+      "end_seconds": 256.84,
       "script_section_id": "s11",
       "framing": "centered safe area with 10% title padding",
       "movement": "slow push-in on the visual element",
@@ -777,7 +777,7 @@
     }
   ],
   "metadata": {
-    "total_duration_seconds": 242.26,
+    "total_duration_seconds": 258.84,
     "source_to_support_ratio": "50/50 alternating within every script section",
     "scene_count": 22,
     "anchor_rules": [

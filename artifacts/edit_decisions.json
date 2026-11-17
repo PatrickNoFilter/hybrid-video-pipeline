@@ -281,7 +281,7 @@
       "id": "s11_graphic",
       "source": "assets/video/gfx/s11.mp4",
       "in_seconds": 207.93,
-      "out_seconds": 240.26,
+      "out_seconds": 256.84,
       "layer": "primary",
       "speed": 1.0,
       "transition_in": "cut",
@@ -356,7 +356,7 @@
         {
           "asset_id": "narr_s11",
           "start_seconds": 207.93,
-          "end_seconds": 240.26
+          "end_seconds": 256.84
         }
       ]
     },
@@ -387,14 +387,13 @@
     "anchor_cut_notes": "25 half-scenes in narration order; s0a is infographic-only, all others alternate real footage and infographic",
     "layer_order": [
       "primary halves",
-      "subtitles",
       "music under narration"
     ],
     "overlay_windows": [],
     "variant_edit_rules": [
       "16:9 master only"
     ],
-    "total_duration_seconds": 242.26,
+    "total_duration_seconds": 258.84,
     "note": "Midpoint transitions assembled as hard cuts for render reliability; brief's 0.3s crossfade not applied (logged in compose)."
   }
 }
