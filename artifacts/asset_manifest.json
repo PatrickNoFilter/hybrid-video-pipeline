@@ -339,7 +339,7 @@
       "source_tool": "provided",
       "scene_id": "all",
       "format": "mp3",
-      "generation_summary": "User-provided track looped with a 4s crossfade at the seam to cover the full 243s video",
+      "generation_summary": "User track trimmed to clean 168s cut and looped with 4s crossfade to cover 243s with no silent gap",
       "duration_seconds": 243.06
     },
     {

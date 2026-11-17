@@ -700,6 +700,32 @@
       "user_visible": true,
       "user_approved": true,
       "confidence": 0.99
+    },
+    {
+      "decision_id": "d-025",
+      "stage": "compose",
+      "category": "music_source",
+      "subject": "Background music loop",
+      "options_considered": [
+        {
+          "option_id": "clean-168-loop",
+          "label": "Loop a clean 168s cut with 4s crossfade",
+          "score": 0.99,
+          "reason": "Source track goes silent at ~176-191s; trimming before the silent tail removes the dead zone"
+        },
+        {
+          "option_id": "full-track-loop",
+          "label": "Loop full 191.7s track",
+          "score": 0.3,
+          "reason": "Previous attempt",
+          "rejected_because": "User reported muting at 2:50-3:10; source had a -91dB silent tail"
+        }
+      ],
+      "selected": "clean-168-loop",
+      "reason": "Fixed the muted window by looping from a clean source cut.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
     }
   ]
 }

@@ -18,7 +18,8 @@
   ],
   "verification_notes": [
     "ffprobe: h264 1920x1080 30fps + aac stereo",
-    "duration 243.06s; music looped with 4s crossfade and audible through the final 4s (tail volumedetect mean -34.8 dB)",
+    "duration 243.06s; music looped from clean 168s cut with 4s crossfade",
+    "verified no silent window at 170-190s (final mean -26.0 dB, max -11.0 dB in that window)",
     "5 visual spot-check frames inspected",
     "no subtitles burned in"
   ],
