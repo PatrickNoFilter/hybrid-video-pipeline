@@ -1,0 +1,863 @@
+{
+  "version": "1.0",
+  "project_id": "vietnam-indonesia-gdp",
+  "pipeline_type": "hybrid",
+  "stage": "scene_plan",
+  "status": "completed",
+  "timestamp": "2026-11-17T06:45:10.015794+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "scene_plan": {
+      "version": "1.0",
+      "style_playbook": "flat-motion-graphics",
+      "scenes": [
+        {
+          "id": "s0a_graphic",
+          "type": "text_card",
+          "description": "Animated news bulletin with 3 headlines and BREAKING tag, full intro section (no footage half)",
+          "start_seconds": 0.0,
+          "end_seconds": 14.66,
+          "script_section_id": "s0a",
+          "framing": "centered safe area with 10% padding",
+          "movement": "frame-based reveal",
+          "transition_in": "fade from black",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "no subtitle overlap with headlines",
+          "shot_intent": "Deliver the headline/title",
+          "narrative_role": "introduce_subject",
+          "information_role": "Animated news bulletin with 3 headlines and BREAKING tag",
+          "hero_moment": true,
+          "texture_keywords": [
+            "flat",
+            "high-contrast"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Remotion news headline card",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s0b_graphic",
+          "type": "text_card",
+          "description": "Full title card with source subtitle",
+          "start_seconds": 14.96,
+          "end_seconds": 18.49,
+          "script_section_id": "s0b",
+          "framing": "centered safe area with 10% padding",
+          "movement": "frame-based reveal",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "no subtitle overlap with headlines",
+          "shot_intent": "Deliver the headline/title",
+          "narrative_role": "deliver_payload",
+          "information_role": "Full title card with source subtitle",
+          "hero_moment": true,
+          "texture_keywords": [
+            "flat",
+            "high-contrast"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Remotion title card",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s0b_footage",
+          "type": "broll",
+          "description": "Vietnam and Indonesia city skylines at dusk",
+          "start_seconds": 18.49,
+          "end_seconds": 22.02,
+          "script_section_id": "s0b",
+          "framing": "full-frame 16:9",
+          "movement": "steady documentary motion",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "burn-in subtitles bottom 12%",
+          "shot_intent": "Set the news framing",
+          "narrative_role": "establish_context",
+          "information_role": "Vietnam and Indonesia city skylines at dusk",
+          "hero_moment": false,
+          "texture_keywords": [
+            "clean",
+            "newsroom"
+          ],
+          "required_assets": [
+            {
+              "type": "real_video_clip",
+              "description": "Pexels skyline footage",
+              "source": "source"
+            }
+          ]
+        },
+        {
+          "id": "s1_footage",
+          "type": "broll",
+          "description": "Vietnam electronics assembly line / Hanoi street establishing shots",
+          "start_seconds": 0.0,
+          "end_seconds": 7.59,
+          "script_section_id": "s1",
+          "framing": "full-frame 16:9",
+          "movement": "steady documentary motion",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "burn-in subtitle at bottom, max 2 lines; no other overlay on this half",
+          "shot_language": {
+            "shot_size": "medium_wide",
+            "camera_movement": "dolly_in",
+            "lens_mm": 35,
+            "lighting_key": "natural",
+            "depth_of_field": "deep",
+            "color_temperature": "neutral"
+          },
+          "shot_intent": "Show the physical reality behind the number",
+          "narrative_role": "introduce_subject",
+          "information_role": "What the physical story looks like",
+          "hero_moment": false,
+          "texture_keywords": [
+            "clean",
+            "documentary",
+            "natural"
+          ],
+          "required_assets": [
+            {
+              "type": "real_video_clip",
+              "description": "Vietnam electronics assembly line / Hanoi street establishing shots",
+              "source": "source"
+            }
+          ]
+        },
+        {
+          "id": "s1_graphic",
+          "type": "text_card",
+          "description": "Remotion split card: 'VIETNAM: Tumbuhnya SUDAH menyalip INDONESIA' green check vs 'Tapi Ekonominya BELUM' amber question mark",
+          "start_seconds": 7.59,
+          "end_seconds": 15.19,
+          "script_section_id": "s1",
+          "framing": "centered safe area with 10% title padding",
+          "movement": "slow push-in on the visual element",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "no subtitle overlap with chart labels; source badge bottom-right where applicable",
+          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "narrative_role": "establish_context",
+          "information_role": "The number behind the narration",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "crisp-type"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Remotion split card: 'VIETNAM: Tumbuhnya SUDAH menyalip INDONESIA' green check vs 'Tapi Ekonominya BELUM' amber question mark",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s2_graphic",
+          "type": "diagram",
+          "description": "Remotion line chart 2025Q1-Q4: VN 7.05/8.16/8.25/8.46 vs ID ~4.9/~5.1/~5.1/~5.2 with approximate marker",
+          "start_seconds": 15.49,
+          "end_seconds": 23.87,
+          "script_section_id": "s2",
+          "framing": "centered safe area with 10% title padding",
+          "movement": "slow push-in on the visual element",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "no subtitle overlap with chart labels; source badge bottom-right where applicable",
+          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "narrative_role": "evidence",
+          "information_role": "The number behind the narration",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "crisp-type"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Remotion line chart 2025Q1-Q4: VN 7.05/8.16/8.25/8.46 vs ID ~4.9/~5.1/~5.1/~5.2 with approximate marker",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s2_footage",
+          "type": "broll",
+          "description": "Hanoi street life and Saigon market b-roll",
+          "start_seconds": 23.87,
+          "end_seconds": 32.24,
+          "script_section_id": "s2",
+          "framing": "full-frame 16:9",
+          "movement": "steady documentary motion",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "burn-in subtitle at bottom, max 2 lines; no other overlay on this half",
+          "shot_language": {
+            "shot_size": "medium_wide",
+            "camera_movement": "dolly_in",
+            "lens_mm": 35,
+            "lighting_key": "natural",
+            "depth_of_field": "deep",
+            "color_temperature": "neutral"
+          },
+          "shot_intent": "Show the physical reality behind the number",
+          "narrative_role": "evidence",
+          "information_role": "What the physical story looks like",
+          "hero_moment": false,
+          "texture_keywords": [
+            "clean",
+            "documentary",
+            "natural"
+          ],
+          "required_assets": [
+            {
+              "type": "real_video_clip",
+              "description": "Hanoi street life and Saigon market b-roll",
+              "source": "source"
+            }
+          ]
+        },
+        {
+          "id": "s3_footage",
+          "type": "broll",
+          "description": "Vietnam factory floor and export port cargo",
+          "start_seconds": 32.54,
+          "end_seconds": 41.31,
+          "script_section_id": "s3",
+          "framing": "full-frame 16:9",
+          "movement": "steady documentary motion",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "burn-in subtitle at bottom, max 2 lines; no other overlay on this half",
+          "shot_language": {
+            "shot_size": "medium_wide",
+            "camera_movement": "dolly_in",
+            "lens_mm": 35,
+            "lighting_key": "natural",
+            "depth_of_field": "deep",
+            "color_temperature": "neutral"
+          },
+          "shot_intent": "Show the physical reality behind the number",
+          "narrative_role": "deliver_payload",
+          "information_role": "What the physical story looks like",
+          "hero_moment": false,
+          "texture_keywords": [
+            "clean",
+            "documentary",
+            "natural"
+          ],
+          "required_assets": [
+            {
+              "type": "real_video_clip",
+              "description": "Vietnam factory floor and export port cargo",
+              "source": "source"
+            }
+          ]
+        },
+        {
+          "id": "s3_graphic",
+          "type": "diagram",
+          "description": "Remotion bar chart 2026Q1-Q3: VN 8.15/8.81/9.95 vs ID 5.61/5.29/5.47 + gap callout 2.2 -> 4.5 points + VN Q1/Q2 revision note",
+          "start_seconds": 41.31,
+          "end_seconds": 50.08,
+          "script_section_id": "s3",
+          "framing": "centered safe area with 10% title padding",
+          "movement": "slow push-in on the visual element",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "no subtitle overlap with chart labels; source badge bottom-right where applicable",
+          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "narrative_role": "comparison",
+          "information_role": "The number behind the narration",
+          "hero_moment": true,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "crisp-type"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Remotion bar chart 2026Q1-Q3: VN 8.15/8.81/9.95 vs ID 5.61/5.29/5.47 + gap callout 2.2 -> 4.5 points + VN Q1/Q2 revision note",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s4_graphic",
+          "type": "text_card",
+          "description": "Remotion checkmark card: 'GROWTH: 7 of 7 quarters - PROVEN' with 7-quarter line recap",
+          "start_seconds": 50.38,
+          "end_seconds": 59.55,
+          "script_section_id": "s4",
+          "framing": "centered safe area with 10% title padding",
+          "movement": "slow push-in on the visual element",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "no subtitle overlap with chart labels; source badge bottom-right where applicable",
+          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "narrative_role": "evidence",
+          "information_role": "The number behind the narration",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "crisp-type"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Remotion checkmark card: 'GROWTH: 7 of 7 quarters - PROVEN' with 7-quarter line recap",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s4_footage",
+          "type": "broll",
+          "description": "BPS Indonesia building exterior and Indonesian market activity",
+          "start_seconds": 59.55,
+          "end_seconds": 68.72,
+          "script_section_id": "s4",
+          "framing": "full-frame 16:9",
+          "movement": "steady documentary motion",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "burn-in subtitle at bottom, max 2 lines; no other overlay on this half",
+          "shot_language": {
+            "shot_size": "medium_wide",
+            "camera_movement": "dolly_in",
+            "lens_mm": 35,
+            "lighting_key": "natural",
+            "depth_of_field": "deep",
+            "color_temperature": "neutral"
+          },
+          "shot_intent": "Show the physical reality behind the number",
+          "narrative_role": "evidence",
+          "information_role": "What the physical story looks like",
+          "hero_moment": false,
+          "texture_keywords": [
+            "clean",
+            "documentary",
+            "natural"
+          ],
+          "required_assets": [
+            {
+              "type": "real_video_clip",
+              "description": "BPS Indonesia building exterior and Indonesian market activity",
+              "source": "source"
+            }
+          ]
+        },
+        {
+          "id": "s5_footage",
+          "type": "broll",
+          "description": "Rupiah banknotes and Indonesian market footage",
+          "start_seconds": 69.02,
+          "end_seconds": 79.17,
+          "script_section_id": "s5",
+          "framing": "full-frame 16:9",
+          "movement": "steady documentary motion",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "burn-in subtitle at bottom, max 2 lines; no other overlay on this half",
+          "shot_language": {
+            "shot_size": "medium_wide",
+            "camera_movement": "dolly_in",
+            "lens_mm": 35,
+            "lighting_key": "natural",
+            "depth_of_field": "deep",
+            "color_temperature": "neutral"
+          },
+          "shot_intent": "Show the physical reality behind the number",
+          "narrative_role": "transition",
+          "information_role": "What the physical story looks like",
+          "hero_moment": false,
+          "texture_keywords": [
+            "clean",
+            "documentary",
+            "natural"
+          ],
+          "required_assets": [
+            {
+              "type": "real_video_clip",
+              "description": "Rupiah banknotes and Indonesian market footage",
+              "source": "source"
+            }
+          ]
+        },
+        {
+          "id": "s5_graphic",
+          "type": "text_card",
+          "description": "Remotion amber caution card: 'NO QUARTERLY PER-CAPITA USD SERIES' + 'Growth != Level'",
+          "start_seconds": 79.17,
+          "end_seconds": 89.32,
+          "script_section_id": "s5",
+          "framing": "centered safe area with 10% title padding",
+          "movement": "slow push-in on the visual element",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "no subtitle overlap with chart labels; source badge bottom-right where applicable",
+          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "narrative_role": "transition",
+          "information_role": "The number behind the narration",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "crisp-type"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Remotion amber caution card: 'NO QUARTERLY PER-CAPITA USD SERIES' + 'Growth != Level'",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s6_graphic",
+          "type": "diagram",
+          "description": "Remotion dual stat cards: WB 2025 current USD $5,066 vs $5,060 (DEAD HEAT) | constant 2015 USD $4,308 vs $4,555 (ID +5.7%)",
+          "start_seconds": 89.62,
+          "end_seconds": 98.97,
+          "script_section_id": "s6",
+          "framing": "centered safe area with 10% title padding",
+          "movement": "slow push-in on the visual element",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "no subtitle overlap with chart labels; source badge bottom-right where applicable",
+          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "narrative_role": "comparison",
+          "information_role": "The number behind the narration",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "crisp-type"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Remotion dual stat cards: WB 2025 current USD $5,066 vs $5,060 (DEAD HEAT) | constant 2015 USD $4,308 vs $4,555 (ID +5.7%)",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s6_footage",
+          "type": "broll",
+          "description": "Container yard / export port with cargo movement",
+          "start_seconds": 98.97,
+          "end_seconds": 108.32,
+          "script_section_id": "s6",
+          "framing": "full-frame 16:9",
+          "movement": "steady documentary motion",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "burn-in subtitle at bottom, max 2 lines; no other overlay on this half",
+          "shot_language": {
+            "shot_size": "medium_wide",
+            "camera_movement": "dolly_in",
+            "lens_mm": 35,
+            "lighting_key": "natural",
+            "depth_of_field": "deep",
+            "color_temperature": "neutral"
+          },
+          "shot_intent": "Show the physical reality behind the number",
+          "narrative_role": "comparison",
+          "information_role": "What the physical story looks like",
+          "hero_moment": false,
+          "texture_keywords": [
+            "clean",
+            "documentary",
+            "natural"
+          ],
+          "required_assets": [
+            {
+              "type": "real_video_clip",
+              "description": "Container yard / export port with cargo movement",
+              "source": "source"
+            }
+          ]
+        },
+        {
+          "id": "s7_footage",
+          "type": "broll",
+          "description": "Vietnam and Indonesia city skylines",
+          "start_seconds": 108.62,
+          "end_seconds": 117.69,
+          "script_section_id": "s7",
+          "framing": "full-frame 16:9",
+          "movement": "steady documentary motion",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "burn-in subtitle at bottom, max 2 lines; no other overlay on this half",
+          "shot_language": {
+            "shot_size": "medium_wide",
+            "camera_movement": "dolly_in",
+            "lens_mm": 35,
+            "lighting_key": "natural",
+            "depth_of_field": "deep",
+            "color_temperature": "neutral"
+          },
+          "shot_intent": "Show the physical reality behind the number",
+          "narrative_role": "evidence",
+          "information_role": "What the physical story looks like",
+          "hero_moment": false,
+          "texture_keywords": [
+            "clean",
+            "documentary",
+            "natural"
+          ],
+          "required_assets": [
+            {
+              "type": "real_video_clip",
+              "description": "Vietnam and Indonesia city skylines",
+              "source": "source"
+            }
+          ]
+        },
+        {
+          "id": "s7_graphic",
+          "type": "text_card",
+          "description": "Remotion stat card: IMF WEO OCT 2026 / CURRENT USD / VN $5,259 vs ID $5,153 + large amber 'PROYEKSI' badge",
+          "start_seconds": 117.69,
+          "end_seconds": 126.76,
+          "script_section_id": "s7",
+          "framing": "centered safe area with 10% title padding",
+          "movement": "slow push-in on the visual element",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "no subtitle overlap with chart labels; source badge bottom-right where applicable",
+          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "narrative_role": "evidence",
+          "information_role": "The number behind the narration",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "crisp-type"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Remotion stat card: IMF WEO OCT 2026 / CURRENT USD / VN $5,259 vs ID $5,153 + large amber 'PROYEKSI' badge",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s8_footage",
+          "type": "broll",
+          "description": "Vietnam factory assembly and export containers",
+          "start_seconds": 127.06,
+          "end_seconds": 136.26,
+          "script_section_id": "s8",
+          "framing": "full-frame 16:9",
+          "movement": "steady documentary motion",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "burn-in subtitle at bottom, max 2 lines; no other overlay on this half",
+          "shot_language": {
+            "shot_size": "medium_wide",
+            "camera_movement": "dolly_in",
+            "lens_mm": 35,
+            "lighting_key": "natural",
+            "depth_of_field": "deep",
+            "color_temperature": "neutral"
+          },
+          "shot_intent": "Show the physical reality behind the number",
+          "narrative_role": "deliver_payload",
+          "information_role": "What the physical story looks like",
+          "hero_moment": false,
+          "texture_keywords": [
+            "clean",
+            "documentary",
+            "natural"
+          ],
+          "required_assets": [
+            {
+              "type": "real_video_clip",
+              "description": "Vietnam factory assembly and export containers",
+              "source": "source"
+            }
+          ]
+        },
+        {
+          "id": "s8_graphic",
+          "type": "diagram",
+          "description": "Remotion sector chart: industry & construction 12.50%, 51.57% of total growth, exports +23.27%, FDI 21.07B USD",
+          "start_seconds": 136.26,
+          "end_seconds": 145.47,
+          "script_section_id": "s8",
+          "framing": "centered safe area with 10% title padding",
+          "movement": "slow push-in on the visual element",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "no subtitle overlap with chart labels; source badge bottom-right where applicable",
+          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "narrative_role": "evidence",
+          "information_role": "The number behind the narration",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "crisp-type"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Remotion sector chart: industry & construction 12.50%, 51.57% of total growth, exports +23.27%, FDI 21.07B USD",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s9_graphic",
+          "type": "diagram",
+          "description": "Remotion comparison cards: population 101.6M vs 285.7M; IDR +3.9% vs VND ~2-3% depreciation",
+          "start_seconds": 145.77,
+          "end_seconds": 155.42,
+          "script_section_id": "s9",
+          "framing": "centered safe area with 10% title padding",
+          "movement": "slow push-in on the visual element",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "no subtitle overlap with chart labels; source badge bottom-right where applicable",
+          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "narrative_role": "evidence",
+          "information_role": "The number behind the narration",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "crisp-type"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Remotion comparison cards: population 101.6M vs 285.7M; IDR +3.9% vs VND ~2-3% depreciation",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s9_footage",
+          "type": "broll",
+          "description": "Rupiah/market footage transitioning to Vietnam street",
+          "start_seconds": 155.42,
+          "end_seconds": 165.07,
+          "script_section_id": "s9",
+          "framing": "full-frame 16:9",
+          "movement": "steady documentary motion",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "burn-in subtitle at bottom, max 2 lines; no other overlay on this half",
+          "shot_language": {
+            "shot_size": "medium_wide",
+            "camera_movement": "dolly_in",
+            "lens_mm": 35,
+            "lighting_key": "natural",
+            "depth_of_field": "deep",
+            "color_temperature": "neutral"
+          },
+          "shot_intent": "Show the physical reality behind the number",
+          "narrative_role": "comparison",
+          "information_role": "What the physical story looks like",
+          "hero_moment": false,
+          "texture_keywords": [
+            "clean",
+            "documentary",
+            "natural"
+          ],
+          "required_assets": [
+            {
+              "type": "real_video_clip",
+              "description": "Rupiah/market footage transitioning to Vietnam street",
+              "source": "source"
+            }
+          ]
+        },
+        {
+          "id": "s10_footage",
+          "type": "broll",
+          "description": "Currency exchange board and Hanoi skyline at dusk",
+          "start_seconds": 165.37,
+          "end_seconds": 175.34,
+          "script_section_id": "s10",
+          "framing": "full-frame 16:9",
+          "movement": "steady documentary motion",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "burn-in subtitle at bottom, max 2 lines; no other overlay on this half",
+          "shot_language": {
+            "shot_size": "medium_wide",
+            "camera_movement": "dolly_in",
+            "lens_mm": 35,
+            "lighting_key": "natural",
+            "depth_of_field": "deep",
+            "color_temperature": "neutral"
+          },
+          "shot_intent": "Show the physical reality behind the number",
+          "narrative_role": "build_tension",
+          "information_role": "What the physical story looks like",
+          "hero_moment": false,
+          "texture_keywords": [
+            "clean",
+            "documentary",
+            "natural"
+          ],
+          "required_assets": [
+            {
+              "type": "real_video_clip",
+              "description": "Currency exchange board and Hanoi skyline at dusk",
+              "source": "source"
+            }
+          ]
+        },
+        {
+          "id": "s10_graphic",
+          "type": "diagram",
+          "description": "Remotion sensitivity gauge: 2.1% gap vs FX swing, label 'PROYEKSI - bisa berubah'",
+          "start_seconds": 175.34,
+          "end_seconds": 185.31,
+          "script_section_id": "s10",
+          "framing": "centered safe area with 10% title padding",
+          "movement": "slow push-in on the visual element",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "no subtitle overlap with chart labels; source badge bottom-right where applicable",
+          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "narrative_role": "deliver_payload",
+          "information_role": "The number behind the narration",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "crisp-type"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Remotion sensitivity gauge: 2.1% gap vs FX swing, label 'PROYEKSI - bisa berubah'",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s11_graphic",
+          "type": "text_card",
+          "description": "Remotion closing card: 'Tumbuhnya SUDAH | Ekonominya BELUM' + CTA + source line 'Sumber: BPS Indonesia \u00b7 NSO Vietnam \u00b7 Bank Dunia \u00b7 IMF WEO Oktober 2026'",
+          "start_seconds": 185.61,
+          "end_seconds": 201.78,
+          "script_section_id": "s11",
+          "framing": "centered safe area with 10% title padding",
+          "movement": "slow push-in on the visual element",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "no subtitle overlap with chart labels; source badge bottom-right where applicable",
+          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "narrative_role": "call_to_action",
+          "information_role": "The number behind the narration",
+          "hero_moment": true,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "crisp-type"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Remotion closing card: 'Tumbuhnya SUDAH | Ekonominya BELUM' + CTA + source line 'Sumber: BPS Indonesia \u00b7 NSO Vietnam \u00b7 Bank Dunia \u00b7 IMF WEO Oktober 2026'",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s11_footage",
+          "type": "broll",
+          "description": "Hanoi street fading into Saigon night footage",
+          "start_seconds": 201.78,
+          "end_seconds": 217.94,
+          "script_section_id": "s11",
+          "framing": "full-frame 16:9",
+          "movement": "steady documentary motion",
+          "transition_in": "crossfade 0.3s from previous half",
+          "transition_out": "crossfade 0.3s to next half",
+          "overlay_notes": "burn-in subtitle at bottom, max 2 lines; no other overlay on this half",
+          "shot_language": {
+            "shot_size": "medium_wide",
+            "camera_movement": "dolly_in",
+            "lens_mm": 35,
+            "lighting_key": "natural",
+            "depth_of_field": "deep",
+            "color_temperature": "neutral"
+          },
+          "shot_intent": "Show the physical reality behind the number",
+          "narrative_role": "resolution",
+          "information_role": "What the physical story looks like",
+          "hero_moment": false,
+          "texture_keywords": [
+            "clean",
+            "documentary",
+            "natural"
+          ],
+          "required_assets": [
+            {
+              "type": "real_video_clip",
+              "description": "Hanoi street fading into Saigon night footage",
+              "source": "source"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "total_duration_seconds": 242.26,
+        "source_to_support_ratio": "50/50 alternating within every script section",
+        "scene_count": 22,
+        "anchor_rules": [
+          "Real footage (MoneyPrinterTurbo) is the anchor medium and appears in every script section",
+          "Footage is never fully covered by graphics; max 2 concurrent overlays (subtitles + one badge)"
+        ],
+        "support_rules": [
+          "Remotion infographic occupies exactly the other half of each section",
+          "Support visuals only clarify numbers; no decorative inserts",
+          "IMF figures always carry the PROYEKSI badge and current-USD label"
+        ],
+        "safe_zones": [
+          "16:9 master: subtitle safe area bottom 12%; chart labels inset 10% from edges",
+          "No critical text within 5% of frame edges"
+        ],
+        "variant_rules": [
+          "Only 16:9 hero cut planned; if 9:16 is added later, charts must be restacked vertically and subtitles moved up"
+        ],
+        "overlay_density_limits": "max 2 concurrent overlays; no full-frame opaque cover over footage",
+        "crossfade_seconds": 0.3,
+        "music": "/home/desktop/Music/Background music News Investigating.mp3",
+        "note": "s0a intro is infographic-only (newsroom footage removed); all other sections remain 50/50 alternating; total 242.26s"
+      }
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "cost_snapshot": {
+    "total_spent_usd": 0.0,
+    "total_reserved_usd": 0.0,
+    "budget_remaining_usd": 2.0
+  },
+  "metadata": {
+    "note": "s0a footage removed; infographic-only intro; d-022"
+  }
+}

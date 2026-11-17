@@ -1,0 +1,2 @@
+{"ts": "2026-11-17T04:48:36.303074+00:00", "call_id": "9b0ba15d1b3c4e0b966c95f233487775", "tool": "direct_clip_search", "event": "start"}
+{"ts": "2026-11-17T04:50:42.749676+00:00", "call_id": "9b0ba15d1b3c4e0b966c95f233487775", "tool": "direct_clip_search", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 126.45}

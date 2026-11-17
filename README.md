@@ -30,7 +30,8 @@ See [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md) for the example's sources.
 | `artifacts/` | Canonical JSON: brief, script, scene_plan, asset_manifest, decision_log, data_manifest, tts_timings |
 | `scripts/` | Generation scripts: TTS, audio/subtitles, MPT batches, Remotion build/render, trimming, manifest |
 | `remotion/` | Standalone Remotion project with all infographic compositions |
-| `docs/` | Pipeline notes and example data sources |
+| `docs/` | `RECOMMENDED_STEPS.md` (working procedure), `BACKLOT.md` (review board), `DATA_SOURCES.md` (example provenance) |
+| `backlot/` | Backlot project state: checkpoints, archived history, events and decision log |
 
 ## Requirements
 

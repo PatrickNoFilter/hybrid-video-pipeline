@@ -1,0 +1,516 @@
+{
+  "version": "1.0",
+  "project_id": "vietnam-indonesia-gdp",
+  "pipeline_type": "hybrid",
+  "stage": "script",
+  "status": "awaiting_human",
+  "timestamp": "2026-11-17T04:27:14.512530+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "script": {
+      "version": "1.0",
+      "title": "Tujuh Triwulan: Tumbuhnya Vietnam Sudah Menyalip Indonesia, Ekonominya Belum?",
+      "total_duration_seconds": 70,
+      "voice_performance": {
+        "performance_intent": "Indonesian data explainer: curious hook, factual middle, cautious pivot, resolute close",
+        "pacing_profile": "conversational",
+        "energy_curve": "curious -> building -> assured -> cautious -> precise -> transparent -> resolute",
+        "pause_policy": "Short 0.2s pauses at scene boundaries; no pause at the 0.3s visual crossfade midpoint",
+        "sample_section_id": "s7",
+        "provider_notes": {
+          "tts_provider": "MoneyPrinterTurbo built-in Edge TTS",
+          "voice": "id-ID-GadisNeural",
+          "voice_rate": "1.0",
+          "voice_volume": "1.0"
+        }
+      },
+      "sections": [
+        {
+          "id": "s1",
+          "label": "Hook - title claim",
+          "text": "Tujuh triwulan terakhir, pertumbuhan Vietnam selalu lebih cepat dari Indonesia. Tapi apakah ekonominya sudah benar-benar menyalip?",
+          "start_seconds": 0,
+          "end_seconds": 9,
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "curious, punchy",
+            "emphasis_words": [
+              "Tujuh triwulan",
+              "Vietnam",
+              "Indonesia",
+              "menyalip"
+            ],
+            "pause_before_seconds": 0.0,
+            "pause_after_seconds": 0.0,
+            "delivery_note": "Open with a question; slight lift on 'menyalip'.",
+            "provider_text": "Tujuh triwulan terakhir, pertumbuhan Vietnam selalu lebih cepat dari Indonesia. Tapi apakah ekonominya sudah benar-benar menyalip?"
+          },
+          "enhancement_cues": [
+            {
+              "type": "broll",
+              "description": "MoneyPrinterTurbo real footage: Vietnam electronics assembly line / Samsung factory, then Hanoi street",
+              "timestamp_seconds": 0
+            },
+            {
+              "type": "stat_card",
+              "description": "OpenMontage Remotion infographic: Opening split card: 'VIETNAM: Tumbuhnya SUDAH menyalip INDONESIA' (green check) vs 'Tapi Ekonominya BELUM' (amber question mark)",
+              "timestamp_seconds": 4.5
+            }
+          ],
+          "pronunciation_guides": [
+            {
+              "word": "BPS",
+              "phonetic": "be-pe-es"
+            },
+            {
+              "word": "NSO",
+              "phonetic": "en-es-o"
+            },
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "source_ref": "brief.title; data_manifest.series"
+        },
+        {
+          "id": "s2",
+          "label": "2025 quarterly actuals",
+          "text": "Sepanjang tahun dua ribu dua puluh lima, Vietnam bertahan di kisaran tujuh hingga delapan koma empat persen. Indonesia bergerak di sekitar lima persen.",
+          "start_seconds": 9,
+          "end_seconds": 18,
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "calm, factual",
+            "emphasis_words": [
+              "tujuh",
+              "delapan koma empat",
+              "lima persen"
+            ],
+            "pause_before_seconds": 0.0,
+            "pause_after_seconds": 0.0,
+            "delivery_note": "Let the line chart breathe; no rush.",
+            "provider_text": "Sepanjang tahun dua ribu dua puluh lima, Vietnam bertahan di kisaran tujuh hingga delapan koma empat persen. Indonesia bergerak di sekitar lima persen."
+          },
+          "enhancement_cues": [
+            {
+              "type": "broll",
+              "description": "MoneyPrinterTurbo real footage: Hanoi street life / Saigon market",
+              "timestamp_seconds": 13.5
+            },
+            {
+              "type": "stat_card",
+              "description": "OpenMontage Remotion infographic: Line chart 2025Q1-2025Q4: VN 7.05/8.16/8.25/8.46 vs ID 4.87/5.12/5.04/5.20 (approx marker on ID)",
+              "timestamp_seconds": 9
+            }
+          ],
+          "pronunciation_guides": [
+            {
+              "word": "BPS",
+              "phonetic": "be-pe-es"
+            },
+            {
+              "word": "NSO",
+              "phonetic": "en-es-o"
+            },
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "source_ref": "data_manifest.series 2025Q1-2025Q4"
+        },
+        {
+          "id": "s3",
+          "label": "2026 quarterly actuals + widening gap",
+          "text": "Masuk tahun dua ribu dua puluh enam, Vietnam melaju ke delapan koma satu lima, delapan koma delapan satu, dan sembilan koma sembilan lima persen. Selisihnya melebar dari dua koma dua menjadi empat koma lima poin.",
+          "start_seconds": 18,
+          "end_seconds": 27,
+          "delivery_cues": {
+            "pace": "brisk",
+            "energy": "building momentum",
+            "emphasis_words": [
+              "sembilan koma sembilan lima",
+              "melebar",
+              "empat koma lima"
+            ],
+            "pause_before_seconds": 0.0,
+            "pause_after_seconds": 0.0,
+            "delivery_note": "Rise in energy on the 9.95% figure.",
+            "provider_text": "Masuk tahun dua ribu dua puluh enam, Vietnam melaju ke delapan koma satu lima, delapan koma delapan satu, dan sembilan koma sembilan lima persen. Selisihnya melebar dari dua koma dua menjadi empat koma lima poin."
+          },
+          "enhancement_cues": [
+            {
+              "type": "broll",
+              "description": "MoneyPrinterTurbo real footage: Vietnam factory / export port cargo",
+              "timestamp_seconds": 18
+            },
+            {
+              "type": "stat_card",
+              "description": "OpenMontage Remotion infographic: Bar chart 2026Q1-Q3: VN 8.15/8.81/9.95 vs ID 5.61/5.29/5.47; gap callout 2.2 -> 4.5 points; revision note on VN Q1/Q2",
+              "timestamp_seconds": 22.5
+            }
+          ],
+          "pronunciation_guides": [
+            {
+              "word": "BPS",
+              "phonetic": "be-pe-es"
+            },
+            {
+              "word": "NSO",
+              "phonetic": "en-es-o"
+            },
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "source_ref": "data_manifest.series 2026Q1-2026Q3; data_manifest.notes[0]"
+        },
+        {
+          "id": "s4",
+          "label": "Primary proof statement",
+          "text": "Itu data aktual dari badan statistik Vietnam dan BPS Indonesia. Tujuh dari tujuh triwulan, Vietnam menang. Bagian 'tumbuhnya sudah menyalip' terbukti.",
+          "start_seconds": 27,
+          "end_seconds": 36,
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "assured",
+            "emphasis_words": [
+              "data aktual",
+              "tujuh dari tujuh",
+              "terbukti"
+            ],
+            "pause_before_seconds": 0.0,
+            "pause_after_seconds": 0.0,
+            "delivery_note": "Firm, documentary tone. This is the proof beat.",
+            "provider_text": "Itu data aktual dari badan statistik Vietnam dan BPS Indonesia. Tujuh dari tujuh triwulan, Vietnam menang. Bagian 'tumbuhnya sudah menyalip' terbukti."
+          },
+          "enhancement_cues": [
+            {
+              "type": "broll",
+              "description": "MoneyPrinterTurbo real footage: BPS Indonesia building / statistician imagery, market footage",
+              "timestamp_seconds": 31.5
+            },
+            {
+              "type": "stat_card",
+              "description": "OpenMontage Remotion infographic: Checkmark card: 'GROWTH: 7 of 7 quarters - PROVEN' with the 7-quarter line chart recap",
+              "timestamp_seconds": 27
+            }
+          ],
+          "pronunciation_guides": [
+            {
+              "word": "BPS",
+              "phonetic": "be-pe-es"
+            },
+            {
+              "word": "NSO",
+              "phonetic": "en-es-o"
+            },
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "source_ref": "data_manifest.scope; brief.metadata.data_hierarchy[0]"
+        },
+        {
+          "id": "s5",
+          "label": "Level caveat - no quarterly per-capita",
+          "text": "Tapi hati-hati. BPS dan badan statistik Vietnam tidak menerbitkan PDB per kapita dolar per triwulan. Jadi klaim 'sudah menyalip' hanya berlaku untuk pertumbuhan, bukan level.",
+          "start_seconds": 36,
+          "end_seconds": 45,
+          "delivery_cues": {
+            "pace": "slow",
+            "energy": "cautious",
+            "emphasis_words": [
+              "hati-hati",
+              "tidak menerbitkan",
+              "bukan level"
+            ],
+            "pause_before_seconds": 0.0,
+            "pause_after_seconds": 0.0,
+            "delivery_note": "Slow down slightly; this is the pivot of the video.",
+            "provider_text": "Tapi hati-hati. BPS dan badan statistik Vietnam tidak menerbitkan PDB per kapita dolar per triwulan. Jadi klaim 'sudah menyalip' hanya berlaku untuk pertumbuhan, bukan level."
+          },
+          "enhancement_cues": [
+            {
+              "type": "broll",
+              "description": "MoneyPrinterTurbo real footage: Rupiah / Indonesian market footage",
+              "timestamp_seconds": 36
+            },
+            {
+              "type": "stat_card",
+              "description": "OpenMontage Remotion infographic: Amber caution card: 'NO QUARTERLY PER-CAPITA USD SERIES' + text 'Growth != Level'",
+              "timestamp_seconds": 40.5
+            }
+          ],
+          "pronunciation_guides": [
+            {
+              "word": "BPS",
+              "phonetic": "be-pe-es"
+            },
+            {
+              "word": "NSO",
+              "phonetic": "en-es-o"
+            },
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "source_ref": "brief.metadata.label_rules[4]; NSO/BPS publication practice"
+        },
+        {
+          "id": "s6",
+          "label": "2025 level actuals - two price bases",
+          "text": "Data tahun dua ribu dua puluh lima menunjukkan Vietnam lima ribu enam puluh enam dolar, Indonesia lima ribu enam puluh dolar. Praktis imbang. Namun dalam ukuran konstan, Indonesia masih unggul lima koma tujuh persen.",
+          "start_seconds": 45,
+          "end_seconds": 54,
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "precise",
+            "emphasis_words": [
+              "praktis imbang",
+              "ukuran konstan",
+              "lima koma tujuh"
+            ],
+            "pause_before_seconds": 0.0,
+            "pause_after_seconds": 0.0,
+            "delivery_note": "Enunciate numbers clearly; emphasize the basis switch.",
+            "provider_text": "Data tahun dua ribu dua puluh lima menunjukkan Vietnam lima ribu enam puluh enam dolar, Indonesia lima ribu enam puluh dolar. Praktis imbang. Namun dalam ukuran konstan, Indonesia masih unggul lima koma tujuh persen."
+          },
+          "enhancement_cues": [
+            {
+              "type": "broll",
+              "description": "MoneyPrinterTurbo real footage: Port cargo / container yard",
+              "timestamp_seconds": 49.5
+            },
+            {
+              "type": "stat_card",
+              "description": "OpenMontage Remotion infographic: Two stat cards side by side: WB 2025 current USD $5,066 vs $5,060 (DEAD HEAT) | constant 2015 USD $4,308 vs $4,555 (ID +5.7%)",
+              "timestamp_seconds": 45
+            }
+          ],
+          "pronunciation_guides": [
+            {
+              "word": "BPS",
+              "phonetic": "be-pe-es"
+            },
+            {
+              "word": "NSO",
+              "phonetic": "en-es-o"
+            },
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "source_ref": "data_manifest.actual_2025_context.world_bank_current_USD and world_bank_constant_2015_USD"
+        },
+        {
+          "id": "s7",
+          "label": "IMF 2026 projection - clearly labeled",
+          "text": "IMF memperkirakan tahun dua ribu dua puluh enam: Vietnam lima ribu dua ratus lima sembilan, Indonesia lima ribu seratus lima puluh tiga dolar. Itu proyeksi, bukan hasil ukur.",
+          "start_seconds": 54,
+          "end_seconds": 63,
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "transparent",
+            "emphasis_words": [
+              "IMF",
+              "proyeksi",
+              "bukan hasil ukur"
+            ],
+            "pause_before_seconds": 0.0,
+            "pause_after_seconds": 0.0,
+            "delivery_note": "Say 'proyeksi' slightly louder; sample section for TTS approval.",
+            "provider_text": "IMF memperkirakan tahun dua ribu dua puluh enam: Vietnam lima ribu dua ratus lima sembilan, Indonesia lima ribu seratus lima puluh tiga dolar. Itu proyeksi, bukan hasil ukur."
+          },
+          "enhancement_cues": [
+            {
+              "type": "broll",
+              "description": "MoneyPrinterTurbo real footage: Vietnam skyline / Indonesia city footage",
+              "timestamp_seconds": 54
+            },
+            {
+              "type": "stat_card",
+              "description": "OpenMontage Remotion infographic: Stat card: IMF WEO OCT 2026 - CURRENT USD - VN $5,259 vs ID $5,153; large amber 'PROYEKSI' badge; no TE comparison in same chart",
+              "timestamp_seconds": 58.5
+            }
+          ],
+          "pronunciation_guides": [
+            {
+              "word": "BPS",
+              "phonetic": "be-pe-es"
+            },
+            {
+              "word": "NSO",
+              "phonetic": "en-es-o"
+            },
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "source_ref": "data_manifest.forecasts.IMF_WEO_Oct_2026_current_USD; FlareSolverr-verified imf.org WEO Oct 2026"
+        },
+        {
+          "id": "s8",
+          "label": "Conclusion + CTA",
+          "text": "Jadi: tumbuhnya Vietnam sudah menyalip Indonesia. Ekonominya? Belum \u2014 baru diproyeksikan. Perhatikan basis harganya.",
+          "start_seconds": 63,
+          "end_seconds": 70,
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "resolute, closing",
+            "emphasis_words": [
+              "sudah menyalip",
+              "Belum",
+              "basis harganya"
+            ],
+            "pause_before_seconds": 0.0,
+            "pause_after_seconds": 0.0,
+            "delivery_note": "Land firmly; leave the question visible for a beat.",
+            "provider_text": "Jadi: tumbuhnya Vietnam sudah menyalip Indonesia. Ekonominya? Belum \u2014 baru diproyeksikan. Perhatikan basis harganya."
+          },
+          "enhancement_cues": [
+            {
+              "type": "broll",
+              "description": "MoneyPrinterTurbo real footage: Hanoi street fading to Saigon night footage",
+              "timestamp_seconds": 66.5
+            },
+            {
+              "type": "stat_card",
+              "description": "OpenMontage Remotion infographic: Closing card: 'Tumbuhnya SUDAH | Ekonominya BELUM' + CTA 'Cek data BPS & NSO'",
+              "timestamp_seconds": 63
+            }
+          ],
+          "pronunciation_guides": [
+            {
+              "word": "BPS",
+              "phonetic": "be-pe-es"
+            },
+            {
+              "word": "NSO",
+              "phonetic": "en-es-o"
+            },
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "source_ref": "brief.core_message; brief.cta"
+        }
+      ],
+      "metadata": {
+        "language": "id-ID",
+        "anchor_sections": [
+          "s1",
+          "s4",
+          "s8"
+        ],
+        "support_sections": [
+          "s2",
+          "s3",
+          "s5",
+          "s6",
+          "s7"
+        ],
+        "narration_sections": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "required_support_assets": [
+          "MPT real footage per scene: s1 factory/Hanoi, s2 Hanoi/Saigon, s3 factory/port, s4 BPS/market, s5 rupiah/market, s6 port cargo, s7 skyline, s8 Hanoi/Saigon night",
+          "Remotion infographic per scene: s1 split card, s2 2025 line chart, s3 2026 bars + gap, s4 proof checkmark, s5 caution card, s6 dual basis stat cards, s7 IMF projection card, s8 closing card"
+        ],
+        "visual_plan": [
+          {
+            "scene": "s1",
+            "order": "footage_first",
+            "crossfade_at_seconds": 4.5
+          },
+          {
+            "scene": "s2",
+            "order": "infographic_first",
+            "crossfade_at_seconds": 13.5
+          },
+          {
+            "scene": "s3",
+            "order": "footage_first",
+            "crossfade_at_seconds": 22.5
+          },
+          {
+            "scene": "s4",
+            "order": "infographic_first",
+            "crossfade_at_seconds": 31.5
+          },
+          {
+            "scene": "s5",
+            "order": "footage_first",
+            "crossfade_at_seconds": 40.5
+          },
+          {
+            "scene": "s6",
+            "order": "infographic_first",
+            "crossfade_at_seconds": 49.5
+          },
+          {
+            "scene": "s7",
+            "order": "footage_first",
+            "crossfade_at_seconds": 58.5
+          },
+          {
+            "scene": "s8",
+            "order": "infographic_first",
+            "crossfade_at_seconds": 66.5
+          }
+        ],
+        "music": "/home/desktop/Music/Background music News Investigating.mp3",
+        "data_manifest": "artifacts/data_manifest.json",
+        "fact_verification": "All numeric claims trace to data_manifest.json. IMF WEO October 2026 vintage verified via FlareSolverr from imf.org. No quarterly per-capita level claim is made."
+      }
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "review": {
+    "rounds": 1,
+    "findings": [
+      {
+        "severity": "critical",
+        "issue": "enhancement_cue timestamps contradicted visual_plan on infographic-first scenes (s2,s4,s6,s8)",
+        "resolution": "Swapped: stat_card at scene start, broll at midpoint for those four scenes; footage-first scenes unchanged",
+        "fixed": true
+      },
+      {
+        "severity": "suggestion",
+        "issue": "s5 (level caveat) was not tagged as a support-led section",
+        "resolution": "Added s5 to metadata.support_sections",
+        "fixed": true
+      },
+      {
+        "severity": "nitpick",
+        "issue": "196 words / 70s = ~168 wpm; verify TTS duration in assets stage",
+        "resolution": "Recorded as an assets-stage check; no script change"
+      }
+    ],
+    "critical_fixed": 1
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0.0,
+    "total_reserved_usd": 0.0,
+    "budget_remaining_usd": 2.0
+  },
+  "metadata": {
+    "note": "Script stage complete; awaiting human approval before scene_plan"
+  }
+}

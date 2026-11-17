@@ -1,0 +1,380 @@
+{
+  "version": "1.0",
+  "project_id": "vietnam-indonesia-gdp",
+  "pipeline_type": "hybrid",
+  "stage": "idea",
+  "status": "awaiting_human",
+  "timestamp": "2026-11-17T03:36:19.747915+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "brief": {
+      "version": "1.0",
+      "title": "Vietnam vs Indonesia: Siapa yang Menyalip?",
+      "hook": "Vietnam akhirnya menyalip Indonesia? Cek datanya \u2014 ternyata selisihnya cuma enam dolar.",
+      "key_points": [
+        "Data IMF 2026: Vietnam $5.260, Indonesia $5.153 \u2014 Vietnam unggul tipis 2,1%.",
+        "Data Bank Dunia 2025: $5.066 vs $5.060 \u2014 selisih hanya $6, praktis imbang.",
+        "Data PBB 2024: Indonesia masih unggul ($4.925 vs $4.717) \u2014 jadi 'penyalipan' ini sangat baru dan tergantung sumber.",
+        "Tren Bank Dunia 2015-2025: Vietnam naik dari 21,6% di bawah Indonesia menjadi setara.",
+        "Penyebab: pertumbuhan riil Vietnam 8,0% vs Indonesia 5,1%; rupiah terdepresiasi 3,9% pada 2025; dong lebih stabil; populasi Vietnam tumbuh lebih lambat.",
+        "Kesimpulan: Vietnam 'mengejar', bukan mengungguli secara meyakinkan \u2014 pergerakan kurs bisa membaliknya.",
+        "Setiap scene memakai DUA alat sekaligus: 50% video nyata dari MoneyPrinterTurbo + 50% infografis animasi dari Remotion."
+      ],
+      "core_message": "Vietnam benar-benar mengejar Indonesia dalam PDB per kapita, tapi penyalipannya baru terjadi pada 2025 dan hanya tipis \u2014 sangat bergantung pada sumber data dan kurs.",
+      "cta": "Simak sampai akhir untuk tahu kenapa angka IMF, Bank Dunia, dan PBB berbeda.",
+      "tone": "Informatif, berbasis data, cepat, Bahasa Indonesia percakapan",
+      "style": "flat-motion-graphics",
+      "target_audience": "Pemirasa umum Indonesia yang tertarik ekonomi Asia Tenggara",
+      "target_platform": "youtube",
+      "target_duration_seconds": 70,
+      "reference_material": [
+        "https://api.worldbank.org/v2/country/VNM;IDN/indicator/NY.GDP.PCAP.CD",
+        "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita",
+        "/home/desktop/Work/MoneyPrinterTurbo/storage/local_videos/hanoi.mp4",
+        "/home/desktop/Work/MoneyPrinterTurbo/storage/local_videos/saigon.mp4",
+        "/home/desktop/Music/Background music News Investigating.mp3"
+      ],
+      "angle_options": [
+        {
+          "name": "Data-detective",
+          "description": "Hook dengan kontroversi 'siapa yang menyalip', lalu buktikan dengan tiga sumber data."
+        },
+        {
+          "name": "Why-it-happened",
+          "description": "Fokus pada mesin pertumbuhan Vietnam dan peran kurs rupiah."
+        }
+      ],
+      "selected_angle": "Data-detective",
+      "metadata": {
+        "anchor_medium": "broll_footage",
+        "source_inventory": {
+          "real_footage": [
+            "hanoi.mp4",
+            "saigon.mp4",
+            "hoian.mp4",
+            "halong.mp4"
+          ],
+          "stock_source": "MoneyPrinterTurbo + Pexels API key (configured)",
+          "music": "/home/desktop/Music/Background music News Investigating.mp3",
+          "narration_voice": "id-ID-GadisNeural (Edge TTS via MoneyPrinterTurbo)"
+        },
+        "support_layers": [
+          "stat_card",
+          "bar_chart",
+          "line_chart",
+          "comparison",
+          "subtitles",
+          "music"
+        ],
+        "deliverable_mix": [
+          "hero cut 16:9"
+        ],
+        "missing_capabilities": [
+          "OpenMontage TTS 0/19 configured \u2014 narration sourced from MoneyPrinterTurbo Edge TTS",
+          "OpenMontage video_generation 0/35 \u2014 real footage sourced from MoneyPrinterTurbo Pexels/local",
+          "OpenMontage image_generation 0/31 \u2014 not needed; Remotion draws infographics"
+        ],
+        "fallback_policy": "If Pexels fails, use the four local Vietnam clips; if Remotion render fails, surface blocker (no silent FFmpeg static-card downgrade).",
+        "render_runtime": "remotion",
+        "composition_mode": "templated",
+        "visual_router": {
+          "pattern": "per_scene_split_50_50",
+          "description": "Every scene contains BOTH tools simultaneously: left half = MoneyPrinterTurbo real video (Pexels stock/local Vietnam clips), right half = Remotion animated infographic (stat_card/bar_chart/line_chart). Continuous Edge TTS Gadis narration and subtitles span the full frame.",
+          "money_turbo_real_video": {
+            "share": "50% of frame / every scene",
+            "content": [
+              "pabrik & electronics manufacturing",
+              "Samsung phone production",
+              "Hanoi / Saigon street life",
+              "rupiah & market footage",
+              "export/port/harbour b-roll"
+            ]
+          },
+          "open_montage_infographic": {
+            "share": "50% of frame / every scene",
+            "content": [
+              "IMF 2026 $5,260 vs $5,153",
+              "World Bank 2025 $5,066 vs $5,060",
+              "UN 2024 $4,717 vs $4,925",
+              "2015-2025 trend line",
+              "8.0% vs 5.1% growth bars",
+              "rupiah -3.9% FX callout"
+            ]
+          },
+          "supersedes": "whole-scene tool assignment (each scene previously went to one tool only)"
+        },
+        "source_to_support_ratio": "50/50 in every scene",
+        "max_concurrent_overlays": 2
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "vietnam-indonesia-gdp",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "idea",
+          "category": "pipeline_selection",
+          "subject": "Pipeline for hybrid real-footage + infographic brief",
+          "options_considered": [
+            {
+              "option_id": "hybrid",
+              "label": "hybrid",
+              "score": 0.95,
+              "reason": "Built for source footage plus support graphics"
+            },
+            {
+              "option_id": "animated-explainer",
+              "label": "animated-explainer",
+              "score": 0.6,
+              "reason": "All-generated; loses real footage",
+              "rejected_because": "No real-video anchor"
+            },
+            {
+              "option_id": "documentary-montage",
+              "label": "documentary-montage",
+              "score": 0.5,
+              "reason": "Footage-led but weak chart support",
+              "rejected_because": "Beta + infographic-led beats need charts"
+            }
+          ],
+          "selected": "hybrid",
+          "reason": "Brief explicitly mixes real footage with data infographics.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "idea",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.95,
+              "reason": "Native stat_card/bar_chart/line_chart scene types; composes video clips + React overlays in one pass"
+            },
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.7,
+              "reason": "HTML/CSS/GSAP kinetic typography",
+              "rejected_because": "Weaker native chart primitives for this data-heavy brief"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.4,
+              "reason": "Reliable cuts/concat",
+              "rejected_because": "Would degrade infographics to static cards"
+            }
+          ],
+          "selected": "remotion",
+          "reason": "User approved Remotion; best fit for animated data infographics.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "idea",
+          "category": "voice_selection",
+          "subject": "Indonesian narration voice",
+          "options_considered": [
+            {
+              "option_id": "edge-gadis",
+              "label": "Edge TTS id-ID-GadisNeural",
+              "score": 0.98,
+              "reason": "User requested 'edge gadis indonesian'; installed, free, no key"
+            },
+            {
+              "option_id": "edge-ardi",
+              "label": "Edge TTS id-ID-ArdiNeural",
+              "score": 0.6,
+              "reason": "Male Indonesian alternative",
+              "rejected_because": "User requested female Gadis"
+            },
+            {
+              "option_id": "om-tts",
+              "label": "OpenMontage TTS provider",
+              "score": 0.1,
+              "reason": "0/19 configured",
+              "rejected_because": "Not available on this machine"
+            }
+          ],
+          "selected": "edge-gadis",
+          "reason": "Exact match to user request, available via MoneyPrinterTurbo.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "idea",
+          "category": "capability_extension",
+          "subject": "Source of real-video segments",
+          "options_considered": [
+            {
+              "option_id": "mpt",
+              "label": "MoneyPrinterTurbo (Pexels + local clips)",
+              "score": 0.95,
+              "reason": "Pexels key configured; four local Vietnam clips on disk"
+            },
+            {
+              "option_id": "om-video",
+              "label": "OpenMontage video_generation",
+              "score": 0.05,
+              "reason": "0/35 configured",
+              "rejected_because": "No provider configured"
+            }
+          ],
+          "selected": "mpt",
+          "reason": "Working free path to real footage via the user's requested MoneyPrinterTurbo tool.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "idea",
+          "category": "music_source",
+          "subject": "Background music",
+          "options_considered": [
+            {
+              "option_id": "user-track",
+              "label": "/home/desktop/Music/Background music News Investigating.mp3",
+              "score": 0.95,
+              "reason": "User supplied exact path"
+            },
+            {
+              "option_id": "none",
+              "label": "No music",
+              "score": 0.5,
+              "reason": "Clean mix",
+              "rejected_because": "User chose a track"
+            },
+            {
+              "option_id": "search",
+              "label": "Music-search tool",
+              "score": 0.4,
+              "reason": "Royalty-free search",
+              "rejected_because": "User supplied their own"
+            }
+          ],
+          "selected": "user-track",
+          "reason": "User provided a specific music file; will be copied into the project and mixed at low volume.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "idea",
+          "category": "approval_policy",
+          "subject": "Human gate policy",
+          "options_considered": [
+            {
+              "option_id": "per-gate",
+              "label": "Stop at each gate",
+              "score": 0.95,
+              "reason": "User explicitly chose review at each gate"
+            },
+            {
+              "option_id": "preauth",
+              "label": "Pre-authorize full run",
+              "score": 0.5,
+              "reason": "Faster",
+              "rejected_because": "User declined full pre-authorization"
+            }
+          ],
+          "selected": "per-gate",
+          "reason": "User selected 'Approve, but stop at each gate'.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "idea",
+          "category": "composition_mode",
+          "subject": "Remotion authoring mode",
+          "options_considered": [
+            {
+              "option_id": "templated",
+              "label": "Templated scene types",
+              "score": 0.85,
+              "reason": "stat_card/bar_chart/line_chart are purpose-built for this data explainer; fast and reliable"
+            },
+            {
+              "option_id": "atelier",
+              "label": "Atelier hand-authored",
+              "score": 0.55,
+              "reason": "Bespoke visual language",
+              "rejected_because": "Overkill for a short data explainer; user did not request hero branding"
+            }
+          ],
+          "selected": "templated",
+          "reason": "Data explainer benefits from proven chart components; surfaced here for user objection at the gate.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "idea",
+          "category": "composition_mode",
+          "subject": "Real-video vs infographic share within each scene",
+          "options_considered": [
+            {
+              "option_id": "split-50-50",
+              "label": "50/50 split-screen in every scene",
+              "score": 0.98,
+              "reason": "User explicitly requested both tools have half share in every scene; narration can point to footage and numbers at once"
+            },
+            {
+              "option_id": "segment-router",
+              "label": "Whole scene assigned to one tool",
+              "score": 0.45,
+              "reason": "Previously logged approach in brief metadata",
+              "rejected_because": "User said it looks like only Remotion is used and asked for half share in every scene"
+            }
+          ],
+          "selected": "split-50-50",
+          "reason": "User feedback at the idea gate: MoneyPrinterTurbo real video must appear in every scene at roughly 50% share alongside the Remotion infographic.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        }
+      ]
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "review": {
+    "rounds": 2,
+    "findings": [
+      {
+        "severity": "suggestion",
+        "issue": "Split-screen halves may reduce text legibility at small sizes",
+        "resolution": "Use large font (>=48px) and high-contrast panel backgrounds; validate at compose"
+      },
+      {
+        "severity": "nitpick",
+        "issue": "'Half share' interpreted as left/right split-screen",
+        "resolution": "Confirm with user at gate; alternative is alternating halves within each scene"
+      }
+    ],
+    "critical_fixed": 0
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0.0,
+    "total_reserved_usd": 0.0,
+    "budget_remaining_usd": 2.0
+  },
+  "metadata": {
+    "note": "Idea REVISED: 50/50 MPT real video + Remotion infographic in every scene; awaiting approval"
+  }
+}

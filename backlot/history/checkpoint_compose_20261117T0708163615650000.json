@@ -1,0 +1,115 @@
+{
+  "version": "1.0",
+  "project_id": "vietnam-indonesia-gdp",
+  "pipeline_type": "hybrid",
+  "stage": "compose",
+  "status": "completed",
+  "timestamp": "2026-11-17T07:08:16.361565+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "render_report": {
+      "version": "1.0",
+      "outputs": [
+        {
+          "path": "/home/desktop/Work/OpenMontage/projects/vietnam-indonesia-gdp/renders/final.mp4",
+          "format": "mp4",
+          "codec": "h264",
+          "audio_codec": "aac",
+          "resolution": "1920x1080",
+          "fps": 30.0,
+          "duration_seconds": 243.063833,
+          "file_size_bytes": 68231634,
+          "platform_target": "youtube"
+        }
+      ],
+      "warnings": [
+        "Final-frame hold added to cover narration tail; midpoint transitions are hard cuts"
+      ],
+      "verification_notes": [
+        "ffprobe: h264 1920x1080 30fps + aac stereo",
+        "duration 243.063833s vs script 242.26s",
+        "5 visual spot-check frames inspected",
+        "no subtitles burned in"
+      ],
+      "render_grammar": "explainer-data",
+      "decision_log_ref": "artifacts/decision_log.json",
+      "final_review_ref": "artifacts/final_review.json",
+      "metadata": {
+        "render_runtime_declared": "remotion",
+        "assembly": "ffmpeg concat of Remotion-rendered infographics + MPT footage halves; narration + music mix",
+        "approval_policy": "per-gate"
+      }
+    },
+    "final_review": {
+      "version": "1.0",
+      "output_path": "/home/desktop/Work/OpenMontage/projects/vietnam-indonesia-gdp/renders/final.mp4",
+      "status": "pass",
+      "checks": {
+        "technical_probe": {
+          "valid_container": true,
+          "duration_seconds": 243.063833,
+          "resolution": "1920x1080",
+          "fps": 30.0,
+          "has_audio": true,
+          "codec": "h264",
+          "file_size_bytes": 68231634,
+          "issues": []
+        },
+        "visual_spotcheck": {
+          "frames_sampled": 5,
+          "frame_paths": [
+            "/tmp/opencode/qa_final3_4.png",
+            "/tmp/opencode/qa_final2_20.png",
+            "/tmp/opencode/qa_final2_110.png",
+            "/tmp/opencode/qa_final2_200.png",
+            "/tmp/opencode/qa_final2_239.png"
+          ],
+          "black_frames_detected": false,
+          "broken_overlays": false,
+          "missing_assets": false,
+          "unreadable_text": false,
+          "issues": []
+        },
+        "audio_spotcheck": {
+          "tracks": [
+            "narration_full.mp3",
+            "background.mp3 @ 0.12"
+          ],
+          "mean_volume_note": "[Parsed_volumedetect_0 @ 0x7f2a70001e40] mean_volume: -24.5 dB",
+          "issues": []
+        },
+        "promise_preservation": {
+          "narration_language": "id-ID",
+          "voice": "id-ID-GadisNeural",
+          "all_sections_present": true,
+          "evidence_hierarchy_intact": true,
+          "issues": []
+        },
+        "subtitle_check": {
+          "enabled": false,
+          "note": "No subtitles burned in per user request",
+          "issues": []
+        }
+      },
+      "metadata": {
+        "reviewed_at": "2026-11-17",
+        "notes": "5 frames sampled across intro, middle and ending; output plays cleanly."
+      }
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "review": {
+    "rounds": 1,
+    "findings": []
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0.0,
+    "total_reserved_usd": 0.0,
+    "budget_remaining_usd": 2.0
+  },
+  "metadata": {
+    "note": "FINAL VIDEO RENDERED: 1920x1080, 243s, no subtitles"
+  }
+}

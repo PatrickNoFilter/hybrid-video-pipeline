@@ -1,0 +1,822 @@
+{
+  "version": "1.0",
+  "project_id": "vietnam-indonesia-gdp",
+  "pipeline_type": "hybrid",
+  "stage": "assets",
+  "status": "awaiting_human",
+  "timestamp": "2026-11-17T06:47:42.437534+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "asset_manifest": {
+      "version": "1.0",
+      "assets": [
+        {
+          "id": "narr_s0a",
+          "type": "narration",
+          "path": "assets/audio/sections/s0a.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "s0a",
+          "model": "id-ID-GadisNeural",
+          "duration_seconds": 14.66,
+          "format": "mp3",
+          "voice_performance": {
+            "source_section_id": "s0a",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice": "id-ID-GadisNeural",
+              "rate": "+0%",
+              "volume": "+0%"
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/sections/s7_sample.mp3",
+            "review_notes": "Polite Gadis voice; intro sections included"
+          },
+          "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+        },
+        {
+          "id": "narr_s0b",
+          "type": "narration",
+          "path": "assets/audio/sections/s0b.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "s0b",
+          "model": "id-ID-GadisNeural",
+          "duration_seconds": 7.06,
+          "format": "mp3",
+          "voice_performance": {
+            "source_section_id": "s0b",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice": "id-ID-GadisNeural",
+              "rate": "+0%",
+              "volume": "+0%"
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/sections/s7_sample.mp3",
+            "review_notes": "Polite Gadis voice; intro sections included"
+          },
+          "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+        },
+        {
+          "id": "narr_s1",
+          "type": "narration",
+          "path": "assets/audio/sections/s1.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "s1",
+          "model": "id-ID-GadisNeural",
+          "duration_seconds": 15.19,
+          "format": "mp3",
+          "voice_performance": {
+            "source_section_id": "s1",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice": "id-ID-GadisNeural",
+              "rate": "+0%",
+              "volume": "+0%"
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/sections/s7_sample.mp3",
+            "review_notes": "Polite Gadis voice; intro sections included"
+          },
+          "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+        },
+        {
+          "id": "narr_s2",
+          "type": "narration",
+          "path": "assets/audio/sections/s2.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "s2",
+          "model": "id-ID-GadisNeural",
+          "duration_seconds": 16.75,
+          "format": "mp3",
+          "voice_performance": {
+            "source_section_id": "s2",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice": "id-ID-GadisNeural",
+              "rate": "+0%",
+              "volume": "+0%"
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/sections/s7_sample.mp3",
+            "review_notes": "Polite Gadis voice; intro sections included"
+          },
+          "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+        },
+        {
+          "id": "narr_s3",
+          "type": "narration",
+          "path": "assets/audio/sections/s3.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "s3",
+          "model": "id-ID-GadisNeural",
+          "duration_seconds": 17.54,
+          "format": "mp3",
+          "voice_performance": {
+            "source_section_id": "s3",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice": "id-ID-GadisNeural",
+              "rate": "+0%",
+              "volume": "+0%"
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/sections/s7_sample.mp3",
+            "review_notes": "Polite Gadis voice; intro sections included"
+          },
+          "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+        },
+        {
+          "id": "narr_s4",
+          "type": "narration",
+          "path": "assets/audio/sections/s4.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "s4",
+          "model": "id-ID-GadisNeural",
+          "duration_seconds": 18.34,
+          "format": "mp3",
+          "voice_performance": {
+            "source_section_id": "s4",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice": "id-ID-GadisNeural",
+              "rate": "+0%",
+              "volume": "+0%"
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/sections/s7_sample.mp3",
+            "review_notes": "Polite Gadis voice; intro sections included"
+          },
+          "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+        },
+        {
+          "id": "narr_s5",
+          "type": "narration",
+          "path": "assets/audio/sections/s5.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "s5",
+          "model": "id-ID-GadisNeural",
+          "duration_seconds": 20.3,
+          "format": "mp3",
+          "voice_performance": {
+            "source_section_id": "s5",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice": "id-ID-GadisNeural",
+              "rate": "+0%",
+              "volume": "+0%"
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/sections/s7_sample.mp3",
+            "review_notes": "Polite Gadis voice; intro sections included"
+          },
+          "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+        },
+        {
+          "id": "narr_s6",
+          "type": "narration",
+          "path": "assets/audio/sections/s6.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "s6",
+          "model": "id-ID-GadisNeural",
+          "duration_seconds": 18.7,
+          "format": "mp3",
+          "voice_performance": {
+            "source_section_id": "s6",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice": "id-ID-GadisNeural",
+              "rate": "+0%",
+              "volume": "+0%"
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/sections/s7_sample.mp3",
+            "review_notes": "Polite Gadis voice; intro sections included"
+          },
+          "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+        },
+        {
+          "id": "narr_s7",
+          "type": "narration",
+          "path": "assets/audio/sections/s7.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "s7",
+          "model": "id-ID-GadisNeural",
+          "duration_seconds": 18.14,
+          "format": "mp3",
+          "voice_performance": {
+            "source_section_id": "s7",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice": "id-ID-GadisNeural",
+              "rate": "+0%",
+              "volume": "+0%"
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/sections/s7_sample.mp3",
+            "review_notes": "Polite Gadis voice; intro sections included"
+          },
+          "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+        },
+        {
+          "id": "narr_s8",
+          "type": "narration",
+          "path": "assets/audio/sections/s8.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "s8",
+          "model": "id-ID-GadisNeural",
+          "duration_seconds": 18.41,
+          "format": "mp3",
+          "voice_performance": {
+            "source_section_id": "s8",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice": "id-ID-GadisNeural",
+              "rate": "+0%",
+              "volume": "+0%"
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/sections/s7_sample.mp3",
+            "review_notes": "Polite Gadis voice; intro sections included"
+          },
+          "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+        },
+        {
+          "id": "narr_s9",
+          "type": "narration",
+          "path": "assets/audio/sections/s9.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "s9",
+          "model": "id-ID-GadisNeural",
+          "duration_seconds": 19.3,
+          "format": "mp3",
+          "voice_performance": {
+            "source_section_id": "s9",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice": "id-ID-GadisNeural",
+              "rate": "+0%",
+              "volume": "+0%"
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/sections/s7_sample.mp3",
+            "review_notes": "Polite Gadis voice; intro sections included"
+          },
+          "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+        },
+        {
+          "id": "narr_s10",
+          "type": "narration",
+          "path": "assets/audio/sections/s10.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "s10",
+          "model": "id-ID-GadisNeural",
+          "duration_seconds": 19.94,
+          "format": "mp3",
+          "voice_performance": {
+            "source_section_id": "s10",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice": "id-ID-GadisNeural",
+              "rate": "+0%",
+              "volume": "+0%"
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/sections/s7_sample.mp3",
+            "review_notes": "Polite Gadis voice; intro sections included"
+          },
+          "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+        },
+        {
+          "id": "narr_s11",
+          "type": "narration",
+          "path": "assets/audio/sections/s11.mp3",
+          "source_tool": "edge_tts",
+          "scene_id": "s11",
+          "model": "id-ID-GadisNeural",
+          "duration_seconds": 32.33,
+          "format": "mp3",
+          "voice_performance": {
+            "source_section_id": "s11",
+            "delivery_cues_applied": true,
+            "provider_text_used": true,
+            "provider_settings": {
+              "voice": "id-ID-GadisNeural",
+              "rate": "+0%",
+              "volume": "+0%"
+            },
+            "sample_approved": true,
+            "sample_path": "assets/audio/sections/s7_sample.mp3",
+            "review_notes": "Polite Gadis voice; intro sections included"
+          },
+          "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+        },
+        {
+          "id": "narr_full",
+          "type": "narration",
+          "path": "assets/audio/narration_full.mp3",
+          "source_tool": "ffmpeg",
+          "scene_id": "all",
+          "format": "mp3",
+          "generation_summary": "13 sections + 0.3s gaps + 2s final hold",
+          "duration_seconds": 242.52
+        },
+        {
+          "id": "subs",
+          "type": "subtitle",
+          "path": "assets/subtitles.srt",
+          "source_tool": "custom",
+          "scene_id": "all",
+          "format": "srt",
+          "generation_summary": "36 sentence-level cues"
+        },
+        {
+          "id": "music",
+          "type": "music",
+          "path": "assets/music/background.mp3",
+          "source_tool": "provided",
+          "scene_id": "all",
+          "format": "mp3",
+          "generation_summary": "User track",
+          "duration_seconds": 191.69
+        },
+        {
+          "id": "s0a_graphic",
+          "type": "animation",
+          "path": "assets/video/gfx/s0a.mp4",
+          "source_tool": "video_compose(remotion)",
+          "scene_id": "s0a_graphic",
+          "model": "Remotion 4.0.544",
+          "duration_seconds": 14.67,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "Animated news bulletin with 3 headlines and BREAKING tag, full intro section (no footage half)",
+          "prompt": "Animated news bulletin with 3 headlines and BREAKING tag, full intro section (no footage half)"
+        },
+        {
+          "id": "s0b_graphic",
+          "type": "animation",
+          "path": "assets/video/gfx/s0b.mp4",
+          "source_tool": "video_compose(remotion)",
+          "scene_id": "s0b_graphic",
+          "model": "Remotion 4.0.544",
+          "duration_seconds": 3.53,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "Full title card with source subtitle",
+          "prompt": "Full title card with source subtitle"
+        },
+        {
+          "id": "s0b_footage",
+          "type": "video",
+          "path": "assets/video/mpt_trim/s0b.mp4",
+          "source_tool": "moneyprinterturbo",
+          "scene_id": "s0b_footage",
+          "provider": "Pexels",
+          "duration_seconds": 3.53,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "MPT + Pexels: Vietnam + Indonesia skylines (title intro); trimmed to footage half",
+          "license": "Pexels License"
+        },
+        {
+          "id": "s1_footage",
+          "type": "video",
+          "path": "assets/video/mpt_trim/s1.mp4",
+          "source_tool": "moneyprinterturbo",
+          "scene_id": "s1_footage",
+          "provider": "Pexels",
+          "duration_seconds": 7.6,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "MPT + Pexels: Vietnam - Ho Chi Minh City skyline (hook); trimmed to footage half",
+          "license": "Pexels License"
+        },
+        {
+          "id": "s1_graphic",
+          "type": "animation",
+          "path": "assets/video/gfx/s1.mp4",
+          "source_tool": "video_compose(remotion)",
+          "scene_id": "s1_graphic",
+          "model": "Remotion 4.0.544",
+          "duration_seconds": 7.6,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "Remotion split card: 'VIETNAM: Tumbuhnya SUDAH menyalip INDONESIA' green check vs 'Tapi Ekonominya BELUM' amber question mark",
+          "prompt": "Remotion split card: 'VIETNAM: Tumbuhnya SUDAH menyalip INDONESIA' green check vs 'Tapi Ekonominya BELUM' amber question mark"
+        },
+        {
+          "id": "s2_graphic",
+          "type": "animation",
+          "path": "assets/video/gfx/s2.mp4",
+          "source_tool": "video_compose(remotion)",
+          "scene_id": "s2_graphic",
+          "model": "Remotion 4.0.544",
+          "duration_seconds": 8.37,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "Remotion line chart 2025Q1-Q4: VN 7.05/8.16/8.25/8.46 vs ID ~4.9/~5.1/~5.1/~5.2 with approximate marker",
+          "prompt": "Remotion line chart 2025Q1-Q4: VN 7.05/8.16/8.25/8.46 vs ID ~4.9/~5.1/~5.1/~5.2 with approximate marker"
+        },
+        {
+          "id": "s2_footage",
+          "type": "video",
+          "path": "assets/video/mpt_trim/s2.mp4",
+          "source_tool": "moneyprinterturbo",
+          "scene_id": "s2_footage",
+          "provider": "Pexels",
+          "duration_seconds": 8.37,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "MPT + Pexels: Vietnam - electronics factory (2025 growth); trimmed to footage half",
+          "license": "Pexels License"
+        },
+        {
+          "id": "s3_footage",
+          "type": "video",
+          "path": "assets/video/mpt_trim/s3.mp4",
+          "source_tool": "moneyprinterturbo",
+          "scene_id": "s3_footage",
+          "provider": "Pexels",
+          "duration_seconds": 8.8,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "MPT + Pexels: Vietnam - industrial park / export port (2026 growth); trimmed to footage half",
+          "license": "Pexels License"
+        },
+        {
+          "id": "s3_graphic",
+          "type": "animation",
+          "path": "assets/video/gfx/s3.mp4",
+          "source_tool": "video_compose(remotion)",
+          "scene_id": "s3_graphic",
+          "model": "Remotion 4.0.544",
+          "duration_seconds": 8.77,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "Remotion bar chart 2026Q1-Q3: VN 8.15/8.81/9.95 vs ID 5.61/5.29/5.47 + gap callout 2.2 -> 4.5 points + VN Q1/Q2 revision note",
+          "prompt": "Remotion bar chart 2026Q1-Q3: VN 8.15/8.81/9.95 vs ID 5.61/5.29/5.47 + gap callout 2.2 -> 4.5 points + VN Q1/Q2 revision note"
+        },
+        {
+          "id": "s4_graphic",
+          "type": "animation",
+          "path": "assets/video/gfx/s4.mp4",
+          "source_tool": "video_compose(remotion)",
+          "scene_id": "s4_graphic",
+          "model": "Remotion 4.0.544",
+          "duration_seconds": 9.17,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "Remotion checkmark card: 'GROWTH: 7 of 7 quarters - PROVEN' with 7-quarter line recap",
+          "prompt": "Remotion checkmark card: 'GROWTH: 7 of 7 quarters - PROVEN' with 7-quarter line recap"
+        },
+        {
+          "id": "s4_footage",
+          "type": "video",
+          "path": "assets/video/mpt_trim/s4.mp4",
+          "source_tool": "moneyprinterturbo",
+          "scene_id": "s4_footage",
+          "provider": "Pexels",
+          "duration_seconds": 9.17,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "MPT + Pexels: Indonesia - BPS / government office (source proof); trimmed to footage half",
+          "license": "Pexels License"
+        },
+        {
+          "id": "s5_footage",
+          "type": "video",
+          "path": "assets/video/mpt_trim/s5.mp4",
+          "source_tool": "moneyprinterturbo",
+          "scene_id": "s5_footage",
+          "provider": "Pexels",
+          "duration_seconds": 10.17,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "MPT + Pexels: Indonesia - bank / rupiah exchange (per-capita caveat); trimmed to footage half",
+          "license": "Pexels License"
+        },
+        {
+          "id": "s5_graphic",
+          "type": "animation",
+          "path": "assets/video/gfx/s5.mp4",
+          "source_tool": "video_compose(remotion)",
+          "scene_id": "s5_graphic",
+          "model": "Remotion 4.0.544",
+          "duration_seconds": 10.13,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "Remotion amber caution card: 'NO QUARTERLY PER-CAPITA USD SERIES' + 'Growth != Level'",
+          "prompt": "Remotion amber caution card: 'NO QUARTERLY PER-CAPITA USD SERIES' + 'Growth != Level'"
+        },
+        {
+          "id": "s6_graphic",
+          "type": "animation",
+          "path": "assets/video/gfx/s6.mp4",
+          "source_tool": "video_compose(remotion)",
+          "scene_id": "s6_graphic",
+          "model": "Remotion 4.0.544",
+          "duration_seconds": 9.33,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "Remotion dual stat cards: WB 2025 current USD $5,066 vs $5,060 (DEAD HEAT) | constant 2015 USD $4,308 vs $4,555 (ID +5.7%)",
+          "prompt": "Remotion dual stat cards: WB 2025 current USD $5,066 vs $5,060 (DEAD HEAT) | constant 2015 USD $4,308 vs $4,555 (ID +5.7%)"
+        },
+        {
+          "id": "s6_footage",
+          "type": "video",
+          "path": "assets/video/mpt_trim/s6.mp4",
+          "source_tool": "moneyprinterturbo",
+          "scene_id": "s6_footage",
+          "provider": "Pexels",
+          "duration_seconds": 9.33,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "MPT + Pexels: Indonesia - bank building / financial district (2025 levels); trimmed to footage half",
+          "license": "Pexels License"
+        },
+        {
+          "id": "s7_footage",
+          "type": "video",
+          "path": "assets/video/mpt_trim/s7.mp4",
+          "source_tool": "moneyprinterturbo",
+          "scene_id": "s7_footage",
+          "provider": "Pexels",
+          "duration_seconds": 9.1,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "MPT + Pexels: Vietnam - skyscraper / financial district (IMF projection); trimmed to footage half",
+          "license": "Pexels License"
+        },
+        {
+          "id": "s7_graphic",
+          "type": "animation",
+          "path": "assets/video/gfx/s7.mp4",
+          "source_tool": "video_compose(remotion)",
+          "scene_id": "s7_graphic",
+          "model": "Remotion 4.0.544",
+          "duration_seconds": 9.07,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "Remotion stat card: IMF WEO OCT 2026 / CURRENT USD / VN $5,259 vs ID $5,153 + large amber 'PROYEKSI' badge",
+          "prompt": "Remotion stat card: IMF WEO OCT 2026 / CURRENT USD / VN $5,259 vs ID $5,153 + large amber 'PROYEKSI' badge"
+        },
+        {
+          "id": "s8_footage",
+          "type": "video",
+          "path": "assets/video/mpt_trim/s8.mp4",
+          "source_tool": "moneyprinterturbo",
+          "scene_id": "s8_footage",
+          "provider": "Pexels",
+          "duration_seconds": 9.2,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "MPT + Pexels: Vietnam - electronics factory (growth engine); trimmed to footage half",
+          "license": "Pexels License"
+        },
+        {
+          "id": "s8_graphic",
+          "type": "animation",
+          "path": "assets/video/gfx/s8.mp4",
+          "source_tool": "video_compose(remotion)",
+          "scene_id": "s8_graphic",
+          "model": "Remotion 4.0.544",
+          "duration_seconds": 9.2,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "Remotion sector chart: industry & construction 12.50%, 51.57% of total growth, exports +23.27%, FDI 21.07B USD",
+          "prompt": "Remotion sector chart: industry & construction 12.50%, 51.57% of total growth, exports +23.27%, FDI 21.07B USD"
+        },
+        {
+          "id": "s9_graphic",
+          "type": "animation",
+          "path": "assets/video/gfx/s9.mp4",
+          "source_tool": "video_compose(remotion)",
+          "scene_id": "s9_graphic",
+          "model": "Remotion 4.0.544",
+          "duration_seconds": 9.63,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "Remotion comparison cards: population 101.6M vs 285.7M; IDR +3.9% vs VND ~2-3% depreciation",
+          "prompt": "Remotion comparison cards: population 101.6M vs 285.7M; IDR +3.9% vs VND ~2-3% depreciation"
+        },
+        {
+          "id": "s9_footage",
+          "type": "video",
+          "path": "assets/video/mpt_trim/s9.mp4",
+          "source_tool": "moneyprinterturbo",
+          "scene_id": "s9_footage",
+          "provider": "Pexels",
+          "duration_seconds": 9.63,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "MPT + Pexels: Indonesia - Jakarta crowd / traffic (population & FX); trimmed to footage half",
+          "license": "Pexels License"
+        },
+        {
+          "id": "s10_footage",
+          "type": "video",
+          "path": "assets/video/mpt_trim/s10.mp4",
+          "source_tool": "moneyprinterturbo",
+          "scene_id": "s10_footage",
+          "provider": "Pexels",
+          "duration_seconds": 10.0,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "MPT + Pexels: Indonesia - exchange counter / Jakarta night (sensitivity); trimmed to footage half",
+          "license": "Pexels License"
+        },
+        {
+          "id": "s10_graphic",
+          "type": "animation",
+          "path": "assets/video/gfx/s10.mp4",
+          "source_tool": "video_compose(remotion)",
+          "scene_id": "s10_graphic",
+          "model": "Remotion 4.0.544",
+          "duration_seconds": 9.97,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "Remotion sensitivity gauge: 2.1% gap vs FX swing, label 'PROYEKSI - bisa berubah'",
+          "prompt": "Remotion sensitivity gauge: 2.1% gap vs FX swing, label 'PROYEKSI - bisa berubah'"
+        },
+        {
+          "id": "s11_graphic",
+          "type": "animation",
+          "path": "assets/video/gfx/s11.mp4",
+          "source_tool": "video_compose(remotion)",
+          "scene_id": "s11_graphic",
+          "model": "Remotion 4.0.544",
+          "duration_seconds": 16.17,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "Remotion closing card: 'Tumbuhnya SUDAH | Ekonominya BELUM' + CTA + source line 'Sumber: BPS Indonesia \u00b7 NSO Vietnam \u00b7 Bank Dunia \u00b7 IMF WEO Oktober 2026'",
+          "prompt": "Remotion closing card: 'Tumbuhnya SUDAH | Ekonominya BELUM' + CTA + source line 'Sumber: BPS Indonesia \u00b7 NSO Vietnam \u00b7 Bank Dunia \u00b7 IMF WEO Oktober 2026'"
+        },
+        {
+          "id": "s11_footage",
+          "type": "video",
+          "path": "assets/video/mpt_trim/s11.mp4",
+          "source_tool": "moneyprinterturbo",
+          "scene_id": "s11_footage",
+          "provider": "Pexels",
+          "duration_seconds": 16.13,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "generation_summary": "MPT + Pexels: Both - Jakarta night + Vietnam city lights (conclusion); trimmed to footage half",
+          "license": "Pexels License"
+        }
+      ],
+      "total_cost_usd": 0.0,
+      "metadata": {
+        "style_playbook": "flat-motion-graphics",
+        "shared_support_assets": [
+          "news bulletin card",
+          "title card",
+          "subtitle treatment",
+          "stat-card system",
+          "PROYEKSI badge",
+          "source credit line"
+        ],
+        "scene_asset_index": {
+          "s0a_graphic": [
+            "s0a_graphic"
+          ],
+          "s0b_graphic": [
+            "s0b_graphic"
+          ],
+          "s0b_footage": [
+            "s0b_footage"
+          ],
+          "s1_footage": [
+            "s1_footage"
+          ],
+          "s1_graphic": [
+            "s1_graphic"
+          ],
+          "s2_graphic": [
+            "s2_graphic"
+          ],
+          "s2_footage": [
+            "s2_footage"
+          ],
+          "s3_footage": [
+            "s3_footage"
+          ],
+          "s3_graphic": [
+            "s3_graphic"
+          ],
+          "s4_graphic": [
+            "s4_graphic"
+          ],
+          "s4_footage": [
+            "s4_footage"
+          ],
+          "s5_footage": [
+            "s5_footage"
+          ],
+          "s5_graphic": [
+            "s5_graphic"
+          ],
+          "s6_graphic": [
+            "s6_graphic"
+          ],
+          "s6_footage": [
+            "s6_footage"
+          ],
+          "s7_footage": [
+            "s7_footage"
+          ],
+          "s7_graphic": [
+            "s7_graphic"
+          ],
+          "s8_footage": [
+            "s8_footage"
+          ],
+          "s8_graphic": [
+            "s8_graphic"
+          ],
+          "s9_graphic": [
+            "s9_graphic"
+          ],
+          "s9_footage": [
+            "s9_footage"
+          ],
+          "s10_footage": [
+            "s10_footage"
+          ],
+          "s10_graphic": [
+            "s10_graphic"
+          ],
+          "s11_graphic": [
+            "s11_graphic"
+          ],
+          "s11_footage": [
+            "s11_footage"
+          ]
+        },
+        "source_vs_generated_map": {
+          "source": [
+            "MPT/Pexels mixed Vietnam+Indonesia footage",
+            "user music"
+          ],
+          "generated": [
+            "Edge TTS narration",
+            "Remotion infographics",
+            "SRT"
+          ]
+        },
+        "scene_footage_map": {
+          "s0a": "News studio broadcast (intro headlines)",
+          "s0b": "Vietnam + Indonesia skylines (title intro)",
+          "s1": "Vietnam - Ho Chi Minh City skyline (hook)",
+          "s2": "Vietnam - electronics factory (2025 growth)",
+          "s3": "Vietnam - industrial park / export port (2026 growth)",
+          "s4": "Indonesia - BPS / government office (source proof)",
+          "s5": "Indonesia - bank / rupiah exchange (per-capita caveat)",
+          "s6": "Indonesia - bank building / financial district (2025 levels)",
+          "s7": "Vietnam - skyscraper / financial district (IMF projection)",
+          "s8": "Vietnam - electronics factory (growth engine)",
+          "s9": "Indonesia - Jakarta crowd / traffic (population & FX)",
+          "s10": "Indonesia - exchange counter / Jakarta night (sensitivity)",
+          "s11": "Both - Jakarta night + Vietnam city lights (conclusion)"
+        },
+        "voice": "id-ID-GadisNeural",
+        "render_runtime": "remotion",
+        "note": "News-headline intro + title intro added; footage mixes Vietnam and Indonesia matched to narration; total 242.26s."
+      }
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "review": {
+    "rounds": 5,
+    "findings": [
+      {
+        "severity": "suggestion",
+        "issue": "Intro footage removed",
+        "resolution": "s0a now full-length news headline infographic; all other sections unchanged"
+      }
+    ],
+    "critical_fixed": 0
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0.0,
+    "total_reserved_usd": 0.0,
+    "budget_remaining_usd": 2.0
+  },
+  "metadata": {
+    "note": "Assets awaiting approval: s0a infographic-only intro, mixed VN/ID footage elsewhere, 41 assets"
+  }
+}

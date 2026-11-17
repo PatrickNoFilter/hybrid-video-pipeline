@@ -1,0 +1,486 @@
+{
+  "version": "1.0",
+  "project_id": "vietnam-indonesia-gdp",
+  "pipeline_type": "hybrid",
+  "stage": "idea",
+  "status": "awaiting_human",
+  "timestamp": "2026-11-17T03:48:22.953233+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "brief": {
+      "version": "1.0",
+      "title": "Tujuh Triwulan: Vietnam Menyalip Indonesia?",
+      "hook": "Tujuh triwulan berturut-turut Vietnam tumbuh lebih cepat dari Indonesia. Tapi apakah angka IMF benar-benar membuktikan Vietnam sudah menyalip?",
+      "key_points": [
+        "Fokus hanya 2025-2026. Bukunya adalah data triwulan dari BPS (Indonesia) dan NSO/Vietnam \u2014 bukan tren 10 tahun.",
+        "2025: Vietnam 7,05% -> 8,16% -> 8,25% -> 8,46%; Indonesia 4,87% -> 5,12% -> 5,04% -> 5,20%.",
+        "2026: Vietnam 8,15% -> 8,81% -> 9,95%; Indonesia 5,61% -> 5,29% -> 5,47%.",
+        "Selisih pertumbuhan melebar: dari ~2,2 poin di Q1 2025 menjadi ~4,5 poin di Q3 2026.",
+        "Data riil PDB per kapita: Bank Dunia 2025 Vietnam $5.066 vs Indonesia $5.060 \u2014 selisih $6, praktis imbang.",
+        "IMF 2026 ($5.260 vs $5.153) adalah PROYEKSI, bukan hasil ukur. Selaras dengan tren, tapi bukan bukti \u2014 ditampilkan berlabel 'proyeksi'.",
+        "Data direvisi: Q1/Q2 2026 Vietnam naik dari 7,83%/8,39% menjadi 8,15%/8,81% pada rilis Q3 2026.",
+        "Kesimpulan: Vietnam benar-benar mengejar lewat tujuh triwulan pertumbuhan, tapi keunggulan per kapitanya masih tipis dan sensitif terhadap kurs."
+      ],
+      "core_message": "Bukti utamanya bukan satu angka IMF, melainkan tujuh triwulan data BPS dan NSO: Vietnam konsisten tumbuh lebih cepat, dan itulah yang membuat PDB per kapitanya kini setara dengan Indonesia.",
+      "cta": "Cek sendiri angka BPS dan NSO di layar \u2014 semuanya data 2025-2026.",
+      "tone": "Informatif, berbasis bukti, hati-hati dalam klaim, Bahasa Indonesia percakapan",
+      "style": "flat-motion-graphics",
+      "target_audience": "Pemirsa Indonesia yang tertarik ekonomi Asia Tenggara dan ingin melihat datanya, bukan sekadarnarasi",
+      "target_platform": "youtube",
+      "target_duration_seconds": 70,
+      "reference_material": [
+        "https://www.nso.gov.vn/en/data-and-statistics/2026/01/press-release-social-economic-situation-in-the-fourth-quarter-and-2025/",
+        "https://www.nso.gov.vn/en/data-and-statistics/2026/11/press-release-socio-economic-performance-in-the-q3-and-the-nine-months-of-2026/",
+        "https://www.nso.gov.vn/en/data-and-statistics/2026/08/press-release-socio-economic-performance-in-the-q2-and-in-the-first-half-of-2026/",
+        "https://tradingeconomics.com/indonesia/gdp-growth-annual (source: Statistics Indonesia / BPS)",
+        "https://countryeconomy.com/gdp/indonesia?year=2025",
+        "/home/desktop/Work/MoneyPrinterTurbo/storage/local_videos/hanoi.mp4",
+        "/home/desktop/Work/MoneyPrinterTurbo/storage/local_videos/saigon.mp4",
+        "/home/desktop/Music/Background music News Investigating.mp3"
+      ],
+      "angle_options": [
+        {
+          "name": "Data-detective",
+          "description": "Hook dengan klaim IMF, lalu turunkan ke bukti triwulan BPS/NSO dan peringkat kepercayaan tiap sumber."
+        },
+        {
+          "name": "Quarter-by-quarter race",
+          "description": "Langsung adu grafik tujuh triwulan, tanpa membahas validitas sumber."
+        }
+      ],
+      "selected_angle": "Data-detective",
+      "metadata": {
+        "anchor_medium": "broll_footage",
+        "source_inventory": {
+          "real_footage": [
+            "hanoi.mp4",
+            "saigon.mp4",
+            "hoian.mp4",
+            "halong.mp4"
+          ],
+          "stock_source": "MoneyPrinterTurbo + Pexels API key (configured)",
+          "music": "/home/desktop/Music/Background music News Investigating.mp3",
+          "narration_voice": "id-ID-GadisNeural (Edge TTS via MoneyPrinterTurbo)"
+        },
+        "support_layers": [
+          "stat_card",
+          "bar_chart",
+          "line_chart",
+          "comparison",
+          "subtitles",
+          "music"
+        ],
+        "deliverable_mix": [
+          "hero cut 16:9"
+        ],
+        "missing_capabilities": [
+          "OpenMontage TTS 0/19 configured - narration from MoneyPrinterTurbo Edge TTS",
+          "OpenMontage video_generation 0/35 - real footage from MoneyPrinterTurbo Pexels/local",
+          "OpenMontage image_generation 0/31 - not needed; Remotion draws infographics"
+        ],
+        "fallback_policy": "If Pexels fails, use the four local Vietnam clips. If Remotion render fails, surface a blocker (no silent FFmpeg static-card downgrade).",
+        "render_runtime": "remotion",
+        "composition_mode": "templated",
+        "visual_router": {
+          "pattern": "per_scene_alternating_halves",
+          "description": "Every scene uses BOTH tools: first ~50% MoneyPrinterTurbo real footage, second ~50% Remotion animated infographic (order alternates across scenes). Continuous Gadis narration + subtitles, 0.3s crossfade at midpoint.",
+          "money_turbo_real_video": {
+            "share": "one half of EVERY scene (~3-4s)",
+            "content": [
+              "lini perakitan elektronik / Samsung Vietnam",
+              "Hanoi & Saigon street life",
+              "rupiah / pasar Indonesia",
+              "pelabuhan ekspor & kargo"
+            ]
+          },
+          "open_montage_infographic": {
+            "share": "the other half of EVERY scene (~3-4s)",
+            "content": [
+              "line chart 7 triwulan 2025Q1-2026Q3 Vietnam vs Indonesia",
+              "bar chart per triwulan: 7.05/8.16/8.25/8.46/8.15/8.81/9.95 vs 4.87/5.12/5.04/5.20/5.61/5.29/5.47",
+              "gap callout 2.2 poin -> 4.5 poin",
+              "stat card Bank Dunia 2025 $5,066 vs $5,060",
+              "stat card IMF 2026 $5,260 vs $5,153 (label: PROYEKSI)"
+            ]
+          }
+        },
+        "data_scope": "2025-2026 quarterly only (BPS + Vietnam NSO); annual per-capita 2025 WB / 2026 IMF as labeled context",
+        "data_manifest": "artifacts/data_manifest.json",
+        "data_hierarchy": [
+          "1. BPS + Vietnam NSO quarterly actuals - PRIMARY PROOF",
+          "2. World Bank 2025 per-capita - observed context (dead heat)",
+          "3. IMF 2026 per-capita - projection only, must be labeled 'proyeksi'",
+          "4. UN 2024 - excluded (outside 2025-2026 scope)"
+        ],
+        "label_rules": [
+          "Every IMF number on screen and in voice must carry the word 'proyeksi'",
+          "Indonesia 2025 quarterly figures rounded to 1 decimal -> show '~' approximate marker",
+          "Show revision note for Vietnam Q1/Q2 2026 (latest vintage used)"
+        ],
+        "source_to_support_ratio": "50/50 alternating within every scene",
+        "max_concurrent_overlays": 2
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "vietnam-indonesia-gdp",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "idea",
+          "category": "pipeline_selection",
+          "subject": "Pipeline for hybrid real-footage + infographic brief",
+          "options_considered": [
+            {
+              "option_id": "hybrid",
+              "label": "hybrid",
+              "score": 0.95,
+              "reason": "Built for source footage plus support graphics"
+            },
+            {
+              "option_id": "animated-explainer",
+              "label": "animated-explainer",
+              "score": 0.6,
+              "reason": "All-generated; loses real footage",
+              "rejected_because": "No real-video anchor"
+            },
+            {
+              "option_id": "documentary-montage",
+              "label": "documentary-montage",
+              "score": 0.5,
+              "reason": "Footage-led but weak chart support",
+              "rejected_because": "Beta + infographic-led beats need charts"
+            }
+          ],
+          "selected": "hybrid",
+          "reason": "Brief explicitly mixes real footage with data infographics.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "idea",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.95,
+              "reason": "Native stat_card/bar_chart/line_chart scene types; composes video clips + React overlays in one pass"
+            },
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.7,
+              "reason": "HTML/CSS/GSAP kinetic typography",
+              "rejected_because": "Weaker native chart primitives for this data-heavy brief"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.4,
+              "reason": "Reliable cuts/concat",
+              "rejected_because": "Would degrade infographics to static cards"
+            }
+          ],
+          "selected": "remotion",
+          "reason": "User approved Remotion; best fit for animated data infographics.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "idea",
+          "category": "voice_selection",
+          "subject": "Indonesian narration voice",
+          "options_considered": [
+            {
+              "option_id": "edge-gadis",
+              "label": "Edge TTS id-ID-GadisNeural",
+              "score": 0.98,
+              "reason": "User requested 'edge gadis indonesian'; installed, free, no key"
+            },
+            {
+              "option_id": "edge-ardi",
+              "label": "Edge TTS id-ID-ArdiNeural",
+              "score": 0.6,
+              "reason": "Male Indonesian alternative",
+              "rejected_because": "User requested female Gadis"
+            },
+            {
+              "option_id": "om-tts",
+              "label": "OpenMontage TTS provider",
+              "score": 0.1,
+              "reason": "0/19 configured",
+              "rejected_because": "Not available on this machine"
+            }
+          ],
+          "selected": "edge-gadis",
+          "reason": "Exact match to user request, available via MoneyPrinterTurbo.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "idea",
+          "category": "capability_extension",
+          "subject": "Source of real-video segments",
+          "options_considered": [
+            {
+              "option_id": "mpt",
+              "label": "MoneyPrinterTurbo (Pexels + local clips)",
+              "score": 0.95,
+              "reason": "Pexels key configured; four local Vietnam clips on disk"
+            },
+            {
+              "option_id": "om-video",
+              "label": "OpenMontage video_generation",
+              "score": 0.05,
+              "reason": "0/35 configured",
+              "rejected_because": "No provider configured"
+            }
+          ],
+          "selected": "mpt",
+          "reason": "Working free path to real footage via the user's requested MoneyPrinterTurbo tool.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "idea",
+          "category": "music_source",
+          "subject": "Background music",
+          "options_considered": [
+            {
+              "option_id": "user-track",
+              "label": "/home/desktop/Music/Background music News Investigating.mp3",
+              "score": 0.95,
+              "reason": "User supplied exact path"
+            },
+            {
+              "option_id": "none",
+              "label": "No music",
+              "score": 0.5,
+              "reason": "Clean mix",
+              "rejected_because": "User chose a track"
+            },
+            {
+              "option_id": "search",
+              "label": "Music-search tool",
+              "score": 0.4,
+              "reason": "Royalty-free search",
+              "rejected_because": "User supplied their own"
+            }
+          ],
+          "selected": "user-track",
+          "reason": "User provided a specific music file; will be copied into the project and mixed at low volume.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "idea",
+          "category": "approval_policy",
+          "subject": "Human gate policy",
+          "options_considered": [
+            {
+              "option_id": "per-gate",
+              "label": "Stop at each gate",
+              "score": 0.95,
+              "reason": "User explicitly chose review at each gate"
+            },
+            {
+              "option_id": "preauth",
+              "label": "Pre-authorize full run",
+              "score": 0.5,
+              "reason": "Faster",
+              "rejected_because": "User declined full pre-authorization"
+            }
+          ],
+          "selected": "per-gate",
+          "reason": "User selected 'Approve, but stop at each gate'.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "idea",
+          "category": "composition_mode",
+          "subject": "Remotion authoring mode",
+          "options_considered": [
+            {
+              "option_id": "templated",
+              "label": "Templated scene types",
+              "score": 0.85,
+              "reason": "stat_card/bar_chart/line_chart are purpose-built for this data explainer; fast and reliable"
+            },
+            {
+              "option_id": "atelier",
+              "label": "Atelier hand-authored",
+              "score": 0.55,
+              "reason": "Bespoke visual language",
+              "rejected_because": "Overkill for a short data explainer; user did not request hero branding"
+            }
+          ],
+          "selected": "templated",
+          "reason": "Data explainer benefits from proven chart components; surfaced here for user objection at the gate.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "idea",
+          "category": "composition_mode",
+          "subject": "Real-video vs infographic share within each scene",
+          "options_considered": [
+            {
+              "option_id": "split-50-50",
+              "label": "50/50 split-screen in every scene",
+              "score": 0.98,
+              "reason": "User explicitly requested both tools have half share in every scene; narration can point to footage and numbers at once"
+            },
+            {
+              "option_id": "segment-router",
+              "label": "Whole scene assigned to one tool",
+              "score": 0.45,
+              "reason": "Previously logged approach in brief metadata",
+              "rejected_because": "User said it looks like only Remotion is used and asked for half share in every scene"
+            }
+          ],
+          "selected": "split-50-50",
+          "reason": "User feedback at the idea gate: MoneyPrinterTurbo real video must appear in every scene at roughly 50% share alongside the Remotion infographic.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "idea",
+          "category": "composition_mode",
+          "subject": "Real-video vs infographic share within each scene",
+          "options_considered": [
+            {
+              "option_id": "split-alternating",
+              "label": "Alternating halves within every scene",
+              "score": 0.99,
+              "reason": "User explicitly chose this: first half MPT real footage, second half Remotion infographic, alternating order across scenes"
+            },
+            {
+              "option_id": "split-50-50",
+              "label": "Side-by-side split-screen in every scene",
+              "score": 0.5,
+              "reason": "Previous revision, d-008",
+              "rejected_because": "User chose alternating halves within each scene instead of simultaneous side-by-side"
+            },
+            {
+              "option_id": "segment-router",
+              "label": "Whole scene assigned to one tool",
+              "score": 0.3,
+              "reason": "Original approach",
+              "rejected_because": "User wanted both tools represented in every scene"
+            }
+          ],
+          "selected": "split-alternating",
+          "reason": "User feedback at the idea gate: alternate the two tools within each scene rather than showing them side by side.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.99
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "idea",
+          "category": "concept_selection",
+          "subject": "Data scope and primary sources",
+          "options_considered": [
+            {
+              "option_id": "q2025-2026",
+              "label": "2025-2026 quarterly BPS + Vietnam NSO",
+              "score": 0.98,
+              "reason": "User explicitly requested only 2025-2026 data, every quarter, from BPS and Vietnam data"
+            },
+            {
+              "option_id": "annual-2015-2025",
+              "label": "2015-2025 annual trend + IMF/WB/UN",
+              "score": 0.25,
+              "reason": "Previous brief scope",
+              "rejected_because": "User asked to restrict to 2025-2026 and use quarterly BPS/Vietnam data"
+            }
+          ],
+          "selected": "q2025-2026",
+          "reason": "User feedback at the idea gate: use only 2025-2026, with quarterly figures from BPS (Indonesia) and Vietnam's NSO/GSO.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.97
+        },
+        {
+          "decision_id": "d-011",
+          "stage": "idea",
+          "category": "visual_accuracy_check",
+          "subject": "IMF projection labeling in narration",
+          "options_considered": [
+            {
+              "option_id": "labeled-context",
+              "label": "IMF as clearly labeled projection/context",
+              "score": 0.95,
+              "reason": "Directionally consistent with BPS/NSO trend but model-based; user asked whether IMF is valid"
+            },
+            {
+              "option_id": "primary-proof",
+              "label": "IMF as primary proof of overtaking",
+              "score": 0.2,
+              "reason": "Would overstate a 2.1% forecast gap",
+              "rejected_because": "IMF 2026 is a forecast, not observed data; gap is within forecast error"
+            },
+            {
+              "option_id": "drop-imf",
+              "label": "Remove IMF entirely",
+              "score": 0.6,
+              "reason": "Simplest, fully actual-data video",
+              "rejected_because": "User only asked about validity, not removal; useful as labeled context"
+            }
+          ],
+          "selected": "labeled-context",
+          "reason": "Resolved the user's validity question: BPS/NSO actuals are the proof; IMF appears only as a clearly labeled 2026 projection.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        }
+      ]
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "review": {
+    "rounds": 5,
+    "findings": [
+      {
+        "severity": "suggestion",
+        "issue": "Brief rewritten to make evidence hierarchy explicit",
+        "resolution": "data_hierarchy + label_rules added to metadata"
+      },
+      {
+        "severity": "nitpick",
+        "issue": "IMF labeled as projection in both visuals and voice",
+        "resolution": "Enforced via label_rules; script gate will verify"
+      }
+    ],
+    "critical_fixed": 0
+  },
+  "cost_snapshot": {
+    "total_spent_usd": 0.0,
+    "total_reserved_usd": 0.0,
+    "budget_remaining_usd": 2.0
+  },
+  "metadata": {
+    "note": "Brief REWRITTEN from all findings; awaiting approval before script stage"
+  }
+}
