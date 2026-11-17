@@ -335,12 +335,12 @@
     {
       "id": "music",
       "type": "music",
-      "path": "assets/music/background.mp3",
+      "path": "assets/music/background_loop.mp3",
       "source_tool": "provided",
       "scene_id": "all",
       "format": "mp3",
-      "generation_summary": "User track",
-      "duration_seconds": 191.69
+      "generation_summary": "User-provided track looped with a 4s crossfade at the seam to cover the full 243s video",
+      "duration_seconds": 243.06
     },
     {
       "id": "s0a_graphic",
@@ -784,6 +784,6 @@
     },
     "voice": "id-ID-GadisNeural",
     "render_runtime": "remotion",
-    "note": "News-headline intro + title intro added; footage mixes Vietnam and Indonesia matched to narration; total 242.26s."
+    "note": "Music looped (4s crossfade) so it plays to the end; no subtitles burned in."
   }
 }

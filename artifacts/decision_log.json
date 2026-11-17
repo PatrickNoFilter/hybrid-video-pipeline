@@ -648,6 +648,58 @@
       "user_visible": true,
       "user_approved": true,
       "confidence": 0.99
+    },
+    {
+      "decision_id": "d-024",
+      "stage": "compose",
+      "category": "music_source",
+      "subject": "Background music loop",
+      "options_considered": [
+        {
+          "option_id": "crossfade-loop",
+          "label": "Loop track with 4s crossfade",
+          "score": 0.98,
+          "reason": "Music (191.7s) ended before the 243s video; seamless re-entry at the seam"
+        },
+        {
+          "option_id": "let-it-stop",
+          "label": "Keep original track ending early",
+          "score": 0.2,
+          "reason": "Previous output",
+          "rejected_because": "User said music stopped before the end"
+        }
+      ],
+      "selected": "crossfade-loop",
+      "reason": "User requested the music play again with a smooth transition.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
+    },
+    {
+      "decision_id": "d-024",
+      "stage": "compose",
+      "category": "music_source",
+      "subject": "Background music loop",
+      "options_considered": [
+        {
+          "option_id": "crossfade-loop",
+          "label": "Loop track with 4s crossfade",
+          "score": 0.98,
+          "reason": "Music (191.7s) ended before the 243s video; seamless re-entry at the seam"
+        },
+        {
+          "option_id": "let-it-stop",
+          "label": "Keep original track ending early",
+          "score": 0.2,
+          "reason": "Previous output",
+          "rejected_because": "User said music stopped before the end"
+        }
+      ],
+      "selected": "crossfade-loop",
+      "reason": "User requested the music play again with a smooth transition.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
     }
   ]
 }

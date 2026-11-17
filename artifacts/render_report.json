@@ -18,7 +18,7 @@
   ],
   "verification_notes": [
     "ffprobe: h264 1920x1080 30fps + aac stereo",
-    "duration 243.063833s vs script 242.26s",
+    "duration 243.06s; music looped with 4s crossfade and audible through the final 4s (tail volumedetect mean -34.8 dB)",
     "5 visual spot-check frames inspected",
     "no subtitles burned in"
   ],
