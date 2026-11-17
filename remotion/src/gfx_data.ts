@@ -2,9 +2,9 @@ export type GfxComp = { id: string; frames: number; section: string; description
 export const COMPS: GfxComp[] = [
   {
     "id": "gfx-s0a",
-    "frames": 220,
+    "frames": 440,
     "section": "s0a",
-    "description": "Animated news bulletin with 3 headlines and BREAKING tag"
+    "description": "Animated news bulletin with 3 headlines and BREAKING tag, full intro section (no footage half)"
   },
   {
     "id": "gfx-s0b",

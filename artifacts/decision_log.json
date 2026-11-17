@@ -544,6 +544,84 @@
       "user_visible": true,
       "user_approved": true,
       "confidence": 0.95
+    },
+    {
+      "decision_id": "d-021",
+      "stage": "assets",
+      "category": "capability_extension",
+      "subject": "Source of real-video segments",
+      "options_considered": [
+        {
+          "option_id": "mixed-vn-id",
+          "label": "Mixed Vietnam + Indonesia footage matched to narration, plus intro",
+          "score": 0.99,
+          "reason": "Vietnam skyline/factory/port for growth beats; Indonesia BPS/bank/rupiah/crowd for level and FX beats; newsroom + skylines for intro"
+        },
+        {
+          "option_id": "diverse-vn-only",
+          "label": "Diverse Vietnam-only footage",
+          "score": 0.5,
+          "reason": "Previous pass",
+          "rejected_because": "User asked to combine with Indonesian videos based on narration"
+        }
+      ],
+      "selected": "mixed-vn-id",
+      "reason": "User requested Indonesian footage mixed in, matched to narration; intro sections added too.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
+    },
+    {
+      "decision_id": "d-022",
+      "stage": "assets",
+      "category": "composition_mode",
+      "subject": "Real-video vs infographic share within each scene",
+      "options_considered": [
+        {
+          "option_id": "intro-graphic-only",
+          "label": "s0a news intro infographic-only",
+          "score": 0.98,
+          "reason": "User asked to delete the real video at the beginning (s0a footage); headline card fills the full intro"
+        },
+        {
+          "option_id": "alternating",
+          "label": "Keep 50/50 footage + infographic in s0a",
+          "score": 0.5,
+          "reason": "Previous rule",
+          "rejected_because": "User asked to remove the intro footage"
+        }
+      ],
+      "selected": "intro-graphic-only",
+      "reason": "Explicit user request; exception applies to s0a only, all other sections stay alternating.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
+    },
+    {
+      "decision_id": "d-021",
+      "stage": "assets",
+      "category": "capability_extension",
+      "subject": "Source of real-video segments",
+      "options_considered": [
+        {
+          "option_id": "mixed-vn-id",
+          "label": "Mixed Vietnam + Indonesia footage matched to narration, plus intro",
+          "score": 0.99,
+          "reason": "Vietnam skyline/factory/port for growth beats; Indonesia BPS/bank/rupiah/crowd for level and FX beats; newsroom + skylines for intro"
+        },
+        {
+          "option_id": "diverse-vn-only",
+          "label": "Diverse Vietnam-only footage",
+          "score": 0.5,
+          "reason": "Previous pass",
+          "rejected_because": "User asked to combine with Indonesian videos based on narration"
+        }
+      ],
+      "selected": "mixed-vn-id",
+      "reason": "User requested Indonesian footage mixed in, matched to narration; intro sections added too.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.99
     }
   ]
 }

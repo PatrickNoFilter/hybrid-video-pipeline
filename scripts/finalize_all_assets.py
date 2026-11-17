@@ -15,7 +15,9 @@ def dur(p):
     except: return 0.0
 
 for s in script['sections']:
-    sid=s['id']; a,b=s['start_seconds'],s['end_seconds']; mid=round((a+b)/2,2)
+    sid=s['id']
+    if order.get(sid)=='infographic_only': continue
+    a,b=s['start_seconds'],s['end_seconds']; mid=round((a+b)/2,2)
     fo,to=(a,mid) if order[sid]=='footage_first' else (mid,b)
     off=round(fo-a,2); d=round(to-fo,2)
     subprocess.run(['ffmpeg','-y','-v','error','-ss',str(off),'-i',str(src/f'{sid}.mp4'),'-t',str(d),
@@ -43,9 +45,11 @@ for sid,path,typ,tool,summary in [
   ("narr_full","assets/audio/narration_full.mp3","narration","ffmpeg","13 sections + 0.3s gaps + 2s final hold"),
   ("subs","assets/subtitles.srt","subtitle","custom","36 sentence-level cues"),
   ("music","assets/music/background.mp3","music","provided","User track")]:
-    assets.append({"id":sid,"type":typ,"path":path,"source_tool":tool,"scene_id":"all",
-      "duration_seconds":dur(PD/path) if path.endswith('.mp3') else None,"format":path.split('.')[-1],
-      "generation_summary":summary})
+    a={"id":sid,"type":typ,"path":path,"source_tool":tool,"scene_id":"all",
+       "format":path.split('.')[-1],"generation_summary":summary}
+    d=dur(PD/path) if path.endswith(('.mp3','.mp4')) else None
+    if d is not None: a["duration_seconds"]=d
+    assets.append(a)
 plan=json.load(open(PD/'artifacts/scene_plan.json'))
 for sc in plan['scenes']:
     section=sc['script_section_id']; sid=sc['id']

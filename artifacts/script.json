@@ -18,7 +18,7 @@
   "sections": [
     {
       "id": "s0a",
-      "label": "News headlines cold open",
+      "label": "News headlines cold open (infographic only)",
       "text": "Liputan ekonomi Asia. IMF memproyeksikan PDB per kapita Vietnam menyalip Indonesia pada tahun dua ribu dua puluh enam. Namun, data aktualnya masih sangat ketat.",
       "start_seconds": 0.0,
       "end_seconds": 14.66,
@@ -37,14 +37,9 @@
       },
       "enhancement_cues": [
         {
-          "type": "broll",
-          "description": "MoneyPrinterTurbo real footage: news studio broadcast / newsroom screens",
-          "timestamp_seconds": 0.0
-        },
-        {
           "type": "stat_card",
-          "description": "OpenMontage Remotion infographic: Animated news bulletin: 3 headlines - 'IMF: Vietnam GDP per capita to pass Indonesia in 2026', 'Vietnam Q3 2026 growth 9.95% (NSO)', 'Indonesia stays near 5% (BPS)' with BREAKING tag and source ticker",
-          "timestamp_seconds": 7.33
+          "description": "Animated news bulletin: 3 headlines - 'IMF: Vietnam GDP per capita to pass Indonesia in 2026', 'Vietnam Q3 2026 growth 9.95% (NSO)', 'Indonesia stays near 5% (BPS)' with BREAKING tag and source ticker",
+          "timestamp_seconds": 0.0
         }
       ],
       "pronunciation_guides": [
@@ -661,15 +656,15 @@
       "s11"
     ],
     "required_support_assets": [
-      "MPT footage: s0a newsroom broadcast, s0b VN+ID skylines",
+      "Remotion news headline card fills entire s0a (no footage)",
       "Remotion: s0a news headline bulletin, s0b title card",
       "Remotion infographic per scene: s1 split card, s2 2025 line chart, s3 2026 bars + gap, s4 proof checkmark, s5 caution card, s6 dual-basis stat cards, s7 IMF projection card, s8 sector chart, s9 population/FX cards, s10 sensitivity gauge, s11 closing card"
     ],
     "visual_plan": [
       {
         "scene": "s0a",
-        "order": "footage_first",
-        "crossfade_at_seconds": 7.33
+        "order": "infographic_only",
+        "crossfade_at_seconds": 0.0
       },
       {
         "scene": "s0b",

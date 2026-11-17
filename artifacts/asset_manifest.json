@@ -2,6 +2,54 @@
   "version": "1.0",
   "assets": [
     {
+      "id": "narr_s0a",
+      "type": "narration",
+      "path": "assets/audio/sections/s0a.mp3",
+      "source_tool": "edge_tts",
+      "scene_id": "s0a",
+      "model": "id-ID-GadisNeural",
+      "duration_seconds": 14.66,
+      "format": "mp3",
+      "voice_performance": {
+        "source_section_id": "s0a",
+        "delivery_cues_applied": true,
+        "provider_text_used": true,
+        "provider_settings": {
+          "voice": "id-ID-GadisNeural",
+          "rate": "+0%",
+          "volume": "+0%"
+        },
+        "sample_approved": true,
+        "sample_path": "assets/audio/sections/s7_sample.mp3",
+        "review_notes": "Polite Gadis voice; intro sections included"
+      },
+      "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+    },
+    {
+      "id": "narr_s0b",
+      "type": "narration",
+      "path": "assets/audio/sections/s0b.mp3",
+      "source_tool": "edge_tts",
+      "scene_id": "s0b",
+      "model": "id-ID-GadisNeural",
+      "duration_seconds": 7.06,
+      "format": "mp3",
+      "voice_performance": {
+        "source_section_id": "s0b",
+        "delivery_cues_applied": true,
+        "provider_text_used": true,
+        "provider_settings": {
+          "voice": "id-ID-GadisNeural",
+          "rate": "+0%",
+          "volume": "+0%"
+        },
+        "sample_approved": true,
+        "sample_path": "assets/audio/sections/s7_sample.mp3",
+        "review_notes": "Polite Gadis voice; intro sections included"
+      },
+      "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
+    },
+    {
       "id": "narr_s1",
       "type": "narration",
       "path": "assets/audio/sections/s1.mp3",
@@ -21,7 +69,7 @@
         },
         "sample_approved": true,
         "sample_path": "assets/audio/sections/s7_sample.mp3",
-        "review_notes": "Sample verified before batch; polite register, numbers spelled out"
+        "review_notes": "Polite Gadis voice; intro sections included"
       },
       "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
     },
@@ -45,7 +93,7 @@
         },
         "sample_approved": true,
         "sample_path": "assets/audio/sections/s7_sample.mp3",
-        "review_notes": "Sample verified before batch; polite register, numbers spelled out"
+        "review_notes": "Polite Gadis voice; intro sections included"
       },
       "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
     },
@@ -69,7 +117,7 @@
         },
         "sample_approved": true,
         "sample_path": "assets/audio/sections/s7_sample.mp3",
-        "review_notes": "Sample verified before batch; polite register, numbers spelled out"
+        "review_notes": "Polite Gadis voice; intro sections included"
       },
       "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
     },
@@ -93,7 +141,7 @@
         },
         "sample_approved": true,
         "sample_path": "assets/audio/sections/s7_sample.mp3",
-        "review_notes": "Sample verified before batch; polite register, numbers spelled out"
+        "review_notes": "Polite Gadis voice; intro sections included"
       },
       "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
     },
@@ -117,7 +165,7 @@
         },
         "sample_approved": true,
         "sample_path": "assets/audio/sections/s7_sample.mp3",
-        "review_notes": "Sample verified before batch; polite register, numbers spelled out"
+        "review_notes": "Polite Gadis voice; intro sections included"
       },
       "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
     },
@@ -141,7 +189,7 @@
         },
         "sample_approved": true,
         "sample_path": "assets/audio/sections/s7_sample.mp3",
-        "review_notes": "Sample verified before batch; polite register, numbers spelled out"
+        "review_notes": "Polite Gadis voice; intro sections included"
       },
       "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
     },
@@ -165,7 +213,7 @@
         },
         "sample_approved": true,
         "sample_path": "assets/audio/sections/s7_sample.mp3",
-        "review_notes": "Sample verified before batch; polite register, numbers spelled out"
+        "review_notes": "Polite Gadis voice; intro sections included"
       },
       "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
     },
@@ -189,7 +237,7 @@
         },
         "sample_approved": true,
         "sample_path": "assets/audio/sections/s7_sample.mp3",
-        "review_notes": "Sample verified before batch; polite register, numbers spelled out"
+        "review_notes": "Polite Gadis voice; intro sections included"
       },
       "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
     },
@@ -213,7 +261,7 @@
         },
         "sample_approved": true,
         "sample_path": "assets/audio/sections/s7_sample.mp3",
-        "review_notes": "Sample verified before batch; polite register, numbers spelled out"
+        "review_notes": "Polite Gadis voice; intro sections included"
       },
       "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
     },
@@ -237,7 +285,7 @@
         },
         "sample_approved": true,
         "sample_path": "assets/audio/sections/s7_sample.mp3",
-        "review_notes": "Sample verified before batch; polite register, numbers spelled out"
+        "review_notes": "Polite Gadis voice; intro sections included"
       },
       "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
     },
@@ -261,7 +309,7 @@
         },
         "sample_approved": true,
         "sample_path": "assets/audio/sections/s7_sample.mp3",
-        "review_notes": "Sample verified before batch; polite register, numbers spelled out"
+        "review_notes": "Polite Gadis voice; intro sections included"
       },
       "generation_summary": "Edge TTS via MoneyPrinterTurbo environment"
     },
@@ -271,9 +319,9 @@
       "path": "assets/audio/narration_full.mp3",
       "source_tool": "ffmpeg",
       "scene_id": "all",
-      "duration_seconds": 220.79,
       "format": "mp3",
-      "generation_summary": "11 section files concatenated with 0.3s gaps + 2.0s final hold"
+      "generation_summary": "13 sections + 0.3s gaps + 2s final hold",
+      "duration_seconds": 242.52
     },
     {
       "id": "subs",
@@ -282,7 +330,7 @@
       "source_tool": "custom",
       "scene_id": "all",
       "format": "srt",
-      "generation_summary": "32 sentence-level cues from approved script"
+      "generation_summary": "36 sentence-level cues"
     },
     {
       "id": "music",
@@ -290,10 +338,48 @@
       "path": "assets/music/background.mp3",
       "source_tool": "provided",
       "scene_id": "all",
-      "duration_seconds": 191.69,
       "format": "mp3",
-      "provider": "user",
-      "generation_summary": "User-provided: /home/desktop/Music/Background music News Investigating.mp3"
+      "generation_summary": "User track",
+      "duration_seconds": 191.69
+    },
+    {
+      "id": "s0a_graphic",
+      "type": "animation",
+      "path": "assets/video/gfx/s0a.mp4",
+      "source_tool": "video_compose(remotion)",
+      "scene_id": "s0a_graphic",
+      "model": "Remotion 4.0.544",
+      "duration_seconds": 14.67,
+      "resolution": "1920x1080",
+      "format": "mp4",
+      "generation_summary": "Animated news bulletin with 3 headlines and BREAKING tag, full intro section (no footage half)",
+      "prompt": "Animated news bulletin with 3 headlines and BREAKING tag, full intro section (no footage half)"
+    },
+    {
+      "id": "s0b_graphic",
+      "type": "animation",
+      "path": "assets/video/gfx/s0b.mp4",
+      "source_tool": "video_compose(remotion)",
+      "scene_id": "s0b_graphic",
+      "model": "Remotion 4.0.544",
+      "duration_seconds": 3.53,
+      "resolution": "1920x1080",
+      "format": "mp4",
+      "generation_summary": "Full title card with source subtitle",
+      "prompt": "Full title card with source subtitle"
+    },
+    {
+      "id": "s0b_footage",
+      "type": "video",
+      "path": "assets/video/mpt_trim/s0b.mp4",
+      "source_tool": "moneyprinterturbo",
+      "scene_id": "s0b_footage",
+      "provider": "Pexels",
+      "duration_seconds": 3.53,
+      "resolution": "1920x1080",
+      "format": "mp4",
+      "generation_summary": "MPT + Pexels: Vietnam + Indonesia skylines (title intro); trimmed to footage half",
+      "license": "Pexels License"
     },
     {
       "id": "s1_footage",
@@ -305,7 +391,7 @@
       "duration_seconds": 7.6,
       "resolution": "1920x1080",
       "format": "mp4",
-      "generation_summary": "MoneyPrinterTurbo with Pexels Vietnam-factory stock footage, trimmed to footage half",
+      "generation_summary": "MPT + Pexels: Vietnam - Ho Chi Minh City skyline (hook); trimmed to footage half",
       "license": "Pexels License"
     },
     {
@@ -344,7 +430,7 @@
       "duration_seconds": 8.37,
       "resolution": "1920x1080",
       "format": "mp4",
-      "generation_summary": "MoneyPrinterTurbo with Pexels Vietnam-factory stock footage, trimmed to footage half",
+      "generation_summary": "MPT + Pexels: Vietnam - electronics factory (2025 growth); trimmed to footage half",
       "license": "Pexels License"
     },
     {
@@ -357,7 +443,7 @@
       "duration_seconds": 8.8,
       "resolution": "1920x1080",
       "format": "mp4",
-      "generation_summary": "MoneyPrinterTurbo with Pexels Vietnam-factory stock footage, trimmed to footage half",
+      "generation_summary": "MPT + Pexels: Vietnam - industrial park / export port (2026 growth); trimmed to footage half",
       "license": "Pexels License"
     },
     {
@@ -396,7 +482,7 @@
       "duration_seconds": 9.17,
       "resolution": "1920x1080",
       "format": "mp4",
-      "generation_summary": "MoneyPrinterTurbo with Pexels Vietnam-factory stock footage, trimmed to footage half",
+      "generation_summary": "MPT + Pexels: Indonesia - BPS / government office (source proof); trimmed to footage half",
       "license": "Pexels License"
     },
     {
@@ -409,7 +495,7 @@
       "duration_seconds": 10.17,
       "resolution": "1920x1080",
       "format": "mp4",
-      "generation_summary": "MoneyPrinterTurbo with Pexels Vietnam-factory stock footage, trimmed to footage half",
+      "generation_summary": "MPT + Pexels: Indonesia - bank / rupiah exchange (per-capita caveat); trimmed to footage half",
       "license": "Pexels License"
     },
     {
@@ -448,7 +534,7 @@
       "duration_seconds": 9.33,
       "resolution": "1920x1080",
       "format": "mp4",
-      "generation_summary": "MoneyPrinterTurbo with Pexels Vietnam-factory stock footage, trimmed to footage half",
+      "generation_summary": "MPT + Pexels: Indonesia - bank building / financial district (2025 levels); trimmed to footage half",
       "license": "Pexels License"
     },
     {
@@ -461,7 +547,7 @@
       "duration_seconds": 9.1,
       "resolution": "1920x1080",
       "format": "mp4",
-      "generation_summary": "MoneyPrinterTurbo with Pexels Vietnam-factory stock footage, trimmed to footage half",
+      "generation_summary": "MPT + Pexels: Vietnam - skyscraper / financial district (IMF projection); trimmed to footage half",
       "license": "Pexels License"
     },
     {
@@ -487,7 +573,7 @@
       "duration_seconds": 9.2,
       "resolution": "1920x1080",
       "format": "mp4",
-      "generation_summary": "MoneyPrinterTurbo with Pexels Vietnam-factory stock footage, trimmed to footage half",
+      "generation_summary": "MPT + Pexels: Vietnam - electronics factory (growth engine); trimmed to footage half",
       "license": "Pexels License"
     },
     {
@@ -526,7 +612,7 @@
       "duration_seconds": 9.63,
       "resolution": "1920x1080",
       "format": "mp4",
-      "generation_summary": "MoneyPrinterTurbo with Pexels Vietnam-factory stock footage, trimmed to footage half",
+      "generation_summary": "MPT + Pexels: Indonesia - Jakarta crowd / traffic (population & FX); trimmed to footage half",
       "license": "Pexels License"
     },
     {
@@ -539,7 +625,7 @@
       "duration_seconds": 10.0,
       "resolution": "1920x1080",
       "format": "mp4",
-      "generation_summary": "MoneyPrinterTurbo with Pexels Vietnam-factory stock footage, trimmed to footage half",
+      "generation_summary": "MPT + Pexels: Indonesia - exchange counter / Jakarta night (sensitivity); trimmed to footage half",
       "license": "Pexels License"
     },
     {
@@ -575,10 +661,10 @@
       "source_tool": "moneyprinterturbo",
       "scene_id": "s11_footage",
       "provider": "Pexels",
-      "duration_seconds": 16.1,
+      "duration_seconds": 16.13,
       "resolution": "1920x1080",
       "format": "mp4",
-      "generation_summary": "MoneyPrinterTurbo with Pexels Vietnam-factory stock footage, trimmed to footage half",
+      "generation_summary": "MPT + Pexels: Both - Jakarta night + Vietnam city lights (conclusion); trimmed to footage half",
       "license": "Pexels License"
     }
   ],
@@ -586,13 +672,23 @@
   "metadata": {
     "style_playbook": "flat-motion-graphics",
     "shared_support_assets": [
-      "subtitle treatment (32 cues)",
+      "news bulletin card",
+      "title card",
+      "subtitle treatment",
       "stat-card system",
       "PROYEKSI badge",
-      "source credit line",
-      "color system VN=green / ID=amber"
+      "source credit line"
     ],
     "scene_asset_index": {
+      "s0a_graphic": [
+        "s0a_graphic"
+      ],
+      "s0b_graphic": [
+        "s0b_graphic"
+      ],
+      "s0b_footage": [
+        "s0b_footage"
+      ],
       "s1_footage": [
         "s1_footage"
       ],
@@ -662,18 +758,32 @@
     },
     "source_vs_generated_map": {
       "source": [
-        "MPT/Pexels Vietnam factory stock footage",
+        "MPT/Pexels mixed Vietnam+Indonesia footage",
         "user music"
       ],
       "generated": [
         "Edge TTS narration",
         "Remotion infographics",
-        "SRT subtitles"
+        "SRT"
       ]
+    },
+    "scene_footage_map": {
+      "s0a": "News studio broadcast (intro headlines)",
+      "s0b": "Vietnam + Indonesia skylines (title intro)",
+      "s1": "Vietnam - Ho Chi Minh City skyline (hook)",
+      "s2": "Vietnam - electronics factory (2025 growth)",
+      "s3": "Vietnam - industrial park / export port (2026 growth)",
+      "s4": "Indonesia - BPS / government office (source proof)",
+      "s5": "Indonesia - bank / rupiah exchange (per-capita caveat)",
+      "s6": "Indonesia - bank building / financial district (2025 levels)",
+      "s7": "Vietnam - skyscraper / financial district (IMF projection)",
+      "s8": "Vietnam - electronics factory (growth engine)",
+      "s9": "Indonesia - Jakarta crowd / traffic (population & FX)",
+      "s10": "Indonesia - exchange counter / Jakarta night (sensitivity)",
+      "s11": "Both - Jakarta night + Vietnam city lights (conclusion)"
     },
     "voice": "id-ID-GadisNeural",
     "render_runtime": "remotion",
-    "note": "Pexels key configured; all 11 MPT footage halves regenerated with Vietnam factory/manufacturing searches. No visual approximation remains.",
-    "missing_files": []
+    "note": "News-headline intro + title intro added; footage mixes Vietnam and Indonesia matched to narration; total 242.26s."
   }
 }

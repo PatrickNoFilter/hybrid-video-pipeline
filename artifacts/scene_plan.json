@@ -3,43 +3,15 @@
   "style_playbook": "flat-motion-graphics",
   "scenes": [
     {
-      "id": "s0a_footage",
-      "type": "broll",
-      "description": "News studio broadcast / newsroom screens",
-      "start_seconds": 0.0,
-      "end_seconds": 7.33,
-      "script_section_id": "s0a",
-      "framing": "full-frame 16:9",
-      "movement": "steady documentary motion",
-      "transition_in": "fade from black",
-      "transition_out": "crossfade 0.3s to next half",
-      "overlay_notes": "burn-in subtitles bottom 12%",
-      "shot_intent": "Set the news framing",
-      "narrative_role": "establish_context",
-      "information_role": "News studio broadcast / newsroom screens",
-      "hero_moment": false,
-      "texture_keywords": [
-        "clean",
-        "newsroom"
-      ],
-      "required_assets": [
-        {
-          "type": "real_video_clip",
-          "description": "Pexels newsroom footage",
-          "source": "source"
-        }
-      ]
-    },
-    {
       "id": "s0a_graphic",
       "type": "text_card",
-      "description": "Animated news bulletin with 3 headlines and BREAKING tag",
-      "start_seconds": 7.33,
+      "description": "Animated news bulletin with 3 headlines and BREAKING tag, full intro section (no footage half)",
+      "start_seconds": 0.0,
       "end_seconds": 14.66,
       "script_section_id": "s0a",
       "framing": "centered safe area with 10% padding",
       "movement": "frame-based reveal",
-      "transition_in": "crossfade 0.3s from previous half",
+      "transition_in": "fade from black",
       "transition_out": "crossfade 0.3s to next half",
       "overlay_notes": "no subtitle overlap with headlines",
       "shot_intent": "Deliver the headline/title",
@@ -864,6 +836,6 @@
     "overlay_density_limits": "max 2 concurrent overlays; no full-frame opaque cover over footage",
     "crossfade_seconds": 0.3,
     "music": "/home/desktop/Music/Background music News Investigating.mp3",
-    "note": "Added news-headline intro + title intro; total 264.58s"
+    "note": "s0a intro is infographic-only (newsroom footage removed); all other sections remain 50/50 alternating; total 242.26s"
   }
 }
