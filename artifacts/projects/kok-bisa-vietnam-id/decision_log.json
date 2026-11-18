@@ -766,6 +766,58 @@
       "user_visible": true,
       "user_approved": false,
       "confidence": 0.98
+    },
+    {
+      "decision_id": "d-028",
+      "stage": "edit",
+      "category": "renderer_family_selection",
+      "subject": "Timeline assembly and Concat handoff",
+      "options_considered": [
+        {
+          "option_id": "concat",
+          "label": "Susun edit_decisions lalu transfer ke Concat",
+          "score": 0.95,
+          "reason": "Sesuai kesepakatan user"
+        },
+        {
+          "option_id": "openmontage-only",
+          "label": "Render final di OpenMontage saja",
+          "score": 0.5,
+          "reason": "—",
+          "rejected_because": "User ingin editing di Concat"
+        }
+      ],
+      "selected": "concat",
+      "reason": "19 clip infografis + audio dipindah ke Concat setelah edit.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.95
+    },
+    {
+      "decision_id": "d-029",
+      "stage": "edit",
+      "category": "provider_selection",
+      "subject": "Editor handoff target",
+      "options_considered": [
+        {
+          "option_id": "concat-project",
+          "label": "/home/desktop/Work/concat-projects/kok-bisa-vietnam-infor",
+          "score": 0.98,
+          "reason": "21 clip (19 gfx + narration + music), 633,43 s, tersimpan"
+        },
+        {
+          "option_id": "stay-openmontage",
+          "label": "Tetap di OpenMontage",
+          "score": 0.4,
+          "reason": "Ditolak",
+          "rejected_because": "User ingin editing di Concat setelah edit"
+        }
+      ],
+      "selected": "concat-project",
+      "reason": "Transfer selesai setelah tahap edit; timeline 19 klip infografis + 2 audio.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
     }
   ]
 }

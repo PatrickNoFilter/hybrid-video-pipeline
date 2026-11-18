@@ -3,11 +3,11 @@
   "project_id": "kok-bisa-vietnam-id",
   "pipeline_type": "hybrid",
   "stage": "assets",
-  "status": "awaiting_human",
-  "timestamp": "2026-11-18T09:12:20.328801+00:00",
+  "status": "completed",
+  "timestamp": "2026-11-18T09:18:41.642314+00:00",
   "checkpoint_policy": "guided",
   "human_approval_required": true,
-  "human_approved": false,
+  "human_approved": true,
   "artifacts": {
     "asset_manifest": {
       "version": "1.0",
@@ -1340,25 +1340,9 @@
   },
   "style_playbook": "flat-motion-graphics",
   "metadata": {
-    "review": {
-      "decision": "PASS",
-      "round": 2,
-      "findings": [
-        {
-          "severity": "NITPICK",
-          "description": "19 klip animasi + 19 still + 2 audio.",
-          "action": "Siap review filmstrip.",
-          "status": "accepted"
-        }
-      ],
-      "summary": {
-        "critical": 0,
-        "success_criteria_met": "4/4"
-      }
-    },
+    "approval": "User approved 19 infographic clips.",
     "cost_snapshot": {
-      "spent_usd": 0.0,
-      "projected_compose_usd": 0.0
+      "spent_usd": 0.0
     },
     "next_stage": "edit"
   }

@@ -1,0 +1,254 @@
+{
+  "version": "1.0",
+  "cuts": [
+    {
+      "id": "s0_1",
+      "source": "assets/video/gfx/s0_1.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 21.47,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "fade from black",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Infografis timeline 1990 → 2026: perbandingan PDB per kapita Vietnam ~1/6 Indonesia (1990, src-08) → proyeksiIMF 5.259 v"
+    },
+    {
+      "id": "s0_2",
+      "source": "assets/video/gfx/s0_2.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 26.46,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Infografis chart: PDB per kapita 2026 Vietnam US$5.259 vs Indonesia US$5.153 — label PROYEKSI IMF WEO Okt 2026"
+    },
+    {
+      "id": "s1_1",
+      "source": "assets/video/gfx/s1_1.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 18.48,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Animasi kue dibagi rata ke penduduk + uang dibagi rata (metafora angka rata-rata)"
+    },
+    {
+      "id": "s1_2",
+      "source": "assets/video/gfx/s1_2.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 26.09,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Chart kurs VND & IDR terhadap USD + PDB per kapita dalam rupiah; asumsi Rp18.000/USD → Rp92,75 juta"
+    },
+    {
+      "id": "s2_1",
+      "source": "assets/video/gfx/s2_1.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 14.92,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Attachment: tangkapan hasil pencarian 'selisih PDB per kapita Vietnam' — headline GoodStats/Tempo/Limapagi tentangproyek"
+    },
+    {
+      "id": "s2_2",
+      "source": "assets/video/gfx/s2_2.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 15.38,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Attachment 2: IMF DataMapper (NGDPDPC, seleksi 2025: ID 5,08 ribu vs VN 4,83 ribu) — konteks revisi April vs Oktober"
+    },
+    {
+      "id": "s2_3",
+      "source": "assets/video/gfx/s2_3.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 34.24,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Chart: PDB total ID US$1,48 T vs VN US$542 M + populasi ID hampir 3x VN (sedikit di atas 100 juta)"
+    },
+    {
+      "id": "s3_1",
+      "source": "assets/video/gfx/s3_1.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 25.12,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Chart: PDB per kapita nominal Vietnam naik 8,9% (2026)"
+    },
+    {
+      "id": "s3_2",
+      "source": "assets/video/gfx/s3_2.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 20.84,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Diagram alur mesin Vietnam: China+1 → FDI masuk → pabrik elektronik/semikonduktor → ekspor naik → lapangan kerja industr"
+    },
+    {
+      "id": "s3_3",
+      "source": "assets/video/gfx/s3_3.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 6.7,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Chart: target PDB per kapita Vietnam US$8.500 pada 2030"
+    },
+    {
+      "id": "s4_1",
+      "source": "assets/video/gfx/s4_1.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 28.2,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Attachment 3: tangkapan pencarian 'kurs rupiah melemah' (Rp18.268/USD 16 Nov; proyeksi Rp18.800) + chart PDB per kapita "
+    },
+    {
+      "id": "s4_2",
+      "source": "assets/video/gfx/s4_2.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 32.38,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Kartu infografis Indonesia: kurs rupiah melemah menekan angka dolar (+1,5%), kritik investasi belum cukup ke dompet warg"
+    },
+    {
+      "id": "s5_1",
+      "source": "assets/video/gfx/s5_1.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 32.68,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Chart daya beli: PDB per kapita PPP VN ~19.970 vs ID ~19.090 dolar internasional (~5%)"
+    },
+    {
+      "id": "s5_2",
+      "source": "assets/video/gfx/s5_2.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 48.97,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Chart: Gini ~36 kedua negara; harga rumah Hanoi/HCMC ~20x pendapatan tahunan median; apartemen +40%; catatan SCMP; kesim"
+    },
+    {
+      "id": "s6_1",
+      "source": "assets/video/gfx/s6_1.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 49.13,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Poin-poin penting + chart: tiga pelajaran dan proyeksi IMF 2027 VN US$5.659 vs ID US$5.550 (PROYEKSI)"
+    },
+    {
+      "id": "s7_1",
+      "source": "assets/video/gfx/s7_1.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 62.79,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Chart: ekspor/PDB 7%→90% sejak Doi Moi; FDI ekspor 73%→76%; ekspor H1 2026 US$266,5 M (+21%); Q3 2026 ID 5,47% vs VN ~10"
+    },
+    {
+      "id": "s7_2",
+      "source": "assets/video/gfx/s7_2.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 50.66,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Poin-poin + chart: rantai pasok terintegrasi, pertanian modern, industri teknologi tinggi, manufaktur ekspor; PMI ID 54 "
+    },
+    {
+      "id": "s8_1",
+      "source": "assets/video/gfx/s8_1.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 88.3,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Poin-poin penting: ketergantungan FDI ~80% ekspor, defisit barang US$16,7 M, kekurangan tenaga terampil, 'pilar kembar' "
+    },
+    {
+      "id": "s9_1",
+      "source": "assets/video/gfx/s9_1.mp4",
+      "in_seconds": 0.0,
+      "out_seconds": 25.92,
+      "layer": "primary",
+      "speed": 1.0,
+      "transition_in": "crossfade 0.3s",
+      "transition_out": "crossfade 0.3s",
+      "transition_duration": 0.3,
+      "reason": "Daftar sumber (IMF WEO Okt 2026, BPS, NSO, src-01…src-24) + poin CTA: komentar, like, subscribe, bagikan"
+    }
+  ],
+  "render_runtime": "remotion",
+  "composition_mode": "templated",
+  "metadata": {
+    "anchor_cut_notes": "19 infographic beats, no real footage; narration is the spine.",
+    "layer_order": [
+      "narration",
+      "infographic video",
+      "music under narration"
+    ],
+    "audio_files": {
+      "narration": "assets/audio/narration_full.mp3",
+      "music": "assets/music/background_loop.mp3",
+      "music_volume": 0.12
+    },
+    "subtitles_enabled": false,
+    "variant_edit_rules": [
+      "16:9 hero only"
+    ],
+    "total_duration_seconds": 633.43,
+    "handoff": "Transfer to Concat after edit stage per user agreement."
+  }
+}
