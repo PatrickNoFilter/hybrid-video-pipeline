@@ -740,6 +740,32 @@
       "user_visible": true,
       "user_approved": true,
       "confidence": 0.95
+    },
+    {
+      "decision_id": "d-027",
+      "stage": "assets",
+      "category": "provider_selection",
+      "subject": "Sumber aset untuk 19 visual beat",
+      "options_considered": [
+        {
+          "option_id": "remotion-all",
+          "label": "19 klip animasi Remotion + 19 still + audio",
+          "score": 0.98,
+          "reason": "100% infografis sesuai rombakan user"
+        },
+        {
+          "option_id": "hybrid",
+          "label": "Footage + grafis",
+          "score": 0.2,
+          "reason": "Ditolak",
+          "rejected_because": "User meminta semua infografis"
+        }
+      ],
+      "selected": "remotion-all",
+      "reason": "Semua 19 klip Remotion berhasil dirender; biaya $0.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.98
     }
   ]
 }

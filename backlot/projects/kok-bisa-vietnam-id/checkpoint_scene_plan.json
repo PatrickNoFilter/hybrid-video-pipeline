@@ -3,11 +3,11 @@
   "project_id": "kok-bisa-vietnam-id",
   "pipeline_type": "hybrid",
   "stage": "scene_plan",
-  "status": "awaiting_human",
-  "timestamp": "2026-11-18T08:56:00.269636+00:00",
+  "status": "completed",
+  "timestamp": "2026-11-18T08:57:38.666845+00:00",
   "checkpoint_policy": "guided",
   "human_approval_required": true,
-  "human_approved": false,
+  "human_approved": true,
   "artifacts": {
     "scene_plan": {
       "version": "1.0",
@@ -1355,27 +1355,9 @@
   },
   "style_playbook": "flat-motion-graphics",
   "metadata": {
-    "review": {
-      "decision": "PASS",
-      "round": 5,
-      "findings": [
-        {
-          "severity": "CRITICAL",
-          "description": "Treatment hybrid tidak sesuai permintaan baru.",
-          "action": "Semua scene & cue diubah ke infografis.",
-          "status": "fixed"
-        }
-      ],
-      "summary": {
-        "critical": 1,
-        "critical_fixed": 1,
-        "success_criteria_met": "4/4"
-      }
-    },
-    "revision_note": "Rombakan total: 100% infografis OpenMontage, tanpa footage real. Narasi & audio tetap.",
+    "approval": "User approved 100% infographic rework.",
     "cost_snapshot": {
-      "spent_usd": 0.0,
-      "projected_compose_usd": 0.0
+      "spent_usd": 0.0
     },
     "next_stage": "assets"
   }
