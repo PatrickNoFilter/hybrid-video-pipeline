@@ -88,7 +88,7 @@ Stage status recap:
 |---|---|---|
 | idea | completed (approved) | Title and source list accepted after several revisions |
 | script | completed (approved) | 10 sections; narration text preserved across 5 user revisions |
-| scene_plan | awaiting_human | 20 half-scenes, retimed to real TTS (636.33 s) |
+| scene_plan | awaiting_human | 19 user-specified visual beats, retimed to real TTS (633.43 s) |
 
 This run follows the revised approval flow documented in
 `RECOMMENDED_STEPS.md` §3: the Edge TTS narration (`id-ID-GadisNeural`) was

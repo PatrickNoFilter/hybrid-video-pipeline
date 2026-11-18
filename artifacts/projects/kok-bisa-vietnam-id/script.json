@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "title": "Kok Bisa Orang Vietnam \"Lebih Kaya\" dari Indonesia?",
-  "total_duration_seconds": 636.33,
+  "total_duration_seconds": 633.43,
   "voice_performance": {
     "performance_intent": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
     "pacing_profile": "conversational",
@@ -444,9 +444,9 @@
     {
       "id": "s9",
       "label": "PENUTUP",
-      "text": "Menurut kamu, apa yang paling perlu dibenahi Indonesia? Industrialisasi, lapangan kerja, atau stabilitas rupiah? Tulis di kolom komentar. Kalau video ini bermanfaat, jangan lupa like, subscribe, dan bagikan ke temanmu yang suka ngobrolin ekonomi. Sampai jumpa di video berikutnya! --- # BAGIAN B: SUMBER",
+      "text": "Menurut kamu, apa yang paling perlu dibenahi Indonesia? Industrialisasi, lapangan kerja, atau stabilitas rupiah? Tulis di kolom komentar. Kalau video ini bermanfaat, jangan lupa like, subscribe, dan bagikan ke temanmu yang suka ngobrolin ekonomi. Sampai jumpa di video berikutnya!",
       "start_seconds": 605.51,
-      "end_seconds": 634.33,
+      "end_seconds": 631.43,
       "speaker_directions": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
       "delivery_cues": {
         "pace": "conversational",
@@ -523,7 +523,8 @@
     "data_basis": "IMF WEO Okt 2026: nominal US$5.259 vs US$5.153; PPP ~US$19.970 vs ~US$19.090 (~5%). Q3 2026 dari BPS/NSO; PMI 54,0 dari S&P Global lewat src-24.",
     "placeholder_resolution": "S5 diisi dari src-06 (ULI 2025 + Vietnamnet).",
     "verification_note": "Sudah diverifikasi: PPP edisi WEO Okt 2026 (src-20, pembanding src-21); Q3 2026 ID 5,47% BPS (src-22) & VN 9,95% NSO (src-23); PMI 54,0 Okt 2026 (src-24). Masih diperhatikan: selisih US$5.259 vs US$5.269 (Katadata), Gini \"sekitar 36\" (tahun survei beda), pangsa FDI 76% (2025) vs ~80% (H1 2026) — cantumkan periodenya di grafis, Rp18.000 asumsi Katadata, klaim 1990 penyederhanaan src-08, S8 poin 3 opini.",
-    "timing_note": "Retimed to real Edge TTS Gadis durations measured with ffprobe (631.63s speech + 0.3s gaps x9 + 2.0s final hold = 636.33s).",
-    "narration_language": "Bahasa Indonesia"
+    "timing_note": "Retimed to real Edge TTS Gadis durations measured with ffprobe (628.73s speech + 0.3s gaps x9 + 2.0s hold = 633.43s). S9 re-rendered without stray markdown tail.",
+    "narration_language": "Bahasa Indonesia",
+    "visual_reference_note": "User supplied per-section visual beats (S0-S9) plus reference screenshots: Google News \"selisih PDB perkapita Vietnam\", IMF DataMapper NGDPDPC 2025, and \"kurs rupiah melemah\". These are captured in scene_plan required_assets descriptions."
   }
 }

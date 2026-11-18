@@ -34,7 +34,7 @@ Log every meaningful choice in `artifacts/decision_log.json` with a unique `(cat
 1. Generate a **sample** of the most numbers-heavy section and approve the voice (the `kok-bisa-vietnam-id` run used section `s5`).
 2. Render all sections with the chosen Edge TTS voice (example: `id-ID-GadisNeural`, rate `+0%`).
 3. Measure real durations with `ffprobe` and save `artifacts/tts_timings.json`.
-4. **Retime the script and scene plan to the real audio** — do not force speech into a planned duration. The first worked example expanded 117 s → 220 s; `kok-bisa-vietnam-id` expanded 510 s → **636.33 s** (631.63 s speech + 0.3 s gaps × 9 + 2 s final hold).
+4. **Retime the script and scene plan to the real audio** — do not force speech into a planned duration. The first worked example expanded 117 s → 220 s; `kok-bisa-vietnam-id` expanded 510 s → **633.43 s** (628.73 s speech + 0.3 s gaps × 9 + 2 s final hold). Strip stray markdown markers from section text **before** rendering TTS — a trailing `--- # BAGIAN ...` was once spoken into the final section.
 5. Only then re-checkpoint `scene_plan` with the retimed artifact and ask for approval.
 6. Build the full narration mix with small gaps and a final hold.
 

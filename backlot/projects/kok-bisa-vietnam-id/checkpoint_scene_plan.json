@@ -4,7 +4,7 @@
   "pipeline_type": "hybrid",
   "stage": "scene_plan",
   "status": "awaiting_human",
-  "timestamp": "2026-11-18T04:22:51.119306+00:00",
+  "timestamp": "2026-11-18T05:02:24.899107+00:00",
   "checkpoint_policy": "guided",
   "human_approval_required": true,
   "human_approved": false,
@@ -14,107 +14,107 @@
       "style_playbook": "flat-motion-graphics",
       "scenes": [
         {
-          "id": "s0a",
-          "type": "text_card",
-          "description": "Hook card \u2014 dua bendera + angka proyeksi IMF US$5.259 vs US$5.153 (label PROYEKSI)",
+          "id": "s0_1",
+          "type": "broll",
+          "description": "Real video Vietnam tahun 1990 \u2014 suasana pedesaan miskin, pasar tradisional, anak-anak; grade warna tua/dokumenter",
           "start_seconds": 0.0,
-          "end_seconds": 23.96,
+          "end_seconds": 21.47,
           "script_section_id": "s0",
-          "framing": "centered safe area with 10% padding",
-          "movement": "frame-based reveal",
+          "framing": "full-frame, subject centred, 10% safe margin",
+          "movement": "slow handheld / lateral move",
           "transition_in": "fade from black",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "no subtitle overlap with key numbers",
-          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle bottom margin; keep faces clear",
+          "shot_intent": "Show the physical reality behind the narration",
           "narrative_role": "introduce_subject",
-          "information_role": "Hook: klaim \"Vietnam lebih kaya\" memicu rasa penasaran.",
-          "hero_moment": true,
+          "information_role": "HOOK \u2014 beat 1 of 2",
+          "hero_moment": false,
           "texture_keywords": [
-            "flat",
-            "high-contrast",
-            "news"
+            "documentary",
+            "natural-light",
+            "urban"
           ],
           "required_assets": [
             {
-              "type": "remotion_infographic",
-              "description": "Hook card \u2014 dua bendera + angka proyeksi IMF US$5.259 vs US$5.153 (label PROYEKSI)",
-              "source": "generate"
+              "type": "stock_footage",
+              "description": "Real video Vietnam tahun 1990 \u2014 suasana pedesaan miskin, pasar tradisional, anak-anak; grade warna tua/dokumenter",
+              "source": "source"
             }
           ]
         },
         {
-          "id": "s0b",
-          "type": "broll",
-          "description": "Dua bendera bersanding, angka muncul satu per satu; transisi ke jalanan Vietnam",
-          "start_seconds": 23.96,
+          "id": "s0_2",
+          "type": "text_card",
+          "description": "Infografis chart: PDB per kapita 2026 Vietnam US$5.259 vs Indonesia US$5.153 \u2014 label PROYEKSI IMF WEO Okt 2026",
+          "start_seconds": 21.47,
           "end_seconds": 47.93,
           "script_section_id": "s0",
-          "framing": "full-frame, subject centred, 10% safe margin",
-          "movement": "slow handheld / lateral move",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "subtitle at bottom margin, keep faces clear",
-          "shot_intent": "Show the physical reality behind the narration",
+          "framing": "centered safe area, 10% padding",
+          "movement": "frame-based reveal",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
           "narrative_role": "introduce_subject",
-          "information_role": "Hook: klaim \"Vietnam lebih kaya\" memicu rasa penasaran.",
+          "information_role": "HOOK \u2014 beat 2 of 2",
           "hero_moment": false,
           "texture_keywords": [
-            "documentary",
-            "natural-light",
-            "urban"
+            "flat",
+            "high-contrast",
+            "news"
           ],
           "required_assets": [
             {
-              "type": "stock_footage",
-              "description": "Dua bendera bersanding, angka muncul satu per satu; transisi ke jalanan Vietnam",
-              "source": "source"
+              "type": "remotion_infographic",
+              "description": "Infografis chart: PDB per kapita 2026 Vietnam US$5.259 vs Indonesia US$5.153 \u2014 label PROYEKSI IMF WEO Okt 2026",
+              "source": "generate"
             }
           ]
         },
         {
-          "id": "s1a",
-          "type": "broll",
-          "description": "Keramaian kota Vietnam dan Indonesia \u2014 visualisasi penduduk, orang lalu lalang",
-          "start_seconds": 48.23,
-          "end_seconds": 70.52,
-          "script_section_id": "s1",
-          "framing": "full-frame, subject centred, 10% safe margin",
-          "movement": "slow handheld / lateral move",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "subtitle at bottom margin, keep faces clear",
-          "shot_intent": "Show the physical reality behind the narration",
-          "narrative_role": "establish_context",
-          "information_role": "Penonton paham bahwa PDB per kapita adalah rata-rata, bukan uang per orang.",
-          "hero_moment": false,
-          "texture_keywords": [
-            "documentary",
-            "natural-light",
-            "urban"
-          ],
-          "required_assets": [
-            {
-              "type": "stock_footage",
-              "description": "Keramaian kota Vietnam dan Indonesia \u2014 visualisasi penduduk, orang lalu lalang",
-              "source": "source"
-            }
-          ]
-        },
-        {
-          "id": "s1b",
+          "id": "s1_1",
           "type": "text_card",
-          "description": "Animasi kue dibagi rata ke penduduk; label \"rata-rata \u2260 uang per orang\"; Rp92,75 juta (asumsi Rp18.000)",
-          "start_seconds": 70.52,
+          "description": "Animasi kue dibagi rata ke penduduk + uang dibagi rata (metafora angka rata-rata)",
+          "start_seconds": 48.23,
+          "end_seconds": 66.71,
+          "script_section_id": "s1",
+          "framing": "centered safe area, 10% padding",
+          "movement": "frame-based reveal",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
+          "narrative_role": "establish_context",
+          "information_role": "APA SIH \"PDB PER KAPITA\" ITU? \u2014 beat 1 of 2",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "news"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Animasi kue dibagi rata ke penduduk + uang dibagi rata (metafora angka rata-rata)",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s1_2",
+          "type": "text_card",
+          "description": "Chart kurs VND & IDR terhadap USD + PDB per kapita dalam rupiah; asumsi Rp18.000/USD \u2192 Rp92,75 juta",
+          "start_seconds": 66.71,
           "end_seconds": 92.8,
           "script_section_id": "s1",
-          "framing": "centered safe area with 10% padding",
+          "framing": "centered safe area, 10% padding",
           "movement": "frame-based reveal",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "no subtitle overlap with key numbers",
-          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
           "narrative_role": "establish_context",
-          "information_role": "Penonton paham bahwa PDB per kapita adalah rata-rata, bukan uang per orang.",
+          "information_role": "APA SIH \"PDB PER KAPITA\" ITU? \u2014 beat 2 of 2",
           "hero_moment": false,
           "texture_keywords": [
             "flat",
@@ -124,26 +124,26 @@
           "required_assets": [
             {
               "type": "remotion_infographic",
-              "description": "Animasi kue dibagi rata ke penduduk; label \"rata-rata \u2260 uang per orang\"; Rp92,75 juta (asumsi Rp18.000)",
+              "description": "Chart kurs VND & IDR terhadap USD + PDB per kapita dalam rupiah; asumsi Rp18.000/USD \u2192 Rp92,75 juta",
               "source": "generate"
             }
           ]
         },
         {
-          "id": "s2a",
+          "id": "s2_1",
           "type": "text_card",
-          "description": "Grafik batang dua negara; selisih ~US$106 (<3%) disorot; PDB total ID US$1,48T vs VN US$542M; populasi ID ~3x VN",
+          "description": "Attachment: tangkapan hasil pencarian 'selisih PDB per kapita Vietnam' \u2014 headline GoodStats/Tempo/Limapagi tentangproyeksi salip",
           "start_seconds": 93.1,
-          "end_seconds": 125.37,
+          "end_seconds": 108.02,
           "script_section_id": "s2",
-          "framing": "centered safe area with 10% padding",
+          "framing": "centered safe area, 10% padding",
           "movement": "frame-based reveal",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "no subtitle overlap with key numbers",
-          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
           "narrative_role": "evidence",
-          "information_role": "Skala selisih dan ukuran ekonomi menjadi jelas.",
+          "information_role": "SELISIHNYA TIPIS BANGET \u2014 beat 1 of 3",
           "hero_moment": false,
           "texture_keywords": [
             "flat",
@@ -153,55 +153,113 @@
           "required_assets": [
             {
               "type": "remotion_infographic",
-              "description": "Grafik batang dua negara; selisih ~US$106 (<3%) disorot; PDB total ID US$1,48T vs VN US$542M; populasi ID ~3x VN",
+              "description": "Attachment: tangkapan hasil pencarian 'selisih PDB per kapita Vietnam' \u2014 headline GoodStats/Tempo/Limapagi tentangproyeksi salip",
               "source": "generate"
             }
           ]
         },
         {
-          "id": "s2b",
-          "type": "broll",
-          "description": "Montase tajuk berita/headline ekonomi yang menyebut \"Vietnam menyalip Indonesia\"",
-          "start_seconds": 125.37,
+          "id": "s2_2",
+          "type": "text_card",
+          "description": "Attachment 2: IMF DataMapper (NGDPDPC, seleksi 2025: ID 5,08 ribu vs VN 4,83 ribu) \u2014 konteks revisi April vs Oktober",
+          "start_seconds": 108.02,
+          "end_seconds": 123.4,
+          "script_section_id": "s2",
+          "framing": "centered safe area, 10% padding",
+          "movement": "frame-based reveal",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
+          "narrative_role": "evidence",
+          "information_role": "SELISIHNYA TIPIS BANGET \u2014 beat 2 of 3",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "news"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Attachment 2: IMF DataMapper (NGDPDPC, seleksi 2025: ID 5,08 ribu vs VN 4,83 ribu) \u2014 konteks revisi April vs Oktober",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s2_3",
+          "type": "text_card",
+          "description": "Chart: PDB total ID US$1,48 T vs VN US$542 M + populasi ID hampir 3x VN (sedikit di atas 100 juta)",
+          "start_seconds": 123.4,
           "end_seconds": 157.64,
           "script_section_id": "s2",
-          "framing": "full-frame, subject centred, 10% safe margin",
-          "movement": "slow handheld / lateral move",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "subtitle at bottom margin, keep faces clear",
-          "shot_intent": "Show the physical reality behind the narration",
+          "framing": "centered safe area, 10% padding",
+          "movement": "frame-based reveal",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
           "narrative_role": "evidence",
-          "information_role": "Skala selisih dan ukuran ekonomi menjadi jelas.",
+          "information_role": "SELISIHNYA TIPIS BANGET \u2014 beat 3 of 3",
           "hero_moment": false,
           "texture_keywords": [
-            "documentary",
-            "natural-light",
-            "urban"
+            "flat",
+            "high-contrast",
+            "news"
           ],
           "required_assets": [
             {
-              "type": "stock_footage",
-              "description": "Montase tajuk berita/headline ekonomi yang menyebut \"Vietnam menyalip Indonesia\"",
-              "source": "source"
+              "type": "remotion_infographic",
+              "description": "Chart: PDB total ID US$1,48 T vs VN US$542 M + populasi ID hampir 3x VN (sedikit di atas 100 juta)",
+              "source": "generate"
             }
           ]
         },
         {
-          "id": "s3a",
-          "type": "broll",
-          "description": "Pabrik elektronik Vietnam \u2014 lini perakitan; kontainer di pelabuhan; kamera melintang",
+          "id": "s3_1",
+          "type": "text_card",
+          "description": "Chart: PDB per kapita nominal Vietnam naik 8,9% (2026)",
           "start_seconds": 157.94,
-          "end_seconds": 184.27,
+          "end_seconds": 183.06,
+          "script_section_id": "s3",
+          "framing": "centered safe area, 10% padding",
+          "movement": "frame-based reveal",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
+          "narrative_role": "build_tension",
+          "information_role": "CERITA VIETNAM, TANCAP GAS \u2014 beat 1 of 3",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "news"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Chart: PDB per kapita nominal Vietnam naik 8,9% (2026)",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s3_2",
+          "type": "broll",
+          "description": "Real video pabrik elektronik Vietnam \u2014 lini perakitan, pekerja, kontainer pelabuhan ekspor",
+          "start_seconds": 183.06,
+          "end_seconds": 203.9,
           "script_section_id": "s3",
           "framing": "full-frame, subject centred, 10% safe margin",
           "movement": "slow handheld / lateral move",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "subtitle at bottom margin, keep faces clear",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle bottom margin; keep faces clear",
           "shot_intent": "Show the physical reality behind the narration",
           "narrative_role": "build_tension",
-          "information_role": "Mesin pertumbuhan Vietnam terlihat nyata.",
+          "information_role": "CERITA VIETNAM, TANCAP GAS \u2014 beat 2 of 3",
           "hero_moment": false,
           "texture_keywords": [
             "documentary",
@@ -211,26 +269,26 @@
           "required_assets": [
             {
               "type": "stock_footage",
-              "description": "Pabrik elektronik Vietnam \u2014 lini perakitan; kontainer di pelabuhan; kamera melintang",
+              "description": "Real video pabrik elektronik Vietnam \u2014 lini perakitan, pekerja, kontainer pelabuhan ekspor",
               "source": "source"
             }
           ]
         },
         {
-          "id": "s3b",
+          "id": "s3_3",
           "type": "text_card",
-          "description": "Kartu pertumbuhan 8,9% (2026) + target PDB per kapita US$8.500 (2030); panah naik",
-          "start_seconds": 184.27,
+          "description": "Chart: target PDB per kapita Vietnam US$8.500 pada 2030",
+          "start_seconds": 203.9,
           "end_seconds": 210.6,
           "script_section_id": "s3",
-          "framing": "centered safe area with 10% padding",
+          "framing": "centered safe area, 10% padding",
           "movement": "frame-based reveal",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "no subtitle overlap with key numbers",
-          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
           "narrative_role": "build_tension",
-          "information_role": "Mesin pertumbuhan Vietnam terlihat nyata.",
+          "information_role": "CERITA VIETNAM, TANCAP GAS \u2014 beat 3 of 3",
           "hero_moment": false,
           "texture_keywords": [
             "flat",
@@ -240,26 +298,26 @@
           "required_assets": [
             {
               "type": "remotion_infographic",
-              "description": "Kartu pertumbuhan 8,9% (2026) + target PDB per kapita US$8.500 (2030); panah naik",
+              "description": "Chart: target PDB per kapita Vietnam US$8.500 pada 2030",
               "source": "generate"
             }
           ]
         },
         {
-          "id": "s4a",
+          "id": "s4_1",
           "type": "text_card",
-          "description": "Grafik PDB per kapita ID +1,5%; overlay pelemahan rupiah; teks \"efek mata uang, bukan ekonomi menyusut\"",
+          "description": "Attachment 3: tangkapan pencarian 'kurs rupiah melemah' (Rp18.268/USD 16 Nov; proyeksi Rp18.800) + chart PDB per kapita ID +1,5%",
           "start_seconds": 210.9,
-          "end_seconds": 241.19,
+          "end_seconds": 239.1,
           "script_section_id": "s4",
-          "framing": "centered safe area with 10% padding",
+          "framing": "centered safe area, 10% padding",
           "movement": "frame-based reveal",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "no subtitle overlap with key numbers",
-          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
           "narrative_role": "comparison",
-          "information_role": "Sisi Indonesia: kurs dan kualitas investasi.",
+          "information_role": "CERITA INDONESIA, JALAN DI TEMPAT \u2014 beat 1 of 2",
           "hero_moment": false,
           "texture_keywords": [
             "flat",
@@ -269,26 +327,26 @@
           "required_assets": [
             {
               "type": "remotion_infographic",
-              "description": "Grafik PDB per kapita ID +1,5%; overlay pelemahan rupiah; teks \"efek mata uang, bukan ekonomi menyusut\"",
+              "description": "Attachment 3: tangkapan pencarian 'kurs rupiah melemah' (Rp18.268/USD 16 Nov; proyeksi Rp18.800) + chart PDB per kapita ID +1,5%",
               "source": "generate"
             }
           ]
         },
         {
-          "id": "s4b",
+          "id": "s4_2",
           "type": "broll",
-          "description": "Aktivitas ekonomi Jakarta \u2014 jalanan, transaksi, rupiah; nada reflektif",
-          "start_seconds": 241.19,
+          "description": "Real video industri Indonesia \u2014 pabrik, aktivitas ekonomi, reindustrialisasi",
+          "start_seconds": 239.1,
           "end_seconds": 271.48,
           "script_section_id": "s4",
           "framing": "full-frame, subject centred, 10% safe margin",
           "movement": "slow handheld / lateral move",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "subtitle at bottom margin, keep faces clear",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle bottom margin; keep faces clear",
           "shot_intent": "Show the physical reality behind the narration",
           "narrative_role": "comparison",
-          "information_role": "Sisi Indonesia: kurs dan kualitas investasi.",
+          "information_role": "CERITA INDONESIA, JALAN DI TEMPAT \u2014 beat 2 of 2",
           "hero_moment": false,
           "texture_keywords": [
             "documentary",
@@ -298,55 +356,26 @@
           "required_assets": [
             {
               "type": "stock_footage",
-              "description": "Aktivitas ekonomi Jakarta \u2014 jalanan, transaksi, rupiah; nada reflektif",
+              "description": "Real video industri Indonesia \u2014 pabrik, aktivitas ekonomi, reindustrialisasi",
               "source": "source"
             }
           ]
         },
         {
-          "id": "s5a",
-          "type": "broll",
-          "description": "Biaya hidup Vietnam \u2014 perumahan, kafe, struk belanja; kamera handheld",
-          "start_seconds": 271.78,
-          "end_seconds": 312.61,
-          "script_section_id": "s5",
-          "framing": "full-frame, subject centred, 10% safe margin",
-          "movement": "slow handheld / lateral move",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "subtitle at bottom margin, keep faces clear",
-          "shot_intent": "Show the physical reality behind the narration",
-          "narrative_role": "comparison",
-          "information_role": "Daya beli, ketimpangan, dan harga membingkai ulang \"lebih kaya\".",
-          "hero_moment": false,
-          "texture_keywords": [
-            "documentary",
-            "natural-light",
-            "urban"
-          ],
-          "required_assets": [
-            {
-              "type": "stock_footage",
-              "description": "Biaya hidup Vietnam \u2014 perumahan, kafe, struk belanja; kamera handheld",
-              "source": "source"
-            }
-          ]
-        },
-        {
-          "id": "s5b",
+          "id": "s5_1",
           "type": "text_card",
-          "description": "Tiga kartu bergantian: PPP ~US$19.970 vs ~US$19.090 (~5%); Gini ~36; harga rumah ~20x pendapatan (H1 2026)",
-          "start_seconds": 312.61,
-          "end_seconds": 353.43,
+          "description": "Chart daya beli: PDB per kapita PPP VN ~19.970 vs ID ~19.090 dolar internasional (~5%)",
+          "start_seconds": 271.78,
+          "end_seconds": 304.46,
           "script_section_id": "s5",
-          "framing": "centered safe area with 10% padding",
+          "framing": "centered safe area, 10% padding",
           "movement": "frame-based reveal",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "no subtitle overlap with key numbers",
-          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
           "narrative_role": "comparison",
-          "information_role": "Daya beli, ketimpangan, dan harga membingkai ulang \"lebih kaya\".",
+          "information_role": "\"LEBIH KAYA\" ITU RELATIF \u2014 beat 1 of 2",
           "hero_moment": true,
           "texture_keywords": [
             "flat",
@@ -356,26 +385,26 @@
           "required_assets": [
             {
               "type": "remotion_infographic",
-              "description": "Tiga kartu bergantian: PPP ~US$19.970 vs ~US$19.090 (~5%); Gini ~36; harga rumah ~20x pendapatan (H1 2026)",
+              "description": "Chart daya beli: PDB per kapita PPP VN ~19.970 vs ID ~19.090 dolar internasional (~5%)",
               "source": "generate"
             }
           ]
         },
         {
-          "id": "s6a",
+          "id": "s5_2",
           "type": "text_card",
-          "description": "Tiga poin ringkas + kartu proyeksi 2027 VN US$5.659 vs ID US$5.550 (PROYEKSI)",
-          "start_seconds": 353.73,
-          "end_seconds": 378.3,
-          "script_section_id": "s6",
-          "framing": "centered safe area with 10% padding",
+          "description": "Chart: Gini ~36 kedua negara; harga rumah Hanoi/HCMC ~20x pendapatan tahunan median; apartemen +40%; catatan SCMP; kesimpulan",
+          "start_seconds": 304.46,
+          "end_seconds": 353.43,
+          "script_section_id": "s5",
+          "framing": "centered safe area, 10% padding",
           "movement": "frame-based reveal",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "no subtitle overlap with key numbers",
-          "shot_intent": "Make the data point unmissable and self-explanatory",
-          "narrative_role": "resolution",
-          "information_role": "Kesimpulan: ini soal arah, bukan menang-kalah.",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
+          "narrative_role": "comparison",
+          "information_role": "\"LEBIH KAYA\" ITU RELATIF \u2014 beat 2 of 2",
           "hero_moment": false,
           "texture_keywords": [
             "flat",
@@ -385,84 +414,84 @@
           "required_assets": [
             {
               "type": "remotion_infographic",
-              "description": "Tiga poin ringkas + kartu proyeksi 2027 VN US$5.659 vs ID US$5.550 (PROYEKSI)",
+              "description": "Chart: Gini ~36 kedua negara; harga rumah Hanoi/HCMC ~20x pendapatan tahunan median; apartemen +40%; catatan SCMP; kesimpulan",
               "source": "generate"
             }
           ]
         },
         {
-          "id": "s6b",
-          "type": "broll",
-          "description": "Dua bendera berdampingan kembali; transisi simbolik dari data ke pelajaran",
-          "start_seconds": 378.3,
+          "id": "s6_1",
+          "type": "text_card",
+          "description": "Poin-poin penting + chart: tiga pelajaran dan proyeksi IMF 2027 VN US$5.659 vs ID US$5.550 (PROYEKSI)",
+          "start_seconds": 353.73,
           "end_seconds": 402.86,
           "script_section_id": "s6",
-          "framing": "full-frame, subject centred, 10% safe margin",
-          "movement": "slow handheld / lateral move",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "subtitle at bottom margin, keep faces clear",
-          "shot_intent": "Show the physical reality behind the narration",
+          "framing": "centered safe area, 10% padding",
+          "movement": "frame-based reveal",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
           "narrative_role": "resolution",
-          "information_role": "Kesimpulan: ini soal arah, bukan menang-kalah.",
+          "information_role": "JADI, APA PELAJARANNYA? \u2014 beat 1 of 1",
           "hero_moment": false,
           "texture_keywords": [
-            "documentary",
-            "natural-light",
-            "urban"
+            "flat",
+            "high-contrast",
+            "news"
           ],
           "required_assets": [
             {
-              "type": "stock_footage",
-              "description": "Dua bendera berdampingan kembali; transisi simbolik dari data ke pelajaran",
-              "source": "source"
+              "type": "remotion_infographic",
+              "description": "Poin-poin penting + chart: tiga pelajaran dan proyeksi IMF 2027 VN US$5.659 vs ID US$5.550 (PROYEKSI)",
+              "source": "generate"
             }
           ]
         },
         {
-          "id": "s7a",
-          "type": "broll",
-          "description": "Pabrik & pelabuhan ekspor Vietnam; pekerja industri; kontainer bergerak",
-          "start_seconds": 403.16,
-          "end_seconds": 459.88,
-          "script_section_id": "s7",
-          "framing": "full-frame, subject centred, 10% safe margin",
-          "movement": "slow handheld / lateral move",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "subtitle at bottom margin, keep faces clear",
-          "shot_intent": "Show the physical reality behind the narration",
-          "narrative_role": "deliver_payload",
-          "information_role": "Empat pelajaran konkret untuk Indonesia.",
-          "hero_moment": false,
-          "texture_keywords": [
-            "documentary",
-            "natural-light",
-            "urban"
-          ],
-          "required_assets": [
-            {
-              "type": "stock_footage",
-              "description": "Pabrik & pelabuhan ekspor Vietnam; pekerja industri; kontainer bergerak",
-              "source": "source"
-            }
-          ]
-        },
-        {
-          "id": "s7b",
+          "id": "s7_1",
           "type": "text_card",
-          "description": "Empat ikon: konsistensi (7%\u219290%), rantai pasok (73%\u219276%), kualitas (Q3 ID 5,47% vs VN 9,95%), manufaktur (PMI 54,0)",
-          "start_seconds": 459.88,
+          "description": "Chart: ekspor/PDB 7%\u219290% sejak Doi Moi; FDI ekspor 73%\u219276%; ekspor H1 2026 US$266,5 M (+21%); Q3 2026 ID 5,47% vs VN ~10%",
+          "start_seconds": 403.16,
+          "end_seconds": 465.95,
+          "script_section_id": "s7",
+          "framing": "centered safe area, 10% padding",
+          "movement": "frame-based reveal",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
+          "narrative_role": "deliver_payload",
+          "information_role": "APA YANG BISA KITA PELAJARI \u2014 beat 1 of 2",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "news"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Chart: ekspor/PDB 7%\u219290% sejak Doi Moi; FDI ekspor 73%\u219276%; ekspor H1 2026 US$266,5 M (+21%); Q3 2026 ID 5,47% vs VN ~10%",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s7_2",
+          "type": "text_card",
+          "description": "Poin-poin + chart: rantai pasok terintegrasi, pertanian modern, industri teknologi tinggi, manufaktur ekspor; PMI ID 54 (Okt 2026)",
+          "start_seconds": 465.95,
           "end_seconds": 516.61,
           "script_section_id": "s7",
-          "framing": "centered safe area with 10% padding",
+          "framing": "centered safe area, 10% padding",
           "movement": "frame-based reveal",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "no subtitle overlap with key numbers",
-          "shot_intent": "Make the data point unmissable and self-explanatory",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
           "narrative_role": "deliver_payload",
-          "information_role": "Empat pelajaran konkret untuk Indonesia.",
+          "information_role": "APA YANG BISA KITA PELAJARI \u2014 beat 2 of 2",
           "hero_moment": false,
           "texture_keywords": [
             "flat",
@@ -472,113 +501,26 @@
           "required_assets": [
             {
               "type": "remotion_infographic",
-              "description": "Empat ikon: konsistensi (7%\u219290%), rantai pasok (73%\u219276%), kualitas (Q3 ID 5,47% vs VN 9,95%), manufaktur (PMI 54,0)",
+              "description": "Poin-poin + chart: rantai pasok terintegrasi, pertanian modern, industri teknologi tinggi, manufaktur ekspor; PMI ID 54 (Okt 2026)",
               "source": "generate"
             }
           ]
         },
         {
-          "id": "s8a",
+          "id": "s8_1",
           "type": "text_card",
-          "description": "Ikon peringatan + dua peta: FDI ~80% ekspor (H1 2026), defisit barang US$16,7M, kekurangan tenaga terampil, \"pilar kembar\" ASEAN",
+          "description": "Poin-poin penting: ketergantungan FDI ~80% ekspor, defisit barang US$16,7 M, kekurangan tenaga terampil, 'pilar kembar' ASEAN",
           "start_seconds": 516.91,
-          "end_seconds": 561.06,
-          "script_section_id": "s8",
-          "framing": "centered safe area with 10% padding",
-          "movement": "frame-based reveal",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "no subtitle overlap with key numbers",
-          "shot_intent": "Make the data point unmissable and self-explanatory",
-          "narrative_role": "emotional_beat",
-          "information_role": "Catatan kritis agar tidak meniru mentah-mentah.",
-          "hero_moment": false,
-          "texture_keywords": [
-            "flat",
-            "high-contrast",
-            "news"
-          ],
-          "required_assets": [
-            {
-              "type": "remotion_infographic",
-              "description": "Ikon peringatan + dua peta: FDI ~80% ekspor (H1 2026), defisit barang US$16,7M, kekurangan tenaga terampil, \"pilar kembar\" ASEAN",
-              "source": "generate"
-            }
-          ]
-        },
-        {
-          "id": "s8b",
-          "type": "broll",
-          "description": "Peta Vietnam dan Indonesia berdampingan; transisi ke skyline keduanya",
-          "start_seconds": 561.06,
           "end_seconds": 605.21,
           "script_section_id": "s8",
-          "framing": "full-frame, subject centred, 10% safe margin",
-          "movement": "slow handheld / lateral move",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "subtitle at bottom margin, keep faces clear",
-          "shot_intent": "Show the physical reality behind the narration",
-          "narrative_role": "emotional_beat",
-          "information_role": "Catatan kritis agar tidak meniru mentah-mentah.",
-          "hero_moment": false,
-          "texture_keywords": [
-            "documentary",
-            "natural-light",
-            "urban"
-          ],
-          "required_assets": [
-            {
-              "type": "stock_footage",
-              "description": "Peta Vietnam dan Indonesia berdampingan; transisi ke skyline keduanya",
-              "source": "source"
-            }
-          ]
-        },
-        {
-          "id": "s9a",
-          "type": "broll",
-          "description": "Jalanan Vietnam sore hari; tempo melambat menuju akhir",
-          "start_seconds": 605.51,
-          "end_seconds": 619.92,
-          "script_section_id": "s9",
-          "framing": "full-frame, subject centred, 10% safe margin",
-          "movement": "slow handheld / lateral move",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "subtitle at bottom margin, keep faces clear",
-          "shot_intent": "Show the physical reality behind the narration",
-          "narrative_role": "call_to_action",
-          "information_role": "Ajakan diskusi dan subscribe.",
-          "hero_moment": false,
-          "texture_keywords": [
-            "documentary",
-            "natural-light",
-            "urban"
-          ],
-          "required_assets": [
-            {
-              "type": "stock_footage",
-              "description": "Jalanan Vietnam sore hari; tempo melambat menuju akhir",
-              "source": "source"
-            }
-          ]
-        },
-        {
-          "id": "s9b",
-          "type": "text_card",
-          "description": "Kartu CTA: \"Industrialisasi, lapangan kerja, atau stabilitas rupiah?\" + like/subscribe/share",
-          "start_seconds": 619.92,
-          "end_seconds": 634.33,
-          "script_section_id": "s9",
-          "framing": "centered safe area with 10% padding",
+          "framing": "centered safe area, 10% padding",
           "movement": "frame-based reveal",
-          "transition_in": "crossfade 0.3s from previous half",
-          "transition_out": "crossfade 0.3s to next half",
-          "overlay_notes": "no subtitle overlap with key numbers",
-          "shot_intent": "Make the data point unmissable and self-explanatory",
-          "narrative_role": "call_to_action",
-          "information_role": "Ajakan diskusi dan subscribe.",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
+          "narrative_role": "emotional_beat",
+          "information_role": "YANG TIDAK PERLU DITIRU MENTAH-MENTAH \u2014 beat 1 of 1",
           "hero_moment": false,
           "texture_keywords": [
             "flat",
@@ -588,16 +530,45 @@
           "required_assets": [
             {
               "type": "remotion_infographic",
-              "description": "Kartu CTA: \"Industrialisasi, lapangan kerja, atau stabilitas rupiah?\" + like/subscribe/share",
+              "description": "Poin-poin penting: ketergantungan FDI ~80% ekspor, defisit barang US$16,7 M, kekurangan tenaga terampil, 'pilar kembar' ASEAN",
+              "source": "generate"
+            }
+          ]
+        },
+        {
+          "id": "s9_1",
+          "type": "text_card",
+          "description": "Daftar sumber (IMF WEO Okt 2026, BPS, NSO, src-01\u2026src-24) + poin CTA: komentar, like, subscribe, bagikan",
+          "start_seconds": 605.51,
+          "end_seconds": 631.43,
+          "script_section_id": "s9",
+          "framing": "centered safe area, 10% padding",
+          "movement": "frame-based reveal",
+          "transition_in": "crossfade 0.3s from previous visual",
+          "transition_out": "crossfade 0.3s to next visual",
+          "overlay_notes": "subtitle in bottom margin; numbers and labels never overlapped",
+          "shot_intent": "Make the data point or point-list unmissable",
+          "narrative_role": "call_to_action",
+          "information_role": "PENUTUP \u2014 beat 1 of 1",
+          "hero_moment": false,
+          "texture_keywords": [
+            "flat",
+            "high-contrast",
+            "news"
+          ],
+          "required_assets": [
+            {
+              "type": "remotion_infographic",
+              "description": "Daftar sumber (IMF WEO Okt 2026, BPS, NSO, src-01\u2026src-24) + poin CTA: komentar, like, subscribe, bagikan",
               "source": "generate"
             }
           ]
         }
       ],
       "metadata": {
-        "total_duration_seconds": 636.33,
-        "source_to_support_ratio": "50/50 per narration section \u2014 alternating halves",
-        "scene_count": 20,
+        "total_duration_seconds": 633.43,
+        "source_to_support_ratio": "User-specified visual beats per section; 5 real-footage beats, 14 infographic beats",
+        "scene_count": 19,
         "anchor_rules": [
           "Real footage stays visually primary in every footage half",
           "No constant overlays over source footage \u2014 subtitles only in bottom margin"
@@ -624,7 +595,10 @@
         "narration_voice": "Edge TTS id-ID-GadisNeural via MoneyPrinterTurbo",
         "render_runtime": "remotion",
         "composition_mode": "templated",
-        "note": "Retimed to real Edge TTS audio: 636.33s total (was 510s). 631.63s speech, 0.3s gaps, 2.0s final hold."
+        "note": "Rebuilt from user visual beats and retimed to 633.43s (TTS 631.63s before S9 fix; now 628.73s speech). Duration per beat split proportionally to narration length.",
+        "visual_plan_source": "User-provided per-section visual directions (S0-S9) with reference screenshots.",
+        "data_discrepancy_note": "IMF DataMapper screenshot shows 2025 selection ID 5.08k vs VN 4.83k, while WB 2025 actual is VN 5.066 vs ID 5.060 and IMF 2026 projection is VN 5.259 vs ID 5.153. Script keeps the 2026 projection with PROYEKSI label; screenshot used only as context in S2 beat 2.",
+        "fx_reference_note": "Screenshots show IDR ~18.252-18.268/USD (Nov 2026) and projections to 18.800. Narration keeps Rp18.000 as Katadata assumption (audio already rendered); screenshot used as context for S4 beat 1."
       }
     },
     "decision_log": {
@@ -1213,6 +1187,32 @@
           "user_visible": true,
           "user_approved": false,
           "confidence": 0.98
+        },
+        {
+          "decision_id": "d-021",
+          "stage": "scene_plan",
+          "category": "concept_selection",
+          "subject": "Visual beat plan per section (S0-S9)",
+          "options_considered": [
+            {
+              "option_id": "user-beats",
+              "label": "19 visual beats mengikuti catatan user per section",
+              "score": 0.98,
+              "reason": "User mengirim visual plan detail + 3 screenshot referensi"
+            },
+            {
+              "option_id": "alternating-halves",
+              "label": "20 half-scene 50/50 generik",
+              "score": 0.65,
+              "reason": "Versi sebelumnya",
+              "rejected_because": "User memberikan visual spesifik per paragraf"
+            }
+          ],
+          "selected": "user-beats",
+          "reason": "Scene plan disusun ulang sesuai visual beat user; audio narasi tidak diubah.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
         }
       ]
     }
@@ -1221,12 +1221,12 @@
   "metadata": {
     "review": {
       "decision": "PASS",
-      "round": 2,
+      "round": 4,
       "findings": [
         {
           "severity": "CRITICAL",
-          "description": "Durasi estimasi 510s tidak sesuai TTS nyata 631,63s.",
-          "action": "Diretime ke 636.33s; 20 half-scene diperbarui.",
+          "description": "Beat pertama di 7 bagian mendapat durasi 0 detik.",
+          "action": "Pembagian durasi diperbaiki; semua beat sekarang >0.",
           "status": "fixed"
         }
       ],
@@ -1240,7 +1240,6 @@
       "spent_usd": 0.0,
       "projected_compose_usd": 0.0
     },
-    "next_stage": "assets",
-    "note": "Menunggu approval dengan durasi akurat hasil pengukuran TTS."
+    "next_stage": "assets"
   }
 }

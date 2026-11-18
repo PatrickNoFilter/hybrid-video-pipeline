@@ -584,6 +584,32 @@
       "user_visible": true,
       "user_approved": false,
       "confidence": 0.98
+    },
+    {
+      "decision_id": "d-021",
+      "stage": "scene_plan",
+      "category": "concept_selection",
+      "subject": "Visual beat plan per section (S0-S9)",
+      "options_considered": [
+        {
+          "option_id": "user-beats",
+          "label": "19 visual beats mengikuti catatan user per section",
+          "score": 0.98,
+          "reason": "User mengirim visual plan detail + 3 screenshot referensi"
+        },
+        {
+          "option_id": "alternating-halves",
+          "label": "20 half-scene 50/50 generik",
+          "score": 0.65,
+          "reason": "Versi sebelumnya",
+          "rejected_because": "User memberikan visual spesifik per paragraf"
+        }
+      ],
+      "selected": "user-beats",
+      "reason": "Scene plan disusun ulang sesuai visual beat user; audio narasi tidak diubah.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.95
     }
   ]
 }
