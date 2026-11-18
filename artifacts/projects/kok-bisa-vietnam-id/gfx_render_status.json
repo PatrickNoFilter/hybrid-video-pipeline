@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "stage": "edit",
+  "status": "STALLED_BY_USER",
+  "rendered": [
+    "s0_2",
+    "s1_1",
+    "s1_2",
+    "s2_1",
+    "s2_2",
+    "s2_3",
+    "s3_1",
+    "s3_3",
+    "s4_1",
+    "s5_1",
+    "s5_2",
+    "s6_1",
+    "s7_1",
+    "s7_2"
+  ],
+  "missing": [
+    "s8_1",
+    "s9_1"
+  ],
+  "rendered_count": 14,
+  "total": 16,
+  "note": "Remotion render timed out after 600s; 14/16 graphic MP4s completed. User requested approval hold and shutdown before finishing s8_1/s9_1."
+}

@@ -662,6 +662,32 @@
       "user_visible": true,
       "user_approved": false,
       "confidence": 0.9
+    },
+    {
+      "decision_id": "d-024",
+      "stage": "edit",
+      "category": "approval_policy",
+      "subject": "Approval flow hold at edit stage",
+      "options_considered": [
+        {
+          "option_id": "hold",
+          "label": "Tahan approval di edit; sinkron backlot; shutdown",
+          "score": 1.0,
+          "reason": "Instruksi eksplisit user"
+        },
+        {
+          "option_id": "continue",
+          "label": "Lanjut render 2 grafis & edit",
+          "score": 0.3,
+          "reason": "Ditolak",
+          "rejected_because": "User meminta stall approve dan shutdown"
+        }
+      ],
+      "selected": "hold",
+      "reason": "User: \"stall the approve, update the github especially the backlot then shutdown\".",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
     }
   ]
 }

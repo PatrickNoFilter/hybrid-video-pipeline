@@ -1,0 +1,988 @@
+{
+  "version": "1.0",
+  "project_id": "kok-bisa-vietnam-id",
+  "pipeline_type": "hybrid",
+  "stage": "assets",
+  "status": "awaiting_human",
+  "timestamp": "2026-11-18T05:13:02.845165+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "asset_manifest": {
+      "version": "1.0",
+      "assets": [
+        {
+          "id": "s0_1",
+          "type": "video",
+          "path": "assets/video/s0_1.mp4",
+          "source_tool": "ffmpeg_local",
+          "scene_id": "s0_1",
+          "generation_summary": "Representasi Vietnam era 1990 (pedesaan/pasar). Bukan footage arsip 1990 asli \u2014 perlu diverifikasi/diganti jika ingin akurat.",
+          "duration_seconds": 21.47,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "provider": "local",
+          "license": "local / representative"
+        },
+        {
+          "id": "s0_2",
+          "type": "image",
+          "path": "assets/stills/s0_2.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s0_2",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s1_1",
+          "type": "image",
+          "path": "assets/stills/s1_1.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s1_1",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s1_2",
+          "type": "image",
+          "path": "assets/stills/s1_2.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s1_2",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s2_1",
+          "type": "image",
+          "path": "assets/stills/s2_1.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s2_1",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s2_2",
+          "type": "image",
+          "path": "assets/stills/s2_2.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s2_2",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s2_3",
+          "type": "image",
+          "path": "assets/stills/s2_3.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s2_3",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s3_1",
+          "type": "image",
+          "path": "assets/stills/s3_1.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s3_1",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s3_2",
+          "type": "video",
+          "path": "assets/video/s3_2.mp4",
+          "source_tool": "ffmpeg_local",
+          "scene_id": "s3_2",
+          "generation_summary": "Pabrik elektronik Vietnam \u2014 lini perakitan/ekspor.",
+          "duration_seconds": 20.84,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "provider": "local",
+          "license": "local / representative"
+        },
+        {
+          "id": "s3_3",
+          "type": "image",
+          "path": "assets/stills/s3_3.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s3_3",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s4_1",
+          "type": "image",
+          "path": "assets/stills/s4_1.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s4_1",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s4_2",
+          "type": "video",
+          "path": "assets/video/s4_2.mp4",
+          "source_tool": "ffmpeg_local",
+          "scene_id": "s4_2",
+          "generation_summary": "Industri & aktivitas ekonomi Indonesia (Jakarta).",
+          "duration_seconds": 32.38,
+          "resolution": "1920x1080",
+          "format": "mp4",
+          "provider": "local",
+          "license": "local / representative"
+        },
+        {
+          "id": "s5_1",
+          "type": "image",
+          "path": "assets/stills/s5_1.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s5_1",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s5_2",
+          "type": "image",
+          "path": "assets/stills/s5_2.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s5_2",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s6_1",
+          "type": "image",
+          "path": "assets/stills/s6_1.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s6_1",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s7_1",
+          "type": "image",
+          "path": "assets/stills/s7_1.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s7_1",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s7_2",
+          "type": "image",
+          "path": "assets/stills/s7_2.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s7_2",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s8_1",
+          "type": "image",
+          "path": "assets/stills/s8_1.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s8_1",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "s9_1",
+          "type": "image",
+          "path": "assets/stills/s9_1.png",
+          "source_tool": "storyboard_still",
+          "scene_id": "s9_1",
+          "generation_summary": "Storyboard preview still \u2014 final flat-motion-graphics animation to render in Remotion.",
+          "resolution": "1280x720",
+          "format": "png",
+          "provider": "local",
+          "license": "generated"
+        },
+        {
+          "id": "narration_full",
+          "type": "audio",
+          "path": "assets/audio/narration_full.mp3",
+          "source_tool": "ffmpeg",
+          "scene_id": "all",
+          "generation_summary": "Full narration mix: 10 Gadis sections, 0.3s gaps, 2s tail hold.",
+          "duration_seconds": 633.43,
+          "format": "mp3",
+          "provider": "local",
+          "license": "user library"
+        },
+        {
+          "id": "background_loop",
+          "type": "audio",
+          "path": "assets/music/background_loop.mp3",
+          "source_tool": "ffmpeg",
+          "scene_id": "all",
+          "generation_summary": "Informative Bed.mp3 looped to full timeline.",
+          "duration_seconds": 633.43,
+          "format": "mp3",
+          "provider": "local",
+          "license": "user library"
+        }
+      ],
+      "metadata": {
+        "storyboard_note": "19 beat-level assets: 3 representative video clips + 14 storyboard stills + 2 audio mixes. Final Remotion graphics render after assets gate approval.",
+        "source_vs_generated_map": {
+          "source": [],
+          "generated": []
+        },
+        "required_footage_note": "Permintaan awal \"busy street of Vietnam\" belum punya beat khusus dalam visual plan terbaru; s0_1 memakai footage Vietnam representatif. Bisa disisipkan saat edit bila diinginkan.",
+        "cost_usd": 0.0,
+        "total_duration_seconds": 633.43
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "kok-bisa-vietnam-id",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "idea",
+          "category": "pipeline_selection",
+          "subject": "Pipeline untuk video hybrid real-footage + infografis",
+          "options_considered": [
+            {
+              "option_id": "hybrid",
+              "label": "hybrid",
+              "score": 0.95,
+              "reason": "Footage nyata + chart/infografis data"
+            },
+            {
+              "option_id": "animated-explainer",
+              "label": "animated-explainer",
+              "score": 0.6,
+              "reason": "Semua generated",
+              "rejected_because": "Kehilangan anchor footage nyata"
+            },
+            {
+              "option_id": "documentary-montage",
+              "label": "documentary-montage",
+              "score": 0.5,
+              "reason": "Footage-led",
+              "rejected_because": "Dukungan chart lemah untuk adegan data"
+            }
+          ],
+          "selected": "hybrid",
+          "reason": "Brief menggabungkan footage nyata dan infografis data.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "idea",
+          "category": "concept_selection",
+          "subject": "Judul video (Bahasa Indonesia)",
+          "options_considered": [
+            {
+              "option_id": "kok-bisa",
+              "label": "Kok Bisa Orang Vietnam 'Lebih Kaya' dari Indonesia?",
+              "score": 0.95,
+              "reason": "Dipilih user; hook 'kok bisa' + angka US$6 di angle"
+            },
+            {
+              "option_id": "photo-finish",
+              "label": "Vietnam Salip Indonesia soal GDP Per Kapita \u2014 Cuma Menang US$6 per Orang",
+              "score": 0.8,
+              "reason": "Lebih berita",
+              "rejected_because": "User memilih opsi 1"
+            },
+            {
+              "option_id": "fakta",
+              "label": "Vietnam Lebih Kaya dari Indonesia? Ini Faktanya",
+              "score": 0.7,
+              "reason": "Myth-busting",
+              "rejected_because": "User memilih opsi 1"
+            }
+          ],
+          "selected": "kok-bisa",
+          "reason": "User secara eksplisit memilih kandidat #1.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "idea",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.95,
+              "reason": "Native stat_card/bar_chart/line_chart; video + React overlay dalam satu pass"
+            },
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.7,
+              "reason": "HTML/GSAP kinetic typography",
+              "rejected_because": "Primitive chart bawaan lebih lemah untuk brief data-heavy ini"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.4,
+              "reason": "Cut/concat lokal",
+              "rejected_because": "Infografis turun jadi kartu statis"
+            }
+          ],
+          "selected": "remotion",
+          "reason": "DIUSULKAN \u2014 kedua runtime tersedia dan sudah dipresentasikan pada gerbang idea. Belum dikunci; tunggu persetujuan eksplisit user. Remotion direkomendasikan karena chart data.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.7
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "idea",
+          "category": "voice_selection",
+          "subject": "Narasi Bahasa Indonesia",
+          "options_considered": [
+            {
+              "option_id": "edge-gadis",
+              "label": "Edge TTS id-ID-GadisNeural (via MPT)",
+              "score": 0.95,
+              "reason": "Terpasang, gratis, sudah dipakai di proyek sebelumnya"
+            },
+            {
+              "option_id": "edge-ardi",
+              "label": "Edge TTS id-ID-ArdiNeural",
+              "score": 0.6,
+              "reason": "Alternatif pria",
+              "rejected_because": "User sebelumnya menyetujui Gadis"
+            },
+            {
+              "option_id": "no-narration",
+              "label": "Tanpa narasi",
+              "score": 0.4,
+              "reason": "Teks di layar saja",
+              "rejected_because": "Video berbasis penjelasan"
+            }
+          ],
+          "selected": "edge-gadis",
+          "reason": "Diusulkan pada gerbang idea; perlu approval user untuk proyek baru ini.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "idea",
+          "category": "music_source",
+          "subject": "Musik latar",
+          "options_considered": [
+            {
+              "option_id": "news-investigating",
+              "label": "Background music News Investigating.mp3",
+              "score": 0.9,
+              "reason": "Sudah ada di library user, cocok nada investigasi"
+            },
+            {
+              "option_id": "pixabay",
+              "label": "Pixabay music search",
+              "score": 0.5,
+              "reason": "Satu-satunya music_search aktif",
+              "rejected_because": "Track user sudah tersedia dan lebih cocok"
+            },
+            {
+              "option_id": "none",
+              "label": "Tanpa musik",
+              "score": 0.3,
+              "reason": "\u2014",
+              "rejected_because": "Mengurangi produksi"
+            }
+          ],
+          "selected": "news-investigating",
+          "reason": "Diusulkan pada gerbang idea; perlu approval user.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "idea",
+          "category": "approval_policy",
+          "subject": "Waktu transfer ke Concat",
+          "options_considered": [
+            {
+              "option_id": "after-edit",
+              "label": "Setelah stage edit disetujui",
+              "score": 1.0,
+              "reason": "Instruksi eksplisit user"
+            },
+            {
+              "option_id": "now",
+              "label": "Transfer sekarang",
+              "score": 0.2,
+              "reason": "\u2014",
+              "rejected_because": "User meminta backlot step-by-step dulu"
+            }
+          ],
+          "selected": "after-edit",
+          "reason": "User: buat backlot seperti biasa dengan step step approval, baru transfer ke concat setelah tahap edit.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "idea",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.95,
+              "reason": "Native chart primitives; user approved"
+            },
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.7,
+              "reason": "HTML/GSAP kinetic typography",
+              "rejected_because": "User memilih Remotion untuk video data-heavy"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.4,
+              "reason": "Cut/concat lokal",
+              "rejected_because": "Infografis turun jadi kartu statis"
+            }
+          ],
+          "selected": "remotion",
+          "reason": "User menyetujui Remotion pada gerbang idea.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "idea",
+          "category": "voice_selection",
+          "subject": "Narasi Bahasa Indonesia",
+          "options_considered": [
+            {
+              "option_id": "edge-gadis",
+              "label": "Edge TTS id-ID-GadisNeural",
+              "score": 0.98,
+              "reason": "User memilih Gadis; gratis, terpasang"
+            },
+            {
+              "option_id": "edge-ardi",
+              "label": "Edge TTS id-ID-ArdiNeural",
+              "score": 0.6,
+              "reason": "Alternatif pria",
+              "rejected_because": "User memilih Gadis"
+            },
+            {
+              "option_id": "none",
+              "label": "Tanpa narasi",
+              "score": 0.3,
+              "reason": "\u2014",
+              "rejected_because": "Video berbasis penjelasan"
+            }
+          ],
+          "selected": "edge-gadis",
+          "reason": "User menyetujui narasi Gadis via MoneyPrinterTurbo.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "idea",
+          "category": "music_source",
+          "subject": "Musik latar",
+          "options_considered": [
+            {
+              "option_id": "informative-bed",
+              "label": "Informative Bed.mp3",
+              "score": 0.95,
+              "reason": "User memilih track dari /home/desktop/Music; nada informatif"
+            },
+            {
+              "option_id": "news-investigating",
+              "label": "News Investigating.mp3",
+              "score": 0.7,
+              "reason": "Usulan sebelumnya",
+              "rejected_because": "User mengganti dengan Informative Bed.mp3 pada gerbang idea"
+            },
+            {
+              "option_id": "none",
+              "label": "Tanpa musik",
+              "score": 0.3,
+              "reason": "\u2014",
+              "rejected_because": "User memilih musik"
+            }
+          ],
+          "selected": "informative-bed",
+          "reason": "User memilih /home/desktop/Music/Informative Bed.mp3.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "idea",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "templated",
+              "label": "Templated",
+              "score": 0.9,
+              "reason": "Cepat, reliabel, cocok untuk data cards; user memilih"
+            },
+            {
+              "option_id": "atelier",
+              "label": "Atelier",
+              "score": 0.6,
+              "reason": "Bespoke, biaya token lebih tinggi",
+              "rejected_because": "User memilih templated"
+            }
+          ],
+          "selected": "templated",
+          "reason": "User menyetujui mode templated pada gerbang idea.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-011",
+          "stage": "script",
+          "category": "visual_accuracy_check",
+          "subject": "Angka PDB per kapita Vietnam vs Indonesia",
+          "options_considered": [
+            {
+              "option_id": "world_bank_api",
+              "label": "World Bank WDI API (current, PPP, constant 2015)",
+              "score": 0.95,
+              "reason": "Primary source, terverifikasi 2026-11-18"
+            },
+            {
+              "option_id": "imf_news",
+              "label": "Headline IMF lewat media",
+              "score": 0.6,
+              "reason": "Dipakai hanya sebagai proyeksi berlabel",
+              "rejected_because": "Bukan hasil ukur dan 403 langsung dari API IMF"
+            }
+          ],
+          "selected": "world_bank_api",
+          "reason": "Semua klaim numerik di script ditelusuri ke data_manifest.json; IMF diberi label PROYEKSI.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-012",
+          "stage": "script",
+          "category": "visual_accuracy_check",
+          "subject": "Klaim perusahaan & pasar pada S7 (China+1)",
+          "options_considered": [
+            {
+              "option_id": "corrected",
+              "label": "Pasar Barat (AS & Eropa) + Samsung, pemasok Apple, Intel/Amkor",
+              "score": 0.95,
+              "reason": "Fakta terverifikasi; istilah China+1/friendshoring tepat"
+            },
+            {
+              "option_id": "user_draft",
+              "label": "Pasar NATO + Samsung, TSMC, iPhone",
+              "score": 0.4,
+              "reason": "Seperti usulan awal",
+              "rejected_because": "NATO adalah aliansi militer bukan pasar; TSMC tidak punya fab di Vietnam; final assembly iPhone terutama di China/India"
+            }
+          ],
+          "selected": "corrected",
+          "reason": "Klaim diperbaiki agar akurat sebelum produksi aset; Samsung investor asing terbesar di Vietnam, pemasok Apple dan Intel/Amkor masuk lewat China+1.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-013",
+          "stage": "script",
+          "category": "concept_selection",
+          "subject": "Struktur & durasi naskah",
+          "options_considered": [
+            {
+              "option_id": "markdown-7min",
+              "label": "Naskah markdown 7 menit (7 bagian)",
+              "score": 0.95,
+              "reason": "User memilih versi markdown; narasi dipertahankan apa adanya"
+            },
+            {
+              "option_id": "backlot-91s",
+              "label": "Naskah backlot 91 detik (10 adegan)",
+              "score": 0.7,
+              "reason": "Lebih ringkas",
+              "rejected_because": "User memilih versi markdown karena salip sudah terjadi di 2025 dan diproyeksikan makin jauh"
+            }
+          ],
+          "selected": "markdown-7min",
+          "reason": "User: \"tetap pakai versi markdown karena di tahun 2025 sudah tersalip dan kemungkinan lebih jauh tersalip\".",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-014",
+          "stage": "script",
+          "category": "visual_accuracy_check",
+          "subject": "Sumber klaim numerik naskah markdown",
+          "options_considered": [
+            {
+              "option_id": "source_list",
+              "label": "8 sumber sekunder + cek primer IMF",
+              "score": 0.95,
+              "reason": "Semua klaim numerik memiliki sumber; 7/8 URL aktif (200), SCMP 403"
+            },
+            {
+              "option_id": "no_sources",
+              "label": "Tanpa daftar sumber",
+              "score": 0.2,
+              "reason": "\u2014",
+              "rejected_because": "Klaim proyeksi harus dapat ditelusuri"
+            }
+          ],
+          "selected": "source_list",
+          "reason": "User memberikan daftar sumber; narasi dipertahankan, angka US$5.259 dipakai karena mayoritas sumber. Perlu cek IMF WEO primer sebelum publish.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-015",
+          "stage": "script",
+          "category": "concept_selection",
+          "subject": "Revisi Bagian 5 & durasi akhir",
+          "options_considered": [
+            {
+              "option_id": "revised",
+              "label": "Naskah revisi: Bagian 5 PPP/Gini/harga + durasi 430 s",
+              "score": 0.95,
+              "reason": "User mengirim revisi; placeholder diisi dari src-06"
+            },
+            {
+              "option_id": "previous",
+              "label": "Naskah round 6 (430\u2192420 s, Bagian 5 lama)",
+              "score": 0.6,
+              "reason": "Versi sebelumnya",
+              "rejected_because": "User meminta revisi"
+            }
+          ],
+          "selected": "revised",
+          "reason": "User mengirim file revisi; narasi dipertahankan apa adanya, placeholder diisi dengan angka terverifikasi.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-016",
+          "stage": "script",
+          "category": "concept_selection",
+          "subject": "Revisi 4: tambah S7/S8/S9 & durasi 8:30",
+          "options_considered": [
+            {
+              "option_id": "rev4",
+              "label": "10 section, 510 s, S7 pelajaran + S8 kritik + S9 penutup",
+              "score": 0.97,
+              "reason": "User mengirim revisi 4 dengan sumber 14-19"
+            },
+            {
+              "option_id": "rev3",
+              "label": "8 section, 430 s",
+              "score": 0.7,
+              "reason": "Versi sebelumnya",
+              "rejected_because": "User meminta revisi lanjutan"
+            }
+          ],
+          "selected": "rev4",
+          "reason": "Narasi revisi 4 dipertahankan; placeholder S5 diisi dari src-06.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-017",
+          "stage": "script",
+          "category": "visual_accuracy_check",
+          "subject": "Revisi 5: PPP WEO Okt 2026 & sumber primer",
+          "options_considered": [
+            {
+              "option_id": "r5",
+              "label": "PPP 19.970 vs 19.090 (~5%) + BPS/NSO/PMI primer",
+              "score": 0.97,
+              "reason": "User mengirim revisi 5 dengan sumber IMF DataMapper & rilis resmi"
+            },
+            {
+              "option_id": "r4",
+              "label": "PPP 18.870 vs 18.657 (~1%, edisi lama)",
+              "score": 0.5,
+              "reason": "Edisi WEO sebelumnya",
+              "rejected_because": "User memperbarui ke edisi Okt 2026"
+            }
+          ],
+          "selected": "r5",
+          "reason": "Angka PPP dan sumber diperbarui; narasi dipertahankan, placeholder S5 tetap diisi dari src-06.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-018",
+          "stage": "scene_plan",
+          "category": "concept_selection",
+          "subject": "Visual router untuk scene_plan",
+          "options_considered": [
+            {
+              "option_id": "alternating-halves",
+              "label": "10 bagian \u00d7 2 half-scene (footage + infografis bergantian)",
+              "score": 0.95,
+              "reason": "Sesuai visual_router brief yang sudah disetujui;Source tetap primer"
+            },
+            {
+              "option_id": "single-visual",
+              "label": "Satu visual per bagian",
+              "score": 0.65,
+              "reason": "Lebih sederhana",
+              "rejected_because": "Mengurangi kehadiran footage nyata dan chart"
+            }
+          ],
+          "selected": "alternating-halves",
+          "reason": "User menyetujui script dengan visual router 50/50; scene_plan mewujudkannya.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-019",
+          "stage": "scene_plan",
+          "category": "approval_policy",
+          "subject": "Urutan approval vs pengukuran TTS",
+          "options_considered": [
+            {
+              "option_id": "tts_first",
+              "label": "Render TTS Gadis \u2192 ukur ffprobe \u2192 retime \u2192 approval scene_plan",
+              "score": 0.98,
+              "reason": "User meminta durasi akurat sebelum approve; narasi sudah disetujui di idea gate"
+            },
+            {
+              "option_id": "approve_first",
+              "label": "Approve scene_plan dulu pakai durasi estimasi",
+              "score": 0.5,
+              "reason": "Durasi 510s hanya estimasi",
+              "rejected_because": "User meminta alur diubah"
+            }
+          ],
+          "selected": "tts_first",
+          "reason": "User: \"ubah flow approvenya ke buatin edge tts narasinya dulu supaya tau durasi lebih akurat\".",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-020",
+          "stage": "scene_plan",
+          "category": "budget_tradeoff",
+          "subject": "Durasi akhir mengikuti TTS nyata",
+          "options_considered": [
+            {
+              "option_id": "extend-636",
+              "label": "Perpanjang timeline ke 636.33s",
+              "score": 0.97,
+              "reason": "Mempertahankan setiap kata narasi yang sudah disetujui dan tempo Gadis alami"
+            },
+            {
+              "option_id": "speed-up",
+              "label": "Percepat TTS ~20%",
+              "score": 0.4,
+              "reason": "Lebih pendek",
+              "rejected_because": "Narasi terdengar terburu-buru"
+            },
+            {
+              "option_id": "cut-text",
+              "label": "Potong naskah",
+              "score": 0.35,
+              "reason": "Mendekati 510s",
+              "rejected_because": "Menghilangkan konten yang sudah disetujui"
+            }
+          ],
+          "selected": "extend-636",
+          "reason": "TTS terukur 631,63s; timeline diperpanjang dengan jeda 0,3s dan hold 2s. Biaya render lokal tetap $0.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.98
+        },
+        {
+          "decision_id": "d-021",
+          "stage": "scene_plan",
+          "category": "concept_selection",
+          "subject": "Visual beat plan per section (S0-S9)",
+          "options_considered": [
+            {
+              "option_id": "user-beats",
+              "label": "19 visual beats mengikuti catatan user per section",
+              "score": 0.98,
+              "reason": "User mengirim visual plan detail + 3 screenshot referensi"
+            },
+            {
+              "option_id": "alternating-halves",
+              "label": "20 half-scene 50/50 generik",
+              "score": 0.65,
+              "reason": "Versi sebelumnya",
+              "rejected_because": "User memberikan visual spesifik per paragraf"
+            }
+          ],
+          "selected": "user-beats",
+          "reason": "Scene plan disusun ulang sesuai visual beat user; audio narasi tidak diubah.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-022",
+          "stage": "script",
+          "category": "concept_selection",
+          "subject": "Visual beat plan per section (S0-S9)",
+          "options_considered": [
+            {
+              "option_id": "user-beats",
+              "label": "S0 = real video Vietnam 1990 \u2192 chart IMF",
+              "score": 0.98,
+              "reason": "User: ganti overlay dua bendera dengan visual yang saya posting"
+            },
+            {
+              "option_id": "old-overlay",
+              "label": "Overlay dua bendera bersanding",
+              "score": 0.4,
+              "reason": "Cue lama dari naskah awal",
+              "rejected_because": "User meminta penggantian dengan real video Vietnam 1990"
+            }
+          ],
+          "selected": "user-beats",
+          "reason": "S0 overlay diganti sesuai visual beat user; narasi & audio tidak berubah.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-023",
+          "stage": "assets",
+          "category": "provider_selection",
+          "subject": "Sumber aset untuk 19 visual beat",
+          "options_considered": [
+            {
+              "option_id": "local-storyboard",
+              "label": "Klip lokal + storyboard still + Remotion saat compose",
+              "score": 0.9,
+              "reason": "Tanpa API berbayar; review filmstrip cepat"
+            },
+            {
+              "option_id": "ai-generation",
+              "label": "Generate footage/chart via API",
+              "score": 0.3,
+              "reason": "Tidak ada provider video/image aktif",
+              "rejected_because": "0/35 video, 0/31 image terkonfigurasi"
+            }
+          ],
+          "selected": "local-storyboard",
+          "reason": "Semua aset lokal/gratis; final animation dirender dengan Remotion setelah approval.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.9
+        }
+      ]
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "metadata": {
+    "review": {
+      "decision": "PASS_WITH_WARNINGS",
+      "round": 1,
+      "findings": [
+        {
+          "severity": "INVESTIGATION",
+          "description": "s0_1 memakai footage Vietnam representatif, bukan arsip 1990 asli.",
+          "action": "Ganti jika diperlukan pada tahap assets lanjutan/edit.",
+          "status": "deferred"
+        },
+        {
+          "severity": "SUGGESTION",
+          "description": "Footage \"busy street of Vietnam\" dari permintaan awal belum punya beat khusus.",
+          "action": "Tambahkan saat edit bila diinginkan.",
+          "status": "deferred"
+        },
+        {
+          "severity": "NITPICK",
+          "description": "14 still baru storyboard preview; animasi final Remotion menyusul.",
+          "action": "Ditetapkan di metadata.",
+          "status": "accepted"
+        }
+      ],
+      "summary": {
+        "critical": 0,
+        "investigations": 1,
+        "suggestions": 1,
+        "success_criteria_met": "4/4"
+      }
+    },
+    "cost_snapshot": {
+      "spent_usd": 0.0,
+      "projected_compose_usd": 0.0
+    },
+    "next_stage": "edit"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "project_id": "kok-bisa-vietnam-id",
+  "pipeline_type": "hybrid",
+  "stage": "edit",
+  "status": "in_progress",
+  "timestamp": "2026-11-18T05:47:01.101515+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {},
+  "style_playbook": "flat-motion-graphics",
+  "metadata": {
+    "status": "STALLED_BY_USER",
+    "render_status": "14/16 Remotion graphic clips rendered; missing: s8_1, s9_1",
+    "note": "Approval held per user request. Backlot synced to GitHub before shutdown.",
+    "next_stage": "edit (on resume)"
+  }
+}

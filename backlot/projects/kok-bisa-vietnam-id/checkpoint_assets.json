@@ -3,11 +3,11 @@
   "project_id": "kok-bisa-vietnam-id",
   "pipeline_type": "hybrid",
   "stage": "assets",
-  "status": "awaiting_human",
-  "timestamp": "2026-11-18T05:13:02.845165+00:00",
+  "status": "completed",
+  "timestamp": "2026-11-18T05:33:30.743178+00:00",
   "checkpoint_policy": "guided",
   "human_approval_required": true,
-  "human_approved": false,
+  "human_approved": true,
   "artifacts": {
     "asset_manifest": {
       "version": "1.0",
@@ -949,39 +949,9 @@
   },
   "style_playbook": "flat-motion-graphics",
   "metadata": {
-    "review": {
-      "decision": "PASS_WITH_WARNINGS",
-      "round": 1,
-      "findings": [
-        {
-          "severity": "INVESTIGATION",
-          "description": "s0_1 memakai footage Vietnam representatif, bukan arsip 1990 asli.",
-          "action": "Ganti jika diperlukan pada tahap assets lanjutan/edit.",
-          "status": "deferred"
-        },
-        {
-          "severity": "SUGGESTION",
-          "description": "Footage \"busy street of Vietnam\" dari permintaan awal belum punya beat khusus.",
-          "action": "Tambahkan saat edit bila diinginkan.",
-          "status": "deferred"
-        },
-        {
-          "severity": "NITPICK",
-          "description": "14 still baru storyboard preview; animasi final Remotion menyusul.",
-          "action": "Ditetapkan di metadata.",
-          "status": "accepted"
-        }
-      ],
-      "summary": {
-        "critical": 0,
-        "investigations": 1,
-        "suggestions": 1,
-        "success_criteria_met": "4/4"
-      }
-    },
+    "approval": "User approved storyboard; render 14 Remotion graphics next.",
     "cost_snapshot": {
-      "spent_usd": 0.0,
-      "projected_compose_usd": 0.0
+      "spent_usd": 0.0
     },
     "next_stage": "edit"
   }
