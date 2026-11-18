@@ -46,3 +46,21 @@ The board shows the latest entry for each decision pair as **current** (tagged *
 4. Open the URL printed by the command.
 
 The rendered video itself is not committed (media is gitignored); regenerate it with the scripts, or copy `renders/final.mp4` from the original workspace.
+
+
+## Storyboard navigation (custom UI edit)
+
+The local Backlot UI in this environment (`OpenMontage/backlot/ui/board.js` and
+`board.css`) was extended for easier navigation of long storyboards:
+
+| Control | What it does |
+|---|---|
+| Scene number chips | One clickable chip per scene — scrolls the filmstrip to that card |
+| Search box | Filters cards by scene id, section label, description or narration; `Esc` clears it |
+| Strip / Grid toggle | Switch between the horizontal filmstrip and a wrapped grid of cards; choice persists in `localStorage` |
+| Click a card | Opens its full narration, timecode and shot notes, plus **"Open in final render"** to jump the video to that scene |
+| ← / → keys | Step through visible scene cards without leaving the keyboard (ignored while typing in the search box) |
+| Selected card | Amber outline marks the current scene across re-renders and SSE refreshes |
+
+Hard-refresh the board after updating `board.js` / `board.css` (the watcher only
+monitors `projects/`, not UI files).
