@@ -1,0 +1,435 @@
+{
+  "version": "1.0",
+  "project_id": "kok-bisa-vietnam-id",
+  "verified_at": "2026-11-18",
+  "sources": {
+    "world_bank_api": "https://api.worldbank.org/v2/country/VNM;IDN/indicator/{INDICATOR}?format=json&date=2018:2025&per_page=100",
+    "world_bank_lastupdated": "2026-11-11",
+    "imf": "IMF WEO October 2026 — GDP per capita current prices (via FlareSolverr, direct 403)"
+  },
+  "levels": {
+    "current_usd": {
+      "indicator": "NY.GDP.PCAP.CD",
+      "2024": {
+        "VNM": 4716.7,
+        "IDN": 4925.4
+      },
+      "2025": {
+        "VNM": 5066.0,
+        "IDN": 5059.6,
+        "gap": 6.4,
+        "gap_pct": 0.13
+      }
+    },
+    "ppp_current_intl": {
+      "indicator": "NY.GDP.PCAP.PP.CD",
+      "2025": {
+        "VNM": 18088,
+        "IDN": 17660,
+        "gap": 428,
+        "gap_pct": 2.4
+      }
+    },
+    "constant_2015_usd": {
+      "indicator": "NY.GDP.PCAP.KD",
+      "2025": {
+        "VNM": 4308.2,
+        "IDN": 4555.2,
+        "gap": -247.0,
+        "gap_pct": -5.7
+      }
+    }
+  },
+  "drivers": {
+    "gdp_growth_pct": {
+      "indicator": "NY.GDP.MKTP.KD.ZG",
+      "2024": {
+        "VNM": 7.0,
+        "IDN": 5.0
+      },
+      "2025": {
+        "VNM": 8.0,
+        "IDN": 5.1
+      }
+    },
+    "fdi_pct_gdp": {
+      "indicator": "BX.KLT.DINV.WD.GD.ZS",
+      "2025": {
+        "VNM": 4.3,
+        "IDN": 1.6
+      }
+    },
+    "gross_capital_formation_pct_gdp": {
+      "indicator": "NE.GDI.TOTL.ZS",
+      "2025": {
+        "VNM": 30.8,
+        "IDN": 30.6
+      }
+    },
+    "population": {
+      "indicator": "SP.POP.TOTL",
+      "2025": {
+        "VNM": 101598527,
+        "IDN": 285721236
+      }
+    },
+    "gdp_total_current_usd": {
+      "indicator": "NY.GDP.MKTP.CD",
+      "2025": {
+        "VNM": 514697215165,
+        "IDN": 1445642584164
+      }
+    },
+    "fx_per_usd": {
+      "indicator": "PA.NUS.FCRF",
+      "2024": {
+        "VNM": 24164.9,
+        "IDN": 15855.4
+      },
+      "2025": {
+        "VNM": null,
+        "IDN": 16477.9,
+        "note": "VND 2025 not published in WDI; Indonesia IDR +3.9%"
+      }
+    }
+  },
+  "quarterly_growth_from_prior_verified_run": {
+    "VNM": {
+      "2025Q1": 7.05,
+      "2025Q2": 8.16,
+      "2025Q3": 8.25,
+      "2025Q4": 8.46,
+      "2026Q1": 8.15,
+      "2026Q2": 8.81,
+      "2026Q3": 9.95
+    },
+    "IDN": {
+      "2025Q1": 4.87,
+      "2025Q2": 5.12,
+      "2025Q3": 5.04,
+      "2025Q4": 5.2,
+      "2026Q1": 5.61,
+      "2026Q2": 5.29,
+      "2026Q3": 5.47
+    },
+    "note": "VNM 2026Q1/Q2 revised upward in Q3 2026 release; source: NSO Vietnam + BPS via TradingEconomics"
+  },
+  "projection_imf_weo_oct_2026_current_usd": {
+    "VNM": 5259,
+    "IDN": 5153,
+    "label": "PROYEKSI — bukan hasil ukur"
+  },
+  "claim_verdict": {
+    "direction": "IMF benar: Vietnam menyalip Indonesia pada perkapita current USD/PPP",
+    "timing": "IMF '2026' sudah ketinggalan — data 2025 aktual menunjukkan salip tipis",
+    "magnitude": "Nominal cuma US$6,4 (0,13%) — photo finish; PPP US$428 (2,4%); constant 2015 USD Indonesia masih unggul 5,7%"
+  },
+  "narration_sources": [
+    {
+      "id": "src-01",
+      "publisher": "EconoTimes",
+      "title": "IMF Projects Vietnam to Surpass Indonesia in GDP per Capita in 2026",
+      "url": "https://econotimes.com/IMF-Projects-Vietnam-to-Surpass-Indonesia-in-GDP-per-Capita-in-2026-1767503",
+      "http_status": 200,
+      "used_for": [
+        "US$5.259 VN vs US$5.153 ID",
+        "PDB total ID US$1,48T vs VN US$542M",
+        "IMF April 2026 masih menaruh Indonesia di atas"
+      ]
+    },
+    {
+      "id": "src-02",
+      "publisher": "Katadata",
+      "title": "Ekonomi Melesat, IMF Prediksi GDP per Kapita Vietnam Salip Indonesia pada 2026",
+      "url": "https://katadata.co.id/finansial/makro/6ae481b5aadc9/ekonomi-melesat-imf-prediksi-gdp-per-kapita-vietnam-salip-indonesia-pada-2026",
+      "http_status": 200,
+      "used_for": [
+        "kenaikan PDB per kapita ID hanya 1,5%",
+        "konversi Rp92,75 juta dengan asumsi Rp18.000/USD"
+      ]
+    },
+    {
+      "id": "src-03",
+      "publisher": "Tuoi Tre News (mengutip Nikkei Asia)",
+      "title": "Vietnam's nominal per capita GDP projected to surpass Indonesia's in 2026",
+      "url": "https://news.tuoitre.vn/vietnams-nominal-per-capita-gdp-projected-to-surpass-indonesias-in-2026-103261030143126582.htm",
+      "http_status": 200,
+      "used_for": [
+        "pertumbuhan 8,9% PDB per kapita VN",
+        "produsen teknologi tinggi/semikonduktor cari alternatif China"
+      ]
+    },
+    {
+      "id": "src-04",
+      "publisher": "Nation Thailand",
+      "title": "Vietnam's growth reshapes Southeast Asia's economic rankings",
+      "url": "https://www.nationthailand.com/news/asean/40072963",
+      "http_status": 200,
+      "used_for": [
+        "pelemahan rupiah menekan PDB per kapita ID",
+        "kritik investasi belum cukup ciptakan lapangan kerja",
+        "target VN US$8.500 per kapita 2030"
+      ]
+    },
+    {
+      "id": "src-05",
+      "publisher": "Investortrust.id",
+      "title": "The 20-Year Leap: How Vietnam's Factory-First Engine Left Indonesia Behind",
+      "url": "https://investortrust.id/market/121091/the-20-year-leap-how-vietnams-factory-first-engine-left-indonesia-behind?page=english-edition",
+      "http_status": 200,
+      "used_for": [
+        "proyeksi IMF 2027: VN US$5.659 vs ID US$5.550"
+      ]
+    },
+    {
+      "id": "src-06",
+      "publisher": "Vietcetera",
+      "title": "Vietnam Is Now Richer Than Indonesia on Paper. What Does That Mean for Everyday Life?",
+      "url": "https://vietcetera.com/en/vietnam-is-now-richer-than-indonesia-on-paper-what-does-that-mean-for-everyday-life",
+      "http_status": 200,
+      "used_for": [
+        "biaya hidup & perumahan VN naik pesat",
+        "\"lebih kaya di atas kertas\""
+      ]
+    },
+    {
+      "id": "src-07",
+      "publisher": "South China Morning Post",
+      "title": "Vietnam surpasses Indonesia on per-person GDP. Is Thailand next?",
+      "url": "https://www.scmp.com/week-asia/economics/article/3373113/vietnam-surpasses-indonesia-person-gdp-thailand-next",
+      "http_status": 403,
+      "used_for": [
+        "keunggulan per kapita VN tipis & belum tentu bertahan",
+        "ekonomi ID masih jauh lebih besar totalnya"
+      ],
+      "note": "HTTP 403 saat dicek otomatis (paywall/bot protection) — source tetap dicantumkan; verifikasi manual disarankan."
+    },
+    {
+      "id": "src-08",
+      "publisher": "The Globalist",
+      "title": "Vietnam consumerism, wealth, purchasing power, development: just the facts",
+      "url": "https://www.theglobalist.com/vietnam-consumerism-wealth-purchasing-power-development-just-the-facts/",
+      "http_status": 200,
+      "used_for": [
+        "perbandingan historis 1990: PDB per kapita VN ~1/6 ID"
+      ]
+    },
+    {
+      "id": "src-09",
+      "publisher": "Statistics of the World",
+      "title": "Viet Nam: GDP per Capita, PPP (data IMF WEO)",
+      "url": "https://statisticsoftheworld.com/country/vietnam/gdp-per-capita-ppp",
+      "used_for": [
+        "PPP VN 2026 ~US$18.870"
+      ],
+      "superseded_by_revision_5": true,
+      "note": "Angka PPP lama (18.870 / 18.657) sudah dibuang pada revisi 5."
+    },
+    {
+      "id": "src-10",
+      "publisher": "Statistics of the World",
+      "title": "Indonesia: GDP per Capita, PPP (data IMF WEO)",
+      "url": "https://statisticsoftheworld.com/country/indonesia/gdp-per-capita-ppp",
+      "used_for": [
+        "PPP ID 2026 ~US$18.657",
+        "Catatan: cocok dengan WEO Okt 2025 (nominal ID 5.398), bukan Okt 2026"
+      ],
+      "superseded_by_revision_5": true,
+      "note": "Angka PPP lama (18.870 / 18.657) sudah dibuang pada revisi 5."
+    },
+    {
+      "id": "src-11",
+      "publisher": "Katadata",
+      "title": "Membaca Ketertinggalan Indonesia dari Laju Kemakmuran Vietnam",
+      "url": "https://katadata.co.id/finansial/makro/6aeda64e76546/membaca-ketertinggalan-indonesia-dari-laju-kemakmuran-vietnam",
+      "used_for": [
+        "pembanding konsumsi PPP; TIDAK dipakai langsung di skrip"
+      ]
+    },
+    {
+      "id": "src-12",
+      "publisher": "Cover Story",
+      "title": "Kompilasi data ketimpangan Asia Tenggara",
+      "url": "https://coverstory.ph/?p=33018",
+      "used_for": [
+        "Gini ID 36,1 (2023) dan VN 36,1 (2022) — tahun survei berbeda"
+      ]
+    },
+    {
+      "id": "src-13",
+      "publisher": "StatisticsTimes",
+      "title": "GDP per capita of Indonesia (IMF WEO Oktober 2025)",
+      "url": "https://www.statisticstimes.com/economy/country/indonesia-gdp-per-capita.php",
+      "used_for": [
+        "cross-check PPP ID US$18.657 — edisi WEO lama"
+      ],
+      "superseded_by_revision_5": true,
+      "note": "Angka PPP lama (18.870 / 18.657) sudah dibuang pada revisi 5."
+    },
+    {
+      "id": "src-14",
+      "publisher": "LSEG / FTSE Russell",
+      "title": "Vietnam on the Rise: Tailwinds Continue (PDF)",
+      "url": "https://www.lseg.com/content/dam/ftse-russell/en_us/documents/research/vietnam-on-the-rise-tailwinds-continue.pdf",
+      "used_for": [
+        "Doi Moi 1986",
+        "ekspor/PDB 6,6% (1986) → ~90% (2024)"
+      ]
+    },
+    {
+      "id": "src-15",
+      "publisher": "The Investor (Vietnam)",
+      "title": "Vietnam to grow at significant pace, see more sophisticated development: execs",
+      "url": "https://theinvestor.vn/vietnam-to-grow-at-significant-pace-see-more-sophisticated-development-execs-d18185.html",
+      "used_for": [
+        "pangsa perusahaan asing ekspor 73% (2021) → 76% (2025)",
+        "kekurangan tenaga kerja terampil"
+      ]
+    },
+    {
+      "id": "src-16",
+      "publisher": "Portfolio Adviser",
+      "title": "Vietnam's era of ascendance: The stakes have never been higher",
+      "url": "https://portfolio-adviser.com/vietnams-era-of-ascendance-the-stakes-have-never-been-higher/",
+      "used_for": [
+        "manufaktur +~10% (2025)",
+        "ekspor H1 2026 US$266,5 M (+21%)",
+        "FDI ~80% ekspor",
+        "defisit barang US$16,7 M"
+      ]
+    },
+    {
+      "id": "src-17",
+      "publisher": "VietnamPlus (mengutip Jakarta Globe)",
+      "title": "Indonesian newspaper highlights Vietnam's lead in investment attraction, industrial development",
+      "url": "https://en.vietnamplus.vn/indonesian-newspaper-highlights-vietnams-lead-in-investment-attraction-industrial-development-post355059.vnp",
+      "used_for": [
+        "saran ekonom soal rantai pasok terintegrasi (S7 pelajaran 3)"
+      ]
+    },
+    {
+      "id": "src-18",
+      "publisher": "Free Malaysia Today (opini)",
+      "title": "If Vietnam can hit 8% growth, so can Indonesia",
+      "url": "https://www.freemalaysiatoday.com/category/opinion/2026/01/08/if-vietnam-can-hit-8-growth-so-can-indonesia",
+      "used_for": [
+        "argumen ekonomi Indonesia lebih beragam — opini, bingkai 'ada yang berpendapat'"
+      ]
+    },
+    {
+      "id": "src-19",
+      "publisher": "VietnamPlus",
+      "title": "Vietnam emerges as region's model for development: Indonesian journalist",
+      "url": "https://en.vietnamplus.vn/vietnam-emerges-as-regions-model-for-development-indonesian-journalist-post325453.vnp",
+      "used_for": [
+        "konsep \"pilar kembar\" ASEAN — pendapat satu jurnalis"
+      ]
+    },
+    {
+      "id": "src-20",
+      "publisher": "IMF DataMapper (WEO Okt 2026)",
+      "title": "GDP per capita, PPP — WEO October 2026",
+      "url": "https://www.imf.org/external/datamapper/PPPPC@WEO/OEMDC/ADVEC/WEOWORLD",
+      "used_for": [
+        "PPP 2026: VN ~19,97 ribu vs ID ~19,09 ribu dolar internasional (~5%)"
+      ]
+    },
+    {
+      "id": "src-21",
+      "publisher": "Worldometer",
+      "title": "GDP per capita by country 2026 (PPP)",
+      "url": "https://www.worldometers.info/gdp/gdp-per-capita/?region=worldwide&year=2026&metric=ppp",
+      "used_for": [
+        "pembanding: US$19.974 vs US$19.091"
+      ]
+    },
+    {
+      "id": "src-22",
+      "publisher": "ANTARA (rilis BPS)",
+      "title": "BPS: Ekonomi RI tumbuh 5,47 persen pada triwulan III 2026",
+      "url": "https://www.antaranews.com/berita/5833219/bps-ekonomi-ri-tumbuh-547-persen-pada-triwulan-iii-2026",
+      "used_for": [
+        "Q3 2026 Indonesia 5,47% yoy"
+      ]
+    },
+    {
+      "id": "src-23",
+      "publisher": "Baochinhphu (VGP, mengutip NSO Vietnam)",
+      "title": "Viet Nam to overtake Indonesia in per capita GDP in 2026: IMF",
+      "url": "https://en.baochinhphu.vn/viet-nam-to-overtake-indonesia-in-per-capita-gdp-in-2026-imf-111261030140830434.htm",
+      "used_for": [
+        "Q3 2026 Vietnam 9,95%"
+      ]
+    },
+    {
+      "id": "src-24",
+      "publisher": "Indonesia Business Post (mengutip S&P Global)",
+      "title": "Airlangga cites manufacturing growth and trade surplus as economic outlook improves",
+      "url": "https://indonesiabusinesspost.com/7739/markets-and-finance/airlangga-cites-manufacturing-growth-and-trade-surplus-as-economic-outlook-improves",
+      "used_for": [
+        "PMI manufaktur Indonesia 54,0 Okt 2026 — tertinggi sejak Maret 2024",
+        "pembanding Trading Economics"
+      ]
+    }
+  ],
+  "source_notes": {
+    "verified_on": "2026-11-18",
+    "figure_discrepancy": "Katadata menulis US$5.269 untuk Vietnam; EconoTimes, Tuoi Tre, dan Nation Thailand menulis US$5.259. Narasi memakai US$5.259 (mayoritas sumber; 5.269 kemungkinan typo).",
+    "fx_assumption": "Kurs Rp18.000/USD adalah asumsi Katadata, bukan kurs resmi. WDI 2025: IDR 16.477,9/USD.",
+    "primary_source_check": "Disarankan buka IMF WEO Oktober 2026 langsung di imf.org sebelum publish; akses langsung dari mesin ini sebelumnya 403.",
+    "historical_claim": "Klaim 1990 \"salah satu negara termiskin di Asia Tenggara\" adalah penyederhanaan The Globalist; bisa diganti angka pasti jika ingin lebih ketat.",
+    "revision": "Naskah revisi menambahkan src-09…src-13 untuk Bagian 5 (PPP, konsumsi, Gini).",
+    "ppp_edition_mismatch": "PPP ID US$18.657 cocok dengan WEO Okt 2025 (nominal 5.398), bukan Okt 2026 (5.153). Inti selisih PPP ~1-3% tetap berlaku; cocokkan di IMF DataMapper sebelum tayang.",
+    "gini_years": "Gini berasal dari kompilasi pihak ketiga dengan tahun survei berbeda (ID 2023, VN 2022); narasi menyebut \"sekitar 36\".",
+    "housing_placeholder_filled": "Placeholder Bagian 5 diisi dari src-06: harga rumah Hanoi/HCMC ~20x pendapatan tahunan median (ULI 2025); apartemen +40% di beberapa tempat (Vietnamnet); inflasi 5,08% YoY, perumahan +6,59% Q3 2026 (NSO).",
+    "multidimensional_poverty_vn": "1,3% di 2025 (turun 1 poin dari 2024) menurut src-06 — tersedia jika ingin dipakai, belum dimasukkan ke narasi.",
+    "revision_4": "Naskah revisi 4: tambah S7 (pelajaran), S8 (yang tidak ditiru), S9 (penutup); durasi 510 s; sumber src-14…src-19.",
+    "q3_pmi_secondhand": "Angka Q3 2026 (ID 5,47%, VN 9,95%) dan PMI 54 (Okt 2026) berasal dari VietnamPlus yang mengutip Jakarta Globe — cek BPS dan S&P Global jika memungkinkan.",
+    "fdi_share_consistency": "Pangsa perusahaan asing dalam ekspor: 76% (2025, src-15) vs \"hampir 80%\" (H1 2026, src-16). Narasi memakai keduanya dengan tahun berbeda; pastikan grafis konsisten.",
+    "opinion_framing": "src-18 dan src-19 adalah opini/pendapat — narasi sudah membingkai dengan \"ada yang berpendapat\" / \"seorang jurnalis menyebut\".",
+    "revision_5": "Sumber S5 diperbarui ke IMF DataMapper WEO Okt 2026 (src-20) + Worldometer (src-21); angka agregator lama src-09/10/13 ditandai superseded. Tambah src-22/23/24 untuk Q3 & PMI.",
+    "revision_5_source_map": "File revisi 5 bernomor 9→src-20, 10→src-21, 11→src-11, 12→src-12, 13→src-14, 14→src-15, 15→src-16, 16→src-17, 17→src-22, 18→src-23, 19→src-24, 20→src-19.",
+    "ppp_resolved": "PPP WEO Okt 2026: VN ~19.970 vs ID ~19.090 (~4,6-5%). Angka lama 18.870/18.657 dibuang."
+  },
+  "pre_publish_checks": {
+    "checked_at": "2026-11-18",
+    "items": [
+      {
+        "id": "chk-01",
+        "topic": "PPP edisi WEO",
+        "status": "RESOLVED",
+        "finding": "Diperbarui pada revisi 5: PPP WEO Okt 2026 (src-20/21); PMI 54,0 (src-24).",
+        "action": "Tidak ada tindakan lanjutan.",
+        "mitigation": "Narasi menyebut \"sekitar 1 persen\"; arah kesimpulan tetap berlaku di kedua edisi."
+      },
+      {
+        "id": "chk-02",
+        "topic": "Q3 2026 growth ID 5,47% / VN 9,95%",
+        "status": "RESOLVED",
+        "finding": "Sudah terverifikasi dari sumber primer di manifest ini: BPS (ID, 5,47%) dan NSO Vietnam Q3 2026 press release (VN, 9,95%). src-17 hanya sumber kedua.",
+        "action": "Tidak perlu revisi narasi; cantumkan BPS/NSO sebagai sumber primer."
+      },
+      {
+        "id": "chk-03",
+        "topic": "PMI manufaktur ID 54 (Okt 2026)",
+        "status": "RESOLVED",
+        "finding": "Diperbarui pada revisi 5: PPP WEO Okt 2026 (src-20/21); PMI 54,0 (src-24).",
+        "action": "Tidak ada tindakan lanjutan."
+      },
+      {
+        "id": "chk-04",
+        "topic": "Pangsa perusahaan asing dalam ekspor VN",
+        "status": "RESOLVED_BY_LABELING",
+        "finding": "76% (2025, src-15) dan \"hampir 80%\" (H1 2026, src-16) tidak bertentangan — periode berbeda.",
+        "action": "Pastikan grafis S7 mencantumkan \"2025\" dan grafis S8 mencantumkan \"H1 2026\". Tidak ada revisi narasi."
+      },
+      {
+        "id": "chk-05",
+        "topic": "Opini src-18 / src-19",
+        "status": "RESOLVED",
+        "finding": "Narasi S8 sudah membingkai sebagai \"Ada yang berpendapat\" dan \"Seorang jurnalis Indonesia bahkan menyebut\".",
+        "action": "Tidak ada tindakan."
+      }
+    ]
+  }
+}

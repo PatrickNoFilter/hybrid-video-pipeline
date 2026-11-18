@@ -1,0 +1,62 @@
+[
+  {
+    "id": "s0",
+    "actual": 47.93,
+    "planned": 30.0,
+    "delta": 17.93
+  },
+  {
+    "id": "s1",
+    "actual": 44.57,
+    "planned": 60.0,
+    "delta": -15.43
+  },
+  {
+    "id": "s2",
+    "actual": 64.54,
+    "planned": 60.0,
+    "delta": 4.54
+  },
+  {
+    "id": "s3",
+    "actual": 52.66,
+    "planned": 90.0,
+    "delta": -37.34
+  },
+  {
+    "id": "s4",
+    "actual": 60.58,
+    "planned": 60.0,
+    "delta": 0.58
+  },
+  {
+    "id": "s5",
+    "actual": 81.65,
+    "planned": 75.0,
+    "delta": 6.65
+  },
+  {
+    "id": "s6",
+    "actual": 49.13,
+    "planned": 35.0,
+    "delta": 14.13
+  },
+  {
+    "id": "s7",
+    "actual": 113.45,
+    "planned": 45.0,
+    "delta": 68.45
+  },
+  {
+    "id": "s8",
+    "actual": 88.3,
+    "planned": 35.0,
+    "delta": 53.3
+  },
+  {
+    "id": "s9",
+    "actual": 28.82,
+    "planned": 20.0,
+    "delta": 8.82
+  }
+]

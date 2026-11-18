@@ -1,0 +1,529 @@
+{
+  "version": "1.0",
+  "title": "Kok Bisa Orang Vietnam \"Lebih Kaya\" dari Indonesia?",
+  "total_duration_seconds": 636.33,
+  "voice_performance": {
+    "performance_intent": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
+    "pacing_profile": "conversational",
+    "energy_curve": "Hook penasaran → data → reflektif di S5 → pelajaran S7 → catatan kritis S8 → ajakan S9.",
+    "pause_policy": "0.3s gap between sections; final card holds 2.0s after voice ends",
+    "sample_section_id": "s5",
+    "provider_notes": {
+      "voice": "id-ID-GadisNeural",
+      "provider": "Edge TTS via MoneyPrinterTurbo"
+    }
+  },
+  "sections": [
+    {
+      "id": "s0",
+      "label": "HOOK",
+      "text": "Kalau saya bilang Vietnam sebentar lagi menyalip Indonesia, kamu percaya nggak? Tahun 1990, Vietnam itu salah satu negara termiskin di Asia Tenggara. Pendapatan per kapitanya waktu itu cuma sekitar seperenam Indonesia. Sekarang? Menurut proyeksi IMF terbaru, PDB per kapita Vietnam tahun 2026 diperkirakan US$5.259, sementara Indonesia US$5.153. Tapi tunggu dulu. Sebelum kamu panik atau marah di kolom komentar, kita bedah dulu: ini benar-benar berarti orang Vietnam lebih kaya dari kita?",
+      "start_seconds": 0.0,
+      "end_seconds": 47.93,
+      "speaker_directions": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "santai mengajak",
+        "delivery_note": "HOOK"
+      },
+      "pronunciation_guides": [
+        {
+          "word": "PDB",
+          "phonetic": "pe-de-be"
+        },
+        {
+          "word": "PPP",
+          "phonetic": "pe-pe-pe"
+        },
+        {
+          "word": "Gini",
+          "phonetic": "gi-ni"
+        },
+        {
+          "word": "PMI",
+          "phonetic": "pe-em-i"
+        },
+        {
+          "word": "Doi Moi",
+          "phonetic": "doi moi"
+        }
+      ],
+      "enhancement_cues": [
+        {
+          "type": "overlay",
+          "description": "dua bendera bersanding, lalu angka muncul satu per satu",
+          "timestamp_seconds": 1.0
+        },
+        {
+          "type": "stat_card",
+          "description": "IMF WEO Okt 2026 (PROYEKSI): VN US$5.259 vs ID US$5.153",
+          "timestamp_seconds": 12.0
+        }
+      ],
+      "source_ref": "src-01; src-08"
+    },
+    {
+      "id": "s1",
+      "label": "APA SIH \"PDB PER KAPITA\" ITU?",
+      "text": "PDB per kapita itu gampangnya begini. Bayangkan seluruh produksi ekonomi sebuah negara itu satu kue besar. Lalu kue itu dibagi rata ke semua penduduk. Hasil potongan per orang itulah PDB per kapita. Perlu diingat, ini angka rata-rata. Bukan berarti setiap orang benar-benar memegang uang segitu. Dan angka ini dihitung dalam dolar AS, jadi kurs ikut berpengaruh. Dalam rupiah, kalau pakai kurs sekitar Rp18.000 per dolar, PDB per kapita Indonesia kira-kira Rp92,75 juta per tahun.",
+      "start_seconds": 48.23,
+      "end_seconds": 92.8,
+      "speaker_directions": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "santai mengajak",
+        "delivery_note": "APA SIH \"PDB PER KAPITA\" ITU?"
+      },
+      "pronunciation_guides": [
+        {
+          "word": "PDB",
+          "phonetic": "pe-de-be"
+        },
+        {
+          "word": "PPP",
+          "phonetic": "pe-pe-pe"
+        },
+        {
+          "word": "Gini",
+          "phonetic": "gi-ni"
+        },
+        {
+          "word": "PMI",
+          "phonetic": "pe-em-i"
+        },
+        {
+          "word": "Doi Moi",
+          "phonetic": "doi moi"
+        }
+      ],
+      "enhancement_cues": [
+        {
+          "type": "animation",
+          "description": "animasi kue besar dipotong sesuai jumlah penduduk",
+          "timestamp_seconds": 31.0
+        }
+      ],
+      "source_ref": "src-02"
+    },
+    {
+      "id": "s2",
+      "label": "SELISIHNYA TIPIS BANGET",
+      "text": "Nah, ini bagian yang sering terlewat di judul-judul berita. Selisihnya cuma sekitar 100 dolar, kurang dari 3 persen. Dan ini masih proyeksi, bukan data final. Bahkan, pada laporan April lalu, IMF masih menempatkan Indonesia di atas Vietnam untuk tahun yang sama. Jadi urutannya bisa saja berubah lagi di revisi berikutnya. Dan kalau kita lihat ukuran ekonomi totalnya, ceritanya beda jauh. PDB total Indonesia diperkirakan US$1,48 triliun, sedangkan Vietnam sekitar US$542 miliar. Penduduk kita hampir tiga kali lipat penduduk Vietnam, yang sedikit di atas 100 juta orang. Jadi ekonomi kita masih hampir tiga kali lebih besar. Lalu kenapa bisa kejadian begini? Ada dua cerita di baliknya.",
+      "start_seconds": 93.1,
+      "end_seconds": 157.64,
+      "speaker_directions": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "santai mengajak",
+        "delivery_note": "SELISIHNYA TIPIS BANGET"
+      },
+      "pronunciation_guides": [
+        {
+          "word": "PDB",
+          "phonetic": "pe-de-be"
+        },
+        {
+          "word": "PPP",
+          "phonetic": "pe-pe-pe"
+        },
+        {
+          "word": "Gini",
+          "phonetic": "gi-ni"
+        },
+        {
+          "word": "PMI",
+          "phonetic": "pe-em-i"
+        },
+        {
+          "word": "Doi Moi",
+          "phonetic": "doi moi"
+        }
+      ],
+      "enhancement_cues": [
+        {
+          "type": "diagram",
+          "description": "grafik batang dua negara, selisihnya disorot",
+          "timestamp_seconds": 91.0
+        },
+        {
+          "type": "stat_card",
+          "description": "PDB total ID US$1,48 T vs VN US$542 M; populasi ID ~286 jt vs VN ~102 jt",
+          "timestamp_seconds": 95.0
+        }
+      ],
+      "source_ref": "src-01"
+    },
+    {
+      "id": "s3",
+      "label": "CERITA VIETNAM, TANCAP GAS",
+      "text": "Pertama, Vietnam yang ngebut. PDB per kapita nominal mereka diperkirakan naik 8,9 persen di tahun 2026. Apa mesinnya? Manufaktur. Vietnam menarik produsen berteknologi tinggi yang mencari alternatif selain China, termasuk pembuat semikonduktor dan peralatan elektronik. Pabrik-pabrik besar membuka lini produksi di sana, ekspor melonjak, lapangan kerja industri bertambah. Dan ini bukan kebetulan semalam. Vietnam sudah puluhan tahun fokus pada satu strategi: jadi basis produksi untuk ekspor. Hasilnya, mereka sekarang menargetkan PDB per kapita US$8.500 pada 2030.",
+      "start_seconds": 157.94,
+      "end_seconds": 210.6,
+      "speaker_directions": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "santai mengajak",
+        "delivery_note": "CERITA VIETNAM, TANCAP GAS"
+      },
+      "pronunciation_guides": [
+        {
+          "word": "PDB",
+          "phonetic": "pe-de-be"
+        },
+        {
+          "word": "PPP",
+          "phonetic": "pe-pe-pe"
+        },
+        {
+          "word": "Gini",
+          "phonetic": "gi-ni"
+        },
+        {
+          "word": "PMI",
+          "phonetic": "pe-em-i"
+        },
+        {
+          "word": "Doi Moi",
+          "phonetic": "doi moi"
+        }
+      ],
+      "enhancement_cues": [
+        {
+          "type": "diagram",
+          "description": "pabrik elektronik, kontainer di pelabuhan, grafik naik",
+          "timestamp_seconds": 151.0
+        },
+        {
+          "type": "stat_card",
+          "description": "Target VN 2030: PDB per kapita US$8.500 (src-04)",
+          "timestamp_seconds": 200.0
+        }
+      ],
+      "source_ref": "src-03; src-04"
+    },
+    {
+      "id": "s4",
+      "label": "CERITA INDONESIA, JALAN DI TEMPAT",
+      "text": "Kedua, sisi kita. PDB per kapita Indonesia diproyeksikan hanya naik 1,5 persen dibanding estimasi tahun ini. Kenapa? Salah satunya kurs. Karena PDB per kapita dihitung dalam dolar, pelemahan rupiah ikut menekan angkanya. Artinya, sebagian \"ketertinggalan\" ini adalah efek mata uang, bukan semata ekonomi kita yang menyusut. Tapi kurs bukan satu-satunya masalah. Ada kritik bahwa investasi di sektor tertentu belum cukup menciptakan lapangan kerja atau menaikkan pendapatan rumah tangga secara signifikan. Dengan kata lain, uang masuk, tapi dampaknya ke dompet orang biasa belum sebesar yang diharapkan. Pemerintah sendiri sedang mendorong reindustrialisasi. Pertanyaannya, apakah itu cukup cepat?",
+      "start_seconds": 210.9,
+      "end_seconds": 271.48,
+      "speaker_directions": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "santai mengajak",
+        "delivery_note": "CERITA INDONESIA, JALAN DI TEMPAT"
+      },
+      "pronunciation_guides": [
+        {
+          "word": "PDB",
+          "phonetic": "pe-de-be"
+        },
+        {
+          "word": "PPP",
+          "phonetic": "pe-pe-pe"
+        },
+        {
+          "word": "Gini",
+          "phonetic": "gi-ni"
+        },
+        {
+          "word": "PMI",
+          "phonetic": "pe-em-i"
+        },
+        {
+          "word": "Doi Moi",
+          "phonetic": "doi moi"
+        }
+      ],
+      "enhancement_cues": [
+        {
+          "type": "diagram",
+          "description": "grafik rupiah melemah, grafik pertumbuhan datar",
+          "timestamp_seconds": 241.0
+        },
+        {
+          "type": "stat_card",
+          "description": "PDB per kapita ID +1,5% (src-02); efek rupiah (src-04)",
+          "timestamp_seconds": 250.0
+        }
+      ],
+      "source_ref": "src-02; src-04"
+    },
+    {
+      "id": "s5",
+      "label": "\"LEBIH KAYA\" ITU RELATIF",
+      "text": "Sekarang pertanyaan pentingnya: apakah orang Vietnam benar-benar hidup lebih sejahtera dari kita? Mari kita cek dengan ukuran lain. Pertama, daya beli. Kalau harga-harga disesuaikan, PDB per kapita Vietnam sekitar 19.970 dolar internasional, Indonesia sekitar 19.090. Vietnam unggul sekitar 5 persen. Sedikit lebih besar dari selisih nominal, tapi tetap tipis. Kedua, ketimpangan. Indeks Gini kedua negara sama-sama sekitar 36. Jadi bukan berarti kekayaan di sana lebih merata, atau di sini lebih timpang. Di Hanoi dan Ho Chi Minh City, harga rumah rata-rata sekitar dua puluh kali pendapatan tahunan rumah tangga median. Harga apartemen di beberapa tempat naik lebih dari empat puluh persen dalam setahun. Dan SCMP mengingatkan, keunggulan Vietnam ini tipis dan belum tentu bertahan lama. Jadi kesimpulannya: bukan \"mereka lebih kaya dari kita\", tapi \"kita sedang disusul, dan selisihnya masih tipis\".",
+      "start_seconds": 271.78,
+      "end_seconds": 353.43,
+      "speaker_directions": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "santai mengajak",
+        "delivery_note": "\"LEBIH KAYA\" ITU RELATIF"
+      },
+      "pronunciation_guides": [
+        {
+          "word": "PDB",
+          "phonetic": "pe-de-be"
+        },
+        {
+          "word": "PPP",
+          "phonetic": "pe-pe-pe"
+        },
+        {
+          "word": "Gini",
+          "phonetic": "gi-ni"
+        },
+        {
+          "word": "PMI",
+          "phonetic": "pe-em-i"
+        },
+        {
+          "word": "Doi Moi",
+          "phonetic": "doi moi"
+        }
+      ],
+      "enhancement_cues": [
+        {
+          "type": "stat_card",
+          "description": "PPP WEO Okt 2026: VN ~US$19.970 vs ID ~US$19.090 (~5%, src-20/21); Gini ~36 (src-12); harga rumah 20x pendapatan (src-06)",
+          "timestamp_seconds": 301.0
+        },
+        {
+          "type": "stat_card",
+          "description": "PPP WEO Okt 2026: VN ~US$19.970 vs ID ~US$19.090 (~5%, src-20/21); Gini ~36 (src-12); harga rumah 20x pendapatan (src-06)",
+          "timestamp_seconds": 320.0
+        }
+      ],
+      "source_ref": "src-20; src-21; src-12; src-06"
+    },
+    {
+      "id": "s6",
+      "label": "JADI, APA PELAJARANNYA?",
+      "text": "Ini bukan soal siapa menang, siapa kalah. Ini soal arah. Dari angka tadi, kita bisa lihat tiga hal. Satu, Vietnam menunjukkan bahwa strategi konsisten bertahun-tahun bisa mengubah nasib sebuah negara. Dua, ukuran ekonomi besar tidak otomatis berarti rata-rata warganya makmur. Tiga, kalau pertumbuhan kita terus lebih lambat, IMF memproyeksikan Vietnam tetap unggul di 2027, yaitu US$5.659 berbanding US$5.550. Pertanyaannya bukan \"kok bisa mereka lebih kaya?\", tapi \"apa yang bisa kita pelajari dan yang tidak perlu ditiru mentah mentah?\"",
+      "start_seconds": 353.73,
+      "end_seconds": 402.86,
+      "speaker_directions": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "santai mengajak",
+        "delivery_note": "JADI, APA PELAJARANNYA?"
+      },
+      "pronunciation_guides": [
+        {
+          "word": "PDB",
+          "phonetic": "pe-de-be"
+        },
+        {
+          "word": "PPP",
+          "phonetic": "pe-pe-pe"
+        },
+        {
+          "word": "Gini",
+          "phonetic": "gi-ni"
+        },
+        {
+          "word": "PMI",
+          "phonetic": "pe-em-i"
+        },
+        {
+          "word": "Doi Moi",
+          "phonetic": "doi moi"
+        }
+      ],
+      "enhancement_cues": [
+        {
+          "type": "overlay",
+          "description": "kembali ke dua bendera",
+          "timestamp_seconds": 376.0
+        },
+        {
+          "type": "stat_card",
+          "description": "PROYEKSI IMF 2027: VN US$5.659 vs ID US$5.550 (src-05)",
+          "timestamp_seconds": 385.0
+        }
+      ],
+      "source_ref": "src-05; src-07"
+    },
+    {
+      "id": "s7",
+      "label": "APA YANG BISA KITA PELAJARI",
+      "text": "Pertama, konsistensi. Sejak reformasi Doi Moi tahun 1986, Vietnam terus membuka diri pada investasi dan ekspor. Porsi ekspornya terhadap PDB melonjak dari sekitar 7 persen menjadi sekitar 90 persen pada 2024. Itu hasil puluhan tahun, bukan satu periode pemerintahan. Kedua, jadi bagian dari rantai pasok global. Vietnam tidak membangun semuanya sendiri, tapi menjadi lokasi produksi bagi perusahaan asing. Pangsa perusahaan asing dalam ekspor Vietnam naik dari 73 persen di 2021 menjadi 76 persen di 2025. Hasilnya, ekspor semester pertama 2026 mencapai 266,5 miliar dolar, naik 21 persen. Ketiga, kualitas pertumbuhan, bukan cuma kecepatan. Para ekonom menekankan Indonesia perlu membangun rantai pasok terintegrasi, memodernisasi pertanian, dan mendorong industri berteknologi tinggi sekaligus manufaktur berorientasi ekspor. Jaraknya sekarang jelas: kuartal ketiga 2026, ekonomi kita tumbuh 5,47 persen, Vietnam hampir 10 persen. Keempat, manufaktur sebagai mesin lapangan kerja. Manufaktur Vietnam tumbuh hampir 10 persen di 2025. Kabar baiknya, kita mulai bergerak: PMI manufaktur Indonesia naik ke 54 pada Oktober 2026, ekspansi terkuat sejak Maret 2024.",
+      "start_seconds": 403.16,
+      "end_seconds": 516.61,
+      "speaker_directions": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "santai mengajak",
+        "delivery_note": "APA YANG BISA KITA PELAJARI"
+      },
+      "pronunciation_guides": [
+        {
+          "word": "PDB",
+          "phonetic": "pe-de-be"
+        },
+        {
+          "word": "PPP",
+          "phonetic": "pe-pe-pe"
+        },
+        {
+          "word": "Gini",
+          "phonetic": "gi-ni"
+        },
+        {
+          "word": "PMI",
+          "phonetic": "pe-em-i"
+        },
+        {
+          "word": "Doi Moi",
+          "phonetic": "doi moi"
+        }
+      ],
+      "enhancement_cues": [
+        {
+          "type": "stat_card",
+          "description": "Ekspor/PDB 7%→90% (src-14); FDI ekspor 73%→76% (src-15, tahun 2025); ekspor H1 2026 US$266,5 M +21% (src-16); Q3 2026 ID 5,47% (BPS/src-22) vs VN 9,95% (NSO/src-23); PMI ID 54,0 Okt 2026 (src-24)",
+          "timestamp_seconds": 411.0
+        },
+        {
+          "type": "stat_card",
+          "description": "Ekspor/PDB 7%→90% (src-14); FDI ekspor 73%→76% (src-15, tahun 2025); ekspor H1 2026 US$266,5 M +21% (src-16); Q3 2026 ID 5,47% (BPS/src-22) vs VN 9,95% (NSO/src-23); PMI ID 54,0 Okt 2026 (src-24)",
+          "timestamp_seconds": 425.0
+        }
+      ],
+      "source_ref": "src-14; src-15; src-16; src-22; src-23; src-24"
+    },
+    {
+      "id": "s8",
+      "label": "YANG TIDAK PERLU DITIRU MENTAH-MENTAH",
+      "text": "Tapi jangan salah, model Vietnam bukan tanpa catatan. Satu, ketergantungan pada perusahaan asing. Hampir 80 persen ekspor Vietnam datang dari perusahaan penanaman modal asing. Dan di semester pertama 2026, impor tumbuh lebih cepat dari ekspor, sehingga neraca barang defisit sekitar 16,7 miliar dolar. Artinya, nilai tambah yang benar-benar tinggal di dalam negeri bisa lebih kecil dari yang terlihat. Dua, kekurangan tenaga terampil. Di industri teknologi tinggi, Vietnam kekurangan pekerja terampil, dan itu disebut sebagai hambatan pertumbuhan jangka panjang. Tiga, titik awal kita berbeda. Ada yang berpendapat ekonomi Indonesia lebih beragam: pertambangan, energi, hilirisasi, pertanian, pariwisata, dan jasa, sementara pertumbuhan Vietnam terpusat pada ekspor manufaktur. Seorang jurnalis Indonesia bahkan menyebut keduanya bisa jadi \"pilar kembar\" ASEAN: kita dengan pasar domestik yang besar, Vietnam dengan ekspor dan manufaktur. Jadi tantangan kita bukan meniru Vietnam, tapi menggabungkan kekuatan kita dengan disiplin industrialisasi yang sama.",
+      "start_seconds": 516.91,
+      "end_seconds": 605.21,
+      "speaker_directions": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "santai mengajak",
+        "delivery_note": "YANG TIDAK PERLU DITIRU MENTAH-MENTAH"
+      },
+      "pronunciation_guides": [
+        {
+          "word": "PDB",
+          "phonetic": "pe-de-be"
+        },
+        {
+          "word": "PPP",
+          "phonetic": "pe-pe-pe"
+        },
+        {
+          "word": "Gini",
+          "phonetic": "gi-ni"
+        },
+        {
+          "word": "PMI",
+          "phonetic": "pe-em-i"
+        },
+        {
+          "word": "Doi Moi",
+          "phonetic": "doi moi"
+        }
+      ],
+      "enhancement_cues": [
+        {
+          "type": "stat_card",
+          "description": "ikon peringatan, lalu dua peta berdampingan",
+          "timestamp_seconds": 456.0
+        },
+        {
+          "type": "stat_card",
+          "description": "FDI ~80% ekspor & defisit barang US$16,7 M (src-16); kekurangan tenaga terampil (src-15); \"pilar kembar\" ASEAN (src-19)",
+          "timestamp_seconds": 470.0
+        }
+      ],
+      "source_ref": "src-15; src-16; src-19"
+    },
+    {
+      "id": "s9",
+      "label": "PENUTUP",
+      "text": "Menurut kamu, apa yang paling perlu dibenahi Indonesia? Industrialisasi, lapangan kerja, atau stabilitas rupiah? Tulis di kolom komentar. Kalau video ini bermanfaat, jangan lupa like, subscribe, dan bagikan ke temanmu yang suka ngobrolin ekonomi. Sampai jumpa di video berikutnya! --- # BAGIAN B: SUMBER",
+      "start_seconds": 605.51,
+      "end_seconds": 634.33,
+      "speaker_directions": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
+      "delivery_cues": {
+        "pace": "conversational",
+        "energy": "santai mengajak",
+        "delivery_note": "PENUTUP"
+      },
+      "pronunciation_guides": [
+        {
+          "word": "PDB",
+          "phonetic": "pe-de-be"
+        },
+        {
+          "word": "PPP",
+          "phonetic": "pe-pe-pe"
+        },
+        {
+          "word": "Gini",
+          "phonetic": "gi-ni"
+        },
+        {
+          "word": "PMI",
+          "phonetic": "pe-em-i"
+        },
+        {
+          "word": "Doi Moi",
+          "phonetic": "doi moi"
+        }
+      ],
+      "enhancement_cues": [],
+      "source_ref": "n/a"
+    }
+  ],
+  "metadata": {
+    "source": "Naskah revisi 5 user — narasi dipertahankan, placeholder S5 diisi dari src-06.",
+    "anchor_sections": [
+      "s0",
+      "s1",
+      "s2",
+      "s5",
+      "s6"
+    ],
+    "support_sections": [
+      "s3",
+      "s4",
+      "s7",
+      "s8",
+      "s9"
+    ],
+    "narration_sections": [
+      "s0",
+      "s1",
+      "s2",
+      "s3",
+      "s4",
+      "s5",
+      "s6",
+      "s7",
+      "s8",
+      "s9"
+    ],
+    "required_support_assets": [
+      "two_flags",
+      "pie_cake",
+      "two_bars",
+      "factory_port",
+      "rupiah_chart",
+      "three_stat_cards",
+      "two_flags_return",
+      "four_icons",
+      "warning_two_maps",
+      "end_cta"
+    ],
+    "visual_router": "Visual cues dari revisi 4 dipertahankan (file revisi 5 menghapus tag VISUAL). S5: tiga kartu; S7: empat ikon; S8: peringatan + dua peta.",
+    "data_basis": "IMF WEO Okt 2026: nominal US$5.259 vs US$5.153; PPP ~US$19.970 vs ~US$19.090 (~5%). Q3 2026 dari BPS/NSO; PMI 54,0 dari S&P Global lewat src-24.",
+    "placeholder_resolution": "S5 diisi dari src-06 (ULI 2025 + Vietnamnet).",
+    "verification_note": "Sudah diverifikasi: PPP edisi WEO Okt 2026 (src-20, pembanding src-21); Q3 2026 ID 5,47% BPS (src-22) & VN 9,95% NSO (src-23); PMI 54,0 Okt 2026 (src-24). Masih diperhatikan: selisih US$5.259 vs US$5.269 (Katadata), Gini \"sekitar 36\" (tahun survei beda), pangsa FDI 76% (2025) vs ~80% (H1 2026) — cantumkan periodenya di grafis, Rp18.000 asumsi Katadata, klaim 1990 penyederhanaan src-08, S8 poin 3 opini.",
+    "timing_note": "Retimed to real Edge TTS Gadis durations measured with ffprobe (631.63s speech + 0.3s gaps x9 + 2.0s final hold = 636.33s).",
+    "narration_language": "Bahasa Indonesia"
+  }
+}

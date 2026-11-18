@@ -27,13 +27,16 @@ Log every meaningful choice in `artifacts/decision_log.json` with a unique `(cat
 - Let the story **resolve**: give the explanation and a real conclusion, not just a statistic.
 - Split into scenes of 5–20 s; for each, specify the real-footage subject and the infographic spec.
 
-## 3. Render narration before locking timing
+## 3. Render narration FIRST, then lock the scene plan
 
-1. Generate a **sample** of the most numbers-heavy section and approve the voice.
-2. Render all sections with the chosen Edge TTS voice.
-3. Measure real durations with `ffprobe`.
-4. **Retime the script and scene plan to the real audio** — do not force speech into a planned duration (the example had to expand from 117 s to 220 s).
-5. Build the full narration mix with small gaps and a final hold.
+**Approval-flow rule (binding):** once the `script` gate is approved, render the narration and measure it **before** asking for `scene_plan` approval. Planned durations are estimates; measured speech is the only reliable clock. Re-checkpoint `scene_plan` as `awaiting_human` only *after* retiming, so the human approves the real timeline.
+
+1. Generate a **sample** of the most numbers-heavy section and approve the voice (the `kok-bisa-vietnam-id` run used section `s5`).
+2. Render all sections with the chosen Edge TTS voice (example: `id-ID-GadisNeural`, rate `+0%`).
+3. Measure real durations with `ffprobe` and save `artifacts/tts_timings.json`.
+4. **Retime the script and scene plan to the real audio** — do not force speech into a planned duration. The first worked example expanded 117 s → 220 s; `kok-bisa-vietnam-id` expanded 510 s → **636.33 s** (631.63 s speech + 0.3 s gaps × 9 + 2 s final hold).
+5. Only then re-checkpoint `scene_plan` with the retimed artifact and ask for approval.
+6. Build the full narration mix with small gaps and a final hold.
 
 ## 4. Build visuals with both engines
 
@@ -65,5 +68,7 @@ Log every meaningful choice in `artifacts/decision_log.json` with a unique `(cat
 | Never put IMF and TradingEconomics numbers in the same chart | different basis = misleading comparison |
 | Append decisions, don't edit them | the board and reviewers rely on audit history |
 | Measure TTS before setting scene durations | text length ≠ speech length |
+| Render TTS **before** the `scene_plan` approval gate | humans must approve the real timeline, not an estimate |
+| Keep narration audio in `assets/audio/sections/<id>.mp3` | retime scripts read these files directly with `ffprobe` |
 | Normalize clips before concat | avoids silent frame loss |
 | Check music source for silent tails | prevents mid-video muting |

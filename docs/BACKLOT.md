@@ -68,3 +68,31 @@ same navigation to another installation.
 
 Hard-refresh the board after updating `board.js` / `board.css` (the watcher only
 monitors `projects/`, not UI files).
+
+## Second worked project — `kok-bisa-vietnam-id`
+A second, longer run is included for the Indonesian-language video
+**"Kok Bisa Orang Vietnam 'Lebih Kaya' dari Indonesia?"**. Its state lives in
+`backlot/projects/kok-bisa-vietnam-id/` (checkpoints, archived `history/`,
+`decision_log.json`, `events.jsonl`, `project.json`) and the canonical artifacts
+in `artifacts/projects/kok-bisa-vietnam-id/`.
+
+Live board:
+```
+http://127.0.0.1:4750/p/kok-bisa-vietnam-id
+```
+Start it with `.venv/bin/python -m backlot open kok-bisa-vietnam-id` from the
+OpenMontage checkout.
+
+Stage status recap:
+| Stage | Status | Note |
+|---|---|---|
+| idea | completed (approved) | Title and source list accepted after several revisions |
+| script | completed (approved) | 10 sections; narration text preserved across 5 user revisions |
+| scene_plan | awaiting_human | 20 half-scenes, retimed to real TTS (636.33 s) |
+
+This run follows the revised approval flow documented in
+`RECOMMENDED_STEPS.md` §3: the Edge TTS narration (`id-ID-GadisNeural`) was
+rendered and measured **before** the scene-plan approval gate. Section audio is
+generated locally into `assets/audio/sections/<id>.mp3` and is intentionally not
+committed; regenerate it with `scripts/tts_all.py`-style code after restoring
+the artifacts.

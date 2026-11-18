@@ -1,0 +1,765 @@
+{
+  "version": "1.0",
+  "project_id": "kok-bisa-vietnam-id",
+  "pipeline_type": "hybrid",
+  "stage": "script",
+  "status": "awaiting_human",
+  "timestamp": "2026-11-18T03:15:58.801211+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "script": {
+      "version": "1.0",
+      "title": "Kok Bisa Orang Vietnam 'Lebih Kaya' dari Indonesia?",
+      "total_duration_seconds": 91.0,
+      "voice_performance": {
+        "performance_intent": "Bahasa Indonesia percakapan yang sopan dan informatif; tekan angka kunci tanpa berlebihan.",
+        "pacing_profile": "conversational",
+        "energy_curve": "Mulai ingin tahu di hook, stabil saat menjelaskan data, menghangat di penutup.",
+        "pause_policy": "Jeda 0,3 s setelah angka kunci; 0,5 s sebelum transisi antar bagian.",
+        "sample_section_id": "s2",
+        "provider_notes": {
+          "voice": "id-ID-GadisNeural",
+          "provider": "Edge TTS via MoneyPrinterTurbo"
+        }
+      },
+      "sections": [
+        {
+          "id": "s0",
+          "label": "Hook \u2014 angka enam dolar",
+          "text": "Klaimnya: orang Vietnam kini lebih kaya dari Indonesia. Datanya, lima ribu enam puluh enam versus lima ribu lima puluh sembilan dolar. Selisihnya hanya enam dolar.",
+          "start_seconds": 0.0,
+          "end_seconds": 9.0,
+          "speaker_directions": "Nada ingin tahu, tekan tipis pada 'enam dolar'.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "informatif, terkendali",
+            "delivery_note": "hook; stat reveal"
+          },
+          "enhancement_cues": [
+            {
+              "type": "broll",
+              "description": "Jalanan ramai Vietnam \u2014 mobilitas harian, motor dan pejalan kaki, siang hari",
+              "timestamp_seconds": 0.5
+            },
+            {
+              "type": "stat_card",
+              "description": "Current US$ 2025: Vietnam US$5.066 vs Indonesia US$5.060 \u2014 sorot selisih US$6,4 (0,13%)",
+              "timestamp_seconds": 4.0
+            }
+          ],
+          "pronunciation_guides": [
+            {
+              "word": "P P P",
+              "phonetic": "pe-pe-pe"
+            },
+            {
+              "word": "F D I",
+              "phonetic": "ef-de-i"
+            }
+          ],
+          "source_ref": "data_manifest.levels.current_usd.2025"
+        },
+        {
+          "id": "s1",
+          "label": "Salip baru terjadi",
+          "text": "Tahun dua ribu dua puluh empat, Vietnam masih kalah dua ratus sembilan dolar. Jadi penyalipan ini baru terjadi dalam satu tahun \u2014 dan tipis sekali.",
+          "start_seconds": 9.0,
+          "end_seconds": 18.0,
+          "speaker_directions": "Tenang, faktual.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "informatif, terkendali",
+            "delivery_note": "context"
+          },
+          "enhancement_cues": [
+            {
+              "type": "stat_card",
+              "description": "2024: Vietnam US$4.716,7 vs Indonesia US$4.925,4 \u2014 Vietnam masih di bawah US$208,7",
+              "timestamp_seconds": 10.0
+            },
+            {
+              "type": "broll",
+              "description": "Keramaian Jakarta sebagai penyeimbang visual Indonesia",
+              "timestamp_seconds": 14.0
+            }
+          ],
+          "pronunciation_guides": [],
+          "source_ref": "data_manifest.levels.current_usd.2024"
+        },
+        {
+          "id": "s2",
+          "label": "Price basis mengubah pemenang",
+          "text": "Sebelum berkesimpulan, lihat basis harganya. Pakai Paritas Daya Beli \u2014 Purchasing Power Parity, disingkat P P P \u2014 Vietnam unggul empat ratus dua puluh delapan dolar. Pakai dolar konstan dua ribu lima belas, Indonesia justru unggul lima koma tujuh persen.",
+          "start_seconds": 18.0,
+          "end_seconds": 28.0,
+          "speaker_directions": "Tekan pada kata 'basis harganya'.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "informatif, terkendali",
+            "delivery_note": "myth-bust; sebut \"Paritas Daya Beli \u2014 Purchasing Power Parity\" dengan jelas sebelum singkatan P P P"
+          },
+          "enhancement_cues": [
+            {
+              "type": "overlay",
+              "description": "Tiga kolom: current US$ (VN +0,13%), PPP (VN +2,4%), constant 2015 US$ (ID +5,7%) \u2014 sorot pemenang berubah. Label: 'PPP = Purchasing Power Parity / Paritas Daya Beli \u2014 disesuaikan dengan harga lokal'",
+              "timestamp_seconds": 19.5
+            },
+            {
+              "type": "broll",
+              "description": "Rupiah / bank Indonesia menjelaskan basis konversi",
+              "timestamp_seconds": 25.0
+            }
+          ],
+          "pronunciation_guides": [
+            {
+              "word": "P P P",
+              "phonetic": "pe-pe-pe"
+            },
+            {
+              "word": "Paritas Daya Beli",
+              "phonetic": "pa-ri-tas da-ya be-li"
+            }
+          ],
+          "source_ref": "data_manifest.levels.ppp_current_intl.2025; data_manifest.levels.constant_2015_usd.2025"
+        },
+        {
+          "id": "s3",
+          "label": "Aturan membaca angka",
+          "text": "Jadi kata lebih kaya tergantung price basis. Dalam video ini kami memakai current U S D sebagai patokan, dan menampilkan basis lain supaya angkanya tidak menyesatkan.",
+          "start_seconds": 28.0,
+          "end_seconds": 36.5,
+          "speaker_directions": "Tegas tapi sopan.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "informatif, terkendali",
+            "delivery_note": "method"
+          },
+          "enhancement_cues": [
+            {
+              "type": "overlay",
+              "description": "Label tetap di layar: 'current US$ | PPP | constant 2015 US$'",
+              "timestamp_seconds": 29.0
+            }
+          ],
+          "pronunciation_guides": [
+            {
+              "word": "U S D",
+              "phonetic": "yu-es-di"
+            }
+          ],
+          "source_ref": "brief.metadata.price_basis_labeling_rules"
+        },
+        {
+          "id": "s4",
+          "label": "Mesin 1 \u2014 kecepatan tumbuh",
+          "text": "Lalu, kok bisa? Pertama, kecepatan. Pertumbuhan Vietnam tujuh persen di dua ribu dua puluh empat, dan delapan persen di dua ribu dua puluh lima. Indonesia, lima persen dan lima koma satu.",
+          "start_seconds": 36.5,
+          "end_seconds": 46.0,
+          "speaker_directions": "Nada menjelaskan sebab-akibat.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "informatif, terkendali",
+            "delivery_note": "explanation"
+          },
+          "enhancement_cues": [
+            {
+              "type": "diagram",
+              "description": "Bertahun: VN 7,0% / 8,0% vs ID 5,0% / 5,1% \u2014 panah selisih 2-3 poin",
+              "timestamp_seconds": 38.0
+            },
+            {
+              "type": "broll",
+              "description": "Pabrik elektronik Vietnam \u2014 lini perakitan",
+              "timestamp_seconds": 43.0
+            }
+          ],
+          "pronunciation_guides": [],
+          "source_ref": "data_manifest.drivers.gdp_growth_pct"
+        },
+        {
+          "id": "s5",
+          "label": "Mesin 2 \u2014 investasi asing",
+          "text": "Kedua, investasi asing. F D I Vietnam mencapai empat koma tiga persen dari P D B, Indonesia satu koma enam persen \u2014 hampir dua setengah kali lipat.",
+          "start_seconds": 46.0,
+          "end_seconds": 55.0,
+          "speaker_directions": "Tekan pada 'dua setengah kali lipat'.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "informatif, terkendali",
+            "delivery_note": "explanation"
+          },
+          "enhancement_cues": [
+            {
+              "type": "stat_card",
+              "description": "FDI % PDB 2025: VN 4,3% vs ID 1,6% (rasio ~2,5x)",
+              "timestamp_seconds": 47.5
+            },
+            {
+              "type": "broll",
+              "description": "Pelabuhan ekspor Vietnam \u2014 kontainer dan kapal",
+              "timestamp_seconds": 52.0
+            }
+          ],
+          "pronunciation_guides": [
+            {
+              "word": "F D I",
+              "phonetic": "ef-de-i"
+            },
+            {
+              "word": "P D B",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "source_ref": "data_manifest.drivers.fdi_pct_gdp.2025"
+        },
+        {
+          "id": "s6",
+          "label": "Bukan soal jumlah investasi",
+          "text": "Rasio investasi terhadap P D B kita hampir sama, sekitar tiga puluh satu persen. Bedanya bukan jumlahnya, tapi arahnya: Vietnam ke pabrik ekspor, Indonesia banyak ke komoditas dan pasar domestik.",
+          "start_seconds": 55.0,
+          "end_seconds": 65.0,
+          "speaker_directions": "Nada reflektif.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "informatif, terkendali",
+            "delivery_note": "nuance"
+          },
+          "enhancement_cues": [
+            {
+              "type": "overlay",
+              "description": "Investasi % PDB hampir sama (30,8% vs 30,6%) \u2014 panah ke arah berbeda: ekspor vs domestik",
+              "timestamp_seconds": 56.5
+            },
+            {
+              "type": "broll",
+              "description": "Aktivitas pasar domestik Indonesia",
+              "timestamp_seconds": 61.0
+            }
+          ],
+          "pronunciation_guides": [
+            {
+              "word": "P D B",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "source_ref": "data_manifest.drivers.gross_capital_formation_pct_gdp.2025"
+        },
+        {
+          "id": "s7",
+          "label": "China plus satu",
+          "text": "Pabrik elektronik, pelabuhan ekspor, dan strategi China plus satu membuat rata-rata output per orang Vietnam naik cepat. Itu mesin di balik angka enam dolar tadi.",
+          "start_seconds": 65.0,
+          "end_seconds": 74.0,
+          "speaker_directions": "Nada menyimpulkan sebab.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "informatif, terkendali",
+            "delivery_note": "explanation"
+          },
+          "enhancement_cues": [
+            {
+              "type": "broll",
+              "description": "Jalanan ramai Vietnam (kedua) + kamera bergerak mengikuti arus lalu lintas",
+              "timestamp_seconds": 66.0
+            },
+            {
+              "type": "diagram",
+              "description": "Rantai: China+1 \u2192 pabrik \u2192 ekspor \u2192 PDB per kapita naik",
+              "timestamp_seconds": 70.0
+            }
+          ],
+          "pronunciation_guides": [],
+          "source_ref": "data_manifest.drivers.fdi_pct_gdp.2025; data_manifest.drivers.gdp_growth_pct"
+        },
+        {
+          "id": "s8",
+          "label": "Skala Indonesia tetap besar",
+          "text": "Tapi jangan lupa ukurannya. Total ekonomi Indonesia satu koma empat lima triliun dolar, Vietnam setengah triliun. Indonesia hampir tiga kali lebih besar.",
+          "start_seconds": 74.0,
+          "end_seconds": 82.5,
+          "speaker_directions": "Nada menyeimbangkan.",
+          "delivery_cues": {
+            "pace": "measured",
+            "energy": "informatif, terkendali",
+            "delivery_note": "nuance"
+          },
+          "enhancement_cues": [
+            {
+              "type": "stat_card",
+              "description": "GDP total 2025: Indonesia US$1,45T vs Vietnam US$0,51T (~2,8x)",
+              "timestamp_seconds": 75.5
+            },
+            {
+              "type": "broll",
+              "description": "Skyline Jakarta malam hari",
+              "timestamp_seconds": 79.5
+            }
+          ],
+          "pronunciation_guides": [],
+          "source_ref": "data_manifest.drivers.gdp_total_current_usd.2025"
+        },
+        {
+          "id": "s9",
+          "label": "Penutup \u2014 rata-rata bukan kekayaan",
+          "text": "Jadi, Vietnam memang menyalip di rata-rata output per orang. Tapi itu photo finish, dan rata-rata bukan kekayaan setiap warga. Silakan cek basis harganya sebelum berkata lebih kaya.",
+          "start_seconds": 82.5,
+          "end_seconds": 91.0,
+          "speaker_directions": "Nada mengajak, sopan, tutup dengan senyum.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "informatif, terkendali",
+            "delivery_note": "conclusion; cta"
+          },
+          "enhancement_cues": [
+            {
+              "type": "broll",
+              "description": "Jalanan Vietnam sore hari \u2014 transisi ke kartu akhir",
+              "timestamp_seconds": 83.5
+            },
+            {
+              "type": "animation",
+              "description": "End card: 'Cek basis harganya' + tiga label current US$/PPP/constant",
+              "timestamp_seconds": 88.0
+            }
+          ],
+          "pronunciation_guides": [],
+          "source_ref": "brief.core_message; brief.cta"
+        }
+      ],
+      "metadata": {
+        "anchor_sections": [
+          "s0",
+          "s1",
+          "s8",
+          "s9"
+        ],
+        "support_sections": [
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "s7"
+        ],
+        "narration_sections": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "s7",
+          "s8",
+          "s9"
+        ],
+        "required_support_assets": [
+          "stat_card_current_usd_2025",
+          "stat_card_2024_gap",
+          "comparison_three_bases",
+          "bar_chart_growth",
+          "stat_card_fdi",
+          "comparison_investment_direction",
+          "diagram_china_plus_one",
+          "stat_card_gdp_total",
+          "end_card_check_basis"
+        ],
+        "visual_router": "per_scene_alternating_halves \u2014 setiap adegan memuat ~50% real footage dan ~50% infografis Remotion",
+        "required_footage": [
+          "busy street of Vietnam (wajib)",
+          "jakarta crowd",
+          "electronics factory Vietnam",
+          "export port Vietnam",
+          "rupiah bank"
+        ],
+        "timing_note": "Durasi di atas adalah estimasi. Sesuai RECOMMENDED_STEPS.md langkah 3, setelah TTS di-render kami ukur durasi nyata dengan ffprobe lalu retime script + scene_plan.",
+        "fact_check": "Semua angka bersumber dari data_manifest.json yang diverifikasi via World Bank API (lastupdated 2026-11-11); IMF ditandai sebagai proyeksi.",
+        "narration_language": "Bahasa Indonesia",
+        "term_definition_note": "PPP ditulis lengkap di narasi dan label: Paritas Daya Beli \u2014 Purchasing Power Parity (PPP)."
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "kok-bisa-vietnam-id",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "idea",
+          "category": "pipeline_selection",
+          "subject": "Pipeline untuk video hybrid real-footage + infografis",
+          "options_considered": [
+            {
+              "option_id": "hybrid",
+              "label": "hybrid",
+              "score": 0.95,
+              "reason": "Footage nyata + chart/infografis data"
+            },
+            {
+              "option_id": "animated-explainer",
+              "label": "animated-explainer",
+              "score": 0.6,
+              "reason": "Semua generated",
+              "rejected_because": "Kehilangan anchor footage nyata"
+            },
+            {
+              "option_id": "documentary-montage",
+              "label": "documentary-montage",
+              "score": 0.5,
+              "reason": "Footage-led",
+              "rejected_because": "Dukungan chart lemah untuk adegan data"
+            }
+          ],
+          "selected": "hybrid",
+          "reason": "Brief menggabungkan footage nyata dan infografis data.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "idea",
+          "category": "concept_selection",
+          "subject": "Judul video (Bahasa Indonesia)",
+          "options_considered": [
+            {
+              "option_id": "kok-bisa",
+              "label": "Kok Bisa Orang Vietnam 'Lebih Kaya' dari Indonesia?",
+              "score": 0.95,
+              "reason": "Dipilih user; hook 'kok bisa' + angka US$6 di angle"
+            },
+            {
+              "option_id": "photo-finish",
+              "label": "Vietnam Salip Indonesia soal GDP Per Kapita \u2014 Cuma Menang US$6 per Orang",
+              "score": 0.8,
+              "reason": "Lebih berita",
+              "rejected_because": "User memilih opsi 1"
+            },
+            {
+              "option_id": "fakta",
+              "label": "Vietnam Lebih Kaya dari Indonesia? Ini Faktanya",
+              "score": 0.7,
+              "reason": "Myth-busting",
+              "rejected_because": "User memilih opsi 1"
+            }
+          ],
+          "selected": "kok-bisa",
+          "reason": "User secara eksplisit memilih kandidat #1.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "idea",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.95,
+              "reason": "Native stat_card/bar_chart/line_chart; video + React overlay dalam satu pass"
+            },
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.7,
+              "reason": "HTML/GSAP kinetic typography",
+              "rejected_because": "Primitive chart bawaan lebih lemah untuk brief data-heavy ini"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.4,
+              "reason": "Cut/concat lokal",
+              "rejected_because": "Infografis turun jadi kartu statis"
+            }
+          ],
+          "selected": "remotion",
+          "reason": "DIUSULKAN \u2014 kedua runtime tersedia dan sudah dipresentasikan pada gerbang idea. Belum dikunci; tunggu persetujuan eksplisit user. Remotion direkomendasikan karena chart data.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.7
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "idea",
+          "category": "voice_selection",
+          "subject": "Narasi Bahasa Indonesia",
+          "options_considered": [
+            {
+              "option_id": "edge-gadis",
+              "label": "Edge TTS id-ID-GadisNeural (via MPT)",
+              "score": 0.95,
+              "reason": "Terpasang, gratis, sudah dipakai di proyek sebelumnya"
+            },
+            {
+              "option_id": "edge-ardi",
+              "label": "Edge TTS id-ID-ArdiNeural",
+              "score": 0.6,
+              "reason": "Alternatif pria",
+              "rejected_because": "User sebelumnya menyetujui Gadis"
+            },
+            {
+              "option_id": "no-narration",
+              "label": "Tanpa narasi",
+              "score": 0.4,
+              "reason": "Teks di layar saja",
+              "rejected_because": "Video berbasis penjelasan"
+            }
+          ],
+          "selected": "edge-gadis",
+          "reason": "Diusulkan pada gerbang idea; perlu approval user untuk proyek baru ini.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "idea",
+          "category": "music_source",
+          "subject": "Musik latar",
+          "options_considered": [
+            {
+              "option_id": "news-investigating",
+              "label": "Background music News Investigating.mp3",
+              "score": 0.9,
+              "reason": "Sudah ada di library user, cocok nada investigasi"
+            },
+            {
+              "option_id": "pixabay",
+              "label": "Pixabay music search",
+              "score": 0.5,
+              "reason": "Satu-satunya music_search aktif",
+              "rejected_because": "Track user sudah tersedia dan lebih cocok"
+            },
+            {
+              "option_id": "none",
+              "label": "Tanpa musik",
+              "score": 0.3,
+              "reason": "\u2014",
+              "rejected_because": "Mengurangi produksi"
+            }
+          ],
+          "selected": "news-investigating",
+          "reason": "Diusulkan pada gerbang idea; perlu approval user.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "idea",
+          "category": "approval_policy",
+          "subject": "Waktu transfer ke Concat",
+          "options_considered": [
+            {
+              "option_id": "after-edit",
+              "label": "Setelah stage edit disetujui",
+              "score": 1.0,
+              "reason": "Instruksi eksplisit user"
+            },
+            {
+              "option_id": "now",
+              "label": "Transfer sekarang",
+              "score": 0.2,
+              "reason": "\u2014",
+              "rejected_because": "User meminta backlot step-by-step dulu"
+            }
+          ],
+          "selected": "after-edit",
+          "reason": "User: buat backlot seperti biasa dengan step step approval, baru transfer ke concat setelah tahap edit.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "idea",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.95,
+              "reason": "Native chart primitives; user approved"
+            },
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.7,
+              "reason": "HTML/GSAP kinetic typography",
+              "rejected_because": "User memilih Remotion untuk video data-heavy"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.4,
+              "reason": "Cut/concat lokal",
+              "rejected_because": "Infografis turun jadi kartu statis"
+            }
+          ],
+          "selected": "remotion",
+          "reason": "User menyetujui Remotion pada gerbang idea.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "idea",
+          "category": "voice_selection",
+          "subject": "Narasi Bahasa Indonesia",
+          "options_considered": [
+            {
+              "option_id": "edge-gadis",
+              "label": "Edge TTS id-ID-GadisNeural",
+              "score": 0.98,
+              "reason": "User memilih Gadis; gratis, terpasang"
+            },
+            {
+              "option_id": "edge-ardi",
+              "label": "Edge TTS id-ID-ArdiNeural",
+              "score": 0.6,
+              "reason": "Alternatif pria",
+              "rejected_because": "User memilih Gadis"
+            },
+            {
+              "option_id": "none",
+              "label": "Tanpa narasi",
+              "score": 0.3,
+              "reason": "\u2014",
+              "rejected_because": "Video berbasis penjelasan"
+            }
+          ],
+          "selected": "edge-gadis",
+          "reason": "User menyetujui narasi Gadis via MoneyPrinterTurbo.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "idea",
+          "category": "music_source",
+          "subject": "Musik latar",
+          "options_considered": [
+            {
+              "option_id": "informative-bed",
+              "label": "Informative Bed.mp3",
+              "score": 0.95,
+              "reason": "User memilih track dari /home/desktop/Music; nada informatif"
+            },
+            {
+              "option_id": "news-investigating",
+              "label": "News Investigating.mp3",
+              "score": 0.7,
+              "reason": "Usulan sebelumnya",
+              "rejected_because": "User mengganti dengan Informative Bed.mp3 pada gerbang idea"
+            },
+            {
+              "option_id": "none",
+              "label": "Tanpa musik",
+              "score": 0.3,
+              "reason": "\u2014",
+              "rejected_because": "User memilih musik"
+            }
+          ],
+          "selected": "informative-bed",
+          "reason": "User memilih /home/desktop/Music/Informative Bed.mp3.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "idea",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "templated",
+              "label": "Templated",
+              "score": 0.9,
+              "reason": "Cepat, reliabel, cocok untuk data cards; user memilih"
+            },
+            {
+              "option_id": "atelier",
+              "label": "Atelier",
+              "score": 0.6,
+              "reason": "Bespoke, biaya token lebih tinggi",
+              "rejected_because": "User memilih templated"
+            }
+          ],
+          "selected": "templated",
+          "reason": "User menyetujui mode templated pada gerbang idea.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-011",
+          "stage": "script",
+          "category": "visual_accuracy_check",
+          "subject": "Angka PDB per kapita Vietnam vs Indonesia",
+          "options_considered": [
+            {
+              "option_id": "world_bank_api",
+              "label": "World Bank WDI API (current, PPP, constant 2015)",
+              "score": 0.95,
+              "reason": "Primary source, terverifikasi 2026-11-18"
+            },
+            {
+              "option_id": "imf_news",
+              "label": "Headline IMF lewat media",
+              "score": 0.6,
+              "reason": "Dipakai hanya sebagai proyeksi berlabel",
+              "rejected_because": "Bukan hasil ukur dan 403 langsung dari API IMF"
+            }
+          ],
+          "selected": "world_bank_api",
+          "reason": "Semua klaim numerik di script ditelusuri ke data_manifest.json; IMF diberi label PROYEKSI.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        }
+      ]
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "metadata": {
+    "review": {
+      "decision": "PASS",
+      "round": 2,
+      "findings": [
+        {
+          "severity": "SUGGESTION",
+          "description": "Durasi masih estimasi 91 s; retime setelah TTS.",
+          "action": "Jalankan tts_all.py + retime_to_tts.py setelah approval.",
+          "status": "deferred"
+        },
+        {
+          "severity": "NITPICK",
+          "description": "S2 sebut istilah lengkap PPP.",
+          "action": "Diterapkan pada revisi ini \u2014 narasi + overlay + pronunciation guide.",
+          "status": "fixed"
+        }
+      ],
+      "summary": {
+        "critical": 0,
+        "suggestions": 1,
+        "nitpicks": 1,
+        "success_criteria_met": "4/4"
+      }
+    },
+    "revision_note": "Revisi atas permintaan user: S2 memakai \"Paritas Daya Beli \u2014 Purchasing Power Parity (PPP)\" di narasi dan label infografis.",
+    "cost_snapshot": {
+      "spent_usd": 0.0,
+      "projected_compose_usd": 0.0
+    },
+    "next_stage": "scene_plan"
+  }
+}

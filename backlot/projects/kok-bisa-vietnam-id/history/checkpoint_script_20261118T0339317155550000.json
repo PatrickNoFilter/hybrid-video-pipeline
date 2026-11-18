@@ -1,0 +1,783 @@
+{
+  "version": "1.0",
+  "project_id": "kok-bisa-vietnam-id",
+  "pipeline_type": "hybrid",
+  "stage": "script",
+  "status": "awaiting_human",
+  "timestamp": "2026-11-18T03:39:31.715555+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": false,
+  "artifacts": {
+    "script": {
+      "version": "1.0",
+      "title": "Kok Bisa Orang Vietnam \"Lebih Kaya\" dari Indonesia?",
+      "total_duration_seconds": 420.0,
+      "voice_performance": {
+        "performance_intent": "Narasi YouTube Bahasa Indonesia, santai dan mengajak, tetap sopan saat membahas angka.",
+        "pacing_profile": "conversational",
+        "energy_curve": "Hook bikin penasaran \u2192 penjelasan tenang \u2192 refleksi di bagian 5-6 \u2192 ajakan di penutup.",
+        "pause_policy": "Jeda 0,3 s setelah angka kunci; 0,5 s antar bagian.",
+        "sample_section_id": "s2",
+        "provider_notes": {
+          "voice": "id-ID-GadisNeural",
+          "provider": "Edge TTS via MoneyPrinterTurbo"
+        }
+      },
+      "sections": [
+        {
+          "id": "s0",
+          "label": "Hook",
+          "text": "Kalau saya bilang Vietnam sebentar lagi menyalip Indonesia, kamu percaya nggak? Tahun 1990, Vietnam itu salah satu negara termiskin di Asia Tenggara. Pendapatan per kapitanya waktu itu cuma sekitar seperenam Indonesia. Sekarang? Menurut proyeksi IMF terbaru, PDB per kapita Vietnam tahun 2026 diperkirakan US$5.259, sementara Indonesia US$5.153. Tapi tunggu dulu. Sebelum kamu panik atau marah di kolom komentar, kita bedah dulu: ini benar-benar berarti orang Vietnam lebih kaya dari kita?",
+          "start_seconds": 0.0,
+          "end_seconds": 30.0,
+          "speaker_directions": "Narasi percakapan Bahasa Indonesia, santai tapi informatif.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "santai, mengajak",
+            "delivery_note": "Hook"
+          },
+          "pronunciation_guides": [
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "enhancement_cues": [
+            {
+              "type": "overlay",
+              "description": "dua bendera bersanding, lalu angka muncul satu per satu",
+              "timestamp_seconds": 1.0
+            },
+            {
+              "type": "stat_card",
+              "description": "IMF WEO Okt 2026 (PROYEKSI): Vietnam US$5.259 vs Indonesia US$5.153",
+              "timestamp_seconds": 12.0
+            }
+          ],
+          "source_ref": "data_manifest.projection_imf_weo_oct_2026_current_usd"
+        },
+        {
+          "id": "s1",
+          "label": "Apa Sih \"PDB per Kapita\" Itu?",
+          "text": "PDB per kapita itu gampangnya begini. Bayangkan seluruh produksi ekonomi sebuah negara itu satu kue besar. Lalu kue itu dibagi rata ke semua penduduk. Hasil potongan per orang itulah PDB per kapita. Perlu diingat, ini angka rata-rata. Bukan berarti setiap orang benar-benar memegang uang segitu. Dan angka ini dihitung dalam dolar AS, jadi kurs ikut berpengaruh. Dalam rupiah, kalau pakai kurs sekitar Rp18.000 per dolar, PDB per kapita Indonesia kira-kira Rp92,75 juta per tahun.",
+          "start_seconds": 30.0,
+          "end_seconds": 90.0,
+          "speaker_directions": "Narasi percakapan Bahasa Indonesia, santai tapi informatif.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "santai, mengajak",
+            "delivery_note": "Apa Sih \"PDB per Kapita\" Itu?"
+          },
+          "pronunciation_guides": [
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "enhancement_cues": [
+            {
+              "type": "animation",
+              "description": "animasi kue besar dipotong sesuai jumlah penduduk",
+              "timestamp_seconds": 31.0
+            },
+            {
+              "type": "overlay",
+              "description": "Label: rata-rata \u2260 uang per orang; angka dalam dolar AS dipengaruhi kurs",
+              "timestamp_seconds": 40.0
+            }
+          ],
+          "source_ref": "brief.metadata.price_basis_labeling_rules"
+        },
+        {
+          "id": "s2",
+          "label": "Selisihnya Tipis Banget",
+          "text": "Nah, ini bagian yang sering terlewat di judul-judul berita. Selisihnya cuma sekitar 100 dolar, kurang dari 3 persen. Dan ini masih **proyeksi**, bukan data final. Bahkan, pada laporan April lalu, IMF masih menempatkan Indonesia di atas Vietnam untuk tahun yang sama. Jadi urutannya bisa saja berubah lagi di revisi berikutnya. Dan kalau kita lihat ukuran ekonomi totalnya, ceritanya beda jauh. PDB total Indonesia diperkirakan US$1,48 triliun, sedangkan Vietnam sekitar US$542 miliar. Ekonomi kita masih hampir tiga kali lipat lebih besar. Jadi kenapa bisa kejadian begini? Ada dua cerita di baliknya.",
+          "start_seconds": 90.0,
+          "end_seconds": 150.0,
+          "speaker_directions": "Narasi percakapan Bahasa Indonesia, santai tapi informatif.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "santai, mengajak",
+            "delivery_note": "Selisihnya Tipis Banget"
+          },
+          "pronunciation_guides": [
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "enhancement_cues": [
+            {
+              "type": "diagram",
+              "description": "grafik batang dua negara, selisihnya disorot",
+              "timestamp_seconds": 91.0
+            },
+            {
+              "type": "stat_card",
+              "description": "Selisih ~US$106 (~2%) \u2014 PROYEKSI IMF. PDB total: ID US$1,48 T vs VN US$542 M",
+              "timestamp_seconds": 95.0
+            }
+          ],
+          "source_ref": "data_manifest.projection_imf_weo_oct_2026_current_usd; data_manifest.drivers.gdp_total_current_usd.2025"
+        },
+        {
+          "id": "s3",
+          "label": "Cerita Vietnam, Tancap Gas",
+          "text": "Pertama, Vietnam yang ngebut. PDB per kapita nominal mereka diperkirakan naik 8,9 persen di tahun 2026. Apa mesinnya? Manufaktur. Vietnam menarik produsen berteknologi tinggi yang mencari alternatif selain China, termasuk pembuat semikonduktor dan peralatan elektronik. Pabrik-pabrik besar membuka lini produksi di sana, ekspor melonjak, lapangan kerja industri bertambah. Dan ini bukan kebetulan semalam. Vietnam sudah puluhan tahun fokus pada satu strategi: jadi basis produksi untuk ekspor. Hasilnya, mereka sekarang menargetkan PDB per kapita US$8.500 pada 2030.",
+          "start_seconds": 150.0,
+          "end_seconds": 240.0,
+          "speaker_directions": "Narasi percakapan Bahasa Indonesia, santai tapi informatif.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "santai, mengajak",
+            "delivery_note": "Cerita Vietnam, Tancap Gas"
+          },
+          "pronunciation_guides": [
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "enhancement_cues": [
+            {
+              "type": "diagram",
+              "description": "pabrik elektronik, kontainer di pelabuhan, grafik naik",
+              "timestamp_seconds": 151.0
+            },
+            {
+              "type": "stat_card",
+              "description": "Target Vietnam 2030: PDB per kapita US$8.500 (klaim dari naskah sumber)",
+              "timestamp_seconds": 200.0
+            }
+          ],
+          "source_ref": "user_markdown_script; data_manifest.drivers.fdi_pct_gdp.2025"
+        },
+        {
+          "id": "s4",
+          "label": "Cerita Indonesia, Jalan di Tempat",
+          "text": "Kedua, sisi kita. PDB per kapita Indonesia diproyeksikan hanya naik 1,5 persen dibanding estimasi tahun ini. Kenapa? Salah satunya kurs. Karena PDB per kapita dihitung dalam dolar, pelemahan rupiah ikut menekan angkanya. Artinya, sebagian \"ketertinggalan\" ini adalah efek mata uang, bukan semata ekonomi kita yang menyusut. Tapi kurs bukan satu-satunya masalah. Ada kritik bahwa investasi di sektor tertentu belum cukup menciptakan lapangan kerja atau menaikkan pendapatan rumah tangga secara signifikan. Dengan kata lain, uang masuk, tapi dampaknya ke dompet orang biasa belum sebesar yang diharapkan. Pemerintah sendiri sedang mendorong reindustrialisasi. Pertanyaannya, apakah itu cukup cepat?",
+          "start_seconds": 240.0,
+          "end_seconds": 300.0,
+          "speaker_directions": "Narasi percakapan Bahasa Indonesia, santai tapi informatif.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "santai, mengajak",
+            "delivery_note": "Cerita Indonesia, Jalan di Tempat"
+          },
+          "pronunciation_guides": [
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "enhancement_cues": [
+            {
+              "type": "diagram",
+              "description": "grafik rupiah melemah, grafik pertumbuhan datar",
+              "timestamp_seconds": 241.0
+            },
+            {
+              "type": "stat_card",
+              "description": "PDB per kapita Indonesia +1,5% (proyeksi); efek pelemahan rupiah",
+              "timestamp_seconds": 250.0
+            }
+          ],
+          "source_ref": "user_markdown_script; data_manifest.drivers.fx_per_usd"
+        },
+        {
+          "id": "s5",
+          "label": "\"Lebih Kaya\" Itu Relatif",
+          "text": "Sekarang pertanyaan pentingnya: apakah rata-rata orang Vietnam benar-benar hidup lebih sejahtera dari kita? Belum tentu. Angka nominal tidak memperhitungkan harga-harga. Di Vietnam sendiri, biaya hidup dan perumahan naik pesat, sehingga tantangan sebenarnya adalah mengubah pertumbuhan di atas kertas menjadi keamanan finansial sehari-hari. Selain itu, rata-rata bisa menutupi ketimpangan. Dua negara dengan angka sama bisa punya kehidupan sehari-hari yang sangat berbeda. Bahkan, media seperti SCMP mengingatkan bahwa keunggulan per kapita Vietnam ini tipis dan belum tentu bertahan lama.",
+          "start_seconds": 300.0,
+          "end_seconds": 360.0,
+          "speaker_directions": "Narasi percakapan Bahasa Indonesia, santai tapi informatif.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "santai, mengajak",
+            "delivery_note": "\"Lebih Kaya\" Itu Relatif"
+          },
+          "pronunciation_guides": [
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "enhancement_cues": [
+            {
+              "type": "broll",
+              "description": "harga rumah, kafe, struk belanja",
+              "timestamp_seconds": 301.0
+            },
+            {
+              "type": "overlay",
+              "description": "Kemiskinan $6,85/hari: Indonesia 64,1% vs Vietnam 21,5% (data terakhir, tahun berbeda) + Gini 34,4 vs 36,1",
+              "timestamp_seconds": 310.0
+            }
+          ],
+          "source_ref": "data_manifest.levels.*; World Bank SI.POV.UMIC/SI.POV.GINI"
+        },
+        {
+          "id": "s6",
+          "label": "Jadi, Apa Pelajarannya?",
+          "text": "Ini bukan soal siapa menang, siapa kalah. Ini soal arah. Dari angka tadi, kita bisa lihat tiga hal. Satu, Vietnam menunjukkan bahwa strategi konsisten bertahun-tahun bisa mengubah nasib sebuah negara. Dua, ukuran ekonomi besar tidak otomatis berarti rata-rata warganya makmur. Tiga, kalau pertumbuhan kita terus lebih lambat, IMF memproyeksikan Vietnam tetap unggul di 2027, yaitu US$5.659 berbanding US$5.550. Pertanyaannya bukan \"kok bisa mereka lebih kaya?\", tapi \"apa yang bisa kita pelajari?\"",
+          "start_seconds": 360.0,
+          "end_seconds": 405.0,
+          "speaker_directions": "Narasi percakapan Bahasa Indonesia, santai tapi informatif.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "santai, mengajak",
+            "delivery_note": "Jadi, Apa Pelajarannya?"
+          },
+          "pronunciation_guides": [
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "enhancement_cues": [
+            {
+              "type": "overlay",
+              "description": "kembali ke dua bendera",
+              "timestamp_seconds": 361.0
+            },
+            {
+              "type": "stat_card",
+              "description": "PROYEKSI IMF 2027: Vietnam US$5.659 vs Indonesia US$5.550",
+              "timestamp_seconds": 375.0
+            }
+          ],
+          "source_ref": "user_markdown_script (IMF projections)"
+        },
+        {
+          "id": "s7",
+          "label": "Penutup",
+          "text": "Menurut kamu, apa yang paling perlu dibenahi Indonesia? Industrialisasi, lapangan kerja, atau stabilitas rupiah? Tulis di kolom komentar. Kalau video ini bermanfaat, jangan lupa like, subscribe, dan bagikan ke temanmu yang suka ngobrolin ekonomi. Sampai jumpa di video berikutnya!",
+          "start_seconds": 405.0,
+          "end_seconds": 420.0,
+          "speaker_directions": "Narasi percakapan Bahasa Indonesia, santai tapi informatif.",
+          "delivery_cues": {
+            "pace": "conversational",
+            "energy": "santai, mengajak",
+            "delivery_note": "Penutup"
+          },
+          "pronunciation_guides": [
+            {
+              "word": "PDB",
+              "phonetic": "pe-de-be"
+            }
+          ],
+          "enhancement_cues": [
+            {
+              "type": "overlay",
+              "description": "Pertanyaan ke penonton: industrialisasi, lapangan kerja, atau stabilitas rupiah?",
+              "timestamp_seconds": 410.0
+            }
+          ],
+          "source_ref": "n/a"
+        }
+      ],
+      "metadata": {
+        "source": "Naskah markdown yang diberikan user \u2014 narasi dipertahankan apa adanya.",
+        "anchor_sections": [
+          "s0",
+          "s1",
+          "s2",
+          "s5",
+          "s6"
+        ],
+        "support_sections": [
+          "s3",
+          "s4",
+          "s7"
+        ],
+        "narration_sections": [
+          "s0",
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "s7"
+        ],
+        "required_support_assets": [
+          "two_flags_overlay",
+          "pie_cake_animation",
+          "two_bar_chart",
+          "factory_port_broll",
+          "rupiah_chart",
+          "cost_of_living_broll",
+          "two_flags_return",
+          "end_cta"
+        ],
+        "visual_router": "VISUAL dari markdown dikonversi menjadi enhancement cues; kartu angka ditambahkan pada adegan kunci.",
+        "data_basis": "IMF WEO Oktober 2026 sebagai proyeksi berlabel; angka aktual World Bank 2025 tetap menjadi pembanding di Bagian 5.",
+        "verification_note": "Seluruh klaim numerik naskah kini memiliki sumber sekunder (src-01\u2026src-08 di data_manifest). Pemetaan: 5.259/5.153 & PDB total \u2192 src-01; +1,5% & Rp92,75jt \u2192 src-02; 8,9% & teknologi tinggi \u2192 src-03; rupiah & lapangan kerja & target 2030 \u2192 src-04; proyeksi 2027 \u2192 src-05; biaya hidup \u2192 src-06; keunggulan tipis & skala ekonomi \u2192 src-07 (403 saat dicek, verifikasi manual); 1990 \u2192 src-08. Sisa tindakan: cek IMF WEO Okt 2026 primer di imf.org sebelum publish; cantumkan sumber di deskripsi; label US$5.259 sebagai proyeksi, Rp18.000 sebagai asumsi.",
+        "timing_note": "Durasi 420 s mengikuti penanda waktu markdown. Sesuai RECOMMENDED_STEPS.md, setelah TTS dirender akan diukur dengan ffprobe lalu script/plan di-retime.",
+        "narration_language": "Bahasa Indonesia",
+        "source_registry": "data_manifest.narration_sources (src-01 \u2026 src-08)",
+        "investigation_status": "RESOLVED_WITH_NOTES \u2014 8 sumber sekunder terdaftar; 1 perlu verifikasi manual (SCMP 403)."
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "kok-bisa-vietnam-id",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "idea",
+          "category": "pipeline_selection",
+          "subject": "Pipeline untuk video hybrid real-footage + infografis",
+          "options_considered": [
+            {
+              "option_id": "hybrid",
+              "label": "hybrid",
+              "score": 0.95,
+              "reason": "Footage nyata + chart/infografis data"
+            },
+            {
+              "option_id": "animated-explainer",
+              "label": "animated-explainer",
+              "score": 0.6,
+              "reason": "Semua generated",
+              "rejected_because": "Kehilangan anchor footage nyata"
+            },
+            {
+              "option_id": "documentary-montage",
+              "label": "documentary-montage",
+              "score": 0.5,
+              "reason": "Footage-led",
+              "rejected_because": "Dukungan chart lemah untuk adegan data"
+            }
+          ],
+          "selected": "hybrid",
+          "reason": "Brief menggabungkan footage nyata dan infografis data.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "idea",
+          "category": "concept_selection",
+          "subject": "Judul video (Bahasa Indonesia)",
+          "options_considered": [
+            {
+              "option_id": "kok-bisa",
+              "label": "Kok Bisa Orang Vietnam 'Lebih Kaya' dari Indonesia?",
+              "score": 0.95,
+              "reason": "Dipilih user; hook 'kok bisa' + angka US$6 di angle"
+            },
+            {
+              "option_id": "photo-finish",
+              "label": "Vietnam Salip Indonesia soal GDP Per Kapita \u2014 Cuma Menang US$6 per Orang",
+              "score": 0.8,
+              "reason": "Lebih berita",
+              "rejected_because": "User memilih opsi 1"
+            },
+            {
+              "option_id": "fakta",
+              "label": "Vietnam Lebih Kaya dari Indonesia? Ini Faktanya",
+              "score": 0.7,
+              "reason": "Myth-busting",
+              "rejected_because": "User memilih opsi 1"
+            }
+          ],
+          "selected": "kok-bisa",
+          "reason": "User secara eksplisit memilih kandidat #1.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "idea",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.95,
+              "reason": "Native stat_card/bar_chart/line_chart; video + React overlay dalam satu pass"
+            },
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.7,
+              "reason": "HTML/GSAP kinetic typography",
+              "rejected_because": "Primitive chart bawaan lebih lemah untuk brief data-heavy ini"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.4,
+              "reason": "Cut/concat lokal",
+              "rejected_because": "Infografis turun jadi kartu statis"
+            }
+          ],
+          "selected": "remotion",
+          "reason": "DIUSULKAN \u2014 kedua runtime tersedia dan sudah dipresentasikan pada gerbang idea. Belum dikunci; tunggu persetujuan eksplisit user. Remotion direkomendasikan karena chart data.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.7
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "idea",
+          "category": "voice_selection",
+          "subject": "Narasi Bahasa Indonesia",
+          "options_considered": [
+            {
+              "option_id": "edge-gadis",
+              "label": "Edge TTS id-ID-GadisNeural (via MPT)",
+              "score": 0.95,
+              "reason": "Terpasang, gratis, sudah dipakai di proyek sebelumnya"
+            },
+            {
+              "option_id": "edge-ardi",
+              "label": "Edge TTS id-ID-ArdiNeural",
+              "score": 0.6,
+              "reason": "Alternatif pria",
+              "rejected_because": "User sebelumnya menyetujui Gadis"
+            },
+            {
+              "option_id": "no-narration",
+              "label": "Tanpa narasi",
+              "score": 0.4,
+              "reason": "Teks di layar saja",
+              "rejected_because": "Video berbasis penjelasan"
+            }
+          ],
+          "selected": "edge-gadis",
+          "reason": "Diusulkan pada gerbang idea; perlu approval user untuk proyek baru ini.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "idea",
+          "category": "music_source",
+          "subject": "Musik latar",
+          "options_considered": [
+            {
+              "option_id": "news-investigating",
+              "label": "Background music News Investigating.mp3",
+              "score": 0.9,
+              "reason": "Sudah ada di library user, cocok nada investigasi"
+            },
+            {
+              "option_id": "pixabay",
+              "label": "Pixabay music search",
+              "score": 0.5,
+              "reason": "Satu-satunya music_search aktif",
+              "rejected_because": "Track user sudah tersedia dan lebih cocok"
+            },
+            {
+              "option_id": "none",
+              "label": "Tanpa musik",
+              "score": 0.3,
+              "reason": "\u2014",
+              "rejected_because": "Mengurangi produksi"
+            }
+          ],
+          "selected": "news-investigating",
+          "reason": "Diusulkan pada gerbang idea; perlu approval user.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "idea",
+          "category": "approval_policy",
+          "subject": "Waktu transfer ke Concat",
+          "options_considered": [
+            {
+              "option_id": "after-edit",
+              "label": "Setelah stage edit disetujui",
+              "score": 1.0,
+              "reason": "Instruksi eksplisit user"
+            },
+            {
+              "option_id": "now",
+              "label": "Transfer sekarang",
+              "score": 0.2,
+              "reason": "\u2014",
+              "rejected_because": "User meminta backlot step-by-step dulu"
+            }
+          ],
+          "selected": "after-edit",
+          "reason": "User: buat backlot seperti biasa dengan step step approval, baru transfer ke concat setelah tahap edit.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "idea",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.95,
+              "reason": "Native chart primitives; user approved"
+            },
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.7,
+              "reason": "HTML/GSAP kinetic typography",
+              "rejected_because": "User memilih Remotion untuk video data-heavy"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.4,
+              "reason": "Cut/concat lokal",
+              "rejected_because": "Infografis turun jadi kartu statis"
+            }
+          ],
+          "selected": "remotion",
+          "reason": "User menyetujui Remotion pada gerbang idea.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "idea",
+          "category": "voice_selection",
+          "subject": "Narasi Bahasa Indonesia",
+          "options_considered": [
+            {
+              "option_id": "edge-gadis",
+              "label": "Edge TTS id-ID-GadisNeural",
+              "score": 0.98,
+              "reason": "User memilih Gadis; gratis, terpasang"
+            },
+            {
+              "option_id": "edge-ardi",
+              "label": "Edge TTS id-ID-ArdiNeural",
+              "score": 0.6,
+              "reason": "Alternatif pria",
+              "rejected_because": "User memilih Gadis"
+            },
+            {
+              "option_id": "none",
+              "label": "Tanpa narasi",
+              "score": 0.3,
+              "reason": "\u2014",
+              "rejected_because": "Video berbasis penjelasan"
+            }
+          ],
+          "selected": "edge-gadis",
+          "reason": "User menyetujui narasi Gadis via MoneyPrinterTurbo.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "idea",
+          "category": "music_source",
+          "subject": "Musik latar",
+          "options_considered": [
+            {
+              "option_id": "informative-bed",
+              "label": "Informative Bed.mp3",
+              "score": 0.95,
+              "reason": "User memilih track dari /home/desktop/Music; nada informatif"
+            },
+            {
+              "option_id": "news-investigating",
+              "label": "News Investigating.mp3",
+              "score": 0.7,
+              "reason": "Usulan sebelumnya",
+              "rejected_because": "User mengganti dengan Informative Bed.mp3 pada gerbang idea"
+            },
+            {
+              "option_id": "none",
+              "label": "Tanpa musik",
+              "score": 0.3,
+              "reason": "\u2014",
+              "rejected_because": "User memilih musik"
+            }
+          ],
+          "selected": "informative-bed",
+          "reason": "User memilih /home/desktop/Music/Informative Bed.mp3.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "idea",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "templated",
+              "label": "Templated",
+              "score": 0.9,
+              "reason": "Cepat, reliabel, cocok untuk data cards; user memilih"
+            },
+            {
+              "option_id": "atelier",
+              "label": "Atelier",
+              "score": 0.6,
+              "reason": "Bespoke, biaya token lebih tinggi",
+              "rejected_because": "User memilih templated"
+            }
+          ],
+          "selected": "templated",
+          "reason": "User menyetujui mode templated pada gerbang idea.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-011",
+          "stage": "script",
+          "category": "visual_accuracy_check",
+          "subject": "Angka PDB per kapita Vietnam vs Indonesia",
+          "options_considered": [
+            {
+              "option_id": "world_bank_api",
+              "label": "World Bank WDI API (current, PPP, constant 2015)",
+              "score": 0.95,
+              "reason": "Primary source, terverifikasi 2026-11-18"
+            },
+            {
+              "option_id": "imf_news",
+              "label": "Headline IMF lewat media",
+              "score": 0.6,
+              "reason": "Dipakai hanya sebagai proyeksi berlabel",
+              "rejected_because": "Bukan hasil ukur dan 403 langsung dari API IMF"
+            }
+          ],
+          "selected": "world_bank_api",
+          "reason": "Semua klaim numerik di script ditelusuri ke data_manifest.json; IMF diberi label PROYEKSI.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.95
+        },
+        {
+          "decision_id": "d-012",
+          "stage": "script",
+          "category": "visual_accuracy_check",
+          "subject": "Klaim perusahaan & pasar pada S7 (China+1)",
+          "options_considered": [
+            {
+              "option_id": "corrected",
+              "label": "Pasar Barat (AS & Eropa) + Samsung, pemasok Apple, Intel/Amkor",
+              "score": 0.95,
+              "reason": "Fakta terverifikasi; istilah China+1/friendshoring tepat"
+            },
+            {
+              "option_id": "user_draft",
+              "label": "Pasar NATO + Samsung, TSMC, iPhone",
+              "score": 0.4,
+              "reason": "Seperti usulan awal",
+              "rejected_because": "NATO adalah aliansi militer bukan pasar; TSMC tidak punya fab di Vietnam; final assembly iPhone terutama di China/India"
+            }
+          ],
+          "selected": "corrected",
+          "reason": "Klaim diperbaiki agar akurat sebelum produksi aset; Samsung investor asing terbesar di Vietnam, pemasok Apple dan Intel/Amkor masuk lewat China+1.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-013",
+          "stage": "script",
+          "category": "concept_selection",
+          "subject": "Struktur & durasi naskah",
+          "options_considered": [
+            {
+              "option_id": "markdown-7min",
+              "label": "Naskah markdown 7 menit (7 bagian)",
+              "score": 0.95,
+              "reason": "User memilih versi markdown; narasi dipertahankan apa adanya"
+            },
+            {
+              "option_id": "backlot-91s",
+              "label": "Naskah backlot 91 detik (10 adegan)",
+              "score": 0.7,
+              "reason": "Lebih ringkas",
+              "rejected_because": "User memilih versi markdown karena salip sudah terjadi di 2025 dan diproyeksikan makin jauh"
+            }
+          ],
+          "selected": "markdown-7min",
+          "reason": "User: \"tetap pakai versi markdown karena di tahun 2025 sudah tersalip dan kemungkinan lebih jauh tersalip\".",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-014",
+          "stage": "script",
+          "category": "visual_accuracy_check",
+          "subject": "Sumber klaim numerik naskah markdown",
+          "options_considered": [
+            {
+              "option_id": "source_list",
+              "label": "8 sumber sekunder + cek primer IMF",
+              "score": 0.95,
+              "reason": "Semua klaim numerik memiliki sumber; 7/8 URL aktif (200), SCMP 403"
+            },
+            {
+              "option_id": "no_sources",
+              "label": "Tanpa daftar sumber",
+              "score": 0.2,
+              "reason": "\u2014",
+              "rejected_because": "Klaim proyeksi harus dapat ditelusuri"
+            }
+          ],
+          "selected": "source_list",
+          "reason": "User memberikan daftar sumber; narasi dipertahankan, angka US$5.259 dipakai karena mayoritas sumber. Perlu cek IMF WEO primer sebelum publish.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 0.9
+        }
+      ]
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "metadata": {
+    "review": {
+      "decision": "PASS",
+      "round": 6,
+      "findings": [
+        {
+          "severity": "NITPICK",
+          "description": "SCMP mengembalikan 403 saat dicek otomatis.",
+          "action": "Verifikasi manual atau cantumkan sebagai sumber dengan catatan paywall.",
+          "status": "deferred"
+        },
+        {
+          "severity": "SUGGESTION",
+          "description": "Cek primer IMF WEO Okt 2026 sebelum publish.",
+          "action": "Buka imf.org (akses langsung sebelumnya 403) atau pakai FlareSolverr.",
+          "status": "deferred"
+        }
+      ],
+      "summary": {
+        "critical": 0,
+        "suggestions": 1,
+        "nitpicks": 1,
+        "success_criteria_met": "4/4"
+      }
+    },
+    "revision_note": "Daftar 8 sumber diintegrasikan; verification note ditutup dengan sisa tindakan pra-publish.",
+    "cost_snapshot": {
+      "spent_usd": 0.0,
+      "projected_compose_usd": 0.0
+    },
+    "next_stage": "scene_plan"
+  }
+}

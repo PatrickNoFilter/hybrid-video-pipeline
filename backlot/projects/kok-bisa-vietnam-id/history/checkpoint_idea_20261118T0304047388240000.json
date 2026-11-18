@@ -1,0 +1,480 @@
+{
+  "version": "1.0",
+  "project_id": "kok-bisa-vietnam-id",
+  "pipeline_type": "hybrid",
+  "stage": "idea",
+  "status": "completed",
+  "timestamp": "2026-11-18T03:04:04.738824+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "brief": {
+      "version": "1.0",
+      "title": "Kok Bisa Orang Vietnam 'Lebih Kaya' dari Indonesia?",
+      "hook": "Data World Bank terbaru menaruh GDP per kapita Vietnam US$5.066 dan Indonesia US$5.060 di 2025. Jadi orang Vietnam 'lebih kaya' \u2014 tapi selisihnya cuma US$6. Lalu kok bisa?",
+      "key_points": [
+        "BAGIAN 1 \u2014 KLAM NYATA TAPI TIPIS: World Bank WDI (update 11 Nov 2026), current US$: Vietnam 2025 US$5.066,0 vs Indonesia US$5.059,6 \u2014 selisih US$6,4 (0,13%). Tahun 2024 Vietnam masih kalah US$208,7, jadi salipnya terjadi dalam satu tahun.",
+        "BAGIAN 2 \u2014 BEDA PRICE BASIS MENENTUKAN PEMENANG: PPP 2025 Vietnam US$18.088 vs Indonesia US$17.660 (selisih US$428 / 2,4%). Tapi constant 2015 US$: Vietnam US$4.308 vs Indonesia US$4.555 \u2014 Indonesia masih unggul 5,7%. Jadi 'lebih kaya' hanya benar pada basis current USD/PPP.",
+        "BAGIAN 3 \u2014 KOK BISA: pertumbuhan 2024/2025 Vietnam 7,0%/8,0% vs Indonesia 5,0%/5,1%. FDI 2025 Vietnam 4,3% PDB vs Indonesia 1,6% (~2,5x). Rasio investasi terhadap PDB hampir sama (30,8% vs 30,6%) \u2014 bedanya ke mana investasi masuk: manufaktur ekspor (China+1, elektronik) vs komoditas dan pasar domestik.",
+        "BAGIAN 4 \u2014 JANGAN TERKEJUT: total ekonomi Indonesia US$1,45 T vs Vietnam US$0,51 T. Populasi Indonesia 285,7 jt vs Vietnam 101,6 jt. GDP per kapita adalah rata-rata, bukan kekayaanMedian per orang.",
+        "BAGIAN 5 \u2014 SOAL IMF: IMF WEO Oktober 2026 memproyeksikan Vietnam US$5.259 vs Indonesia US$5.153 (current USD) untuk 2026 \u2014 itu PROYEKSI, bukan hasil ukur. Data 2025 aktual sudah menunjukkan salip tipis, jadi narasi 'IMF benar soal arah, tapi ketinggalan soal waktu'.",
+        "KESIMPULAN: Vietnam menyalip di rata-rata output per orang karena mesin ekspor-FDI dan pertumbuhan 7-8%, tapi selisihnya photo finish \u2014 dan tergantung price basis. Yang disalip adalah angka rata-rata, bukan taraf hidup seluruh warga."
+      ],
+      "core_message": "Vietnam benar-benar menyalip Indonesia di GDP per kapita current USD, tapi cuma selisih US$6 (0,13%) dan hasil ini berbalik pada basis constant 2015 USD. Penjelasannya bukan 'Vietnam lebih kaya', melainkan mesin FDI-ekspor yang tumbuh 7-8% sementara Indonesia tumbuh ~5% \u2014 dengan catatan bahwa rata-rata bukan kekayaan per orang dan total ekonomi Indonesia masih ~3x lebih besar.",
+      "cta": "Cek basis harganya setiap kali melihat angka 'lebih kaya' \u2014 current USD, PPP, atau constant USD.",
+      "tone": "Informatif, percakapan Bahasa Indonesia, transparan soal ketidakpastian data, myth-busting, sopan",
+      "style": "flat-motion-graphics",
+      "target_audience": "Pemirsa Indonesia yang ingin tahu apakah klaim 'Vietnam lebih kaya' benar dan mengapa angkanya bisa begini",
+      "target_platform": "youtube",
+      "target_duration_seconds": 90,
+      "reference_material": [
+        "https://api.worldbank.org/v2/country/VNM;IDN/indicator/NY.GDP.PCAP.CD (lastupdated 2026-11-11)",
+        "https://api.worldbank.org/v2/country/VNM;IDN/indicator/NY.GDP.PCAP.PP.CD",
+        "https://api.worldbank.org/v2/country/VNM;IDN/indicator/NY.GDP.PCAP.KD",
+        "https://api.worldbank.org/v2/country/VNM;IDN/indicator/BX.KLT.DINV.WD.GD.ZS",
+        "https://www.nso.gov.vn/en/data-and-statistics/2026/11/press-release-socio-economic-performance-in-the-q3-and-the-nine-months-of-2026/",
+        "https://tradingeconomics.com/indonesia/gdp-growth-annual (source: Statistics Indonesia / BPS)",
+        "IMF WEO October 2026, GDP per capita current prices \u2014 via FlareSolverr (403 direct), vintage confirmed in prior verified run",
+        "/home/desktop/Work/MoneyPrinterTurbo/storage/local_videos/hanoi.mp4",
+        "/home/desktop/Work/MoneyPrinterTurbo/storage/local_videos/saigon.mp4",
+        "/home/desktop/Music/Background music News Investigating.mp3"
+      ],
+      "angle_options": [
+        {
+          "name": "Photo finish + price basis",
+          "description": "Hook: Vietnam 'lebih kaya' \u2014 ternyata cuma US$6. Bongkar price basis, lalu jelaskan mesin FDI-ekspor. (selected)"
+        },
+        {
+          "name": "IMF forecast miss",
+          "description": "Fokus pada IMF yang memproyeksikan 2026 padahal data 2025 sudah salip."
+        },
+        {
+          "name": "Growth engine only",
+          "description": "Langsung ke FDI, ekspor, dan pertumbuhan tanpa myth-busting angka."
+        }
+      ],
+      "selected_angle": "Photo finish + price basis",
+      "metadata": {
+        "anchor_medium": "broll_footage",
+        "source_inventory": {
+          "local_footage": [
+            "hanoi.mp4",
+            "saigon.mp4",
+            "hoian.mp4",
+            "halong.mp4"
+          ],
+          "required_shot": "busy street of Vietnam (permintaan eksplisit user \u2014 menggantikan footage s0b lama)",
+          "stock_source": "MoneyPrinterTurbo + Pexels (configured locally)",
+          "music": "/home/desktop/Music/Background music News Investigating.mp3",
+          "narration_voice": "Edge TTS id-ID-GadisNeural via MoneyPrinterTurbo (proposed \u2014 needs approval)"
+        },
+        "support_layers": [
+          "stat_card",
+          "bar_chart",
+          "comparison",
+          "narration",
+          "subtitles (optional)",
+          "music"
+        ],
+        "deliverable_mix": [
+          "hero cut 16:9"
+        ],
+        "missing_capabilities": [
+          "OpenMontage TTS 0/19 \u2014 narration via MoneyPrinterTurbo Edge TTS",
+          "OpenMontage video_generation 0/35 \u2014 real footage via MoneyPrinterTurbo/Pexels + local clips",
+          "OpenMontage image_generation 0/31 \u2014 not needed; Remotion draws infographics"
+        ],
+        "fallback_policy": "Pexels gagal \u2192 pakai 4 klip lokal Vietnam. Remotion gagal \u2192 eskalasi blocker, tidak turun ke static-card FFmpeg.",
+        "render_runtime": "remotion",
+        "composition_mode": "templated",
+        "evidence_hierarchy": {
+          "proof": [
+            "World Bank WDI current US$ 2024/2025",
+            "World Bank PPP 2025",
+            "World Bank constant 2015 US$ 2025",
+            "BPS/NSO quarterly growth"
+          ],
+          "context": [
+            "World Bank FDI % PDB",
+            "investment % PDB",
+            "population",
+            "GDP total",
+            "FX rates"
+          ],
+          "labeled_projection": [
+            "IMF WEO October 2026 current USD \u2014 wajib diberi label PROYEKSI"
+          ]
+        },
+        "price_basis_labeling_rules": [
+          "Setiap angka per kapita wajib menyebut basis: current USD / PPP / constant 2015 USD.",
+          "IMF dan TradingEconomics tidak boleh digabung dalam satu chart.",
+          "Jika basis berbeda dan pemenang berubah, tampilkan dua angka berdampingan \u2014 jangan diratarata."
+        ],
+        "visual_router": {
+          "pattern": "per_scene_alternating_halves",
+          "description": "Tiap adegan: ~50% real footage Vietnam/Indonesia, ~50% infografis Remotion; urutan bergantian antar scene. Narasi Gadis berjalan terus.",
+          "footage_triggers": [
+            "jalanan ramai Vietnam",
+            "pabrik elektronik",
+            "pelabuhan ekspor",
+            "keramaian Jakarta",
+            "rupiah / bank"
+          ],
+          "infographic_triggers": [
+            "angka US$5.066 vs US$5.060",
+            "PPP vs constant",
+            "FDI 4,3% vs 1,6%",
+            "pertumbuhan 8% vs 5%",
+            "US$1,45 T vs US$0,51 T"
+          ]
+        },
+        "constraint": "Transfer ke Concat baru dilakukan SETELAH stage edit disetujui (instruksi user).",
+        "narration_voice": "Edge TTS id-ID-GadisNeural via MoneyPrinterTurbo",
+        "music": "/home/desktop/Music/Informative Bed.mp3",
+        "approved_at_idea_gate": {
+          "render_runtime": "remotion",
+          "voice": "id-ID-GadisNeural",
+          "music": "/home/desktop/Music/Informative Bed.mp3",
+          "composition_mode": "templated"
+        }
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "kok-bisa-vietnam-id",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "idea",
+          "category": "pipeline_selection",
+          "subject": "Pipeline untuk video hybrid real-footage + infografis",
+          "options_considered": [
+            {
+              "option_id": "hybrid",
+              "label": "hybrid",
+              "score": 0.95,
+              "reason": "Footage nyata + chart/infografis data"
+            },
+            {
+              "option_id": "animated-explainer",
+              "label": "animated-explainer",
+              "score": 0.6,
+              "reason": "Semua generated",
+              "rejected_because": "Kehilangan anchor footage nyata"
+            },
+            {
+              "option_id": "documentary-montage",
+              "label": "documentary-montage",
+              "score": 0.5,
+              "reason": "Footage-led",
+              "rejected_because": "Dukungan chart lemah untuk adegan data"
+            }
+          ],
+          "selected": "hybrid",
+          "reason": "Brief menggabungkan footage nyata dan infografis data.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.9
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "idea",
+          "category": "concept_selection",
+          "subject": "Judul video (Bahasa Indonesia)",
+          "options_considered": [
+            {
+              "option_id": "kok-bisa",
+              "label": "Kok Bisa Orang Vietnam 'Lebih Kaya' dari Indonesia?",
+              "score": 0.95,
+              "reason": "Dipilih user; hook 'kok bisa' + angka US$6 di angle"
+            },
+            {
+              "option_id": "photo-finish",
+              "label": "Vietnam Salip Indonesia soal GDP Per Kapita \u2014 Cuma Menang US$6 per Orang",
+              "score": 0.8,
+              "reason": "Lebih berita",
+              "rejected_because": "User memilih opsi 1"
+            },
+            {
+              "option_id": "fakta",
+              "label": "Vietnam Lebih Kaya dari Indonesia? Ini Faktanya",
+              "score": 0.7,
+              "reason": "Myth-busting",
+              "rejected_because": "User memilih opsi 1"
+            }
+          ],
+          "selected": "kok-bisa",
+          "reason": "User secara eksplisit memilih kandidat #1.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "idea",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.95,
+              "reason": "Native stat_card/bar_chart/line_chart; video + React overlay dalam satu pass"
+            },
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.7,
+              "reason": "HTML/GSAP kinetic typography",
+              "rejected_because": "Primitive chart bawaan lebih lemah untuk brief data-heavy ini"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.4,
+              "reason": "Cut/concat lokal",
+              "rejected_because": "Infografis turun jadi kartu statis"
+            }
+          ],
+          "selected": "remotion",
+          "reason": "DIUSULKAN \u2014 kedua runtime tersedia dan sudah dipresentasikan pada gerbang idea. Belum dikunci; tunggu persetujuan eksplisit user. Remotion direkomendasikan karena chart data.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.7
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "idea",
+          "category": "voice_selection",
+          "subject": "Narasi Bahasa Indonesia",
+          "options_considered": [
+            {
+              "option_id": "edge-gadis",
+              "label": "Edge TTS id-ID-GadisNeural (via MPT)",
+              "score": 0.95,
+              "reason": "Terpasang, gratis, sudah dipakai di proyek sebelumnya"
+            },
+            {
+              "option_id": "edge-ardi",
+              "label": "Edge TTS id-ID-ArdiNeural",
+              "score": 0.6,
+              "reason": "Alternatif pria",
+              "rejected_because": "User sebelumnya menyetujui Gadis"
+            },
+            {
+              "option_id": "no-narration",
+              "label": "Tanpa narasi",
+              "score": 0.4,
+              "reason": "Teks di layar saja",
+              "rejected_because": "Video berbasis penjelasan"
+            }
+          ],
+          "selected": "edge-gadis",
+          "reason": "Diusulkan pada gerbang idea; perlu approval user untuk proyek baru ini.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "idea",
+          "category": "music_source",
+          "subject": "Musik latar",
+          "options_considered": [
+            {
+              "option_id": "news-investigating",
+              "label": "Background music News Investigating.mp3",
+              "score": 0.9,
+              "reason": "Sudah ada di library user, cocok nada investigasi"
+            },
+            {
+              "option_id": "pixabay",
+              "label": "Pixabay music search",
+              "score": 0.5,
+              "reason": "Satu-satunya music_search aktif",
+              "rejected_because": "Track user sudah tersedia dan lebih cocok"
+            },
+            {
+              "option_id": "none",
+              "label": "Tanpa musik",
+              "score": 0.3,
+              "reason": "\u2014",
+              "rejected_because": "Mengurangi produksi"
+            }
+          ],
+          "selected": "news-investigating",
+          "reason": "Diusulkan pada gerbang idea; perlu approval user.",
+          "user_visible": true,
+          "user_approved": false,
+          "confidence": 0.8
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "idea",
+          "category": "approval_policy",
+          "subject": "Waktu transfer ke Concat",
+          "options_considered": [
+            {
+              "option_id": "after-edit",
+              "label": "Setelah stage edit disetujui",
+              "score": 1.0,
+              "reason": "Instruksi eksplisit user"
+            },
+            {
+              "option_id": "now",
+              "label": "Transfer sekarang",
+              "score": 0.2,
+              "reason": "\u2014",
+              "rejected_because": "User meminta backlot step-by-step dulu"
+            }
+          ],
+          "selected": "after-edit",
+          "reason": "User: buat backlot seperti biasa dengan step step approval, baru transfer ke concat setelah tahap edit.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "idea",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.95,
+              "reason": "Native chart primitives; user approved"
+            },
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.7,
+              "reason": "HTML/GSAP kinetic typography",
+              "rejected_because": "User memilih Remotion untuk video data-heavy"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.4,
+              "reason": "Cut/concat lokal",
+              "rejected_because": "Infografis turun jadi kartu statis"
+            }
+          ],
+          "selected": "remotion",
+          "reason": "User menyetujui Remotion pada gerbang idea.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "idea",
+          "category": "voice_selection",
+          "subject": "Narasi Bahasa Indonesia",
+          "options_considered": [
+            {
+              "option_id": "edge-gadis",
+              "label": "Edge TTS id-ID-GadisNeural",
+              "score": 0.98,
+              "reason": "User memilih Gadis; gratis, terpasang"
+            },
+            {
+              "option_id": "edge-ardi",
+              "label": "Edge TTS id-ID-ArdiNeural",
+              "score": 0.6,
+              "reason": "Alternatif pria",
+              "rejected_because": "User memilih Gadis"
+            },
+            {
+              "option_id": "none",
+              "label": "Tanpa narasi",
+              "score": 0.3,
+              "reason": "\u2014",
+              "rejected_because": "Video berbasis penjelasan"
+            }
+          ],
+          "selected": "edge-gadis",
+          "reason": "User menyetujui narasi Gadis via MoneyPrinterTurbo.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-009",
+          "stage": "idea",
+          "category": "music_source",
+          "subject": "Musik latar",
+          "options_considered": [
+            {
+              "option_id": "informative-bed",
+              "label": "Informative Bed.mp3",
+              "score": 0.95,
+              "reason": "User memilih track dari /home/desktop/Music; nada informatif"
+            },
+            {
+              "option_id": "news-investigating",
+              "label": "News Investigating.mp3",
+              "score": 0.7,
+              "reason": "Usulan sebelumnya",
+              "rejected_because": "User mengganti dengan Informative Bed.mp3 pada gerbang idea"
+            },
+            {
+              "option_id": "none",
+              "label": "Tanpa musik",
+              "score": 0.3,
+              "reason": "\u2014",
+              "rejected_because": "User memilih musik"
+            }
+          ],
+          "selected": "informative-bed",
+          "reason": "User memilih /home/desktop/Music/Informative Bed.mp3.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        },
+        {
+          "decision_id": "d-010",
+          "stage": "idea",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "templated",
+              "label": "Templated",
+              "score": 0.9,
+              "reason": "Cepat, reliabel, cocok untuk data cards; user memilih"
+            },
+            {
+              "option_id": "atelier",
+              "label": "Atelier",
+              "score": 0.6,
+              "reason": "Bespoke, biaya token lebih tinggi",
+              "rejected_because": "User memilih templated"
+            }
+          ],
+          "selected": "templated",
+          "reason": "User menyetujui mode templated pada gerbang idea.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
+        }
+      ]
+    }
+  },
+  "style_playbook": "flat-motion-graphics",
+  "metadata": {
+    "approval": "User approved idea gate: Remotion + Edge TTS Gadis + Informative Bed.mp3 + templated",
+    "review_findings": {
+      "critical": 0,
+      "suggestions": [],
+      "success_criteria_met": "4/4"
+    },
+    "cost_snapshot": {
+      "spent_usd": 0.0,
+      "projected_compose_usd": 0.0
+    },
+    "next_stage": "script"
+  }
+}
