@@ -62,5 +62,9 @@ The local Backlot UI in this environment (`OpenMontage/backlot/ui/board.js` and
 | ← / → keys | Step through visible scene cards without leaving the keyboard (ignored while typing in the search box) |
 | Selected card | Amber outline marks the current scene across re-renders and SSE refreshes |
 
+The edited UI files are included in this repo at `backlot-ui/board.js` and
+`backlot-ui/board.css`. Copy them into `OpenMontage/backlot/ui/` to apply the
+same navigation to another installation.
+
 Hard-refresh the board after updating `board.js` / `board.css` (the watcher only
 monitors `projects/`, not UI files).
