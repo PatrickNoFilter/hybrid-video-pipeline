@@ -4,30 +4,30 @@
   "scenes": [
     {
       "id": "s0_1",
-      "type": "broll",
-      "description": "Real video Vietnam tahun 1990 — suasana pedesaan miskin, pasar tradisional, anak-anak; grade warna tua/dokumenter",
+      "type": "diagram",
+      "description": "Infografis timeline 1990 → 2026: perbandingan PDB per kapita Vietnam ~1/6 Indonesia (1990, src-08) → proyeksiIMF 5.259 vs 5.153 (2026). Label \"ilustrasi dari data perbandingan\".",
       "start_seconds": 0.0,
       "end_seconds": 21.47,
       "script_section_id": "s0",
-      "framing": "full-frame, subject centred, 10% safe margin",
-      "movement": "slow handheld / lateral move",
+      "framing": "centered safe area, 10% padding",
+      "movement": "frame-based diagram reveal",
       "transition_in": "fade from black",
       "transition_out": "crossfade 0.3s to next visual",
       "overlay_notes": "subtitle bottom margin; keep faces clear",
-      "shot_intent": "Show the physical reality behind the narration",
+      "shot_intent": "Make the relationship or number unmissable",
       "narrative_role": "introduce_subject",
       "information_role": "HOOK — beat 1 of 2",
       "hero_moment": false,
       "texture_keywords": [
-        "documentary",
-        "natural-light",
-        "urban"
+        "flat",
+        "high-contrast",
+        "diagram"
       ],
       "required_assets": [
         {
-          "type": "stock_footage",
-          "description": "Real video Vietnam tahun 1990 — suasana pedesaan miskin, pasar tradisional, anak-anak; grade warna tua/dokumenter",
-          "source": "source"
+          "type": "remotion_infographic",
+          "description": "Infografis timeline 1990 → 2026: perbandingan PDB per kapita Vietnam ~1/6 Indonesia (1990, src-08) → proyeksiIMF 5.259 vs 5.153 (2026). Label \"ilustrasi dari data perbandingan\".",
+          "source": "generate"
         }
       ]
     },
@@ -236,30 +236,30 @@
     },
     {
       "id": "s3_2",
-      "type": "broll",
-      "description": "Real video pabrik elektronik Vietnam — lini perakitan, pekerja, kontainer pelabuhan ekspor",
+      "type": "diagram",
+      "description": "Diagram alur mesin Vietnam: China+1 → FDI masuk → pabrik elektronik/semikonduktor → ekspor naik → lapangan kerja industri → PDB per kapita naik.",
       "start_seconds": 183.06,
       "end_seconds": 203.9,
       "script_section_id": "s3",
-      "framing": "full-frame, subject centred, 10% safe margin",
-      "movement": "slow handheld / lateral move",
+      "framing": "centered safe area, 10% padding",
+      "movement": "frame-based diagram reveal",
       "transition_in": "crossfade 0.3s from previous visual",
       "transition_out": "crossfade 0.3s to next visual",
       "overlay_notes": "subtitle bottom margin; keep faces clear",
-      "shot_intent": "Show the physical reality behind the narration",
+      "shot_intent": "Make the relationship or number unmissable",
       "narrative_role": "build_tension",
       "information_role": "CERITA VIETNAM, TANCAP GAS — beat 2 of 3",
       "hero_moment": false,
       "texture_keywords": [
-        "documentary",
-        "natural-light",
-        "urban"
+        "flat",
+        "high-contrast",
+        "diagram"
       ],
       "required_assets": [
         {
-          "type": "stock_footage",
-          "description": "Real video pabrik elektronik Vietnam — lini perakitan, pekerja, kontainer pelabuhan ekspor",
-          "source": "source"
+          "type": "remotion_infographic",
+          "description": "Diagram alur mesin Vietnam: China+1 → FDI masuk → pabrik elektronik/semikonduktor → ekspor naik → lapangan kerja industri → PDB per kapita naik.",
+          "source": "generate"
         }
       ]
     },
@@ -323,30 +323,30 @@
     },
     {
       "id": "s4_2",
-      "type": "broll",
-      "description": "Real video industri Indonesia — pabrik, aktivitas ekonomi, reindustrialisasi",
+      "type": "text_card",
+      "description": "Kartu infografis Indonesia: kurs rupiah melemah menekan angka dolar (+1,5%), kritik investasi belum cukup ke dompet warga, reindustrialisasi.",
       "start_seconds": 239.1,
       "end_seconds": 271.48,
       "script_section_id": "s4",
-      "framing": "full-frame, subject centred, 10% safe margin",
-      "movement": "slow handheld / lateral move",
+      "framing": "centered safe area, 10% padding",
+      "movement": "frame-based diagram reveal",
       "transition_in": "crossfade 0.3s from previous visual",
       "transition_out": "crossfade 0.3s to next visual",
       "overlay_notes": "subtitle bottom margin; keep faces clear",
-      "shot_intent": "Show the physical reality behind the narration",
+      "shot_intent": "Make the relationship or number unmissable",
       "narrative_role": "comparison",
       "information_role": "CERITA INDONESIA, JALAN DI TEMPAT — beat 2 of 2",
       "hero_moment": false,
       "texture_keywords": [
-        "documentary",
-        "natural-light",
-        "urban"
+        "flat",
+        "high-contrast",
+        "diagram"
       ],
       "required_assets": [
         {
-          "type": "stock_footage",
-          "description": "Real video industri Indonesia — pabrik, aktivitas ekonomi, reindustrialisasi",
-          "source": "source"
+          "type": "remotion_infographic",
+          "description": "Kartu infografis Indonesia: kurs rupiah melemah menekan angka dolar (+1,5%), kritik investasi belum cukup ke dompet warga, reindustrialisasi.",
+          "source": "generate"
         }
       ]
     },
@@ -556,7 +556,7 @@
   ],
   "metadata": {
     "total_duration_seconds": 633.43,
-    "source_to_support_ratio": "User-specified visual beats per section; 5 real-footage beats, 14 infographic beats",
+    "source_to_support_ratio": "100% infografis OpenMontage — tanpa real footage",
     "scene_count": 19,
     "anchor_rules": [
       "Real footage stays visually primary in every footage half",
@@ -584,9 +584,15 @@
     "narration_voice": "Edge TTS id-ID-GadisNeural via MoneyPrinterTurbo",
     "render_runtime": "remotion",
     "composition_mode": "templated",
-    "note": "Rebuilt from user visual beats and retimed to 633.43s (TTS 631.63s before S9 fix; now 628.73s speech). Duration per beat split proportionally to narration length.",
-    "visual_plan_source": "User-provided per-section visual directions (S0-S9) with reference screenshots.",
+    "note": "19 infographic scenes, 633.43 s, narasi Gadis tidak berubah.",
+    "visual_plan_source": "Rombakan user: semua beat jadi infografis.",
     "data_discrepancy_note": "IMF DataMapper screenshot shows 2025 selection ID 5.08k vs VN 4.83k, while WB 2025 actual is VN 5.066 vs ID 5.060 and IMF 2026 projection is VN 5.259 vs ID 5.153. Script keeps the 2026 projection with PROYEKSI label; screenshot used only as context in S2 beat 2.",
-    "fx_reference_note": "Screenshots show IDR ~18.252-18.268/USD (Nov 2026) and projections to 18.800. Narration keeps Rp18.000 as Katadata assumption (audio already rendered); screenshot used as context for S4 beat 1."
+    "fx_reference_note": "Screenshots show IDR ~18.252-18.268/USD (Nov 2026) and projections to 18.800. Narration keeps Rp18.000 as Katadata assumption (audio already rendered); screenshot used as context for S4 beat 1.",
+    "anchor_medium": "narration_led_graphics",
+    "footage_removed": [
+      "s0_1 Vietnam 1990",
+      "s3_2 pabrik Vietnam",
+      "s4_2 industri Indonesia"
+    ]
   }
 }

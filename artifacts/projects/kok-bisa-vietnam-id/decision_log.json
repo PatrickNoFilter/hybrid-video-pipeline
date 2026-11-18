@@ -688,6 +688,58 @@
       "user_visible": true,
       "user_approved": true,
       "confidence": 1.0
+    },
+    {
+      "decision_id": "d-025",
+      "stage": "scene_plan",
+      "category": "concept_selection",
+      "subject": "Visual beat plan per section (S0-S9)",
+      "options_considered": [
+        {
+          "option_id": "all-infographic",
+          "label": "100% infografis OpenMontage — 19 chart/diagram/card",
+          "score": 0.98,
+          "reason": "User: rombak semuanya jadikan ke infografis semua pakai OpenMontage"
+        },
+        {
+          "option_id": "hybrid",
+          "label": "Hybrid footage + infografis",
+          "score": 0.45,
+          "reason": "Versi sebelumnya",
+          "rejected_because": "User mengubah treatment secara total"
+        }
+      ],
+      "selected": "all-infographic",
+      "reason": "Semua 19 beat dirender sebagai animasi Remotion; narasi & audio tidak berubah.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-026",
+      "stage": "scene_plan",
+      "category": "approval_policy",
+      "subject": "Approval flow hold at edit stage",
+      "options_considered": [
+        {
+          "option_id": "reopen-scene-plan",
+          "label": "Buka ulang scene_plan untuk approval treatment baru",
+          "score": 0.95,
+          "reason": "Perubahan treatment setelah approval harus melalui gate"
+        },
+        {
+          "option_id": "stay-stalled",
+          "label": "Tetap stalled di edit",
+          "score": 0.4,
+          "reason": "—",
+          "rejected_because": "User meminta rombakan total"
+        }
+      ],
+      "selected": "reopen-scene-plan",
+      "reason": "Scene_plan direvisi dan dikembalikan ke gerbang approval.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.95
     }
   ]
 }

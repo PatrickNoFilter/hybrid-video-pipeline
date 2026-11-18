@@ -88,9 +88,9 @@ Stage status recap:
 |---|---|---|
 | idea | completed (approved) | Title and source list accepted after several revisions |
 | script | completed (approved) | 10 sections; narration text preserved across 5 user revisions |
-| scene_plan | completed (approved) | 19 user-specified visual beats, retimed to real TTS (633.43 s) |
-| assets | completed (approved) | 21 assets: narration mix, 3 footage clips, 16 storyboard stills |
-| edit | in_progress — STALLED BY USER | Remotion render timed out at 14/16 graphic MP4s (missing `s8_1`, `s9_1`); approval held per user request |
+| scene_plan | awaiting_human (reopened) | Rombakan total: 19 beats 100% infografis OpenMontage, tanpa footage real; durasi 633.43 s |
+| assets | pending rebuild | Aset lama (3 footage + 16 still) tidak dipakai; akan dibuat ulang setelah scene_plan approved |
+| edit | stalled — superseded | Status lama tersimpan di `history/`; alur kembali ke scene_plan |
 
 This run follows the revised approval flow documented in
 `RECOMMENDED_STEPS.md` §3: the Edge TTS narration (`id-ID-GadisNeural`) was

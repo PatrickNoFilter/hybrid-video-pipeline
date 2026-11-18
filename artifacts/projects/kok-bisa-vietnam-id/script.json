@@ -50,8 +50,8 @@
       ],
       "enhancement_cues": [
         {
-          "type": "broll",
-          "description": "Real video Vietnam tahun 1990 — suasana pedesaan miskin, pasar tradisional, anak-anak; grade warna tua/dokumenter",
+          "type": "diagram",
+          "description": "Infografis timeline 1990→2026: Vietnam ~1/6 Indonesia → proyeksi IMF 2026 VN 5.259 vs ID 5.153.",
           "timestamp_seconds": 1.0
         },
         {
@@ -519,12 +519,13 @@
       "warning_two_maps",
       "end_cta"
     ],
-    "visual_router": "Visual cues dari revisi 4 dipertahankan (file revisi 5 menghapus tag VISUAL). S5: tiga kartu; S7: empat ikon; S8: peringatan + dua peta.",
+    "visual_router": "100% infografis OpenMontage (tanpa footage real): stat_card, diagram alur, chart, point-list.",
     "data_basis": "IMF WEO Okt 2026: nominal US$5.259 vs US$5.153; PPP ~US$19.970 vs ~US$19.090 (~5%). Q3 2026 dari BPS/NSO; PMI 54,0 dari S&P Global lewat src-24.",
     "placeholder_resolution": "S5 diisi dari src-06 (ULI 2025 + Vietnamnet).",
     "verification_note": "Sudah diverifikasi: PPP edisi WEO Okt 2026 (src-20, pembanding src-21); Q3 2026 ID 5,47% BPS (src-22) & VN 9,95% NSO (src-23); PMI 54,0 Okt 2026 (src-24). Masih diperhatikan: selisih US$5.259 vs US$5.269 (Katadata), Gini \"sekitar 36\" (tahun survei beda), pangsa FDI 76% (2025) vs ~80% (H1 2026) — cantumkan periodenya di grafis, Rp18.000 asumsi Katadata, klaim 1990 penyederhanaan src-08, S8 poin 3 opini.",
     "timing_note": "Retimed to real Edge TTS Gadis durations measured with ffprobe (628.73s speech + 0.3s gaps x9 + 2.0s hold = 633.43s). S9 re-rendered without stray markdown tail.",
     "narration_language": "Bahasa Indonesia",
-    "visual_reference_note": "User supplied per-section visual beats (S0-S9) plus reference screenshots: Google News \"selisih PDB perkapita Vietnam\", IMF DataMapper NGDPDPC 2025, and \"kurs rupiah melemah\". These are captured in scene_plan required_assets descriptions."
+    "visual_reference_note": "User supplied per-section visual beats (S0-S9) plus reference screenshots: Google News \"selisih PDB perkapita Vietnam\", IMF DataMapper NGDPDPC 2025, and \"kurs rupiah melemah\". These are captured in scene_plan required_assets descriptions.",
+    "treatment_change": "User meminta rombakan total ke infografis; narasi & audio tidak diubah."
   }
 }

@@ -69,7 +69,7 @@
   ],
   "selected_angle": "Photo finish + price basis",
   "metadata": {
-    "anchor_medium": "broll_footage",
+    "anchor_medium": "narration_led_graphics",
     "source_inventory": {
       "local_footage": [
         "hanoi.mp4",
@@ -78,7 +78,7 @@
         "halong.mp4"
       ],
       "required_shot": "busy street of Vietnam (permintaan eksplisit user — menggantikan footage s0b lama)",
-      "stock_source": "MoneyPrinterTurbo + Pexels (configured locally)",
+      "stock_source": "Tidak dipakai — semua visual dirender Remotion di OpenMontage",
       "music": "/home/desktop/Music/Background music News Investigating.mp3",
       "narration_voice": "Edge TTS id-ID-GadisNeural via MoneyPrinterTurbo (proposed — needs approval)"
     },
@@ -124,24 +124,7 @@
       "IMF dan TradingEconomics tidak boleh digabung dalam satu chart.",
       "Jika basis berbeda dan pemenang berubah, tampilkan dua angka berdampingan — jangan diratarata."
     ],
-    "visual_router": {
-      "pattern": "per_scene_alternating_halves",
-      "description": "Tiap adegan: ~50% real footage Vietnam/Indonesia, ~50% infografis Remotion; urutan bergantian antar scene. Narasi Gadis berjalan terus.",
-      "footage_triggers": [
-        "jalanan ramai Vietnam",
-        "pabrik elektronik",
-        "pelabuhan ekspor",
-        "keramaian Jakarta",
-        "rupiah / bank"
-      ],
-      "infographic_triggers": [
-        "angka US$5.066 vs US$5.060",
-        "PPP vs constant",
-        "FDI 4,3% vs 1,6%",
-        "pertumbuhan 8% vs 5%",
-        "US$1,45 T vs US$0,51 T"
-      ]
-    },
+    "visual_router": "100% infografis: chart, diagram alur, stat_card, point-list — tanpa footage real",
     "constraint": "Transfer ke Concat baru dilakukan SETELAH stage edit disetujui (instruksi user).",
     "narration_voice": "Edge TTS id-ID-GadisNeural via MoneyPrinterTurbo",
     "music": "/home/desktop/Music/Informative Bed.mp3",
@@ -152,6 +135,7 @@
       "composition_mode": "templated"
     },
     "structure_source": "User-provided markdown script (7 bagian + hook + penutup), dipertahankan apa adanya.",
-    "source_notes": "Lihat data_manifest.narration_sources + source_notes"
+    "source_notes": "Lihat data_manifest.narration_sources + source_notes",
+    "treatment_change": "User: rombak semuanya jadi infografis pakai OpenMontage."
   }
 }
