@@ -562,6 +562,12 @@ function openNarrModal(card) {
     el("div", { class: "modal-page" },
       el("div", { class: "script-card", style: "cursor:default" },
         el("div", { class: "sp-meta" }, meta),
+        card.visual && card.visual.exists && card.visual.renderable
+          ? el("div", { style: "margin:12px 0 16px" },
+              card.visual.type === "video"
+                ? el("video", { src: mediaURL(state.project_id, card.visual.path), muted: "", controls: "", playsinline: "", style: "max-width:100%;border-radius:6px;display:block" })
+                : el("img", { src: thumbURL(state.project_id, card.visual.path, 1280), loading: "lazy", alt: "", style: "max-width:100%;height:auto;border-radius:6px;display:block" }))
+          : null,
         card.narration ? el("div", { class: "sp-action", style: "margin-left:0" }, card.narration) : null,
         card.shot_intent ? el("div", { class: "sp-paren", style: "margin-left:0" }, `Intent — ${card.shot_intent}`) : null,
         card.description ? el("div", { class: "sp-paren", style: "margin-left:0" }, card.description) : null,
