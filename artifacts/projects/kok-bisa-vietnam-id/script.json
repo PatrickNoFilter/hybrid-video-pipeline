@@ -50,14 +50,14 @@
       ],
       "enhancement_cues": [
         {
-          "type": "overlay",
-          "description": "dua bendera bersanding, lalu angka muncul satu per satu",
+          "type": "broll",
+          "description": "Real video Vietnam tahun 1990 — suasana pedesaan miskin, pasar tradisional, anak-anak; grade warna tua/dokumenter",
           "timestamp_seconds": 1.0
         },
         {
           "type": "stat_card",
           "description": "IMF WEO Okt 2026 (PROYEKSI): VN US$5.259 vs ID US$5.153",
-          "timestamp_seconds": 12.0
+          "timestamp_seconds": 21.47
         }
       ],
       "source_ref": "src-01; src-08"

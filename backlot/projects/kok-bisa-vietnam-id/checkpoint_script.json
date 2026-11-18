@@ -4,7 +4,7 @@
   "pipeline_type": "hybrid",
   "stage": "script",
   "status": "completed",
-  "timestamp": "2026-11-18T05:02:01.594249+00:00",
+  "timestamp": "2026-11-18T05:09:07.920707+00:00",
   "checkpoint_policy": "guided",
   "human_approval_required": true,
   "human_approved": true,
@@ -61,14 +61,14 @@
           ],
           "enhancement_cues": [
             {
-              "type": "overlay",
-              "description": "dua bendera bersanding, lalu angka muncul satu per satu",
+              "type": "broll",
+              "description": "Real video Vietnam tahun 1990 \u2014 suasana pedesaan miskin, pasar tradisional, anak-anak; grade warna tua/dokumenter",
               "timestamp_seconds": 1.0
             },
             {
               "type": "stat_card",
               "description": "IMF WEO Okt 2026 (PROYEKSI): VN US$5.259 vs ID US$5.153",
-              "timestamp_seconds": 12.0
+              "timestamp_seconds": 21.47
             }
           ],
           "source_ref": "src-01; src-08"
@@ -1151,13 +1151,39 @@
           "user_visible": true,
           "user_approved": false,
           "confidence": 0.95
+        },
+        {
+          "decision_id": "d-022",
+          "stage": "script",
+          "category": "concept_selection",
+          "subject": "Visual beat plan per section (S0-S9)",
+          "options_considered": [
+            {
+              "option_id": "user-beats",
+              "label": "S0 = real video Vietnam 1990 \u2192 chart IMF",
+              "score": 0.98,
+              "reason": "User: ganti overlay dua bendera dengan visual yang saya posting"
+            },
+            {
+              "option_id": "old-overlay",
+              "label": "Overlay dua bendera bersanding",
+              "score": 0.4,
+              "reason": "Cue lama dari naskah awal",
+              "rejected_because": "User meminta penggantian dengan real video Vietnam 1990"
+            }
+          ],
+          "selected": "user-beats",
+          "reason": "S0 overlay diganti sesuai visual beat user; narasi & audio tidak berubah.",
+          "user_visible": true,
+          "user_approved": true,
+          "confidence": 1.0
         }
       ]
     }
   },
   "style_playbook": "flat-motion-graphics",
   "metadata": {
-    "approval": "Teks S9 dibersihkan dari marker markdown; audio S9 di-render ulang. Durasi diretime.",
+    "approval": "Cue S0 diperbarui sesuai visual posting user; audio tidak berubah.",
     "cost_snapshot": {
       "spent_usd": 0.0
     },
