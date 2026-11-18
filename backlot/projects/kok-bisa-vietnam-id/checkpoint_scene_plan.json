@@ -3,11 +3,11 @@
   "project_id": "kok-bisa-vietnam-id",
   "pipeline_type": "hybrid",
   "stage": "scene_plan",
-  "status": "awaiting_human",
-  "timestamp": "2026-11-18T05:09:08.143753+00:00",
+  "status": "completed",
+  "timestamp": "2026-11-18T05:11:08.673206+00:00",
   "checkpoint_policy": "guided",
   "human_approval_required": true,
-  "human_approved": false,
+  "human_approved": true,
   "artifacts": {
     "scene_plan": {
       "version": "1.0",
@@ -1245,25 +1245,9 @@
   },
   "style_playbook": "flat-motion-graphics",
   "metadata": {
-    "review": {
-      "decision": "PASS",
-      "round": 5,
-      "findings": [
-        {
-          "severity": "NITPICK",
-          "description": "Cue overlay lama di S0 diganti real video Vietnam 1990.",
-          "action": "Diterapkan di script artifact.",
-          "status": "fixed"
-        }
-      ],
-      "summary": {
-        "critical": 0,
-        "success_criteria_met": "4/4"
-      }
-    },
+    "approval": "User approved 19 visual beats / 633.43 s.",
     "cost_snapshot": {
-      "spent_usd": 0.0,
-      "projected_compose_usd": 0.0
+      "spent_usd": 0.0
     },
     "next_stage": "assets"
   }

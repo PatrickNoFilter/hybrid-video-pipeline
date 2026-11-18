@@ -636,6 +636,32 @@
       "user_visible": true,
       "user_approved": true,
       "confidence": 1.0
+    },
+    {
+      "decision_id": "d-023",
+      "stage": "assets",
+      "category": "provider_selection",
+      "subject": "Sumber aset untuk 19 visual beat",
+      "options_considered": [
+        {
+          "option_id": "local-storyboard",
+          "label": "Klip lokal + storyboard still + Remotion saat compose",
+          "score": 0.9,
+          "reason": "Tanpa API berbayar; review filmstrip cepat"
+        },
+        {
+          "option_id": "ai-generation",
+          "label": "Generate footage/chart via API",
+          "score": 0.3,
+          "reason": "Tidak ada provider video/image aktif",
+          "rejected_because": "0/35 video, 0/31 image terkonfigurasi"
+        }
+      ],
+      "selected": "local-storyboard",
+      "reason": "Semua aset lokal/gratis; final animation dirender dengan Remotion setelah approval.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.9
     }
   ]
 }
