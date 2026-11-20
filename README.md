@@ -21,7 +21,9 @@ The idea: **the script drives the visuals**. Each section is split into two alte
 - mixed Vietnam/Indonesia footage matched to the narration,
 - append-only decision history across human-approval gates.
 
-See [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md) for the example's sources.
+See [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md) for the example's sources and
+[`docs/FOOTAGE_SOURCES.md`](docs/FOOTAGE_SOURCES.md) for free, API/MCP-accessible stock-footage
+providers you can swap in.
 
 ## Repository layout
 
@@ -30,7 +32,7 @@ See [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md) for the example's sources.
 | `artifacts/` | Canonical JSON: brief, script, scene_plan, asset_manifest, decision_log, data_manifest, tts_timings |
 | `scripts/` | Generation scripts: TTS, audio/subtitles, MPT batches, Remotion build/render, trimming, manifest |
 | `remotion/` | Standalone Remotion project with all infographic compositions |
-| `docs/` | `RECOMMENDED_STEPS.md` (working procedure), `BACKLOT.md` (review board), `DATA_SOURCES.md` (example provenance) |
+| `docs/` | `RECOMMENDED_STEPS.md` (working procedure), `BACKLOT.md` (review board), `DATA_SOURCES.md` (example provenance), `FOOTAGE_SOURCES.md` (free, agent-friendly stock footage) |
 | `backlot/` | Backlot project state: checkpoints, archived history, events and decision log |
 
 ## Requirements
@@ -76,3 +78,5 @@ Then continue at `edit` and `compose` in OpenMontage.
 ## Adapting to a new topic
 
 Replace `artifacts/brief.json`, `script.json` and `scene_plan.json` with your own content (keeping the same schema), adjust `remotion/src/gfx_data.ts` compositions, update the MPT search terms in the batch scripts, and rerun. The narration→visual routing, 50/50 alternating structure, QA checkpoints and decision logging stay the same.
+
+To widen the footage pool without paid generation, see [`docs/FOOTAGE_SOURCES.md`](docs/FOOTAGE_SOURCES.md) — it lists free providers with REST APIs or MCP servers (Pexels, Coverr, Pixabay, Wikimedia Commons, Archive.org, NASA) plus their attribution requirements.

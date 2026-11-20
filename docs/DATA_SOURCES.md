@@ -39,3 +39,5 @@ World Bank `SP.POP.TOTL` (VN 101.6M, ID 285.7M in 2025) and `PA.NUS.FCRF` (IDR 1
 ## Footage licensing
 
 All real-video halves come from **Pexels** (Pexels License) via MoneyPrinterTurbo, with queries matched to each scene's narration (Vietnam skyline/factory/port; Indonesia BPS office/bank/rupiah/Jakarta crowd; newsroom for the intro). No API key is stored in this repo.
+
+`scripts/get_clips.py` additionally demonstrates open-archive sourcing from **Wikimedia Commons** and **Archive.org** (`sources: ["wikimedia", "archive_org"]`). For the full list of free, API/MCP-accessible footage providers and their license terms, see [`FOOTAGE_SOURCES.md`](FOOTAGE_SOURCES.md).
